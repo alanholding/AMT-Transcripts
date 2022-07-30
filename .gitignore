@@ -225,3 +225,4 @@ $RECYCLE.BIN/
 *.zip
 node_modules/
 /HTML/*_audio.html
+/HTML/audio/
