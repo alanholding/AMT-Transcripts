@@ -219,9 +219,9 @@ $RECYCLE.BIN/
 
 # Project specific
 /Audio/
-/HTML/css/
-/HTML/fonts/
-/HTML/js/
+# /HTML/css/
+# /HTML/fonts/
+# /HTML/js/
 *.zip
 node_modules/
 /HTML/*_audio.html
