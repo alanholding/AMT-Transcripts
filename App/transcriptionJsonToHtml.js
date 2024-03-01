@@ -227,6 +227,11 @@ class TranscriptionJsonToHtml {
       <div class="container">
         <h2>Transcription: ${HTML_TITLE}</h2>
         <h3>Released: ${this.releaseDate}</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/INSERTPODCASTIDHERE/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
     `
     this.para = START_TEXT;
   }
