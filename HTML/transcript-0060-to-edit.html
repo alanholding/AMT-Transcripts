@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0060 - Wesley Smith</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0060 - Wesley Smith</h2>
+        <h3>Released: Dec 28, 2014</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3263839/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Getting back to the scene of the crime, we're speaking to one of my coworkers, Wesley Smith This also gets us back to the world of graphics, which is kind of always fun to do. One of the things I really wanted to pick Wesley's Brain on was how he deals with mathematics as an artist, or art as a mathematician slash programmer guy. I think you'll find his answers pretty fascinating. And, if the word math intuition sounds foreign to you, you're probably gonna want to listen to this podcast. So thanks <span style="color:red" data-ts="37.14" data-end_ts="37.36" title="37.14" id=c_"37.14">__lot__</span> and I'll talk to you at the end. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. This week I have got the great opportunity to speak with my colleague Wesley Smith This is a really exciting opportunity for me, but it's also a timely one. Wess is about to embark on a, a new project. And so he's not gonna be working with me for much longer, and so I thought I'd take the opportunity to grab him while I could kind of brow beat him into it. Wess is an amazing technologist as well as artist. He works primarily in the worlds of, of OpenGL, and he is the pri one of the primary drivers behind the gen, graphics, subsystem within Max. And so with that, I will say hi. Hi, Wess, how are you? 
+</p>
+
+<p>
+<b>Wesley Smith: </b>Hey Darwin 
+</p>
+
+<p>
+<b>Darwin: </b>Thanks a lot for joining me on the podcast. It's really cool. 
+</p>
+
+<p>
+<b>Wesley: </b>My pleasure. 
+</p>
+
+<p>
+<b>Darwin: </b>Before we get started, why don't you, fill everybody in on what you're going to be doing here shortly? 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So, as much as I can say right now is I've, you know, been exploring the world of digital fabrication and am jumping into the three D printing world. So I'll be developing software for three d printing and, yeah. See where it takes me. It's gonna be an interesting journey. Yeah, 
+</p>
+
+<p>
+<b>Darwin: </b>I'll bet It is. It's interesting to hear that you're going into digital fab because I think of you as a person who has really been, super virtualized. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah, that's really true. And part of it is a reaction to that. I see. So it's like, I sit in front of my computer all day and you know, when do I stand up and take a break? It's, you know, I kind of lose myself in it and I just want to get physical with things. And even though I'll be writing software, it has a physical outcome and, you know, there'll be more, it'll just get more and more into reality for me. It's, you know, <span style="color:red" data-ts="171.56" data-end_ts="171.8" title="171.56" id=c_"171.56">__taking__</span> me away from the computer more. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Absolutely. And you'll actually be able to do stuff that you can drop on your foot now, which is great. 
+</p>
+
+<p>
+<b>Wesley: </b><laugh>. <span style="color:red" data-ts="179.35" data-end_ts="179.64" title="179.35" id=c_"179.35">__Yeah__</span>, exactly. 
+</p>
+
+<p>
+<b>Darwin: </b>So, in my podcast, what I generally do is I ask people to start off by giving me a little bit about, their background. I know a little bit of yours, it's pretty fascinating, but I'm kind of interested in hearing the full story. So if you could tell us a little bit about your background and how you got to be where you are. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah, so the, the, I started out being just really interested in photography. That's kind of how I, you know, ended up in the art side of things. But at the same time, I was really into Legos and just playing around with mathematics. And I, I enjoyed physics in high school, for instance. And so <span style="color:red" data-ts="223.32" data-end_ts="223.44" title="223.32" id=c_"223.32">__I__</span> <span style="color:red" data-ts="223.51" data-end_ts="223.8" title="223.51" id=c_"223.51">__also__</span>, I was struck by, something my physics teacher told me when I went to college, which is he did physics because it was the most difficult thing he could think of to study. And so when I was trying to figure out what I wanted to major in, which ended up being electrical engineering, that's kind of the mindset I took to it. And also I thought it would be just useful to understand the technology that is around us <span style="color:red" data-ts="247.1" data-end_ts="247.32" title="247.1" id=c_"247.1">__in__</span> computers and how things function. And, you know, these days I would probably choose something like biology 'cause things have changed so much. 
+</p>
+
+<p>
+<b>Wesley: </b>But that's what I chose back in like 1998. And I kept doing photography all the time. Like in high school, I took photos, at least a roll of film every week for three or four years. And then, at some point, I bought a four by five camera. So I started taking, you know, using the cape and the, the big tripod and taking more just staged photographs. Mm-hmm. <affirmative>. So while I was doing my engineering studies, I went to Johns Hopkins and they have a relationship with the Maryland Institute College of Art, which just down the street, so I could take classes there, no problem. So I'd always, every semester take at least one art class. So I was doing photography, I could use their facilities. And then at some point I studied abroad in Paris and didn't study any engineering, just did purely photography and really dove deep into that. And, when I graduated I kind of didn't know what to do 'cause I wanted to combine art and my technological background, my engineering background, but I just didn't know the world of <span style="color:red" data-ts="321.74" data-end_ts="321.96" title="321.74" id=c_"321.74">__Max__</span>. I didn't know that kind of thing existed. I, you know, that <span style="color:red" data-ts="324.72" data-end_ts="324.84" title="324.72" id=c_"324.72">__was__</span>, wasn't exposed to that until my last year. I met Randall Packer. I don't know if you know him at all. 
+</p>
+
+<p>
+<b>Darwin: </b>I've heard the name. I don't know personally, 
+</p>
+
+<p>
+<b>Wesley: </b>Cycling did an interview with him at one point. Right. I'm pretty sure. And so he's used Max a long time. I think David Zicarelli wrote the, laser disc object for him. <laugh>, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="345.38" data-end_ts="345.6" title="345.38" id=c_"345.38">__The__</span>, the famous laser disc object. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. He used to do, mixed media performances on, in some theaters on Mission Street in Ssf. But he was in DC and so that's where I met him in Baltimore at Johns Hopkins. And then after Hopkins, I, I actually spent a year at the <span style="color:red" data-ts="363.36" data-end_ts="363.48" title="363.36" id=c_"363.36">__me__</span> Institute College of Art and just trying to figure out where I was gonna go. And he put me, in contact with uc, Santa Barbara, where the media arts and technology program was starting up. And so that's how I ended up out there. And I spent about six years there and ended up all but dissertation with my PhD. 'cause other things happened. I started working for Cycling for One, I was doing, I think I started working for cycling after my first year at, m a t just as a part-time thing. Oh. And then it became more serious, you know, there was like an opportunity to do full-time. And so I had these competing interests, like, should I do full-time? I really like this job. It's fantastic. You know, it's a lot of fun to work with everyone. But at the same time, I'm, you know, having fun exploring this stuff. And eventually, I left uc, Santa Barbara and moved to SSF to work for cycling. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Okay. Wow. That's a very interesting trail. I didn't, I didn't realize that you had the background in photography that you did. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So that's pretty cool. At some point in Baltimore, I, you know, I, I learned about jitter. So I took a class called, what is it called? Intermediate Studio, I believe, right? From Randall. Right. And Luke Dubois came and presented jitter a couple months before it came out. Right. So we were using nato of course. That was my first, I can actually say I used NATO in a, in a project. My first project used NATO. And, then obviously was so much easier 'cause the documentation was ridiculous on nato. Right. And, I started doing video performances. The one that I, I, from that era that I really like a lot was using, one way mirror to optically mix a computer monitor and a old school television where you could jiggle the frequencies between channels and get the vertical hold moving and stuff like that. Oh, okay. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. 
+</p>
+
+<p>
+<b>Wesley: </b>So that was my controller. And then I had jitter running using, the, the eclipse Jit <span style="color:red" data-ts="490.72" data-end_ts="490.84" title="490.72" id=c_"490.72">__that__</span> eclipse when it was all the right. And, I had some color cycling going on, and it was feeding back onto the one <span style="color:red" data-ts="499.44" data-end_ts="499.6" title="499.44" id=c_"499.44">__way__</span> mirror where things where the television and the jitter processing were mixing. Right. And there was a ca so the camera was picking that up. Right. And, what was really interesting about that is, 'cause you could only do three 20 by two 40 video back in that time, what I would do is I'd have the television in perfectly sharp focus, and obviously that's like hot super high resolution because it's reality in a certain way. And I would defocus the jitter a little bit, the, the feedback, the processing from jitter, so you wouldn't see the pixel boundaries. Sure. And since you saw this very sharp image of the television, everything just looks super high res mm-hmm. <affirmative>, so yeah, that was, and so I would just improvise. And sometimes you get Monday night football, sometimes you get P b s, ballet <span style="color:red" data-ts="545.2" data-end_ts="545.32" title="545.2" id=c_"545.2">__B__</span> boff on theirs. And I just play with the patterns as they developed. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's really interesting. It, it's fun to, it's fun. Also though, maybe a little irritating to think back of some of the limitations we put up with and the tricks that we, that we took advantage of in order to kind of make our work seem maybe technically better than it was. 'cause Yeah. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. And just to give it a, not to like get distracted by, you know, things that people might hone in on because they see, oh, it's just a bunch of, you know, small pixels, you know, 
+</p>
+
+<p>
+<b>Darwin: </b>It's so pixelated, it can't be any good. Right. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. I, you know, there's lots of people who work with that as well, but that's not, that's not something I was trying to, to work with. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. So now you, you primarily are known, within the cycling world, for being sort of heavy duty OpenGL and, and then for doing all of the craziness that is Jen. 
+</p>
+
+<p>
+<b>Wesley: </b>Yes. 
+</p>
+
+<p>
+<b>Darwin: </b>Nothing about that implies a background in photography. Right. No, there's, there's massive amounts of math and stuff. Now you said that you went to school, for engineering because it was kind of the hardest thing that you could imagine doing. 
+</p>
+
+<p>
+<b>Wesley: </b>Correct. 
+</p>
+
+<p>
+<b>Darwin: </b>When you first got into OpenGL, was it primarily because it was a difficult puzzle or were you drawn there for other reasons? 
+</p>
+
+<p>
+<b>Wesley: </b>It was more just to, you know, that's how you could draw things, right? Mm-hmm. <affirmative> quickly. So my, my progression is, so I did photography, and then that kinda led into video. Right? Right. And then real time video. And then when I got to Santa Barbara, I was introduced to a lots of concepts about architecture and virtual reality. And, you know, things became more spatial. So it became more about drawing things in, <span style="color:red" data-ts="666.44" data-end_ts="666.66" title="666.44" id=c_"666.44">__in__</span> dimensionally and GRA three D graphics because of that. 
+</p>
+
+<p>
+<b>Darwin: </b>I see. 
+</p>
+
+<p>
+<b>Wesley: </b>So it's kind of like a progression in that sense. And, you know, if you think about it now, now it's, okay, three d printing, physical, you know, it's like, it's like pretty clear succession of, topics I guess you would call it. Right? 
+</p>
+
+<p>
+<b>Darwin: </b>I guess. So that's 
+</p>
+
+<p>
+<b>Wesley: </b>Subject matter. Right. And, yeah. So I didn't really learn programming that much in undergraduate. I just, you know, we did a little bit of assembly, but we didn't go too deep. And I learned enough c to be dangerous, but not do anything crazy. And we know we didn't, we didn't learn anything about manipulating audio or graphics. So that's a totally different kind of programming. Right. And so at, at Santa Barbara, since I had just be, you know, I was really learning jitter, I thought I was getting pretty good at it, and I wanted to get deeper because I couldn't, there were some limitations into how you can work with the jitter matrices mm-hmm. <affirmative> in terms of arranging data and building dynamic structures. Right. So I was like, okay, I'm gonna learn C and learn how to write jitter external. So I got my roommate August, who <span style="color:red" data-ts="728.71" data-end_ts="729" title="728.71" id=c_"728.71">__also__</span> works for <span style="color:red" data-ts="729.28" data-end_ts="729.52" title="729.28" id=c_"729.28">__cycl__</span> <span style="color:red" data-ts="729.52" data-end_ts="729.72" title="729.52" id=c_"729.52">__in__</span> 74. Yeah. Right. So he, he and I were roommates for six years in Santa Barbara. Five years. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, <span style="color:red" data-ts="734.48" data-end_ts="734.72" title="734.48" id=c_"734.48">__didn't__</span> know that. That's hilarious. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So he, he knew c a lot better than I did at the time. So he taught me how to read the jitter, s d k, and then I made my first objects, and eventually I think I made 20 something objects called the X-ray objects. And, yeah. So that's, that's kind of how I just got into it. I was like, okay, I need to do something, so let's learn it. And I have a tendency to really try to learn everything I can. So I just kind of practice, you know? <span style="color:red" data-ts="764.78" data-end_ts="765" title="764.78" id=c_"764.78">__Oh__</span>, you know, I don't know how many years I've been programming gl, but it's just practice every day, basically. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. It's like, like an instrument almost. Right. Yeah. Well, what's interesting is that, the first time I heard your name was when, Joshua was talking about hiring, <span style="color:red" data-ts="784.71" data-end_ts="785" title="784.71" id=c_"784.71">__unit__</span> cycling, and he was like, yeah, I'm really thinking of, of working with Wesley. He is, everybody just loves working with him and loves his work. And I'm like, <span style="color:red" data-ts="796.26" data-end_ts="796.48" title="796.26" id=c_"796.26">__eh__</span>, he's like, yeah, he did the X-ray stuff. And I'm like, <span style="color:red" data-ts="800.24" data-end_ts="800.44" title="800.24" id=c_"800.24">__Ugh__</span>, the x-ray guy <laugh>. Yeah. Because you got pretty, you got pretty well known for those, those were, yeah. There was, it was, it kind of provided a, a fairly unique way of approaching, some of that jitter functionality. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So there was a couple, like greatest hits from that. You know, there was like 20 something objects, probably 15 of which were really quirky and specific to what I was doing uhhuh. And then there's the Time <span style="color:red" data-ts="829.51" data-end_ts="829.8" title="829.51" id=c_"829.51">__Cube__</span> one, which lets you do <span style="color:red" data-ts="831.36" data-end_ts="831.48" title="831.36" id=c_"831.36">__a__</span> slit scan style, manipulation of video. And that was obviously, I mean, who doesn't love a good slit scan? 
+</p>
+
+<p>
+<b>Darwin: </b>Who doesn't love a good slit scan. That's right. 
+</p>
+
+<p>
+<b>Wesley: </b>And then, there was another one X-Ray JIT water, which did a pretty fast and really nice, it, it wasn't limited to a wa like a water simulation like you do with a convolution example mm-hmm. <affirmative>, it comes with jitter. Right. It, you could vary the temporal resolution as well as the spatial resolution and the speed at which the wave propagated, per pixel. So that gave people a lot of, fun. It's always fun to play with water simulations. Yeah. Like fluid simulations is just, you can't go wrong. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. So do you, do you still maintain the X-ray objects? 
+</p>
+
+<p>
+<b>Wesley: </b>I have. I, every once in a while I get someone asking me about something. Maybe I have it compiled it for 64 <span style="color:red" data-ts="884.58" data-end_ts="884.8" title="884.58" id=c_"884.58">__bit__</span> or for window Right. Windows or, you know, something random like that. And that I will, I will then like, you know, find where I have the source code stashed <laugh>. Maybe it's not on my most recent computer. Maybe I have to go to an old hard drive <laugh> and, and try to compile it. And usually I can get it done in like a pretty good easy. So, yeah, I do, they're online in the Max Objects database. Sure. And I think I, they're still on my freely, super old uc Santa Barbara website. I think that's where the link takes you. Oh, interesting. Man, it's a terrible website. So 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, well, 
+</p>
+
+<p>
+<b>Wesley: </b>Don't judge me. 
+</p>
+
+<p>
+<b>Darwin: </b>Don't judge you based on that. 
+</p>
+
+<p>
+<b>Wesley: </b>But the objects are there and, you know, and the, the thing that happened after that is the Boyds, right? So, I think Eric Singer had this Max Boyd object, and it was super slow if you had a ton of a huge list. Right. 'cause you're working with max lists with those. Right. So then I ported it to jitter to use matrices, and then it became super fast. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, that's cool. Yeah. Yeah, I didn't realize you were involved in that, but it makes sense now. At Santa Barbara, they did a lot of, it's <span style="color:red" data-ts="956.69" data-end_ts="956.81" title="956.69" id=c_"956.69">__a__</span>, you, you kind of just off the cuff <span style="color:red" data-ts="958.52" data-end_ts="958.81" title="958.52" id=c_"958.52">__said__</span>, you know, you kind of like learned about architecture and some of this stuff, but Santa Barbara's got kind of, some notoriety behind sort of like large format virtual realities, right? 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. 'cause of the AlloSphere Yeah. The giant ball that looks like an X-ray, X-men set. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Did you, were you involved with that at all? 
+</p>
+
+<p>
+<b>Wesley: </b>I did. I was there when they built it and started setting it up, and we moved into the nano systems, the California Nano Systems building, which is where it's housed. Okay. Before we were in a humanities building where the math people are and some other stuff mm-hmm. <affirmative> and, so yeah, we moved out there and now we're in labs where people are growing iguana, feet follicles to simulate stickiness and all, you know, it's like crazy stuff going on in there. Yeah. Yeah. And then, yeah, so we're, it's just a, it's a big virtual reality, 360 by 360 I guess, spherical system with huge amounts of channels of audio. But I, you know, I was just there when the things were getting off the ground and I, I wasn't around as much when they got the system really running. And, that's some, yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>But you obviously were there for some of the planning and, and like mockups and stuff for what it could do, right? 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So we actually developed some of the early prototypes of like, you know, how would things work in jitter. So that's why I put the stereoscopic three D stuff in jitter and some other things like that. And in the end we developed a thing called Cosm, which I presented at the first max, expo. Yeah. And, so we developed this Ambisonics, with Graham and I, Graham was also co-developed <span style="color:red" data-ts="1067.45" data-end_ts="1067.65" title="1067.45" id=c_"1067.45">__gen__</span> with me Uhhuh, so he did Gen Tilda. Right. And, so we developed, cosm. And what's really nice about Cosm is that you could attach sounds to spatial locations and <span style="color:red" data-ts="1080.3" data-end_ts="1080.72" title="1080.3" id=c_"1080.3">__assist__</span> and then also draw objects with them. So you could say, okay, I have this sound, put it in this location and attach it to this visual open GL object and move it around. And you'll get Doppler shift. You'll get dampening from distance and <span style="color:red" data-ts="1096.44" data-end_ts="1096.6" title="1096.44" id=c_"1096.44">__then__</span> do this spatial spatialization using Ambusonics. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. 
+</p>
+
+<p>
+<b>Wesley: </b>So it was really well integrated. And then you could switch between stereoscopic mode or just normal. You could do, you know, multiple windows. It was really, it opt, it did a lot of things that now you can do in max seven mm-hmm. <affirmative> in a simpler way, or even max six, because there's physics now on max. Right. There's, jit.world, there's a lot of other things that simplify doing these kind of, I don't know. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>I didn't <span style="color:red" data-ts="1127.47" data-end_ts="1127.71" title="1127.47" id=c_"1127.47">__just__</span> 
+</p>
+
+<p>
+<b>Wesley: </b>Complicated sequences of objects. 
+</p>
+
+<p>
+<b>Darwin: </b>I hadn't even thought about it. But when you did the cosm stuff Yeah. None of that physics stuff was in place. You were kind of having developed that all from all whole cloth. Yeah. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. And then also Graham and I, worked on the thing called Lua av, which was an audio visual, real <span style="color:red" data-ts="1147.52" data-end_ts="1147.72" title="1147.52" id=c_"1147.52">__time__</span> programming environment using the Lua scripting language. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. What is, I remember when you did that, what was it about Lua that drew you to that language? 
+</p>
+
+<p>
+<b>Wesley: </b>First of all, it's super small. So it, the language itself is 200 K, so it's embedded in, you can embed it in your app. It takes up no space whatsoever. It's used in, video game development a lot because of that. 
+</p>
+
+<p>
+<b>Darwin: </b>I see. Well, it's funny because I was goofing around with, some I or Android development mm-hmm. <affirmative> and I ended up stumbling across this Corona Labs. Yeah, <span style="color:red" data-ts="1182.63" data-end_ts="1182.92" title="1182.63" id=c_"1182.63">__yeah__</span>. Group. And they use Lua for everything. And so in order to just play around with it, I got a chance to use a little bit. Yeah. Fun little language. 
+</p>
+
+<p>
+<b>Wesley: </b>It's pretty fun. It's a little bit verbose to do, live coding. Yeah. Because you have to type in these long words, like keywords all the time, function and stuff. But it's, it's a fantastic language. It's super small. Like, you know, there's like one data structure, you know, you don't have to learn a lot to get started. And it's multi paradigm. So you can do procedural, you can do functional, you can do, you know, a bunch of different ways of styles of programming. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. The one thing I found is that, it's method for doing like object oriented stuff kind of broke my head. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. Well, it's a prototype language similar <span style="color:red" data-ts="1228.4" data-end_ts="1228.48" title="1228.4" id=c_"1228.4">__of__</span> JavaScript, but it doesn't come with an object model from the start. So everyone rolls their own, and that's kind of one of the downsides of it. So it's, there hasn't really been a community that's pushed a standard set of libraries, Uhhuh, <affirmative>, there kind of is, but it's, I it's not nothing like what you have with Node jss or Ruby Gems or anything like that. Right. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. But what we really liked about it is that it integrates super well with c and c plus plus. Mm-hmm. <affirmative>. And so the way, Lu AV worked is we added, and also Lua had cot routines. So co routines is like a function you call it, but you can pause the execution of the function in the middle, do something else, and then resume it <laugh>. So it's, <span style="color:red" data-ts="1273.04" data-end_ts="1273.26" title="1273.04" id=c_"1273.04">__it__</span>, you can kind of, kind of think of it as a function that's scheduled where you can do different things over time. Yeah. And we had both, you could pause it for, you could pause, let's say you had a loop that played 10 notes mm-hmm. <affirmative>. So you could pause the for loop for like a 10th of a second, and then play the next note, and then the next note. And you just write this one little loop that plays 10 notes, but it'll play 'em out over time. Right. 
+</p>
+
+<p>
+<b>Wesley: </b>Or you could say, wait for an event. So you could wait for some kind of like, you know, someone clicks a button on the window, a mouse button on the window, and then play the next note. You know, you can do all these different kinds of, asynchronous or synchronous type timing. Yeah. And then in the backend, because you know, there's, first of all, it's multi-threaded. So there's some running some D S P audio, stuff, and then there's the graphics. And the, the way it worked is that we used L L V M, which is the low level virtual machine to <span style="color:red" data-ts="1328.1" data-end_ts="1328.22" title="1328.1" id=c_"1328.1">__j__</span> compile, d s P code to run super fast audio mm-hmm. <affirmative>. So in Lua you describe some kind of unit generator. Okay. And we translate that into c plus plus code, compile it, and run it in the audio thread 
+</p>
+
+<p>
+<b>Darwin: </b>Uhhuh, 
+</p>
+
+<p>
+<b>Wesley: </b>And then you could call those from <span style="color:red" data-ts="1344.72" data-end_ts="1344.94" title="1344.72" id=c_"1344.72">__Lua__</span>. So you could schedule the union generators to play, for certain amounts of time and change the parameters and do all this kind of stuff and mix those with the graphics. So that was so 
+</p>
+
+<p>
+<b>Darwin: </b>And so, you literally were flying back and forth between code and C code on the fly as you need it, 
+</p>
+
+<p>
+<b>Wesley: </b>But you as a author of a script, never saw that. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Right. That's really interesting. But that also sounds like the perfect precursor to the whole gen mechanism. Yeah. 
+</p>
+
+<p>
+<b>Wesley: </b>It basically is what we took a lot of the same, work, you know, ideas and, you know, ways of working with L L V M and generating code to put it into gen. Yeah. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>So now, moving to the moving to the <span style="color:red" data-ts="1392.32" data-end_ts="1392.54" title="1392.32" id=c_"1392.32">__gen__</span> world, it's, it's kind of interesting to see how that's developed because it really started off as kind of a way to do low level. I mean, for me, the thing I liked about it is, is it changed my interaction with, I, I <span style="color:red" data-ts="1409.82" data-end_ts="1410.02" title="1409.82" id=c_"1409.82">__use__</span> <span style="color:red" data-ts="1410.56" data-end_ts="1410.78" title="1410.56" id=c_"1410.56">__GEN__</span> a lot, so it changed my interactions with the pixels of a frame. Yeah. I tend to think of jitter as kind of a frame oriented processing system. <span style="color:red" data-ts="1419.05" data-end_ts="1419.34" title="1419.05" id=c_"1419.05">__Yeah__</span>. And Jen allowed me to, to get more involved in pixel processing, which, which I really, really like. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. That, that's really exciting. And when I've taught workshops mm-hmm. <affirmative>, you know, people who are afraid to go into G L SS O code and, you know, work on fragment shaders or, you know, obviously who wants to go, who wants to go write <span style="color:red" data-ts="1442.56" data-end_ts="1442.68" title="1442.56" id=c_"1442.56">__a__</span>, a jitter object in, see, it's just a pain <laugh>, and it's not a pain because, you know, it's bad design. It's just a, a pain to write something like that in See in general, <span style="color:red" data-ts="1451.69" data-end_ts="1452.04" title="1451.69" id=c_"1451.69">__right__</span>. <span style="color:red" data-ts="1452.04" data-end_ts="1452.28" title="1452.04" id=c_"1452.04">__Because__</span> you have to deal with all the different matrix types. There's four types, there's multiple dimensions, there's multiple channels. It's just like a Combinator explosion and it just makes you wanna like <span style="color:red" data-ts="1464.81" data-end_ts="1465.16" title="1464.81" id=c_"1464.81">__stand__</span>, you know, you just don't wanna do it. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, and and the other thing is, <span style="color:red" data-ts="1468.78" data-end_ts="1469" title="1468.78" id=c_"1468.78">__and__</span>, and I have to admit that, that I am totally of this class, but working, working in max kind of spoils you from one standpoint, which is you get away from the whole edit, compile test mode. Yeah. You're testing while you're programming and all this stuff, and all of a sudden to stop the flow and say, well, okay, I'm gonna get into this, you know, loop where I'm iteratively adding or testing functionality, it seems like all of a sudden, you know, it's like, it's like you've got a car boot put on or something. Right. <laugh>. Yeah, 
+</p>
+
+<p>
+<b>Wesley: </b>Totally. 
+</p>
+
+<p>
+<b>Darwin: </b>It's, it, it really seems to slow the turnaround on, on making stuff happen. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So that was also a motivation for writing <span style="color:red" data-ts="1511.22" data-end_ts="1511.44" title="1511.22" id=c_"1511.22">__Lu__</span> av, you know, I just wanted to experiment and see stuff and not have to think about the details of how the stuff works, you know, in a scripting language, you don't have to think about types and all this kind of stuff. Right. And then same thing in Jen, you don't have to think about, you know, what, what are my inputs are? Are they like three D matrices? Are they two D? You just kind of do it and everything just works unless there's a bug. Of course, of course. But everything just, everything just works. And you can, play around with it and see it <span style="color:red" data-ts="1539.06" data-end_ts="1539.28" title="1539.06" id=c_"1539.06">__on__</span>, you know, on the fly. It's, it's a really fantastic, medium to like try and play around with, the pixels and generating patterns in the, in the matrices and stuff. 
+</p>
+
+<p>
+<b>Darwin: </b>Right now in, the jitter part of Jen, you continued kind of the, the, the jitter standard of, conflating the open GL and the standard image processing into sort of like one object. But I was actually kinda surprised when, Jen was first getting rolled out that there was also gonna be a gen for audio. And, I'm wondering how hard it was to come up with a paradigm that would work with not only with the already pretty diverse worlds of image processing and OpenGL, but then also this completely other world of audio. 
+</p>
+
+<p>
+<b>Wesley: </b>You know, it's actually not that bad. 'cause in the end, a gen patch is nothing but a function. It's <span style="color:red" data-ts="1602.12" data-end_ts="1602.24" title="1602.12" id=c_"1602.12">__not__</span>, it's an expression that takes some kind of input and output. And since things are dynamically generated, you know, like say, okay, here I have a sample coming into my input, and I can just push that information through the graph Right. And generate the appropriate code. And if I have a matrix, it's a different kind of information that I propagate through the graph and it generates this other kind of code. So it's the fact that it's like dynamically compiled that really makes that surprisingly easy. Mm-hmm. <affirmative>. And also the, there's a big difference between how Gen <span style="color:red" data-ts="1636.94" data-end_ts="1637.34" title="1636.94" id=c_"1636.94">__Patcher__</span> work and Max Objects and that the gen objects, you can put arbitrary expressions inside as arguments. So there's a, a lot more freedom in terms of like how you construct the patcher itself because of this. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I guess it makes sense because if, I really think then too, one of the things that always kind of break breaks my head a little bit, you know, because I come from a background of working with audio, audio is really streaming data, right? You very much think of audio as a stream. Hmm. You tend to think of images as much more of frames, and then OpenGL stuff to me is like blocks of data. But now if I think about how I interact with them within gem, it does seem like everything also does kind of boil down into streamed kind of a function. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. You can imagine it conceptually as just taking your, all of your pixels in the image and just putting them in one line. Right. And pretending those are audio samples and that's what's happening. Mm-hmm. <affirmative> it's happening in parallel, but that's totally just a implementation issue. Right. Conceptually, you can think of it that way. Sure, 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Now, when you, do workshops or when you're teaching people, how to get into this stuff mm-hmm. <affirmative>, do you ever teach anything at, at a beginner level or do you always kind of assume a certain high level of 
+</p>
+
+<p>
+<b>Wesley: </b>Facility? Yes. I have taught an Intro to Jitter workshop mm-hmm. <affirmative>, before Jen existed actually. And it's, I mean, I was still trying to, I was haven't done that many workshops at that point, and difficult to like know how to break people into Max, you know, I assume they knew Max at least. Right, right. So I was just kinda explaining to 'em the details and, it was pretty good. You know, I was able to like, get across to a lot of people most of the class, like how things were working and <span style="color:red" data-ts="1750.85" data-end_ts="1750.97" title="1750.85" id=c_"1750.85">__they__</span>, you know, I got a lot of good feedback from it. But my, honestly, the most fun for me is when I have people who are advanced already and I don't have to slow down to explain like what a message box is and all <span style="color:red" data-ts="1764.18" data-end_ts="1764.3" title="1764.18" id=c_"1764.18">__that__</span> kind of stuff. Right. And so I taught a workshop at Beck in Norway Yeah. 
+</p>
+
+<p>
+<b>Wesley: </b>In February last year. And that was the most amazing workshop I've ever taught. Not because I necessarily did like, you know, this had this amazing didactic style, but because the students were all professionals using Macs in their own work in a day-to-day basis, you know, they're artists doing <span style="color:red" data-ts="1786.4" data-end_ts="1786.6" title="1786.4" id=c_"1786.4">__in__</span> theater or video production of some kind, doing interactive installations. And so they were for one, really motivated, and two, they were just like intensely focused on learning. Right. And I could just kind of whip through the gen stuff, even though that was largely new to them. I think half the class had to buy gen for the workshop 'cause they hadn't used it before <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. 
+</p>
+
+<p>
+<b>Wesley: </b>But afterwards they were, that was all they were working with, you know, because it was really meeting this like, need of, I wanna customize right. The processing and not lose the efficiency that, you know, I, I need to realize the project in real time. And especially when I showed them the, the geo GL pick subject for doing the, the fragment shader stuff. Right. Because you get such high resolution, you can do really nice procedural graphics with jitter <span style="color:red" data-ts="1833.71" data-end_ts="1834" title="1833.71" id=c_"1833.71">__that__</span> GL picks. People are just like blown away by it and just like really super into. And so we explored a lot of different pattern generation techniques there. And I, you know, I also introduced some of the physics objects and how to use <span style="color:red" data-ts="1846.88" data-end_ts="1847.08" title="1846.88" id=c_"1846.88">__jam__</span> with physics. And that just like, you know, it really lit a lot of fires and, and, it was, it was great. 
+</p>
+
+<p>
+<b>Darwin: </b>Now you say that you, you don't know that it was successful because of your style, but I have to admit that, having seen you kind of do presentations a couple of times, you do have a pretty unique and fun style. If nothing else. I'll never forget when you did, one of your presentations at that first Max expo. I was actually in another room sitting through, this thing about the, about programming Max objects and sea. And I walk into the main room and you had a hundred, you know, 150 people howling, laughing as you were up on stage, kinda raising the roof. And, you know, you had like donuts spinning inside of donuts and stuff like that. And it was a lot of fun. You seem to bring a lot of fun, a lot of levity to, working with these highly technical issues. Is it something that you just kind of feel naturally in your gut, or do you work hard at trying to find fun ways to deal with this technology? 
+</p>
+
+<p>
+<b>Wesley: </b>I think I just really enjoy it. You know, I, I like doing this stuff. I like working with the software and, you know, software, writing software to me is about learning how to understand something. Mm-hmm. <affirmative>. So if you can, if I can write a program to do something that, and it works, that means I understand the concept and I really get take a lot of pleasure in that. So that's like, you know, a very strong love right there. Sure. And I, that's probably, that's just, I, you know, <span style="color:red" data-ts="1950.87" data-end_ts="1951.16" title="1950.87" id=c_"1950.87">__well__</span>, I was presenting the Cosm stuff, I believe at that presentation, and I just, you know, I was really happy with how the objects came out and all the things you could do in a such a simple way. And I think that's just why, why it came off that way. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Yeah. Do, have you ever done any performance or anything like that? 
+</p>
+
+<p>
+<b>Wesley: </b>You know, I've done some video performances here and there, but it's not something I do that much of. And you know, my artistic production hasn't been so high, the last couple years. It's more been focused on the software development Yeah. And just thinking about how 
+</p>
+
+<p>
+<b>Darwin: </b>Tech production Yeah, 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. Thinking, thinking about how we put information to computer and how we can use it to realize like a, some kind of composition, just like that, you know, that kind of stuff. Like Jen really, you know, how how can I make things easy, balanced, like easy, efficient, and, you know, fun to use to like, to do your work 
+</p>
+
+<p>
+<b>Darwin: </b>And, and Rich also, you know? Yeah. The ability to do a rich level of work. Yeah. So that swings up the door, open a door to something that I think, is going to resonate to a lot of listeners of this, of my podcast, which is, in order to do a lot of things that you do, you have to have a real firm grasp of math. And I would say that, a significant number of the people that get into art do so because they recognize that they couldn't, they couldn't stand math <laugh>, right? Mm-hmm. <affirmative>. How do you, how did you find the balance there? Which came first for you, but how do you find balance, or how do you relate to math in a way that feels artistic to you? 
+</p>
+
+<p>
+<b>Wesley: </b>I, well, I, my favorite subject there is geometry. And Geometry is this kind of mathematics where you're limited by spatial relationships. So it's constrained. It's not just like putting numbers, messing with numbers where it's, you know, it's not arbitrary, but it kind of seems like the rules are a little bit more loose. Mm-hmm. <affirmative> in geometry, you're highly constrained by relationships of how things can be put together. Sure. And it's kind of like a, that's more like a puzzle. So I just really enjoyed like, digging into that. And it, the motivation just comes from like, trying to understand it and, and I just, I see <span style="color:red" data-ts="2111.17" data-end_ts="2111.46" title="2111.17" id=c_"2111.17">__that__</span> the patterns that I like to, when I see like images that people generate, I really like to try and figure out exactly the processes behind them and just enjoy creating like <span style="color:red" data-ts="2121.02" data-end_ts="2121.26" title="2121.02" id=c_"2121.02">__those__</span>, those kind of processes. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Interesting. And at the same time, not helpful if I wanted to get better at math. Right. I mean there, there are certain kinds of math that, that came easy to me. Other things that came hard. And especially when you start digging into, OpenGL and you're dealing with some of, some of the like linear, linear algebra type, processes for transforms and stuff. Yeah. It, it's hard to find a context for that that relates to art. Right. Even though, you know, like a transform matrix is actually artistically does something to your open GL thing. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. But this technology has been used in art since the Renaissance. Right. That's like what, what drove people to be able to make these beautiful perspective paintings. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. But somehow the way that the numbers are represented and the activity that occurs Yeah. Don't seem to be well connected. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. You can't get lost in the numbers. That's <span style="color:red" data-ts="2192.51" data-end_ts="2192.79" title="2192.51" id=c_"2192.51">__true__</span>. <laugh>. You have to find a way to develop intuition for it. And if that's through just like visualizing things in different ways, that's probably, that's how I learned, you know? Yeah. So I would just try to, try to draw it in different ways and try and see how it worked and put a slider on it, and then just see the patterns. 
+</p>
+
+<p>
+<b>Darwin: </b>Now it's interesting you used the word intuition 'cause I was trying to find the right word, and maybe that's the word. One of the things I feel like about all of your work and hearing some of your background, it also implies even earlier work, is that you have, you have a fairly good, or maybe well honed intuition because you were, balancing engineering and photography, or you were working with live video while you were doing, you know, doing other things. You're playing around with art and technology pretty heavily on both sides. You've gotten to the point where, you know, again, my first experience with your work was with the X-ray objects, and there seemed to be like a rightness about the way that you put those together. You know, if you look at the gen stuff, you talk specifically about trying to find the balance between efficiency and ease of use. And I would say that generally speaking, you get it right. Again, do you work with people and kind of like watch people work with your stuff? Or do you just kind of innately say, I'm gonna find what's right for me and present that and see if it, see if it fits. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah, so it's a combination of a lot, a lot of practice and just not, I think, I don't remember. I, I didn't look back to see when we started on <span style="color:red" data-ts="2300.35" data-end_ts="2300.51" title="2300.35" id=c_"2300.35">__Jam__</span>, but I think it was a couple years before it was released. Yeah. And I think we went through at least 20 different iterations at least. You know, it's like the final drawings that you see presented in a gallery are often part of a much larger complex network of sketches. And that's kind of how it is. You just have to like, make something and chip away at it and hone it. And it's a lot of practice on one hand. And then also just a lot of exploration I'd I read everything I can get my hands on, like that's related to this kind of stuff. And just try to go deep in that. So I, I do my homework onto what's come before and try to understand the, i the history of ideas in relationship to what I'm working on. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, that's really interesting. That's really cool. So at cycling, a lot of your time was spent working with Graham when he was, when he was working a lot with the company, but then he went on to do his academic magic stuff. Who have you been working with to kind of, hone this? 'cause again, I think that some of what you're talking about really comes from having great collaborations as well, right? 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So I mean, on the OpenGL stuff, I work with Rob Ramirez. Mm-hmm. <affirmative>, but on the gen stuff, I've been kind of flying solo since, you know, Graham moved on to teaching. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That must be hard because, you know, again, you've been, you, you'd been working with Graham certainly through the s the Santa Barbara years, right? 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. For a long time. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Yeah. It must be, must be hard to kinda lose a collaborator like that. Yeah. 
+</p>
+
+<p>
+<b>Wesley: </b>I mean he's has <span style="color:red" data-ts="2406.32" data-end_ts="2406.44" title="2406.32" id=c_"2406.32">__a__</span> great intuition for, interfaces and how to compose and what the structure should look like in the software level to like realize these kind of really interesting ideas. So I definitely learned a lot from him. You know, in relationship to that. Like, you know, at Santa Barbara we were always trying to figure out like, how would you embody create, like the process of being creative in software was kind of one of the motivations. And so that's one also why a lot of people learned how to program there, even if they didn't beforehand. So, you know, gibber, Charlie Roberts live coding jss thing. Yes. There's all these like projects like that where it's just like about developing your voice through your, your take on what software should look like and not relying on the existing, you know, environment, environment, environment of that exists. You know, not using Photoshop or Final Cut or whatever. Just kind of really developing a voice that you realize computationally. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well it's interesting too because I feel like I teach a little bit here at the University of Denver, and one of the things I really enjoy seeing is kind of the breakthroughs that people come up with when they're the first time they're able to find a little bit of their voice in code. You know, it's, they may have found their voice up to this point with Final Cut or with Photoshop or with whatever, but the first time that they get, they're able to find their voice with code. It's almost always in some way related to giving up a little control and allowing a system to work. Mm-hmm. <affirmative>. And it's interesting to watch that happen because it's so unlike what you do in the hyper control world of Final Cut or Photoshop or Illustrator, right? Mm-hmm. <affirmative>. Now with, I would say that <laugh>, you know, you're talking about moving towards digital fabrication. It seems like you're kind of now almost completing that circle, which is you're going back to something which is gonna be very concrete mm-hmm. <affirmative> and very much not very, you, you pretty much don't want to give up control. You want to get back to the point of maintaining some significant control. Is that something that you want to sort of influence or are, I mean, is that a place where you feel like you can be specifically creative? 
+</p>
+
+<p>
+<b>Wesley: </b>Absolutely. There's a lot of, there's a big gap in the software for doing three D printing and <span style="color:red" data-ts="2570.78" data-end_ts="2570.86" title="2570.78" id=c_"2570.78">__these__</span> other kind of processes. You know, it's, it's very, coming from a very engineering mindset, Uhhuh <affirmative> and the technology is changing so fast. There's new kinds of materials like, you know, in the last couple months I've seen magnetic materials, conductive materials, three D printed batteries. Yeah. You can do whole assemblies, you know, just with the printer there are limitations to it. Obviously. It's not just like the magic tool for everything. Right. But it's pretty, and you can do gradients <span style="color:red" data-ts="2600.78" data-end_ts="2600.86" title="2600.78" id=c_"2600.78">__and__</span> materials, so you can gradually mix rubber into hard plastic and transparency and all this kinda stuff. So you can do some things that have like, just incredible properties and movement and shapes and, but making those is a really labor intensive process right now. Mm-hmm. <affirmative>. So one of our goals is to improve the productivity and by token the capacity for creating like, interesting objects. Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. You know, I think one of the things that, that maybe needs to be, defined here is that by three d I mean, I would say most people, if they've been around three D printing at all, it's been like the kind of maker bot thing, you know, where it, it'll poop out a key fob for your <laugh>, you know, for your car keys. Sure. And, even then, two times out of three, it's gonna fold in on itself before you even actually get to the car. Yeah. <laugh>, you know, yeah. You're talking about much more high <span style="color:red" data-ts="2667.52" data-end_ts="2667.74" title="2667.52" id=c_"2667.52">__end__</span> stuff, but at that high end it gets kind of freakish. 
+</p>
+
+<p>
+<b>Wesley: </b>Yeah. So, you know, once you get 10,000 I guess, or maybe even a hundred thousand and above, in terms of the machine uhhuh, it's pretty incredible how precise, how detailed you can make things and how varied you can make the materials. Yeah. So specifically <span style="color:red" data-ts="2687.34" data-end_ts="2687.56" title="2687.34" id=c_"2687.34">__the__</span>, I think it's called <span style="color:red" data-ts="2689.82" data-end_ts="2690.04" title="2689.82" id=c_"2689.82">__OBJ__</span> Machine, the Conex 500 I think it's called. So there's a great, place here in San Francisco called, pier Nine, which is run by Autodesk. Yeah. And, it's under Instructables, which Autodesk owns. So they have a artist of residency program and they have four of these machines plus a bunch of other things. And the whole c n c lab with water jets, mills, basically if you can, any tool you can imagine to make anything they have. Right. And you can apply through Instructables for artists <span style="color:red" data-ts="2723.36" data-end_ts="2723.56" title="2723.36" id=c_"2723.36">__and__</span> residency and get access and they pay for the materials. 
+</p>
+
+<p>
+<b>Wesley: </b>'cause three D printing isn't cheap. Right. Especially on these high <span style="color:red" data-ts="2730.12" data-end_ts="2730.28" title="2730.12" id=c_"2730.12">__end__</span> machines. Sure. So you can do some incredible stuff there. So I would highly recommend applying if anyone's interested in this kind of stuff. 'cause they have people who can teach you and help you get into it if, if that, if you don't know anything about it even. So that's kinda where I started poking my, like Reza, who interviewed a while ago. He was there and so I was just tagging along, hanging out with him there. And yeah, that's kind of how I was also doing some stuff at the, what are they called? Tech shop in sf. Yeah, yeah. Yeah. So I've been going there a little bit and, working with the laser cutters and three D printers and, yeah, just kind of slowly getting into it <span style="color:red" data-ts="2771.95" data-end_ts="2772.44" title="2771.95" id=c_"2771.95">__because__</span>, you know, like I mentioned, I'm really into spatial stuff, geometry, right. And moving away from dynamic stuff more into constructed forms. Sure. So I had some projects that I've been, working on, using these kind of technologies. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's fantastic. Wesley, I wanna thank you for spending the time, with us. This has really been fascinating. We kinda like burned through the better part of an hour really quickly, and, really got a chance to peer into your mind a little bit, which I think is fascinating because again, I, I think that the kind of work that you do is a little bit mind blowing and maybe a little intimidating for a lot of people. And I think just hearing you talk about it in such artistic terms is really interesting and, and really inspirational. 
+</p>
+
+<p>
+<b>Wesley: </b>Well, thank you Darwin It's been a great pleasure. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well, thanks, again, and hopefully I'll talk again to you soon. 
+</p>
+
+<p>
+<b>Wesley: </b>Okay. Take care. <span style="color:red" data-ts="2834.22" data-end_ts="2834.44" title="2834.22" id=c_"2834.22">__All__</span> right. Bye. 
+</p>
+
+<p>
+<b>Darwin: </b>All right. Well, the family's biting at my heels here to start being able to make noise again. So I'm going to, sign off right quickly. But, thanks again to Wesley for doing the interview. It was really interesting. We wish him well as he moves on to the next, phase of his life. And, I want to thank everybody out there. This is the last podcast for your, I want to thank everybody for the, great listenership and for the great feedback you've given me. And I hope you have a fantastic New Year. Bye.
+</p>
+
+    <p><i>Copyright 2014-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
