@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0042 - Tim Caswell</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0042 - Tim Caswell</h2>
+        <h3>Released: Aug 17, 2014</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3016155/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>This week we have the pleasure of speaking with Tim Caswell Tim is one of the, one of the founders of Studio Electronics, the company whose gear I've always been a big fan of. They do tremendous work in the digital controlled analog world, which is always a fun area to play with. Particularly their filter designs are something to really, highly covet. We are, lucky enough to get some of Tim's time this week to talk about, the design process, how he chooses what to do, things he chooses to, not maybe make so public, but a lot is about his inspiration in making the gear that he makes. I always find that fascinating, as you well know. And so I was really happy to get, some insights on Tim's, work and some of the future things that Tim's planning on as well. So, really exciting interview. I hope you enjoy it. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. This week we are, going to be speaking to Tim Caswell Tim Caswell is one of the founders of Studio Electronics, one of the companies that makes, fantastical gear. I'll say it that way. It's stuff that over the years has always been inspirational to use, has been, has found its way into being an important part of a lot of different kinds of music. And, so, I was really excited when Mark Vail actually opened the door to, talk to Tim. And so let's say hi to Tim. Hi, Tim. How are you? 
+</p>
+
+<p>
+<b>Tim Caswell: </b>I'm pretty good. Thanks. 
+</p>
+
+<p>
+<b>Darwin: </b>Thanks for taking a little time to talk with us. I really appreciate it. One of the things I do in the podcast is I generally start off by asking people to give us a little information about their background, how they got to the place that they are today. Now you have quite a long history in the industry, so I think that regardless of what part of your history you decide to tell us about, it'll be pretty interesting. But, I'll let you pick. Why don't you tell us something about your background? 
+</p>
+
+<p>
+<b>Tim: </b>Well, there's always music in the house. My dad was a music educator and, very, very accomplished woodwind player. And my mother had had a college scholarship on playing the French horn. So, there was music all the time in the house. And, <span style="color:red" data-ts="165.89" data-end_ts="166.01" title="165.89" id=c_"165.89">__I__</span> know they never forced me to take lessons or anything. I played piano and trumpet stuff, but they were always pretty good about not pressuring me. And then I also <span style="color:red" data-ts="173.85" data-end_ts="173.97" title="173.85" id=c_"173.85">__like__</span> to build things. So, <laugh> kinda end up, putting those two together eventually. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. It's interesting that you say that, that they, they didn't kind of push you into things. I, I just recently had a, had a discussion with somebody and we were talking about sort of parental influence and how it seems like, if parents make something seem interesting, that's almost inevitably what the kids aren't gonna find interesting. You know? Did you feel like they were trying to avoid that? Or were they just not pushy people? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, I, yeah, I, I really don't know why, how that worked out. And they just, they love music. My dad was in the classical music and broke music, but also, he played a lot of big band stuff when he was younger. So we <span style="color:red" data-ts="227.18" data-end_ts="227.38" title="227.18" id=c_"227.18">__heard__</span>, you know, we had all that kind of stuff going on, but he was never pushy about it. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. So, what, you said that you kind of started building things. What were some of the first things that you were building? 
+</p>
+
+<p>
+<b>Tim: </b>I think when I was maybe 11, it was maybe I built a walkie-talkie kit that almost worked <laugh>, the local TV repairman. You said there was a few bad sider joints, <span style="color:red" data-ts="250.1" data-end_ts="250.26" title="250.1" id=c_"250.1">__but__</span> <span style="color:red" data-ts="250.26" data-end_ts="250.42" title="250.26" id=c_"250.26">__you__</span> said <span style="color:red" data-ts="250.88" data-end_ts="251.1" title="250.88" id=c_"250.88">__you__</span>, you know, it's pretty close <laugh> that kinda got me going. I still have those things. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, do you, do you like keep them in a box or do you, have you mounted 'em on the wall? 
+</p>
+
+<p>
+<b>Tim: </b><laugh>, they're in a bookcase <span style="color:red" data-ts="262.9" data-end_ts="263.1" title="262.9" id=c_"262.9">__then__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. Sure. Like, like trophies. Right. What's, what's the first time you did, like musical electronics? 
+</p>
+
+<p>
+<b>Tim: </b>I had, I had, well, I played guitar starting when, oh geez, I dunno, 1963 or four, maybe it was, I started playing after I saw the Beatles on Ed Sullivan. Of course, 
+</p>
+
+<p>
+<b>Darwin: </b>Of course. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah. I got one of the early maestro fuzz tones, like, <span style="color:red" data-ts="286.21" data-end_ts="286.5" title="286.21" id=c_"286.21">__what__</span> they used on Rolling Stone Satisfaction. And I opened that up, looking at it. I'm like, geez, this thing's pretty simple. I should be able to make one of these. So kind of figured out what the parts were. Went down to the, the local place and bought all the parts and tried to build one. And it, it didn't exactly work. Made a bunch of weird noises. <laugh>, I don't know. I'm kind of persistent, so I just kept, messing with stuff. 
+</p>
+
+<p>
+<b>Darwin: </b>So, did you like try and figure out the circuit and try and copy it? Or did you find, find some 
+</p>
+
+<p>
+<b>Tim: </b><span style="color:red" data-ts="318.14" data-end_ts="318.22" title="318.14" id=c_"318.14">__Oh__</span>, I wasn't enough to it at that point. Uhhuh, I was trying to, you know, physically put parts in the same sort. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, same configuration, right? 
+</p>
+
+<p>
+<b>Tim: </b>Oh, I didn't really know what was going on <span style="color:red" data-ts="327.52" data-end_ts="327.74" title="327.52" id=c_"327.52">__now__</span>. I was in bands on the road in the seventies and started getting more into electronics at that point. So we were out on the road, things would break and, you know, you couldn't always get 'em fixed. So I just started getting books from radios shack in the library and building little things on breadboards and, you know, just trying to understand this stuff a little better 
+</p>
+
+<p>
+<b>Darwin: </b>Right now. At some point you obviously got, pretty good at it because you and Val St. Regis started up a company called Studio Electronics. Now was there was, were you doing, you were actually doing, working at S iir or something prior to that, right? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, that was actually, they kind of were simultaneous. Oh, okay. 
+</p>
+
+<p>
+<b>Darwin: </b>
+</p>
+
+<p>
+<b>Tim: </b>They, they had various different people trying to maintain their equipment there with various, success or lack of success. And I, <span style="color:red" data-ts="383.43" data-end_ts="383.59" title="383.43" id=c_"383.43">__so__</span> I had in, one <span style="color:red" data-ts="385.27" data-end_ts="385.47" title="385.27" id=c_"385.27">__had__</span> paper in LA that someone's looking for a musical instrument repair guy. I'm like, wow, this is what I always wanted to do. <laugh>. I been working in Silicon Valley up, doing telephone test equipment before that when I lived up by, near San Francisco. And that was interesting. I learned a heck of a lot. But, you know, I saw an opportunity to work on music here. I'm like, <span style="color:red" data-ts="404.29" data-end_ts="404.51" title="404.29" id=c_"404.29">__all__</span> right. So I went and got that job, and those guys had just contracted with s <span style="color:red" data-ts="408.55" data-end_ts="408.67" title="408.55" id=c_"408.55">__i__</span> r to do their repair. So they sent me over there, there was a big pile of broken stuff in the middle of the shop. And <laugh>, they said, the last guy said, this stuff's all junk, you know, you can salvage anything you want from it. <span style="color:red" data-ts="419.26" data-end_ts="419.55" title="419.26" id=c_"419.26">__Well__</span>, took me about a week to get it all working. So they <span style="color:red" data-ts="422.35" data-end_ts="422.55" title="422.35" id=c_"422.35">__kinda__</span> looked at each other and said, oh, right, <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. That was, that was a good qualifier for the gig, huh. 
+</p>
+
+<p>
+<b>Tim: </b>And they, those guys proved to be somewhat unreliable. And Val came along about that time, and he knew one of the owners from San Francisco, he, Val had had a music store up there, and he proposed to him that he'll use the un unused top story of the building to sell excess gear that they had. And, and, he would partner with me to work the repair shop. So they <span style="color:red" data-ts="451.43" data-end_ts="451.59" title="451.43" id=c_"451.43">__kinda__</span> hired me away from those guys and <span style="color:red" data-ts="453.49" data-end_ts="453.71" title="453.49" id=c_"453.49">__be__</span>, and I started our, our business there. So I did their repair and bell sold stuff, and yeah, we had a good time 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Sure. Now, the first thing I remember coming out, under the studio electronics label was basically a rack mounted minimoog. And now I'm trying to remember what you guys named it, because I got minimoog in my head, but I think that was a different unit, right? 
+</p>
+
+<p>
+<b>Tim: </b>Well, it was the Minimoog originally, and then, oh, okay. At that point, someone had bought the mug name and trademarks and things, and they, objected to us using the mug name. So we had to change it to the mini, <span style="color:red" data-ts="493.83" data-end_ts="494.07" title="493.83" id=c_"493.83">__maybe__</span>, 
+</p>
+
+<p>
+<b>Darwin: </b>Ah, the mini <span style="color:red" data-ts="495.75" data-end_ts="496.03" title="495.75" id=c_"495.75">__maybe__</span>. <span style="color:red" data-ts="496.62" data-end_ts="496.91" title="496.62" id=c_"496.62">__Okay__</span>, that makes sense. That's now it's coming back. Well, I just remember seeing that and, cause that, that came along at a time where people were, were so entranced by the, the samplers and digital systems coming out that they were kind of bailing, bailing on, on, on analog <span style="color:red" data-ts="516.4" data-end_ts="516.75" title="516.4" id=c_"516.4">__since__</span>, but at the same time, they were doing it, they were also kind of like saying, <span style="color:red" data-ts="521.33" data-end_ts="521.55" title="521.33" id=c_"521.33">__oh__</span>, I just wish, you know, if only that would've integrated into my studio a little better, I probably would've kept it. And, the MiniMogue is, is I remember being the thing that sort of was like, <span style="color:red" data-ts="533.85" data-end_ts="534.07" title="533.85" id=c_"533.85">__oh__</span>, here's a way to kind of take that cool sounding technology and bring it into the modern studio. With, with that, did you find that it was, it was, well, first of all, like, I remember seeing it being blown away by it, but it was also pretty expensive for where I was at at the time. How many of those did you sell <span style="color:red" data-ts="555.82" data-end_ts="555.94" title="555.82" id=c_"555.82">__and__</span> did you actually have to like, tear apart minimoogs and rebuild them in order to make it happen? 
+</p>
+
+<p>
+<b>Tim: </b>Originally, yeah. We first started out, someone would bring us a mini and we'd, you know, take the guts out and stick it in <span style="color:red" data-ts="570.26" data-end_ts="570.34" title="570.26" id=c_"570.26">__a__</span> little rat case. Eventually we just, sort of ran outta minis and we just started making the boards ourselves. 
+</p>
+
+<p>
+<b>Darwin: </b>I see. Okay. So like, how many do you think that you did? Just because occasionally I see 'em and I'm, I've always, I've always wondered, you know, is this like one of 10 or is it like one of a hundred <laugh>? I'm always, I was curious. 
+</p>
+
+<p>
+<b>Tim: </b>I, my partner would know, but, Greg St. Regis Uhhuh, I'm, I know it's more than a thousand. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh my goodness. Wow. 
+</p>
+
+<p>
+<b>Tim: </b>I'm not sure exactly how many We did. Really, quite a few. They were pretty popular. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I'll bet. Apparently. So, 
+</p>
+
+<p>
+<b>Tim: </b>You know, just a little more background on that though, <span style="color:red" data-ts="611.46" data-end_ts="611.58" title="611.46" id=c_"611.46">__is__</span>, s <span style="color:red" data-ts="612.06" data-end_ts="612.14" title="612.06" id=c_"612.06">__a__</span> r was really kind of my dream job because they had everything. I mean, I, I had built synthesizers myself back in the seventies, and, you know, I didn't really have money to buy stuff, which is <span style="color:red" data-ts="622.22" data-end_ts="622.34" title="622.22" id=c_"622.22">__why__</span> I got into making stuff. I made mixed boards and light boards and stuff from my bands. And s <span style="color:red" data-ts="626.46" data-end_ts="626.58" title="626.46" id=c_"626.46">__a__</span> r had everything. They had minis, they had herps, they had profit fives, they had oberheims. It was just, it was like a candy store for me. Absolutely loved it. And they even better, they had all the schematics and service manuals for that <span style="color:red" data-ts="638.46" data-end_ts="638.7" title="638.46" id=c_"638.46">__stuff__</span>, <span style="color:red" data-ts="638.72" data-end_ts="638.94" title="638.72" id=c_"638.72">__so__</span>, 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, yeah. Yeah. 
+</p>
+
+<p>
+<b>Tim: </b>That was in heaven there for quite a while. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that must have felt like going to the University of Analog Electronics too, huh? 
+</p>
+
+<p>
+<b>Tim: </b>Oh, absolutely. Analog and digital. And 
+</p>
+
+<p>
+<b>Darwin: </b>Digital. Right. 
+</p>
+
+<p>
+<b>Tim: </b>I learned <span style="color:red" data-ts="650.24" data-end_ts="650.46" title="650.24" id=c_"650.24">__the__</span> micro controller stuff when I was in Silicon Valley at <span style="color:red" data-ts="652.78" data-end_ts="652.94" title="652.78" id=c_"652.78">__Larry__</span> Siegler. They had some early, micro controlled stuff, so I started learning that there. So that was really, and that was the state of the art at the time is, digitally controlled analog, which is really pretty much still what I do. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, it is. And I remember when the, the SE one came out, it was kind of a stunner because it was, you know, it was clearly analog, analog electronics. I mean, you could hear it the first time you plugged in and played it, but it was all digitally controlled and there wasn't, you didn't see a lot of that, or at least it didn't seem like you saw a lot of that at the time, you know? And so I thought it was really, it, it certainly was the start of, of what I would say is it was the start of kind of the ma modern analog, re evolution. I mean, do, did you feel at the time like you were part of a thing or were you just doing it cuz that's what you <span style="color:red" data-ts="707.54" data-end_ts="707.7" title="707.54" id=c_"707.54">__liked__</span> doing? 
+</p>
+
+<p>
+<b>Tim: </b>Greg's brother, mark, he's a fantastic musician. He's, you know, in touch with, you know, a lot of the, you know, fairly heavy music makers and he kind of keeps his ear to the ground. And so we were sort of in touch with what people wanted actually. And it, of course <span style="color:red" data-ts="727.62" data-end_ts="727.9" title="727.62" id=c_"727.62">__then__</span>, you know, usually would line up with what we wanted. I, I generally can't make myself design something if I don't want it <laugh> much like working a regular job, so I need to want it. But, yeah, mark. And, you know, we get feedback from different people and I remember when I was at s <span style="color:red" data-ts="746.58" data-end_ts="746.7" title="746.58" id=c_"746.58">__I__</span> <span style="color:red" data-ts="746.74" data-end_ts="746.86" title="746.74" id=c_"746.74">__r__</span> I remember the change came about it. <span style="color:red" data-ts="749.52" data-end_ts="749.74" title="749.52" id=c_"749.52">__Oh__</span>, it was like, I don't know, 83 or 84 maybe. Exactly. But all of a sudden mini mugs had kind of not really been rented all that much. 
+</p>
+
+<p>
+<b>Tim: </b>All of a sudden people were renting 'em for bass and that became the thing as, everybody was using minis for bass <span style="color:red" data-ts="764" data-end_ts="764.22" title="764" id=c_"764">__and__</span>, you know, might <span style="color:red" data-ts="764.82" data-end_ts="764.98" title="764.82" id=c_"764.82">__had__</span> something to do with Stevie Wonders, for a solo album where he used a lot of sense bass. Right. But I saw that starting to happen and, really the, the minis and the se ones were really used pretty much for bass on r and b dance <span style="color:red" data-ts="780.82" data-end_ts="781.06" title="780.82" id=c_"780.82">__type__</span> music, and it kind of, supplanted the regular electric bass, which was kind of unfortunate cuz at that time there was that great style of, you know, slapping and popping mm-hmm. Love. But, yeah, <span style="color:red" data-ts="793.71" data-end_ts="794.06" title="793.71" id=c_"793.71">__sense__</span> <span style="color:red" data-ts="794.06" data-end_ts="794.3" title="794.06" id=c_"794.06">__base__</span> really kind of took over and we were just lucky enough to get in on that. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, true enough. Now, I would say that, that, especially with the SE one and then eventually with the SE one X, that sort of became a standard device in, rap music in, in kind of hip hop shops. And you would see practically anybody whose studio was detailed out, you would see that they had, they had, they had one of your machines in there, and you, you would hear it a lot too. I mean, not only his bass, bass tools, but kind of the whiny lead tones and stuff like that, that that <span style="color:red" data-ts="835.38" data-end_ts="835.58" title="835.38" id=c_"835.38">__really__</span>, really became a signature of a lot of rap music. And you guys were right in the center of that, it seemed. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah. Greg would know better than I do, who actually used them, but, he would, you know, <span style="color:red" data-ts="847.64" data-end_ts="847.86" title="847.64" id=c_"847.64">__son__</span> <span style="color:red" data-ts="847.86" data-end_ts="848.02" title="847.86" id=c_"847.86">__would__</span> come on the radio and he'd go, oh, that's patch number two, <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Now that's actually, that's actually a really interesting, I have a really interesting, or I'm really interested in the answer to a question of something, which is how much effort and how much concern do you put in the creation of presets? Because I think it's pretty common, for most equipment manufacturers and builders to say, oh, you know, when stuff comes back for repair, none of the presets are changed. Mm-hmm. <affirmative>, so there's, there's a sense that the, the instrument is pretty well defined by the presets. Is that your experience, do you think? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, kind of. Yeah. I mean, <span style="color:red" data-ts="894.34" data-end_ts="894.46" title="894.34" id=c_"894.34">__I__</span>, there's <laugh> there's a lot of, lot of stuff there. Our presets mostly are done by Mark, Greg's brother, mark Greg's done some of them. I really haven't really ever done many of the presets on our things cuz you know, I'm basically a dinosaur. I still listen to Emerson Lake and Palmer all the time. So it was up to me that's what our <span style="color:red" data-ts="915.54" data-end_ts="915.7" title="915.54" id=c_"915.54">__LA__</span> would 
+</p>
+
+<p>
+<b>Darwin: </b>Be, you would be, you would, you would create the ultimate, outdated synthesizer. <laugh>. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah. That's, you know, basically, the only one that's me when <span style="color:red" data-ts="926.15" data-end_ts="926.5" title="926.15" id=c_"926.15">__after__</span> actually given away actually was to Keith Emerson. Oh, really? Yeah. Did <span style="color:red" data-ts="930.34" data-end_ts="930.46" title="930.34" id=c_"930.34">__a__</span> little custom software on it too for the Glide so that, you could do the solo unlucky man. Oh 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Oh, that's awesome. That's great. So let's talk about, so since you're a self-described dinosaur, which is actually, I, that warms my heart. I wanna I want to talk a little bit about, the studio electronics equipment. So we talked a little bit about the s se one and one X, which is obviously that's the things that grew out of your detailed interest in the minimoog and you know, kind of following that through, the company's history. But there's a couple of other, senses that you make that have, sort of different voicings. And the one that's probably the easiest for people to approach from a cost standpoint is the boom <span style="color:red" data-ts="983.25" data-end_ts="983.54" title="983.25" id=c_"983.25">__star__</span>. Now the boom <span style="color:red" data-ts="985.69" data-end_ts="985.98" title="985.69" id=c_"985.69">__star__</span>, that the boom <span style="color:red" data-ts="987.02" data-end_ts="987.22" title="987.02" id=c_"987.02">__star__</span> device that you sell actually has, sort of multiple instances, which are defined by the kind of filtering and voicing that each machine has. 
+</p>
+
+<p>
+<b>Darwin: </b>And so some of 'em are more focused on arp <span style="color:red" data-ts="1001.9" data-end_ts="1002.18" title="1001.9" id=c_"1001.9">__like__</span>, cameras, others are maybe a little more ob, <span style="color:red" data-ts="1007.07" data-end_ts="1007.42" title="1007.07" id=c_"1007.07">__Jaime__</span> or Roland. What is the process that you go through in terms of creating something that would have that kind of, that kind of voice? How, like, you know, if you say, okay, I'm gonna do something, I'm gonna do something that has a, a Roland <span style="color:red" data-ts="1028.7" data-end_ts="1028.94" title="1028.7" id=c_"1028.7">__dish__</span> feel to it, right. How do you, how do you go about defining, first of all for yourself, what does Roland sound like? And secondly, what do you do to determine which of the many possible Roland sounds are the one that you are going to embrace? And then finally, how do you take whatever you find from that research and turn it into something that's your own? So there's your ultimate multi-part question. I'm sorry about that, <span style="color:red" data-ts="1057.16" data-end_ts="1057.38" title="1057.16" id=c_"1057.16">__but__</span> I hope you get what I'm, what I, I kind of wanna learn a little bit more about the process you go through in, in like designing the hardware to meet, some sort of goal, 
+</p>
+
+<p>
+<b>Tim: </b>Really boils down to the filters. It's, something we found out kind of early on, you know, given synthesizer, it's got different quirks and different things. It does well, different things, it doesn't do so well. And, you know, we were always, you know, on the lookout for the good stuff and, you know, <span style="color:red" data-ts="1084.22" data-end_ts="1084.42" title="1084.22" id=c_"1084.22">__try__</span> and get rid of the bad stuff. I came to the conclusion quite a long time ago that the filter is probably the most important part, most characteristic part of the sound. So we figured out the mini filter fairly early on, and that's in the s se <span style="color:red" data-ts="1099.5" data-end_ts="1099.66" title="1099.5" id=c_"1099.5">__one__</span>. And then we liked the Oberheim sems always too. So the s <span style="color:red" data-ts="1102.74" data-end_ts="1102.82" title="1102.74" id=c_"1102.74">__se__</span> <span style="color:red" data-ts="1102.82" data-end_ts="1102.94" title="1102.82" id=c_"1102.82">__one__</span> had that filter onboard too, so you could select one or the other <span style="color:red" data-ts="1107.56" data-end_ts="1107.78" title="1107.56" id=c_"1107.56">__and__</span> gives, you know, two really very different sounds. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Tim: </b>And, <span style="color:red" data-ts="1112.84" data-end_ts="1113.06" title="1112.84" id=c_"1112.84">__you__</span> know, we were developing the next one, the ATC came up with the concept of interchangeable filter cartridges. So there was a little, there was a slot on the back and we made the mini cartridge and the S SCM cartridge. And then <span style="color:red" data-ts="1125.76" data-end_ts="1125.98" title="1125.76" id=c_"1125.76">__the__</span> air reverse engineered the 26 or 2,600 filter and the, TB 3 0 3 Roland one, which is really very close to the mini. And so you could buy those as cartridges and change, you know, change 'em out real quick on the <span style="color:red" data-ts="1142.88" data-end_ts="1143.1" title="1142.88" id=c_"1142.88">__atc__</span>. And, came up with a selector external unit where all four of 'em could be in there and you could, part of the program was which one was in a given patch. That's sort of where that whole thing came from. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure, I see. And, so the, the process that you went through then to make these carts, is that basically then that concept and, <span style="color:red" data-ts="1167.16" data-end_ts="1167.38" title="1167.16" id=c_"1167.16">__and__</span> maybe even that circuitry, what's used to develop boom <span style="color:red" data-ts="1170.06" data-end_ts="1170.34" title="1170.06" id=c_"1170.06">__stars__</span> then? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, we're using the same filters. The boom <span style="color:red" data-ts="1174.02" data-end_ts="1174.26" title="1174.02" id=c_"1174.02">__stars__</span> are all basically the same. It's the same main circuit board, but, you know, different resistors get changed just to make the each filter work, you know, in its optimum ranges. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. So what is it that, what is it about a circuit or about some, the part of the development of a synthesizer that you find most interesting? I mean, it's, it sounds like the filter is what you find sort of like, gives a thing its voice. Is that, is that where you like also spending your time or is there something else that really, that you're into? And I ask this because when I, when I talk to other synth builders, some of 'em are really into like, response factors, you know, so like, you know, how quickly does an envelope respond or how, you know, how much slewing is there in a vca and other people are just like, oh, I just <span style="color:red" data-ts="1232.5" data-end_ts="1232.74" title="1232.5" id=c_"1232.5">__want__</span> it sound really warm. <laugh>, you know, it's like their definitions of what drives them from an engineering standpoint can tend to be very, very different. What's the thing that drives you? 
+</p>
+
+<p>
+<b>Tim: </b>I guess it's really just the, the feeling that you get from playing it. You know, is it satisfying? You know, does, can you, can you get the sounds that you want? Does it feel quick and immediate and satisfying to play, I think is really what I'm most concerned about. And, you know, want the flexibility to do all the different kinds of things that I think a synthesizer should do, which is, you know, essentially anything that's been done with one in the last <laugh> 30 or 40 years, <laugh>, it should be able to do everything. Right. <span style="color:red" data-ts="1273.22" data-end_ts="1273.34" title="1273.22" id=c_"1273.22">__A__</span> lot of my benchmarks <span style="color:red" data-ts="1274.06" data-end_ts="1274.22" title="1274.06" id=c_"1274.06">__with__</span> <span style="color:red" data-ts="1274.34" data-end_ts="1274.5" title="1274.34" id=c_"1274.34">__er__</span> <span style="color:red" data-ts="1274.5" data-end_ts="1274.82" title="1274.5" id=c_"1274.5">__winners__</span>, Frankenstein, I always wanna make sure that it <laugh> <span style="color:red" data-ts="1277.48" data-end_ts="1277.7" title="1277.48" id=c_"1277.48">__it__</span> can do everything that's on that. And although, you know, it's really not very useful nowadays a lot of that, but still, it's just sort of a benchmark. And we always liked the herps, the <span style="color:red" data-ts="1288.1" data-end_ts="1288.26" title="1288.1" id=c_"1288.1">__boom__</span> star's got a lot of, ARP Odyssey influences Greg had gotten wanted to play with as we were working on the boom <span style="color:red" data-ts="1293.98" data-end_ts="1294.26" title="1293.98" id=c_"1293.98">__star__</span>. And I got my old one out and we were, kind of revisiting that and going, oh, this is cool. Hey, can we do this? Oh yeah, let's throw this in <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Sure. That's, that's interesting because, while it may be influenced a lot by the Odyssey, the, the variety of filters certainly gives them different, you know, pretty wildly different <span style="color:red" data-ts="1316.02" data-end_ts="1316.38" title="1316.02" id=c_"1316.02">__silence__</span>. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, the filters definitely <span style="color:red" data-ts="1319.96" data-end_ts="1320.18" title="1319.96" id=c_"1319.96">__on__</span> different, there's, you know, the, the Yamaha 80 type filter and the, the mini filter, the A filter, they're very different sounding. The sem, they, you know, sound very different. 
+</p>
+
+<p>
+<b>Darwin: </b>What's your favorite? 
+</p>
+
+<p>
+<b>Tim: </b>Oh, that's tough. <laugh>. That's tough. The 80 filter's awful fun. The, I really like the ARP <span style="color:red" data-ts="1344.02" data-end_ts="1344.14" title="1344.02" id=c_"1344.02">__one__</span> too, just, it, it's really sharp and cutting. <span style="color:red" data-ts="1349.41" data-end_ts="1349.7" title="1349.41" id=c_"1349.41">__Kind__</span> the resonance on the MOG filter though <span style="color:red" data-ts="1351.78" data-end_ts="1351.9" title="1351.78" id=c_"1351.78">__is__</span> really hard to beat. 
+</p>
+
+<p>
+<b>Darwin: </b>Right? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, it's tough. I haven't ever had to make the one, you know, only one choice though, 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Right. I guess it's, it is sort of like asking which of your children, which, which of your children is your favorite. Right. 
+</p>
+
+<p>
+<b>Tim: </b>It's pretty hard to do without that mini filter though. That's pretty, really like that one quite a lot. 
+</p>
+
+<p>
+<b>Darwin: </b>Now. Is there any, is there any filter that you wanted to, wanted to duplicate and just didn't feel like you could get it or, 
+</p>
+
+<p>
+<b>Tim: </b>We've been playing with the Cork 700 filter lately <span style="color:red" data-ts="1386.37" data-end_ts="1386.66" title="1386.37" id=c_"1386.37">__that__</span> it was on the, the mini <span style="color:red" data-ts="1387.9" data-end_ts="1388.18" title="1387.9" id=c_"1387.9">__cord__</span>, right? <span style="color:red" data-ts="1388.96" data-end_ts="1389.18" title="1388.96" id=c_"1388.96">__Max__</span> cord. That's, essentially it's much like the CS 80 filter as far as it being a, <span style="color:red" data-ts="1396.14" data-end_ts="1396.26" title="1396.14" id=c_"1396.14">__a__</span> high pass followed by a low pass. But, that one's, it's a diode filter and it's, that one's, we really had a hard time getting it to perform the way we would want it to. And I have a mini cord here and basically <span style="color:red" data-ts="1413.56" data-end_ts="1413.78" title="1413.56" id=c_"1413.56">__the__</span> filter is just doesn't have the wide range of, of, control that we ex expect. You know, they've got it built into the thing in a way that works really well and it doesn't expose its noise inherent noisiness and <laugh>. It doesn't expose the fact that it won't track the keyboard or that it's really got a very limited sweep range. It's just they've integrated into that in such a way that it works really well. But if you take that out and then try and put it in one of our other platforms where we're used to filters that are, you know, technically much better, it doesn't really look that good. 
+</p>
+
+<p>
+<b>Darwin: </b>Well that's, that's a, that's a curious thing, but also one I guess I, I hadn't thought of, but it makes perfect sense, which is that especially the kinds of filters that you find in sort of all <span style="color:red" data-ts="1461.38" data-end_ts="1461.58" title="1461.38" id=c_"1461.38">__in__</span> one or in poly <span style="color:red" data-ts="1462.67" data-end_ts="1463.02" title="1462.67" id=c_"1462.67">__based__</span> units or whatever, they, they can hide an awful lot because, you know, it's, it's a pretty opaque system. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah. That one actually really surprised me cuz I've always liked the mini <span style="color:red" data-ts="1476.72" data-end_ts="1476.94" title="1476.72" id=c_"1476.72">__cor__</span>. I still do. It's really fun to play. It's a great sounding box, but, yeah, the, the filter is just not, it's not on the level of what we're used to. Right. As far as the range of sweep and tracking and, noise and whatnot. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Well, now the other thing with that filter though too is, is it strikes me that that would be, that's one that you kind of have to nail because there was, there was that whole timeframe sort of in, in, British pop music where it was just mini cork preset after mini cork preset. Every one of those sounds got to be so iconic that you, you kind of, if you're gonna say that that's what you did, it seems like you'd have to, you'd have to nail it pretty well in order to, in order to pull it off. That does seem like a tough thing. I hadn't really thought about it, but yeah, it seems really, 
+</p>
+
+<p>
+<b>Tim: </b>That <span style="color:red" data-ts="1532.9" data-end_ts="1533.02" title="1532.9" id=c_"1532.9">__sounds__</span> really not so hard to get those sounds. The problem is isn't when you put that in a boom <span style="color:red" data-ts="1536.5" data-end_ts="1536.78" title="1536.5" id=c_"1536.5">__star__</span>, I mean, you can dial those in uhhuh <affirmative>, it's really not that hard to do. But then when you start dialing in other stuff that you know wasn't in there, then you start to see the limitations of that filter. And we just feel like, we can't really, don't really wanna put that out there, you know, with, you know, have a bunch of caveats of, you know, it's just, you know, it'll do this, but it won't do that. And you know, don't do this <span style="color:red" data-ts="1563.24" data-end_ts="1563.46" title="1563.24" id=c_"1563.24">__cuz__</span> somebody's gonna do that. And they go, wow, this is noisy. You know, this doesn't 
+</p>
+
+<p>
+<b>Darwin: </b>Turn back. Right. Sure. Oh, I see what you're saying. Right. 
+</p>
+
+<p>
+<b>Tim: </b>So, you know, that one, I've been trying to improve it and fix it, but, you know, then I'm afraid of, well, it's not gonna be what it is anymore if I fix it. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Good point. 
+</p>
+
+<p>
+<b>Tim: </b>Sure. It's really fixable. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, that's interesting. That's really wild. Most of the work that you guys have done has been around, mono since the se one kind of building off of the platform concept that the mini set, the, the, atc, which was kind of a platform for your filter, filter designs, the boom star, which is kind of now the affordable unit that kind of takes, takes on some of these ideas. But you guys built the Omega, which, I had the pleasure of trying out once and it was kind of overwhelming, in, in that it was huge sounding. But I think, correct me if I'm wrong, but I think the Omega and its variance is the only polyphonic thing you guys have done, right? 
+</p>
+
+<p>
+<b>Tim: </b>That's right. 
+</p>
+
+<p>
+<b>Darwin: </b>What was, other than, you know, obviously the sheer cost of multiples of every circuit, what was the <span style="color:red" data-ts="1648.23" data-end_ts="1648.45" title="1648.23" id=c_"1648.23">__har__</span> what was the most difficult, development aspect to that? 
+</p>
+
+<p>
+<b>Tim: </b>Oh, certainly, right in all the firmware, all the code to run a thing, it's got a main CPU that operates the front panel and receives <span style="color:red" data-ts="1662.77" data-end_ts="1662.89" title="1662.77" id=c_"1662.77">__humidity__</span> and stores the programs and everything. And then the voice boards each have their own processor that, that, you know, running the actual code that makes the sound that, that was a lot of work, that was a lot of coding. I, it's not really my favorite thing in the world to do, but, we can't really afford to go outside and hire programmers. And I also know from the experiences of other companies that hiring programmers can be very problematic if, you can inherit a lot of bugs and then if they don't do their job right, you have to go get somebody else who has to try and understand what they did and get layers upon layers of bugs. Certain certain companies in, California that went outta business in the eighties, had that had that problem of, too many cooks <laugh> right. Kitchen. And, so I've, I've always just, kept it to what I could do myself so that, you know, if it didn't work, at least we know whose fault it was. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, in doing, in working with Micros microprocessors for this stuff, it strikes me that when a lot of the kind of like earlier designs cropped up, there weren't that many options from microprocessors. And the ones that were out there were not that robust. I mean, did 
+</p>
+
+<p>
+<b>Tim: </b>Me that, you know, the o <span style="color:red" data-ts="1740.28" data-end_ts="1740.4" title="1740.28" id=c_"1740.28">__B__</span> eight is probably the greatest example of, of what, you know, the absolute limit of what you can really do with one <span style="color:red" data-ts="1747.08" data-end_ts="1747.2" title="1747.08" id=c_"1747.08">__B__</span> 80 <laugh>. It's really, it's pretty amazing what <span style="color:red" data-ts="1750.6" data-end_ts="1750.8" title="1750.6" id=c_"1750.6">__they__</span>, what that does, how many things that poor little processor is actually doing. 
+</p>
+
+<p>
+<b>Darwin: </b>Did you, did you ever, or did you occasionally run into, situations where for your own work the processor just wasn't up to it? 
+</p>
+
+<p>
+<b>Tim: </b>No, not really. Kind of with the Omega, we decided to, you know, just throw power at the problem and it just, gave each voice it's own micro controller. Right. It's really pretty much overkill. You know, one of those could, could have run all <span style="color:red" data-ts="1783.02" data-end_ts="1783.14" title="1783.02" id=c_"1783.02">__the__</span> voices, but I didn't want there to be any compromises or any excuses that, you know, would slow the response time or, or in any way compromise, you know, the immediacy of, of the plane experience. So, you know, there's nine microcontrollers in Omega one for the, the master and then one in each voice. So they're, none of 'em are working terribly hard. And so response is very quick. 
+</p>
+
+<p>
+<b>Darwin: </b>You know, if I would've had to guess before we had our discussion, I would've guessed that the thing that you, found most important in a design would've been the tone. Because I always have thought of your, of the studio electronics sense as really, being focused on, a specific and very rich tone set. And, but it actually heartens me to, here you can keep on referring to this responsiveness thing because I have had the opportunity to work with some synthesizer systems that use micro microprocessors that would sort of fail that, that the responsiveness or, some of the tasks that that micros were supposed to perform, weren't quite up to snuff. And especially you see this in cases where, you know, maybe envelopes were supposed to be driven by, a digital process and it just wasn't up for as many envelopes as it was supposed to handle, or, or some of the voice, voice handling wasn't quite up to snuff. And so if you started hitting the polyphony a lot, you would, start, feel, start to feel things slow down. So I think that that's really, that is interesting to think about that from a digital standpoint. But, part of that is also the analog circuitry as well. I, again, talking about envelopes, it certainly seems like the design of a responsive envelope is really much more art than it is science. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, A little both. Little both. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, just in that, I mean it's not only how quick does it respond, but it's sort of like, I, I dunno, at least I feel like I sense the difference in the, in the curves of the, of the ramps. I I tend to sense the difference of that kind of almost, not intellectually, but almost emotionally, you know, it's, it's almost like I can intuit the, the difference between, you know, say the, the curvature of <span style="color:red" data-ts="1938.43" data-end_ts="1938.55" title="1938.43" id=c_"1938.43">__a__</span> sh 1 0 1 s envelope versus an Odyssey's envelope as an example. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah. That's part of what you feel. That's, you know, what I, you know, talk about responsive and feel, you know, you feel that 
+</p>
+
+<p>
+<b>Darwin: </b>Right now, one of the things that you guys have never done is build a synthesizer that has a, that has a keyboard in it. You've always depended on MIDI as a front end, right? 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, yeah. There's been various propositions and ideas at times and we may still do that, that that brings in a whole nother kettle of fish and Yeah. We don't have a lot of room at our various facilities too, to have big stacks of keyboards and cases and shipping boxes for 'em. Yeah. So I know we've, we had a guy that designs concept <span style="color:red" data-ts="1988.61" data-end_ts="1988.9" title="1988.61" id=c_"1988.61">__cars__</span> for Ford that drew us a beautiful rendering of what a Polyon maker would look like. And I wanted it <laugh> we wanted to make it and he wanted, obviously he wanted <span style="color:red" data-ts="1997.04" data-end_ts="1997.26" title="1997.04" id=c_"1997.04">__one__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Tim: </b>And I really wanted to make that. And I don't know, maybe we'll get around to it someday. I mean, I'd really dearly love to have one. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, do you ever, do you ever do like, you know, I I would just call 'em wild ass projects. Do you ever take on like crazy custom projects or 
+</p>
+
+<p>
+<b>Tim: </b>Just that we don't really do much of anymore cuz that's just too time consuming? Yeah, you know, we're pretty focused on, you know, trying to bring out products that, you know, we think we can sell that also interest us enough to, to wanna design them and then, you know, go ahead and follow few and build them and maintain them without, you know, wishing we'd have never done it. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Well it goes back to that motivation thing about not even wanting to, build anything that you don't really want yourself <laugh> Yeah. Well, which, which makes me <span style="color:red" data-ts="2046.86" data-end_ts="2047.06" title="2046.86" id=c_"2046.86">__that__</span> which then begs the next question, which is what's the next thing that you think you want? What is, what are things that are out there, besides like the cork filter, but what are, what are some of the things out there that intrigue you and represent the kind of thing that would, excite you into doing another design? 
+</p>
+
+<p>
+<b>Tim: </b>I'm, I'm not sure how much I should talk about what we're working on, but I <span style="color:red" data-ts="2072.9" data-end_ts="2073.1" title="2072.9" id=c_"2072.9">__think__</span> with the Boone <span style="color:red" data-ts="2073.74" data-end_ts="2073.98" title="2073.74" id=c_"2073.74">__Stars__</span> that one and Analog <span style="color:red" data-ts="2078.02" data-end_ts="2078.3" title="2078.02" id=c_"2078.02">__View__</span> have kind of always complained about Oh yeah. You know, the pot <span style="color:red" data-ts="2081.51" data-end_ts="2081.86" title="2081.51" id=c_"2081.51">__stuff__</span> and, you know, the envelopes are software and they're not snappy and which, you know, I really take exception too cuz they use a digital storage scope to sample the mini <span style="color:red" data-ts="2091.3" data-end_ts="2091.5" title="2091.3" id=c_"2091.3">__of__</span> envelopes and you know, that's, it's got the software code that runs in the SD one and the Omega it's, you know, it's very quick. It updates the envelopes a thousand times a second. And I really, I challenge anyone to actually measure that they're any slower than a hardware envelope, but with the <span style="color:red" data-ts="2112.42" data-end_ts="2112.62" title="2112.42" id=c_"2112.42">__boom__</span> <span style="color:red" data-ts="2112.62" data-end_ts="2112.9" title="2112.62" id=c_"2112.62">__star__</span> and I said, okay, well let's just put this to rest. We'll just do one with hardware envelopes. So <laugh> and no <span style="color:red" data-ts="2119.78" data-end_ts="2119.98" title="2119.78" id=c_"2119.78">__mid__</span>, so no stepping of controls and Uhhuh 
+</p>
+
+<p>
+<b>Darwin: </b><affirmative>. 
+</p>
+
+<p>
+<b>Tim: </b>So I mean, no presets I should say has 
+</p>
+
+<p>
+<b>Darwin: </b>Right, right. 
+</p>
+
+<p>
+<b>Tim: </b>That's kind of what we did there, but <span style="color:red" data-ts="2130.05" data-end_ts="2130.34" title="2130.05" id=c_"2130.05">__boom__</span> <span style="color:red" data-ts="2130.34" data-end_ts="2130.58" title="2130.34" id=c_"2130.34">__Star__</span> is, it's really fairly expensive to make now. We can't really sell it it for what we really should be able to sell it for. So we're looking at looking at some variant of that that's, a little more software intensive and less hardware intensive. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. 
+</p>
+
+<p>
+<b>Tim: </b>That's one of the things we're looking at now anyway. Doing a lot of audio stuff these days too. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh yeah. Like what, 
+</p>
+
+<p>
+<b>Tim: </b>Did a couple things with Steven Slate for Slate Pro Audio a few years ago. The Dragon Compressor and the Fox <span style="color:red" data-ts="2165.68" data-end_ts="2165.9" title="2165.68" id=c_"2165.68">__mic__</span> pre Right. Those, we're still selling those and working on other joint project with him right now. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, that's interesting. 
+</p>
+
+<p>
+<b>Tim: </b>Kind of go between audio and synthesizers, but you know, eventually <span style="color:red" data-ts="2178.06" data-end_ts="2178.18" title="2178.06" id=c_"2178.06">__a__</span> synthesizer has to get recorded. So 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, it's all, it's all one big milieu. Right. 
+</p>
+
+<p>
+<b>Tim: </b>I kinda started the, the audio thing <span style="color:red" data-ts="2186.68" data-end_ts="2186.9" title="2186.68" id=c_"2186.68">__cuz__</span> I needed stuff for my studio and I couldn't afford the stuff that I really wanted. Couldn't afford LA two ways and 1176 <span style="color:red" data-ts="2193.18" data-end_ts="2193.3" title="2193.18" id=c_"2193.18">__s__</span> and that kind of thing, these boards. So I was thinking, eh, you know, I've gotta be able to make those things. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. That's, that's wild. Have you guys ever thought about, playing around in the modular, the up and coming modular world? 
+</p>
+
+<p>
+<b>Tim: </b>Well, funny you ask <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>Ah, oh 
+</p>
+
+<p>
+<b>Tim: </b>No. The modules, we should be releasing the first modules next month. I'm thinking, 
+</p>
+
+<p>
+<b>Darwin: </b>Oh my goodness. 
+</p>
+
+<p>
+<b>Tim: </b>Circuit boards are <span style="color:red" data-ts="2223.94" data-end_ts="2224.02" title="2223.94" id=c_"2223.94">__out__</span> now. 
+</p>
+
+<p>
+<b>Darwin: </b>That's exciting. 
+</p>
+
+<p>
+<b>Tim: </b><span style="color:red" data-ts="2226.57" data-end_ts="2226.86" title="2226.57" id=c_"2226.57">__Yeah__</span>, I think we'll probably yes, September we should be shipping the first modules we've been working with, with Richard <span style="color:red" data-ts="2232.06" data-end_ts="2232.46" title="2232.06" id=c_"2232.06">__Nickol__</span> at Pittsburgh Modular. Right. <span style="color:red" data-ts="2234.6" data-end_ts="2234.82" title="2234.6" id=c_"2234.6">__And__</span>, he's gonna distribute, we're basically modularizing the boom <span style="color:red" data-ts="2239.1" data-end_ts="2239.38" title="2239.1" id=c_"2239.1">__star__</span> Denver <span style="color:red" data-ts="2241.2" data-end_ts="2241.42" title="2241.2" id=c_"2241.2">__the__</span> filters. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, that's, that's awesome. That is really exciting. So 
+</p>
+
+<p>
+<b>Tim: </b>The filters and then the discrete VCA from the boom <span style="color:red" data-ts="2248.46" data-end_ts="2248.74" title="2248.46" id=c_"2248.46">__star__</span>, those will be the first modules. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, that's fantastic. That's exciting news because frankly, there, there are a lot of good, there are a lot of good filters, but I don't think, if I were to think of who really understands, the Minimoogs filter best, I can't imagine anyone who understands it better than you do. And so having some of the, having that having a fantastic s cm filter come out, that's gonna be really, really exciting to hear. I'm glad to hear that. Thanks for sharing. 
+</p>
+
+<p>
+<b>Tim: </b>Yeah, that's, <span style="color:red" data-ts="2282.77" data-end_ts="2283.06" title="2282.77" id=c_"2282.77">__that__</span> should be interesting <span style="color:red" data-ts="2283.78" data-end_ts="2284.02" title="2283.78" id=c_"2283.78">__then__</span>. Yeah, the modular world is really a lot bigger than I realized when Duffer first came out with that Euro rack in the nineties. And I'm like, yeah, that's kinda interesting. But to me it's too tedious. I don't, I never really got into the modular things. You spend too much time patching stuff before you get to just what, you know, I would expect it to just do when you turn it on. Right. It's a different mindset <span style="color:red" data-ts="2305.33" data-end_ts="2305.62" title="2305.33" id=c_"2305.33">__with__</span> I that I know I don't fully understand, but, 
+</p>
+
+<p>
+<b>Darwin: </b>Well, I can, I can quality modules. Yeah. I can tell you why I get into it is because, you know, I've been, I've been doing music for, I hate to even admit this, but like, getting on 40 years. And one of the things that I, I find is that I, I bothered sometimes by the extent to which I have a tendency to want to use presets, right? So the one thing that a modular system will not do is allow you to fall into preset mode <laugh>. And so I find that the development of the patch is actually a really important art part of the art part of what I do now. I'm not doing pop or rrb type music, so the big production thing, you know, isn't my deal. And hence I can get away with doing like squeaky little patches and, and calling it art, right? 
+</p>
+
+<p>
+<b>Darwin: </b>Mm-hmm. <affirmative>. But, I just really happy to hear that because I, <span style="color:red" data-ts="2366.18" data-end_ts="2366.3" title="2366.18" id=c_"2366.18">__I__</span> just feel like, you guys have some areas of expertise that are really, really particular and kind of groundbreaking or, or at the very least, industry leading. And so it's good to see, that technology come available in different kinds of formats. That's cool. So, what do you of, I mean, you have been, you know, you say that you got into guitar as a, as kind of one of the, one of the great, horde of Beatle, Beatles watch it and pick up the guitar kit, right? So you have basically followed, the modern pop and, yeah. Popular music and rock music, genres from almost their inception. What is the thing that disappoints you most about where music has gone? 
+</p>
+
+<p>
+<b>Tim: </b><laugh>. I don't <span style="color:red" data-ts="2431.98" data-end_ts="2432.02" title="2431.98" id=c_"2431.98">__know__</span> how much I should talk about that. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, if you don't want, I mean, if, yeah, I guess maybe <span style="color:red" data-ts="2437.28" data-end_ts="2437.5" title="2437.28" id=c_"2437.28">__as__</span> I'm like saying which of your customers disappoint you? 
+</p>
+
+<p>
+<b>Tim: </b><span style="color:red" data-ts="2442.56" data-end_ts="2442.78" title="2442.56" id=c_"2442.56">__No__</span>, well, yeah, I, you know, I'm really probably not that up on, on popular music per se, you know, and, you know, turn on <span style="color:red" data-ts="2450.26" data-end_ts="2450.34" title="2450.26" id=c_"2450.26">__the__</span> tv, you know, watch the Grammys or something. I'm like, huh, never heard of these guys. I'm just really not very aware of it. I mostly listen to older stuff. Mm-hmm. <affirmative> and the newer stuff I listen to is generally not really very mainstream. I, you know, I'm, what I care about really is, groups that actually can play together in real time. And I know, you know, a lot of what I do enables people to piece stuff together, which is great. You know, allows someone with ideas, who doesn't necessarily have a great ensemble on tap to, you know, to realize their ideas. Right. You know, <span style="color:red" data-ts="2487.46" data-end_ts="2487.66" title="2487.46" id=c_"2487.46">__from__</span> my musical side, I I just find a lot more satisfying to play with people who play very well, 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Right. Well, one of the things that's kinda interesting is that I would say the vast majority of people that you use your equipment or that are for that matter, going to listen to this podcast, are relatively new to the synth world and, and definitely don't have the, the, the benefit of the decades of listening that you've, you've done. If you were to take a new generation and try and turn them onto something from the past, what would be the thing that you'd want to turn 'em onto? 
+</p>
+
+<p>
+<b>Tim: </b>Oh, geez. That's, that's a tough one. That's a tough one. You know, most of the music genres that I really like, you know, older ones, they really were born, you know, in a place in time, you know, the social conditions at the time, you know, kind of drove the music and, you know, different things coming together that, you know, can really never happen that way again. So I think, you know, music is probably always pop, music is always an expression of the times and, you know, the various threads of popular culture and, and society coming together. So, I don't know if there's really any way to answer that one. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay, that's great. Or interesting advice. And I would guess, I guess that the other way of saying that is listen to it all. It's all got some value. Oh, it sounds like my whole family <span style="color:red" data-ts="2581.92" data-end_ts="2582.14" title="2581.92" id=c_"2581.92">__is__</span> coming barreling in the front door. So, I'm going to have to, wrap this up, but I really appreciate, I know you have a real busy schedule since you've been spent so much time learning to design stuff. What I'm wondering is if you could give, our listeners who might be interested in thinking about trying to design some electronics, some advice about where you would tell them to get started. 
+</p>
+
+<p>
+<b>Tim: </b>I wish I would've had the internet back in the seventies when I was starting. It's just, you can find out anything you want now in second <span style="color:red" data-ts="2612.26" data-end_ts="2612.58" title="2612.26" id=c_"2612.26">__center__</span>. I mean, I would, I would look for years for schematics to certain pieces of gear that I was interested in and, you know, maybe finally I'd find it at some studio and <span style="color:red" data-ts="2620.62" data-end_ts="2620.78" title="2620.62" id=c_"2620.62">__the__</span> now you can find anything online that's schematics. It's, it's an amazing resource. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, that's a, that's a great point. And you know, especially with like the, the onset of like the maker environments and stuff like that too, it seems like not only is the information available, but it's kind of getting to be hip to build stuff as well, which is also pretty cool. So. Well Tim, thank you so much for your time and, and again, for, for telling us a little bit about the past and about the future. Really excited about this modular thing. I'll tell you that right now. Give a shout out to Mark again for opening the door for us to chat and, have a great day. 
+</p>
+
+<p>
+<b>Tim: </b>Okay, thank you. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, how about that? The first, art Plus Music plus Technology scoop. I'm gonna be seeing some modules from study electronics. That's actually really exciting news. Again, I would like to thank all of you listeners for sticking with me. I hope that you've been enjoying it. If you have any questions, comments, ideas for people to interview, please feel free to drop me a line DDG cycling <span style="color:red" data-ts="2690.3" data-end_ts="2690.54" title="2690.3" id=c_"2690.3">__70__</span> <span style="color:red" data-ts="2690.54" data-end_ts="2691.34" title="2690.54" id=c_"2690.54">__four.com__</span>. And I will talk to you next week. Bye.
+</p>
+
+    <p><i>Copyright 2014-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
