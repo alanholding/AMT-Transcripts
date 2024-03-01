@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0053 - Chris Blarsky</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0053 - Chris Blarsky</h2>
+        <h3>Released: Nov 9, 2014</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3169592/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+<p>
+<b>Darwin: </b>Okay. This week we are going to talk to somebody, whose brain I'm interested in picking. His name is Chris Larky. People in the modular world would probably know him from the oddities that he's been posting pictures of lately. He has a Euro rack speak and spell. He did a five U version of the mutable braids. He did the work shot in Euro format. He did a mod for me, which put a 10 turn <span style="color:red" data-ts="37.46" data-end_ts="37.68" title="37.46" id=c_"37.46">__pot__</span> on a, a Pittsburgh OSCI <span style="color:red" data-ts="40.4" data-end_ts="40.52" title="40.4" id=c_"40.4">__layer__</span>. That was just awesome. And so he does these kind of oddities of the, of the <span style="color:red" data-ts="45.04" data-end_ts="45.2" title="45.04" id=c_"45.04">__year__</span> world, but he actually has a thing going called instruments. And, it represents sort of the culmination of the chip tune, integration into the rest of the world, I guess is how I'd put it. Does that seem right, Chris? Yeah, 
+</p>
+
+<p>
+<b>Chris Blarsky: </b>No, that sounds exactly right. <laugh>, right 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. It sounds awesome. I am, I, I am trying to find a way to like weasel enough money out of my son's piggy bank pile or something, <laugh>, but they're really, really cool. And the, but over the time that I've known Chris, he's kind of like introduced me to, Hey, I'm doing this with a genesis, and hey, I'm doing this with this other thing. And <span style="color:red" data-ts="88.78" data-end_ts="89" title="88.78" id=c_"88.78">__oh__</span>, you know, this has this kind of connector and it exposes these things. And I'm just like, first of all, I'm a little bit <span style="color:red" data-ts="96.2" data-end_ts="96.52" title="96.2" id=c_"96.2">__<inaudible>__</span>. And secondly, when I see the work he does, he does a really interesting thing, and it's something I want to dive into towards the end of the podcast. He is one of the people that is sort of a maker in a way that is, that the end result is really pro. And so I want <span style="color:red" data-ts="117.52" data-end_ts="117.56" title="117.52" id=c_"117.52">__to__</span> talk about that a little bit too. But given that he's probably, at least in my neck of the woods, the expert on game system, we're gonna talk a little bit about game music. Does that sound all right, Chris? Absolutely. All right, cool. Well, how are you? 
+</p>
+
+<p>
+<b>Chris: </b>Excellent. And I'm very much happy to be here at your house. 
+</p>
+
+<p>
+<b>Darwin: </b>This is awesome. Oh, yeah, that's right. This is, this one is in the house, so y'all are hearing the, I, I actually use this room for acoustic guitar recordings because it actually has a really nice bloom to it. Nice 
+</p>
+
+<p>
+<b>Chris: </b>Bloom. And very nice view too. I might add. Very much so, 
+</p>
+
+<p>
+<b>Darwin: </b>Yes. In my Eagle's Nest <laugh>. So, as, you probably know, I always start off with my, my podcast with, with a question about, about people's history and their background. And particularly in your case, I'd like to know a little bit about your background as it relates to kind of the, this weird place you live in, which is a combination of, of like games and music and electronics and building. And I don't know, man, I, I'm curious about where this even comes from. 
+</p>
+
+<p>
+<b>Chris: </b>Well, I think for me it really centers around a time period. The, the crazy thing, and I would put it time period wise from like 82 to like 87, that that five year period, I think culturally so much was going on. I think you had all sorts of different types of music. So when you'd listen to the top party on the radio, it would, it would contain so many different genres and so many different creative ideas. And then at the same time, you had kind of the whole technological thing happening with video games and, and toys even, were starting to become alive, like speaking reads, were kind of getting into the hands of kids, and you could start to recognize this whole shift start to happen from like more of an old school analog feel to like, this new, what is this digital kind of thing happening? And so it really adds a whole, idea that, for me it was this culmination of seeing these two things start to happen and change and music kind of enforcing all of that at the same time. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, it's, it's interesting that you talk about some of those, those items in particular because it was a time where people sort of liked things to be computers, right? Absolutely. So the speak and read and speak and spell and all those things were very unabashedly, you know, computers with very robotic, voices. Right. And, musically that was kind of the era where the pH <span style="color:red" data-ts="269.92" data-end_ts="270.24" title="269.92" id=c_"269.92">__lights__</span> and the, the sinclairs kind of ruled the day. But we were also, we also had the opportunity to pick up mirage or whatever to play around with sampling as well. It was, it was a time that really embraced the idea of computers and, and digital tack, well, 
+</p>
+
+<p>
+<b>Chris: </b>In pop music too, just took on a whole different sound. I mean, you started seeing like DX seven sound and it just exploded and nobody was expecting that to replace a lot of the traditional instruments. 
+</p>
+
+<p>
+<b>Darwin: </b>That's true. Well, and, and it didn't, it didn't hurt that, you know, M T V was really had its wheels at the time. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. And see, and that's where I think a lot of people don't recognize there's a whole social thing behind it. You had arcades that were very strong places for young kids to go. And I think one of the aspects that empowered me, even from an early age, is that there was no real age, focus as far as who was in the arcade. You had old people, young people, a lot of times you were finding yourself watching other people play because they were better than you. So, and then you would see music and levels and graphics that you would never see on your own. 'cause you could never make it past level one. Right. And so you were like watching other people, and you'd have full, you know, adults watching me as a kid just walk through these levels and there, and they'd be learning from me and, and excited. And it was a whole social kind of amalgamation going on that, you know, is not really there now. I mean, now you have 'em, but they're more like nostalgia for, for people like me, right. They're not like the, the intensity that was there. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it seems like a lot of our kids now tend to be, co-located with either take your Kids for Pizza or go to the oldie style burger shop. Right. <laugh>, which is kind of, which is kind of weird because I know what you mean about there being no age <span style="color:red" data-ts="378.6" data-end_ts="379" title="378.6" id=c_"378.6">__Raiders__</span>. I remember, I actually, played, space Invaders back in the day. I was on the road with a, with a music group. And every time we'd stop at a mall to like supposedly go buy clothes or whatever, we would actually barrel around and look for the arcades, which at that time would have like a bunch of pinball machines and like ski ball. And then would have like one or two space invaders in the corner. Yep. And we would just like play until they literally <span style="color:red" data-ts="413.94" data-end_ts="414.16" title="413.94" id=c_"413.94">__dug__</span> us outta the room. It was, it was great. But, you know, it was kind of weird also because you were a bunch of 20 year olds in Arcade that was mostly parents with their eight, eight year olds, you know? Yeah. And it, it really hadn't gotten traction. Well, 
+</p>
+
+<p>
+<b>Chris: </b>It's important that you bring that up because like for us, I, I mean, as a kid I can remember my mom and my dad being more interested in what was on tv, and I was actually more interested in what was going on with my gaming system. Right. So it's like they had their entertainment and then I had my entertainment 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Right. It was your, it was your little, your little island. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. And, and it was great because you could go there and nobody else would go there. So it was kind of a little antisocial. You weren't exactly exposed to conversation. And it wasn't all, let's get together and enjoy Family game night. It was, you kind of went off into your own room and you did your own thing. And, and I think that really influenced our generation. 
+</p>
+
+<p>
+<b>Darwin: </b>So how did you go from, going to arcades to, hacking Home Systems, which apparently was a turn that happened somewhere along the line. Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>It was, it was definitely the Commodore 64 that changed my life. <laugh>, I, it just was, and it, it was crazy. 'cause I, I <span style="color:red" data-ts="484.8" data-end_ts="484.96" title="484.8" id=c_"484.8">__had__</span> went back and started looking even last night and just kind of remembering some of these things. And, even then at, at age, you know, 1213, I had black hat friends and I had white hat friends. We were, a lot of us, some of us were poor. I was poor. I came from a single parent home. My dad wasn't really around. So I spent a lot of time in my own little world. And one of those things that allowed me to do that was the Commodore. But I couldn't afford a lot of games. So I quickly learned how to duplicate and, and rip these games. And so I would find myself with these people, like in, Cobo Hall <span style="color:red" data-ts="525.84" data-end_ts="526.04" title="525.84" id=c_"525.84">__in__</span>, in Detroit, for instance, three, four times a year they'd throw a big event and, you would find a lot of people showing up there with a couple of 1541 drives and they were copying the latest and greatest video games. 
+</p>
+
+<p>
+<b>Chris: </b>And then they had a Xerox machine in the corner for a nickel. You could get a, a copy made. And so you would actually copy the documentation. Right. And so the documentation was kind of critical. 'cause at the time, the games were so maxed as far as performance that they couldn't really use like very strong copy encryption type software. So they would go basic and they would say, you know, look at, the 13th word on page 12. Right, <span style="color:red" data-ts="564.4" data-end_ts="564.64" title="564.4" id=c_"564.4">__right__</span>. And enter it in before <span style="color:red" data-ts="565.66" data-end_ts="565.88" title="565.66" id=c_"565.66">__you__</span> start the gate. <span style="color:red" data-ts="566.2" data-end_ts="566.32" title="566.2" id=c_"566.2">__I__</span> remember. That's right. And, and the neat thing was, is that you were kind of a part of this whole thing that was illegal, but it wasn't really illegal. No copy protection was really set up and there was no police or I R I A A or any of that stuff going on. So it kind of gave you that excitement that you were kind of being a, a, a wrong, but at the same time, you wanted to check out the new games and the new sound and the new graphics. Well, it 
+</p>
+
+<p>
+<b>Darwin: </b>Was also kind of clear at the time that pe that nobody even really knew how illegal that they wanted it, because there was like a whole industry of high <span style="color:red" data-ts="598.57" data-end_ts="598.92" title="598.57" id=c_"598.57">__speed__</span> copy programs and copy cracking programs that were like advertised in the magazines right next to the games that they were ripping off. Absolutely. It was amazing. <laugh>. Yeah. And I mean, nobody's, nobody's doing that anymore. But, 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, it was completely unabashed. They didn't know, like you said, they didn't care if they right there and your face knew that you could copy this and that way to take care of it and right alongside the ad for the actual game. 
+</p>
+
+<p>
+<b>Darwin: </b>So why the Commodore 64 over any of the other things was just, just the price, I think, because I remember the price was like outrageously cheap in comparison to like an apple. Yeah. 
+</p>
+
+<p>
+<b>Chris: </b>Oh, absolutely. And I think the, the, the strength of the community and the gaming community, I mean, some of these guys were amazing as far as the, the titles they were putting out and, and the music they were coming up with. I mean, it was, it was kind of revolutionary. I mean, the SSID ship really kind of brought that to full light. I mean, you, you could do a lot and you had some really strong analog sound out of it, and yet it still had this whole digital sample kind of thing. And it was this whole different idea that you could get and, achieve these different levels and games and these, the games could do so many different things. And so you could be in one mood and then just change the game and be in a total different mood. Right, right. Because the games weren't as complex as they are. Like now, I think <span style="color:red" data-ts="676.82" data-end_ts="677.04" title="676.82" id=c_"676.82">__the__</span>, the younger generation now doesn't understand that, you know, we didn't sit down for like, you know, 17, 24 <span style="color:red" data-ts="683.2" data-end_ts="683.44" title="683.2" id=c_"683.2">__hours__</span> straight playing games. That just isn't Well 
+</p>
+
+<p>
+<b>Darwin: </b>'cause minor 2049 er just wasn't gonna do it. Right. You would have those little guys burning your brain. You would, you, you'd have like literally phospho burning in your eyeballs. Right. <laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. There's just no way you could go marathon sessions like that. So Right. You had to focus on just the parts that you liked and the games that would frustrate you the most. Sometimes, you know, everything from strategy games. There was, that was the other thing. It was, it was totally different from a normal standard just arcade style. It was like, you could go into Zork and beyond Zork and totally get lost in your head and a little bit more advanced than like your regular Dungeons and Dragons play. 'cause now it's just you and the computer and, and why isn't this thing paying attention <laugh>? 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well, but you know, for me that was actually a big win because I sort of like that fantasy dungeon and dragon thing. But I looked in the middle of the land of the wood <span style="color:red" data-ts="734.96" data-end_ts="735.2" title="734.96" id=c_"734.96">__tick__</span> there, <laugh>. Absolutely. There was, you know, there was me wanting to be a wizard and then a whole bunch of snowmobile Repairmen. Right. <laugh>, it was not, it was not conducive to d and d time. Right. Absolutely. 
+</p>
+
+<p>
+<b>Chris: </b><laugh>. Well, and anything that would enhance that vision that you were having would just bring it more to life. Oh yeah. So anything that would give you that instant response and you're just like, oh, all of a sudden it just, that's all it took. It didn't take much. 'cause you were already there and you just needed a little bit more pushing. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh. But you know, the flip side of it is, I remember the frustration, the frustration of getting like lost in that, in those caverns in Zork or, there was one like graphic thing. It was actually not much of an adventure game, but it was by, oh, I can't remember who it was, but it was one of those where Drew like a really crude image of wherever you were <laugh>. And, but I remember just like getting so frustrated, more, much more frustrated than I did later with more advanced games, just because it seemed like the, <span style="color:red" data-ts="798.12" data-end_ts="798.32" title="798.12" id=c_"798.12">__so__</span> they were so simple. The fact that I couldn't get it <span style="color:red" data-ts="800.76" data-end_ts="801" title="800.76" id=c_"800.76">__made__</span> must really made me feel stupid <laugh>. Yeah. You 
+</p>
+
+<p>
+<b>Chris: </b>And well, and it, a lot of times you'd have to ask your friends. So in that 
+</p>
+
+<p>
+<b>Darwin: </b>Situation you'd have to say, right, that's where <span style="color:red" data-ts="808.48" data-end_ts="808.52" title="808.48" id=c_"808.48">__it__</span> got social. Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. You would have to go, well, did you try that game out? And if you had, how far did you get? And sometimes you would just go over to your friend's house and like, yeah, you just gotta show me what you're doing. 'cause I don't even understand it. So Right. It, it did, it, it did give you that social aspect. Yet at the same time it gave you independence because you could then be farther along, way farther along in the game than your friend was and be like, oh, you just do this, you do that and do this. And you'd sound like the expert. 
+</p>
+
+<p>
+<b>Darwin: </b>So how did you socialize through this? Was it mostly face-to-face or were you like doing the bulletin board thing? Well, 
+</p>
+
+<p>
+<b>Chris: </b>I was the distributor. I mean, I know that kind of sounds bad, but I mean, I had friends that were much older than me and they were able to, to actually at that time afford to buy the games. And then they would make a lot of copies and then I would take the copies and sell 'em to kids at school. Got it. Got it. So, and that was one of the ways that I was able to even actually get the games early on, was kind of my participation because I couldn't have afforded them otherwise. Right, right. 
+</p>
+
+<p>
+<b>Chris: </b>So I was kind of the distributor and it was neat because at the time, the things were so archaic that everything was built around trying to copy the games as fast as you could. And then you were notching out five and a quarter floppies and you're flipping around and you're trying to turn and burn and, you know, rip off docks the same time. And it was hard because it, it didn't became a kind of an industry all on its own. And I started to lose the love for the games and then got more into the actual hardware and then selling and buying the hardware. And then I remember at times, I remember, I think I sold like four systems when I was 15 that just included a thousand floppies with all the games. Oh geez. And so just the time it took to build that right was like intense. But when you, you'd give those man, it was intense. 'cause those people would just love you forever. Right, right. 'cause they'd be like, this is everything that I'd ever wanted. 
+</p>
+
+<p>
+<b>Darwin: </b>Then it also turn around, turn around and be the thing where, because you gave it to 'em then you were the guy that they were calling at four in the morning too. Yep. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. <laugh>. Absolutely. No, I love that part of it too. 'cause I, I didn't have a social life. I was kind of a nerd. I didn't really have a much going on then, so mm-hmm. <affirmative>, I was like, the president of the Computer Explorers group, our local chapter and then national, 
+</p>
+
+<p>
+<b>Darwin: </b>Which was a sure way to get beat up. Right? Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Exactly. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. You didn't say that stuff like you do now, like you wear it on your right lapel and go, yeah, that's me. But you didn't do that back then. 'cause you're right. You would get beat up. Yeah. There would be some, some problems coming your way. You show that off. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>So, m many of the people, most of the people, I would even say that, that were into early computers. What they ended up focusing on was the graphics. Yes. But a subspecies, of which both you and I, our members really were, were drawn to the sound aspects. Not just the music, but also, you know, the sound of the explosions. I remember there was one game, I had an apple just because I was older and I had a job that I had enough of a job that I could get a loan to get an apple. Right. And I remember there was one game where the game was almost nothing, but they used up almost all of memory to have this enormous scream. So when you died, the best thing about the game is when you died, you'd get this long tortured scream. And, I remember being amazed and also working very hard at finding the quickest way to die. <laugh> <laugh>, just revisit that. Right. No, it's true. But then there was like the mountain sound card, which I got and I was doing, you know, trying to play around with computer music and then stuff like that. 
+</p>
+
+<p>
+<b>Chris: </b>Well those were the more interesting games. Even in the arcade, like in early or later seventies in Berserk, they had the same kind of game where the game was really bad. It was this kind of like maze looking thing. And then you kind of just went around and then you could only shoot like your, your lasers and like the, the primary six directions mm-hmm. <affirmative>. And it was really bad. But like you said, it had that little audio bit where it would go intruder alert and then you'd try to run away from 'em and they'd say chicken fight like a robot <laugh>. It was just great. So you, like you said, a lot of times just the dying parts of it or just parts of that game would really just make you drop a quarter into it. 'cause you just want to hear that familiarity. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. So what, so why is it that you got keyed into the audio? I mean, was it just, 
+</p>
+
+<p>
+<b>Chris: </b>Well, I think for me, it started when I wanted to actually build the game. So I started actually copying and, and, and hacking and then selling and that kind of thing. But I started getting to the point where I, I wanted to make my own. So part of the game is the audio. You had to really kind of start to analyze the audio. And there's a, there was a program, Gary Kitchen's game Maker, and it had that, it was like really rudimentary and you could build, you know, kind of basic graphics and sprites and then you could get into the audio track. And I found myself in the audio than <span style="color:red" data-ts="1089.08" data-end_ts="1089.2" title="1089.08" id=c_"1089.08">__I__</span> more than I did in the game. Yeah. So I found myself having, just, like you said, I had kind of this really bad game, but the, the sounds were great. <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's, you know, I think that sometimes, what you have to do is you have to find the thing that becomes an inadvertent obsession. That's how, you know, you found a thing that was good for you. I mean, there's, there are things over the course of the years that I've really tried, I I have tried to do great three D stuff. Right. I've put a lot of effort into it. I've studied it a lot. I've spent the time and all of it just seemed like effort as if I was having to climb a rope in gym class. Right. 
+</p>
+
+<p>
+<b>Chris: </b><span style="color:red" data-ts="1128.26" data-end_ts="1128.48" title="1128.26" id=c_"1128.26">__It__</span> was a lot of terminology, a lot of new stuff. And by the time you get over that huge learning curve and you start doing it, you realize you gotta put a lot of screen time to get in there. That's 
+</p>
+
+<p>
+<b>Darwin: </b>True. But I mean, it's sort of the same with digital audio. True. But for some reason, that was like sliding down a slide. Yeah. Instead of climbing up a rope. That's true. I was like, I had no problem spending 12 hours doing it <laugh>. I didn't have to count my hours of studying because I would just sit there with a book. I mean, I mean, you know, I would have one stack of books by the toilet, another stack of books by the bathtub. You know, it's just like moving from one subject area to the other was just like literally where I propped myself <span style="color:red" data-ts="1168.36" data-end_ts="1168.64" title="1168.36" id=c_"1168.36">__from__</span>. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>And, you know, I think that, I think that you end up finding your by, by seeing what you're drawn to and what you can easily become obsessed with is how you find your thing. Well, 
+</p>
+
+<p>
+<b>Chris: </b>And I think at the time, like I mentioned that timeframe sampling was so infant, you know, in its infancy, it was so rudimentary. So there were so many people trying different ways of doing it. And you were always in intrigued when you would hear something sampled and it did sound a little clear and it did sound a little better and a little less robotic, and you kind of perked your ears up because all of a sudden now, well, they've got some real good sampling going on, and you could hear some real world sounds, you know, or people yelling or screaming or, or whatever. And that would draw you in because a little bit of human interaction, less computer at that point. And you didn't even really realize it at the time because you just like, <span style="color:red" data-ts="1216.4" data-end_ts="1216.6" title="1216.4" id=c_"1216.4">__well__</span>, I'm playing with a computer. But at the time it's, it's actually interacting more and more now that it's starting to sound like a human being. 
+</p>
+
+<p>
+<b>Darwin: </b>So what were the things sound wise that really, really revved you off? The 
+</p>
+
+<p>
+<b>Chris: </b>Biggest one that I, there's a couple of 'em. I mean, the speaking reads were pretty intense. And I remember, pretty early on, I think I would say like early eighties, at some point my battery started to die in my speaker read. And it literally did sound like a dead cat. It had so many problems. But I just got off enjoying pushing the buttons while it was dying. And as it was dying, it was making garbled speeches and doing different things. And it, it was just a fun toy. And I remember my cousin even more interested in it than even the games he was playing at the time. And there was just some sort of magic thing happening with it that we couldn't even understand. And at the time, neither one of us understood the technical terms of what was going on. We just knew that it sounded very strange. 
+</p>
+
+<p>
+<b>Chris: </b>It sounded like it was human, but it didn't as it was starting to die. And then building past that point for me, I think, games like, Zon, the, the, the background track was almost all white noise and it was varied white noise to where it was kind of evil at times and you were really stuck. And it was trying to simulate supposedly the sound of space. But it was the first time I'd ever really heard white noise used outside of a TV <span style="color:red" data-ts="1296.63" data-end_ts="1296.92" title="1296.63" id=c_"1296.63">__just__</span> creatively. Right, right. Because you'd normally would hear it at three in the morning when the, the American <span style="color:red" data-ts="1301.42" data-end_ts="1301.64" title="1301.42" id=c_"1301.42">__fly__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>It's 
+</p>
+
+<p>
+<b>Chris: </b>All you would hear is Shh. And that what's all you would hear. But that's 
+</p>
+
+<p>
+<b>Darwin: </b>Another thing that a whole generation is missing <span style="color:red" data-ts="1307.86" data-end_ts="1308.08" title="1307.86" id=c_"1307.86">__all__</span> on. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. Yeah. Right after Night Gallery or whatever mm-hmm. <affirmative>, you'd get the little three minute star <span style="color:red" data-ts="1313.2" data-end_ts="1313.48" title="1313.2" id=c_"1313.2">__span__</span> <span style="color:red" data-ts="1313.48" data-end_ts="1313.6" title="1313.48" id=c_"1313.48">__with__</span> Banner and then, and it was gone. And, and, but the, the first time hear White noise used like that. And then of course the, the arcade again really had the speakers set up in a way to where these consoles were huge and booming. So like for instance, when you'd die in Centipede and, and you would count all the little parts of the, the the centipede, it was this incredible, and then this whole cabinet would just rattle and you would like, I gotta Die again. That sound was incredible <laugh>. And it would just drag you into it. Right. Right. So <span style="color:red" data-ts="1345.46" data-end_ts="1345.68" title="1345.46" id=c_"1345.46">__it__</span>, there were times where you <span style="color:red" data-ts="1346.96" data-end_ts="1347.12" title="1346.96" id=c_"1346.96">__would__</span> just, you would never hear that sound anywhere else. You could listen to the radio and I was, I was mix <span style="color:red" data-ts="1352.08" data-end_ts="1352.32" title="1352.08" id=c_"1352.08">__tape__</span>, man. I would make mix tapes and I'd, I love the sound off the radio, but none of that stuff was coming from the radio. So that would seem like the only outlet you could get is, is actually getting it from the video games. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. So when did you start hacking them? How did that come about? Because especially, you know, if you didn't have a lot of money and if that, and if your computer was sort of your best friend, getting in there with a screwdriver is sort of like doing appendix surgery on your best friend. You don't really want to do it because you're <span style="color:red" data-ts="1385.65" data-end_ts="1385.93" title="1385.65" id=c_"1385.65">__likely__</span> likely not to have a friend when it's over. Right. 
+</p>
+
+<p>
+<b>Chris: </b>Well, I knew I kind of got into a group of people that were into that, more into the black hat and weren't afraid to tear into their systems now. And I, I couldn't tell you exactly why. 'cause you know, at the time, like you said, they were, they were expensive and compared to what you could, you didn't want to just destroy. Right. But he, you know, I remember one guy specifically Jim <span style="color:red" data-ts="1407.59" data-end_ts="1407.81" title="1407.59" id=c_"1407.59">__Het__</span>, he, he really kind of narrowed me down and showed me all these different ways that you could use the Commodore. And I remember the, the modification for Jiffy Doss had come out and, and, and the fast load epics, cartridges and all these ways to try to speed it up and, and, and hype it up. And, and that's essentially what you'd want to do because it, let's face it, it took forever to load these games. A lot of people don't even realize. I mean, there, there were, there were manufacturers that actually like Ocean who built loaders and had, different people like Ron Hubbard and stuff, you know, compose whole pieces of music that would actually go on before even the game loaded. And, and so a lot of times I'd found that the, even that intro was more interesting than the game. It was 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>And, and that's exactly what would happen as these crackers would start going. They'd get the crack screens right. And they'd get all those flashing graphics and the incredible sound that was coming outta. And it a lot of times was better than the game. 
+</p>
+
+<p>
+<b>Darwin: </b>I forgot about that be. That's right. The whole cracker thing, which was, you know, sort of like, I mean, it was sort of digital graffiti almost absolute. Absolutely. They would put their front end on the game. Absolutely. Yeah. So often it was more impressive than anything. And 
+</p>
+
+<p>
+<b>Chris: </b>It wasn't like a, a nice slowed fade in for the sound. It was boom and it was like, and it would all go nuts. And you'd just be like, oh, whoa, and my audio's up and you <laugh> you know, it's, you'd have to really kind of, sorry, 
+</p>
+
+<p>
+<b>Darwin: </b>Mom. Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Exactly. But like I said, they'd have all the, the registers going and the ssid and that thing would be cranking and it would just, it would be great sound. And so a lot of times you've got stuck in just this, this has gotta be good. And it also would depend on who cracked it too. Sometimes you're like, oh, if this guy cracked it, oh, this has gotta be a good game. 
+</p>
+
+<p>
+<b>Darwin: </b>It's gonna be a good, yeah. Yeah. So, so, so it sounds to me like you were kind of into the chip tune sound before it was even a thing. Absolutely. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>But it eventually became a thing and there seemed to be very much a community around that. Yes. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>How did that even develop I, that that is now when I, you know, moved on to high fidelity? Right, sure. And, I feel like I missed something. Right. I feel like I missed a link that could have been really fun to have taken. 
+</p>
+
+<p>
+<b>Chris: </b>Well, it was kinda like the, just the early days of, of the D movement basically. I mean, you had your first tracker come out, in 87 called Ultimate Sound Tracker. That was for the Omega. And that really kind of changed the shape of it. All of a sudden, now all of a sudden it was a matter of who could compose what. And, and it wasn't a strange way to compose anymore. Like some of the early people had to really kind of build things out of assembly in order to get the, the music to work. And nobody ever wanted to go there <laugh>. So, but by that time you had seen the first trackers come along and now all of a sudden it's like, okay, well, and they were a little foreign. They still are to a lot of people. They see trackers with the scrolling and they're like, what is going on here? But if you looked at it from the primary aspect of needing some real rudimentary way of getting this music in there and figuring out how to get it to play with different sounds and tracks, it kind of started to make sense. Now 
+</p>
+
+<p>
+<b>Darwin: </b>Talk a little bit about the tracker though. So a tracker, I mean, I have virtually no experience with him. My friend Wally's really into him and, and has tried numerous times to get me, get me in. But, you know, it's one of those things where it's, it's foreign enough. Or in one case I tried it and I happened to be doing some programming in a specific area and all of a sudden I realized, wow, this and that are the same thing. <laugh>. Right. And so I don't wanna be doing the same thing for fun that I'm doing for a job. Right. But, explain a little bit from your perspective about what tracking, what trackers are, why they were important at the time and why you kind of talk. I mean, as soon as we started talking about Chip Tunes, you jumped right to Trackers. Why, why that connection? 
+</p>
+
+<p>
+<b>Chris: </b>I think it's just because, like I said before, <span style="color:red" data-ts="1649.9" data-end_ts="1650.12" title="1649.9" id=c_"1649.9">__the__</span> really the rudimentary programs that allowed you to kind of access those music, parts in the actual computer were just almost two Fisher-Price to where they had the standard, you know, five bar layout and or four bar layout. And you would draw notes, but it was really no way to build a whole track. It was kind of just like, Ooh, I could make a couple of sounds as opposed to like, I wanna really build a song. And so the power of the tracker just allowed you to say, Hey, I could actually build an entire track here. And the other benefit at times too was, is that, you know, maybe this might get used in a game. So that was the other part of it is if I, if I build it in this language, then maybe I can export that out and, and have it as a soundtrack for a game. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1690.54" data-end_ts="1690.76" title="1690.54" id=c_"1690.54">__Now__</span> that used sample sound, right? Or at times, or did it also <span style="color:red" data-ts="1693.38" data-end_ts="1693.6" title="1693.38" id=c_"1693.38">__use__</span> the synth capabilities of the chips? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, I mean, it was kind of a combination. I mean, there were people doing different ways of trying to, to sample sounds like I said, and there was different technologies in order to get it. I think for me at that time, that was kind of like the upper end in the Amigo <span style="color:red" data-ts="1709.8" data-end_ts="1709.92" title="1709.8" id=c_"1709.8">__Land__</span> and I really couldn't afford it. Right. I kind of had to go back toward, the gaming side of things. I was more into at that point the Game Boy itself more, more 'cause it was just a portable format. But what I was doing before that was just taking sounds that I could build in like trackers and then just literally recording them to tapes and then making dub tapes with <span style="color:red" data-ts="1730" data-end_ts="1730.16" title="1730" id=c_"1730">__it__</span>. It was, it was kind of a convoluted digital analog thing going on, but it seemed to really work well. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. But you know, I think, I think sometimes almost the more convoluted of a path it takes, the better the end result is because every time you have to take another like, offshoot on a path, if you're not really a hundred percent convinced that that's good stuff, you're gonna be like, oh, Jesus Christ, I don't wanna spend another eight hours on this piece of crap. Right. No, 
+</p>
+
+<p>
+<b>Chris: </b>It does. It dilutes your momentum and and you don't <span style="color:red" data-ts="1760.16" data-end_ts="1760.32" title="1760.16" id=c_"1760.16">__realize__</span> it 
+</p>
+
+<p>
+<b>Darwin: </b>Does. You have to, you have to really be, <span style="color:red" data-ts="1763.7" data-end_ts="1763.92" title="1763.7" id=c_"1763.7">__you__</span>, you have to feel like the work was on the mark in order to plow through all that. And I think that there's a value to that. Well, 
+</p>
+
+<p>
+<b>Chris: </b>And I, I already kind of knew how to dub with tape and I just was so familiarized with that format. So it was tough for me to move past that format personally. Yeah. And I, even now, I, I still love tape, so it's tough for me to, even, even digitally, people <span style="color:red" data-ts="1782" data-end_ts="1782.08" title="1782" id=c_"1782">__are__</span> like, oh, <span style="color:red" data-ts="1782.4" data-end_ts="1782.6" title="1782.4" id=c_"1782.4">__well__</span> just pop this little chip in this SD card. And I'm like, what? Where's my tape? I mean, 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, the, 
+</p>
+
+<p>
+<b>Chris: </b>The convenience definitely sells it. But man, the sound, there's just something magic about the sound. So 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I don't know. I still remember having to wait, spent too much of my life waiting for tape to rewind <laugh> tape Rewinding was the death of me. But I mean, that was a momentum killer. 
+</p>
+
+<p>
+<b>Chris: </b>Well, and I had an old four <span style="color:red" data-ts="1803.44" data-end_ts="1803.76" title="1803.44" id=c_"1803.44">__track__</span>, tape player too. That was kind of a crazy thing as well. And some of the heads would get dirty quickly. And, and so then you would then try to bounce it from one track and then just, you just never knew what you were gonna get. So it was kind of spacey. A lot of times you just, the f flanging and all kinds of things you could do would just be like, what is this 
+</p>
+
+<p>
+<b>Darwin: </b>Now who were some of the artists at the time that you might've been listening to that would've made you feel like that was, 'cause here's one <span style="color:red" data-ts="1828.48" data-end_ts="1828.56" title="1828.48" id=c_"1828.48">__of__</span>, one of the issues I had with, even when I was doing a lot of stuff on little cassette decks and stuff, you know, I was listening to, I hate to admit this, please, listeners forgive me, <laugh>. It was just, it's not my fault, it was my surroundings, but I was listening to a lot of Steely Dan <span style="color:red" data-ts="1846.6" data-end_ts="1846.76" title="1846.6" id=c_"1846.6">__and__</span> Fleetwood Mac and stuff like that, you know, with this pristine, zillion dollar production value. And, you know, I'd sit in front of my task <span style="color:red" data-ts="1854.3" data-end_ts="1854.52" title="1854.3" id=c_"1854.3">__am__</span> 2 2 34 and hit record and play my guitar, and it would end up sounding like, white noise ducked by the sound of a guitar. Right. <laugh>. And, I <span style="color:red" data-ts="1869.32" data-end_ts="1869.48" title="1869.32" id=c_"1869.32">__did__</span>, I never, I never embraced the low finest of it. You know, I was always kind of frustrated by it. And I feel like I, again, I feel like I lost an opportunity instead of enjoying that and, and learning to, to make music and, and to, and distribute music based off of that. I felt like, oh, this is inferior. This is not, 
+</p>
+
+<p>
+<b>Chris: </b>Well, I can remember, like, for me, a spec, there was a time where I kind of got into music and, and I actually even picked up the, the French horn and tried to play that in, in school. But, just because I <span style="color:red" data-ts="1904.96" data-end_ts="1905.12" title="1904.96" id=c_"1904.96">__love__</span> the sound of it and how it would resonate, but I would, I would have keyboard magazines and I would see early on cogs being used by Depeche Mode and, and different groups. And it was all, you know, fantasy land for me because you just, there's no way you could afford any of that stuff. But you could a lot of times catch the music, you know, you could catch what people were listening to and, and you could pick up sounds from there and you'd be just kind of blown away that that was, you couldn't really register it. Was that a percussion sound? 
+</p>
+
+<p>
+<b>Chris: </b>Was that a synth sound? You, you had to really hear it six or seven times before you started to understand this may be just an oscillator and it's just tuned a certain way or a V c A, but at the time you didn't know any of that. You just were trying to analyze where was this sound coming from mm-hmm. <span style="color:red" data-ts="1946.72" data-end_ts="1946.76" title="1946.72" id=c_"1946.72">__<affirmative>__</span>. And they were pretty straightforward as far as being, right on that edge where they were trying new stuff and they could afford it. So they, they had no problem sticking it on their next album, whether it made sense or not. And so you would hear those sounds and be like, yeah, that's gotta be something that's processed or something. Right. There's no way you could make that sound. 
+</p>
+
+<p>
+<b>Darwin: </b>It's funny, I was just, the other morning kids were all kind of flopping around, not moving very much. And so I was like, well, let's try something different. And so I brought up, Thomas Dolby's <span style="color:red" data-ts="1976.64" data-end_ts="1976.8" title="1976.64" id=c_"1976.64">__Spider__</span> <span style="color:red" data-ts="1976.82" data-end_ts="1977.04" title="1976.82" id=c_"1976.82">__Me__</span> <span style="color:red" data-ts="1977.04" data-end_ts="1977.16" title="1977.04" id=c_"1977.04">__with__</span> Science. Right, <span style="color:red" data-ts="1977.68" data-end_ts="1977.92" title="1977.68" id=c_"1977.68">__yeah__</span>. Nice. Which he was like one of those guys, you could just, you could just tell by listening to that, that he got a sampler and then nobody saw him for six months while he sampled like every pot and pan and fork and knife in the kitchen or whatever. Right. And then all of it ended up in his first <span style="color:red" data-ts="1994.91" data-end_ts="1995.2" title="1994.91" id=c_"1994.91">__tune__</span> <laugh>. Well, 
+</p>
+
+<p>
+<b>Chris: </b>And that was heavily influenced too. You gotta remember, you know, empire Strikes Back came out and now all of a sudden that just changed. 
+</p>
+
+<p>
+<b>Darwin: </b>So Space sounds and 
+</p>
+
+<p>
+<b>Chris: </b>All that stuff. Oh, I mean, that, that just changed life altogether. And, and I grew up already with Buck Rogers and some of that stuff going on too, but Star Wars, man, that just cemented it. Everybody was like, oh, how you making those sounds? And, you know, just seeing the, the reaction that people would have to, those were, it was like Alien, but yet it was, it was something they could recognize. And then they, they, it was just, and in fact, it was even stole so much, it was ripped off. I mean, most of the Transformers episodes basically at that point were just literally ripping the Star Wars samples right up. And so you'd see Optimist Prime do something or move away, and you'd hear the Millennium Fall 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, wait a minute, that's, that's 
+</p>
+
+<p>
+<b>Chris: </b>A Star Wars sound. They didn't even change 
+</p>
+
+<p>
+<b>Darwin: </b>The, the right. Even bother Right. <span style="color:red" data-ts="2043.96" data-end_ts="2044.04" title="2043.96" id=c_"2043.96">__Picture__</span> The <span style="color:red" data-ts="2044.16" data-end_ts="2044.2" title="2044.16" id=c_"2044.16">__Tim__</span> or any of it. It's just, come on 
+</p>
+
+<p>
+<b>Chris: </b>Now, that's from Star Wars. So yeah, it was kind of this unusual blend of everything wanting to be spacey and science fiction and technology and everything going at that moment. 
+</p>
+
+<p>
+<b>Darwin: </b>So now you said that you started moving towards, like Game Boys and stuff like that. Game Boy has kind of a very particular history in, sort of the game <span style="color:red" data-ts="2068.36" data-end_ts="2068.68" title="2068.36" id=c_"2068.36">__based__</span> music stuff, because some hackers got in there and started making carts. I think it, they, they actually made literally cartridges Oh yeah. That were, that were hacked to have unauthorized Yeah. Unauthorized applications that were specifically for sound composition. I'm trying to remember the, that nano Yeah, nano <span style="color:red" data-ts="2092.2" data-end_ts="2092.32" title="2092.2" id=c_"2092.2">__Loop__</span>. Nano <span style="color:red" data-ts="2092.72" data-end_ts="2092.84" title="2092.72" id=c_"2092.72">__Loop__</span> Uhhuh. That was it. Uhhuh. That was, that was the first one I remember hearing of anyway. <span style="color:red" data-ts="2098.15" data-end_ts="2098.44" title="2098.15" id=c_"2098.15">__Yeah__</span>. But, that was, that was kind of interesting because that was before anybody was doing portable music making devices at all. That I can remember that 
+</p>
+
+<p>
+<b>Chris: </b>That was the big draw. I think it was the generation after me that really embraced the Game Boy. And then Nintendo kind of embraced them as well and did <span style="color:red" data-ts="2117.32" data-end_ts="2117.52" title="2117.32" id=c_"2117.32">__di__</span> several versions of it and, tried to expand on it a little bit with the color and different things. But yeah, it was the underground scene that really kind of pushed the music part of it forward. And it was interesting to see it develop a little bit just with, the nature of how people would work. You started to see people wanting to integrate it more into the rest of their, existing instruments. They wanted to be able to sync it and, and have midi control. And, and so, you know, the community really kind of stepped forward and put those things into place. You know, people like Trash <span style="color:red" data-ts="2149.04" data-end_ts="2149.36" title="2149.04" id=c_"2149.04">__80__</span> and, and, Oliver and, and you know, the creator Ls, dj, just all those people really stepped up and, and, and still even now we'll do a lot of support for it. And, and it's pretty amazing to see that kind of dedication and love for it. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well, it's clear that, that among certain people that the Game Boy and meaning not just the sound of it, but the, the particular screen and screen display, the sound of it, but also the form factor in your hand and the, the pressure of the buttons. That's like people's stratocaster. Absolutely. You know, it's like, don't give me a Gibson sg I need a Strat and I need it from this era. You know? 'cause you, you see that, I mean, when I go and I, I, every once in a while I'll stick my nose in the, in the game audio thing, and inevitably I'll just like plop into something which is like, you know, which was, which was better? The, you know, the, the, <span style="color:red" data-ts="2207.99" data-end_ts="2208.21" title="2207.99" id=c_"2207.99">__the__</span> 1996 version of The Game Boy or Sure. The 98 version that had this one component changed out. Yeah. And 
+</p>
+
+<p>
+<b>Chris: </b>There's, there's sites that compare all of them that will do sound samples and we'll give you oscilloscopes and you'll be able to analyze the, the waves and well, is this a little too clean? There's this too dirty. And it gets pretty intense. There are sometimes, and, and honestly, you know, you, you do start to develop a love for a certain model. Yeah, yeah. The Pocket for instance, I mean, that's probably the most, neglected version, but its base was so crunchy and almost garbled. It was almost useless. I'll just say it. But if you knew <span style="color:red" data-ts="2246.09" data-end_ts="2246.29" title="2246.09" id=c_"2246.09">__what__</span> you were doing, it would sing, it would sing so beautifully. Oh, really? And it was like, it was almost like a line you could draw in the sand and say, well, have you even tried this? Or you tried that. And then if somebody hadn't had gotten as far as you had, then it was like this immediate moment where you had, where you're like, wow, you love what I love too. And you could really kind of build a social thing with it. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, social comes up again, which is interesting because it's a different social. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>But, so social has changed, obviously it's gotten to be internet based. Yes. 
+</p>
+
+<p>
+<b>Darwin: </b>And so how does, how does that change your interaction with people? How does it change? Like the way you say, oh, you like the same thing as I do, we must be friends. How <span style="color:red" data-ts="2291.27" data-end_ts="2291.43" title="2291.27" id=c_"2291.27">__do__</span>, how does that end up going to, you know, to sort of like saying hi? I mean, in, in a way, it used to be like, to me, these like super underground movements, you would be in a city of a million people and maybe four other people into town would be into it. So the five of you were like tight, right. <laugh>, you'd drive across town, you know, at the drop of a hat because somebody said, oh, I just got X, you know? And now, now not so much. Now, instead it seems to be like that sixth, that awkward sixth grade dance, you know, <laugh> where everybody's standing along the walls and, and nobody really wants the pro, <span style="color:red" data-ts="2331.28" data-end_ts="2331.68" title="2331.28" id=c_"2331.28">__rather__</span> because we've forgotten how to even talk to other humans. We used to just like be so hungry to talk to a person, we would search 'em out. Right. We would look like, oh look, that guy's kinda looking at the same bin of records, or he's looking at the same bin of games or whatever, you know, maybe. Right. But now it's like different. And, and how does how, I mean, you've got a chance to, to be a part of both societies. How are they different? 
+</p>
+
+<p>
+<b>Chris: </b>Well, I think the thing you could always go back to with Chip people is the games. So you'd always find those people that were willing to play games and then might be, you know, musicians on the side. And so whether they knew it or not, and whether they were thinking they were ever gonna go into Chip, ended up going into Chip a lot of times because just their love of music in general. So you would get people like, different computer stores like Babbage's and whatever, and you'd be able to kind of find out what nerds were like into what, and be able to build. And I, I can remember even a couple of times, just going online, if you will, at 300 Bod Modem in the, the, the local, yeah. Right, right. You know, bulletin board and just being able to dial into my friend and we'd be able to have chats and we'd be able to <span style="color:red" data-ts="2403.6" data-end_ts="2403.76" title="2403.6" id=c_"2403.6">__enter__</span>, you know, have other people jump in. 
+</p>
+
+<p>
+<b>Chris: </b>And, and a lot of times that would be the collaboration. And it would be a lot of times where I want sound like I want it to sound like Black Sabbath, but you're thinking to yourself, there's no way I'm gonna be able, so you would just try to find some chords and then build some things <laugh>. Right, right. And, and you would find that kind of camaraderie. But the chips, the scene now is kind of interesting because it's kind of developed over time where the internet has made it possible to just be able to kind of go to every part of the world. Because I think mostly it would be accepted that, you know, the chiptune scene in America is maybe a fourth of what it really is everywhere else. I mean, I think in Japan and Germany and definitely in Europe it's a lot, stronger than it <span style="color:red" data-ts="2446.84" data-end_ts="2447" title="2446.84" id=c_"2446.84">__is__</span> here. 
+</p>
+
+<p>
+<b>Darwin: </b>You mean in terms of like the ratio attention or something? Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. In fact, when I sell my synth boys, I'd say it's a 90% time. It's gonna be overseas somewhere. Oh, okay. Interesting. So I don't really sell much to American. Interesting. 
+</p>
+
+<p>
+<b>Darwin: </b>So before we go into the modern world, I want to ask one more thing, which I'm kind of curious about. How many of the people that were into the chip music thing, how many of them came at it from the music side? And how many came at it from the chip <span style="color:red" data-ts="2476.04" data-end_ts="2476.16" title="2476.04" id=c_"2476.04">__and__</span> game side? I mean, meaning how many of 'em were musicians before they got into it? 
+</p>
+
+<p>
+<b>Chris: </b>I think if they were musicians, they were probably, you know, like amateurs at best and not really <span style="color:red" data-ts="2486.16" data-end_ts="2486.52" title="2486.16" id=c_"2486.16">__killer__</span> crap. <laugh>. Yeah. Not, not really meant to. I mean, there are some, there are a couple that are really, you know, very good guitar players and that will mix and meld those. In fact, a lot of times that's how I can almost stand chip music just on a daily basis, is if it's not a hundred percent chip. I see there's a lot of purists out there that say, oh no, it's all gotta be chip. No, I'm, I'm not one of those. I'm, I'm one of those where it's like any other instrument, if you, you listen to one instrument too long, it's break it up with some other instrument, so. Right, right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's, it's kind of hard though, unless you have some kind of mechanism to tie it in, which is where, again, you walk directly through the door with, with an instruments devices, which first time I saw it, I turned around and I saw the jacks and I turned it back around and I saw more jacks. I was like, oh, <laugh>, this is cool. I mean, so, it's, what's it called again now? Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Synth 
+</p>
+
+<p>
+<b>Darwin: </b>Boy. The Synth Boy. Right, right. And so this is, it's like a holder for a game boy. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. 'cause that's really the benefit of the Game Boy is the portability. Mm-hmm. <affirmative>. And you didn't want to, I didn't wanna mess with that. I mean, I had originally built a rack version and it was nice, but I found myself always wanting to take it with me, and it was just difficult to move a whole rack around. So the Synth Boy kind of gave me that flexibility and I was able to think, well, you know, look at all these connectors on this game, boy. And the way I normally would have it all plugged in is I'd have to have the power and I'd have to have the audio and you know, and these jacks are 
+</p>
+
+<p>
+<b>Darwin: </b>All right, so you had all the, all the octopus cable. Yeah. You 
+</p>
+
+<p>
+<b>Chris: </b>Got all this stuff coming on. And I'm like, well, wouldn't it just make sense to just take everything that you'd need out of this and just drop it into a connector at the bottom? And that's really kind of how that kind of happened is, is, and we went through several different methodologies. We were just gonna build a center cable that came out of it. But one of the things I was watching, even with some of the guys playing chip tune in their gigs, is they would lay the game boys flat on the table. And if, if you know anything about a Game Boy, and the way you try to look at it, if you don't have the contrast, just <span style="color:red" data-ts="2611" data-end_ts="2611.16" title="2611" id=c_"2611">__say__</span>, well, heck with you won't able 
+</p>
+
+<p>
+<b>Darwin: </b>Can't see anything, any of <span style="color:red" data-ts="2613.08" data-end_ts="2613.12" title="2613.08" id=c_"2613.08">__it__</span>, 
+</p>
+
+<p>
+<b>Chris: </b>Anything. Right. So I tried to set it up to where it could just, just sit on the table at a comfortable angle with like a synth keyboard type thing plugged in right in front of it, and that you'd be able to see what you're doing kind of as an easy angle. That's 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Yeah, I, I, I was a big Game Boy fan from the get go because, I was working at this company that just insisted on having a lot of all company meetings, <laugh>. And so what I found is my best friend and I that if, if we got a game, if we had a Game Boy, and we took it to these like three hour long boring as hell meetings, <laugh>, you know, we could really make some hay on Tetris or whatever in the course <span style="color:red" data-ts="2650.66" data-end_ts="2650.88" title="2650.66" id=c_"2650.66">__of__</span> a meeting. Right. But I loved it, but I would say that at the same time I was doing, I had a little, you know, studio thing and I was doing writing and stuff. I never thought of the two as occupying the same place in, in, in the world 
+</p>
+
+<p>
+<b>Chris: </b>Again. And then I, I point back to that point in time for me growing up where there was no one dominance, everything had equal dominance. So the radio <span style="color:red" data-ts="2671.9" data-end_ts="2672.12" title="2671.9" id=c_"2671.9">__was__</span> just as important, as, as you know, the music that I would play, you know, from Records, and then that would also have the same equal importance as the soundtrack and the games. Right. So for me, they were <span style="color:red" data-ts="2682.36" data-end_ts="2682.52" title="2682.36" id=c_"2682.36">__on__</span> equal footing all the way around. And, and I would in my head be singing the, the Zelda theme, <laugh> the whole day as much as you would be listening to, you know, golden Earrings, Twilight Zone, I mean. Right, right. And I would sing 'em both in the same day. Right. So that was, that was the kind of, that's the reason I bring that timeframe up. It was very odd that you would have these medias all <span style="color:red" data-ts="2702.71" data-end_ts="2703" title="2702.71" id=c_"2702.71">__come__</span> in form into one thing. You had music television, M t V, which is nothing like, of course what it is today, but it really was this culmination of, of art, graphics, sound, you know, and, <span style="color:red" data-ts="2713.32" data-end_ts="2713.48" title="2713.32" id=c_"2713.32">__and__</span> almost a timeframe too. There was time that was involved with that. And, and there's been nothing like that since. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>That's true. So with the Synth Boy, what all different ways can you connect into it? 
+</p>
+
+<p>
+<b>Chris: </b>You've got your, MIDI io, which is probably the biggest way, then you also have CB <span style="color:red" data-ts="2730.92" data-end_ts="2731.12" title="2730.92" id=c_"2730.92">__Gate__</span>, which I kind of recently brought with Mod three. CCB <span style="color:red" data-ts="2735.2" data-end_ts="2735.36" title="2735.2" id=c_"2735.2">__Gate__</span> was big for me. I've kind of gotten into <span style="color:red" data-ts="2737.68" data-end_ts="2737.84" title="2737.68" id=c_"2737.68">__Euro__</span> thanks to you. Yeah, 
+</p>
+
+<p>
+<b>Darwin: </b>I know. I I'm at fault for that. Sorry. <laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. Star <span style="color:red" data-ts="2742.36" data-end_ts="2742.56" title="2742.36" id=c_"2742.36">__one__</span>, did a little presentation and then now I'm penniless 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, but, <laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>But it was great because the, the raw feelings of modular just made total sense on that digital level, and all of a sudden I had to have both of them. And so that's one of the things I immediately had to put in. So 
+</p>
+
+<p>
+<b>Darwin: </b>The CB Gate is that output of a sequencer. I mean, first of all, what kind of software are you running on the Game? Boy, 
+</p>
+
+<p>
+<b>Chris: </b>It's, M G B made by, trash 80, which is basically taking, and we're translating the midi, basically <span style="color:red" data-ts="2773.54" data-end_ts="2773.76" title="2773.54" id=c_"2773.54">__and__</span> into from Voltage. Okay. So it's actually CVGate input. 
+</p>
+
+<p>
+<b>Darwin: </b>So, so the, the Game Boy's providing the sequencing, and you're sequencing out of that into your modular, well, 
+</p>
+
+<p>
+<b>Chris: </b>You can set it up that way. There's another program, L S D J, where you can actually trigger and do different things that way if you want to actually sequence, I primarily just use it as <span style="color:red" data-ts="2794.68" data-end_ts="2794.8" title="2794.68" id=c_"2794.68">__a__</span>, as an noise source. Oh, I see. Okay. So I'm able just to trigger, 
+</p>
+
+<p>
+<b>Darwin: </b>It's like a complex weirdo oscillator for you. Absolutely. 
+</p>
+
+<p>
+<b>Chris: </b>Oh, absolutely. In fact, the Wave Channel on a Game Boy is, I mean, if you were to try to draw some lines, you could probably say it was smack in the middle of a cycle box in a, in a gamma wave source, Uhhuh <affirmative>. It's right in there where it's like, it's this whole digital monster all on its own. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, how much variation do you get then <span style="color:red" data-ts="2818.58" data-end_ts="2818.8" title="2818.58" id=c_"2818.58">__in__</span>, I mean, you picked two very interesting fence posts there, <laugh>, in that both of those have high variability. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>You get the same thing out of a game boy. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. Yeah, because you, you, you're translating it from, from step notes. So if you wanted to move and you wanted a slew between notes and all of a sudden you could slew into a section of notes or, or trigger a sequence outside of those notes and, and do exactly that. In fact, I'm working on mod three now, and, and I'm trying to bring that into where it's basically just what's 
+</p>
+
+<p>
+<b>Darwin: </b>Mod three, 
+</p>
+
+<p>
+<b>Chris: </b>Mod three for, for synth Oy is going to be, basically bringing pitch control in there so you can <span style="color:red" data-ts="2857.1" data-end_ts="2857.32" title="2857.1" id=c_"2857.1">__CV__</span> and pitch control the whole thing. And I'm trying to make that usable though. 'cause like right now it's almost like a, a toy to where you just, you can't really get a lot of usability. I'm trying to really kind of build the attenuation in there to where it's, it's in a range to where it's really usable. Sometimes with this earlier chip stuff, that's what you find is, is that you've, you get these extreme, behavior, which is, let's face it, it's interesting for about 10 seconds. And then after that you're like, <span style="color:red" data-ts="2885.86" data-end_ts="2886.08" title="2885.86" id=c_"2885.86">__eh__</span>, okay, I heard it. And then move on. You have to kind of stretch beyond that and say, okay, well what if we did different things and maybe if we stretched it a little bit, or <span style="color:red" data-ts="2894.2" data-end_ts="2894.4" title="2894.2" id=c_"2894.2">__what__</span> if we changed the pitch? Or maybe if we, we moved it down a little bit. And then you've gotta figure out a way to allow those controls to be readily ably access so people can then use those. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>So now how much do you end up, how much of like your preferences end up in the final thing, <laugh>? So, because I, my assumption is, is that depending on how you drive the inputs or the clock speeds or whatever, that you can go from one kind of complete horse <span style="color:red" data-ts="2922.83" data-end_ts="2923.12" title="2922.83" id=c_"2922.83">__shit__</span> through a wide range of interesting sounds and end up at another version of horseshit. Right. 
+</p>
+
+<p>
+<b>Chris: </b>Well, I have to give a lot of credit to my, my developer Michael Colson. 'cause I, I kind of, I'm a, I mean, I like to, my whole thing with the Game Boy is I want to be able to crash it <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh <laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>I really want to be able to take it to the extreme to where it's almost just ready to give up the ghost. Okay. And so, oh, 
+</p>
+
+<p>
+<b>Darwin: </b>So that goes back to your <span style="color:red" data-ts="2950.16" data-end_ts="2950.28" title="2950.16" id=c_"2950.16">__speaking__</span> read. Yeah. Dying. Exactly. That was when it was most interesting to you. Yeah, absolutely. 
+</p>
+
+<p>
+<b>Chris: </b><laugh> because it was like, if you really stressed it out to the point where it couldn't handle it anymore, things would happen that you couldn't almost replicate. Right. And there was this whole port there where you, you could see a, a bright light and it was just about to go out. It's like that, that point where the light bulb just goes really bright and then boom, it's gone. It's that same kind of point. So for me, that was tough. I really made it to where the performance had to be strong to where if you took an oscillator and you cranked up a square wave real fast, you could pretty much crush the game Boy. 
+</p>
+
+<p>
+<b>Darwin: </b>Really. 
+</p>
+
+<p>
+<b>Chris: </b>In fact, in my first video. 
+</p>
+
+<p>
+<b>Darwin: </b>And it sounds like what it, 
+</p>
+
+<p>
+<b>Chris: </b>It, it does it sounds it's, it's its own sound it hard to describe. I would say it's like complicated FM synthesis <span style="color:red" data-ts="2999.48" data-end_ts="2999.64" title="2999.48" id=c_"2999.48">__as__</span> at some point to where like it was pushed through, a crazy filter of somehow. And then you're able to vary that at those speeds. You can get it. In fact, the first YouTube video I show and I kind of illustrate re I do that, I just take an oscillator and I literally just take that game boy right to its knees <laugh>. And that was important because I wanted some reality check to where you could then get the standard bullet bill, boom, you know, the, the typical Nintendo sounds. But you didn't wanted something outside of that realm, like I said. 'cause after 10 minutes of that bill, bill sound, you're like, okay, yeah, big deal. You wanted something to stretch out past that point. And that's essentially what Mod two really brought or mod three, I mean, really brought to that. So that's what was exciting to see, you know, people really take that and, and all of a sudden stretch it past that point and 
+</p>
+
+<p>
+<b>Darwin: </b><crosstalk>. So is that, is that what you're shipping now? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, mod three has Okay. Mod two. And I know that sounds weirdly strange that it would be in reverse order. 'cause Mod two, essentially the idea was to add more variation. So instead of just the regular standard, like you mentioned, the, the first Game Boy brick, if you will, the, the gray version Mod two was gonna do two things. It was gonna allow for a different power source to power the various different models and allow different models. In fact, I'm hoping to bring color into it. 'cause color adds, more performance. You actually get a little bit stronger, processing out of it. And it can, because 
+</p>
+
+<p>
+<b>Darwin: </b>They <span style="color:red" data-ts="3082.76" data-end_ts="3082.84" title="3082.76" id=c_"3082.76">__have__</span> to have a bigger processor just to handle the color 
+</p>
+
+<p>
+<b>Chris: </b>Well. And then just overall, they kind of brought things up to speed a little bit and said, okay, well now we can, we have the technology. We, we can get cheaper memory. We can do all these things. And so we're gonna up upgrade those. And so a lot of the manufacturers like L S D J will take advantage of those upgrades and allow you to do even more with them. So that's, that was kind of the other thing with Synth <span style="color:red" data-ts="3106.84" data-end_ts="3107.04" title="3106.84" id=c_"3106.84">__Boy__</span> <span style="color:red" data-ts="3107.04" data-end_ts="3107.16" title="3107.04" id=c_"3107.04">__is__</span>, is that I didn't want to ignore the existing chip crowd. I really wanted them to be able to, if they were using L Ss D and they were using, they could literally just take out their cart mm-hmm. <affirmative> and drop it into a synth boy and output. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Right. And 
+</p>
+
+<p>
+<b>Chris: </b>That was kind of an unusual twist because it was like you said, that proprietary, 
+</p>
+
+<p>
+<b>Darwin: </b>You do <span style="color:red" data-ts="3123.8" data-end_ts="3123.92" title="3123.8" id=c_"3123.8">__the__</span> audio <span style="color:red" data-ts="3124.06" data-end_ts="3124.28" title="3124.06" id=c_"3124.06">__all__</span> putting everything through the, through the stand piece as well. Absolutely. Okay. So literally, oh yeah, that's right. 'cause you showed me it and it and you have like some big ultra multip pin connector at the bottom that you kind of glue. I don't, I gotta say, man, I don't even know how <laugh> you're able to like wedge all this crap in because I see some of this stuff and it's not minuscule, it's microscopic. 
+</p>
+
+<p>
+<b>Chris: </b>Well, I mean, the thing is, is that I didn't really invent anything. These guys were already there. They were already jamming all this stuff. And, and what had happened was, <span style="color:red" data-ts="3157.18" data-end_ts="3157.4" title="3157.18" id=c_"3157.18">__is__</span> a guy named Next that <span style="color:red" data-ts="3158.6" data-end_ts="3158.72" title="3158.6" id=c_"3158.6">__the__</span>, he goes by next and his name's Ralph and he just would do all of this stuff and even put more stuff than even I was putting inside the Game Boy Shell and I saw the vulnerability that if you dropped it or you did something right, <span style="color:red" data-ts="3172.4" data-end_ts="3172.6" title="3172.4" id=c_"3172.4">__right__</span>. You know, the three or $400 mod it's gone. Right. Where I thought, well there's gotta be a little bit better way as far as just if you just literally wanted to use it for gigging and if you destroyed the Game Boy. So I kind of pulled out all the critical stuff and put it into the base, therefore, if you lost the Game Boy or busted <span style="color:red" data-ts="3190.52" data-end_ts="3190.6" title="3190.52" id=c_"3190.52">__it__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>So the Game Boy Shell itself is nothing more than a, a bunch of routers to that multi <span style="color:red" data-ts="3196.58" data-end_ts="3196.8" title="3196.58" id=c_"3196.58">__pin__</span> connector. Absolutely. And all of the groovy is in the base. Absolutely. Oh, okay. 
+</p>
+
+<p>
+<b>Chris: </b>So that way you could destroy the Game Boy and you wouldn't be freaking out. You'd have to mod one and put a connector in the bottom of it, but you wouldn't be freaking out that you just lost a three or $400 custom game. <span style="color:red" data-ts="3210.78" data-end_ts="3211" title="3210.78" id=c_"3210.78">__Boy__</span>. So that was kind of the other part of it. The other side benefit was, is that you could then obviously just pick it up, pop it in, and take it on the bus drop in L S D J, do a tracker or mess around with some sounds and then literally come back to the studio, drop it right back in, drop <span style="color:red" data-ts="3225.6" data-end_ts="3225.68" title="3225.6" id=c_"3225.6">__it__</span> in, go and go. Yeah. Yeah. So that was kind of a benefit. 
+</p>
+
+<p>
+<b>Darwin: </b>That seems pretty cool. 
+</p>
+
+<p>
+<b>Chris: </b>The other thing that people don't know about that is, is that it is powered by the batteries that are in the Game. Boy. So it does not need power. It's like its own little battery backup system. So if you, you keep four AA batteries in there and you lose all the, the power to the show, your, your game boy's still going. 'cause it'll power the synth Boy Doc as well. <laugh>. That's funny. So 
+</p>
+
+<p>
+<b>Darwin: </b>That's hilarious. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. Kind of a kind of a side tidbit there. 
+</p>
+
+<p>
+<b>Darwin: </b>So now in addition to the, the Synth Boy, which is pretty fun, and I I hope people take the opportunity to <span style="color:red" data-ts="3259.28" data-end_ts="3259.4" title="3259.28" id=c_"3259.28">__go__</span> watch some videos on that. In addition to that, you have started doing just wack making wacky decisions about modifying things to work in Europe. And so Yeah, I did. I was, I remember you being there. I remember you coming to me afterwards and after I did my little presentation and asked me a little bit about where you would go to get started. And I made the mistake of pointing you at Muff Wiggler <laugh>. That's so, it's not me that makes you broke <laugh>. But, you also were talking at the time, we were like, well, you know, I'm considering doing CV and <span style="color:red" data-ts="3301.15" data-end_ts="3301.44" title="3301.15" id=c_"3301.15">__Gate__</span> out of this and you know, I don't really have equipment to do that. Could I sometime come visit you and and try it out? I was like, sure, that sounds great. I'd love to check it out. Right. I never heard from you again <laugh>, because clearly you went home, got on Muff Wiggler and by the end of the evening had ordered like 12 <span style="color:red" data-ts="3322.42" data-end_ts="3322.64" title="3322.42" id=c_"3322.42">__you__</span> worth of stuff, right? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. It was, it was like trial by fire. I literally wanted to learn as much as I could. Like you were saying before, when you were motivated and the time just disappear and so did the money in this case too. <span style="color:red" data-ts="3333.66" data-end_ts="3333.88" title="3333.66" id=c_"3333.66">__So__</span> you just <span style="color:red" data-ts="3335.04" data-end_ts="3335.24" title="3335.04" id=c_"3335.04">__got__</span> a, got a chance to enjoy it. But it was a fascinating world because I, I kind of did remember MIDI and I remember Commodore with MIDI and I remember the starts of midi and, and I kind of was interested in midi, but before then I had to admit I really had no real, you know, exposure to analog and Right. Modular synths. So it was, it was, it, it was like a brand new world and I wanted every bit of it. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, you seem to be all in now <laugh>, but in addition then to, to getting the Game Boy work or the synth boy working in the environment you have now also started making these oddities. And <span style="color:red" data-ts="3369.44" data-end_ts="3369.52" title="3369.44" id=c_"3369.44">__so__</span> the first one, well I actually saw you sort of like hacking away at stuff <laugh> and you did like that function generator weirdo thing. Yeah. And, some other stuff. What was that function generator again? Can you explain that a little bit more? 'cause I don't even get what that was about. 
+</p>
+
+<p>
+<b>Chris: </b>We're still working on it. I'm actually working with another company on that. They're helping me. They're doing a lot of the design work and then I'm just kind of saying, well, it's a great scientific instrument, but if you looked at it from an audio perspective and we did this and that and added this man, this would be extremely usable. Basically what that came down to is we're trying to get it to where, I want to be able to kind of create my own digital wave. I wanna be able to sample my own digital wave and, and, and be able to access those and, and, and just treat 'em, have 
+</p>
+
+<p>
+<b>Darwin: </b>It be usable in a modular environment. 
+</p>
+
+<p>
+<b>Chris: </b>Absolutely. Still be accessible. It's all digital. I mean, and, and that's definitely gonna draw away from all the analog folks, but I, I love the, the early sounds that just fits me very well. Mm-hmm. <affirmative> with, with pushing a couple arduinos to the limit as far as what you can do with real <span style="color:red" data-ts="3432.88" data-end_ts="3433.08" title="3432.88" id=c_"3432.88">__time__</span> audio. That fits me very well now and it's like a rebirth for me to get a chance to see it again happen on the ground level. Right. So, 
+</p>
+
+<p>
+<b>Darwin: </b>Well the, the modular world is actually really kind of cool because, or I should say the Euro world. 'cause I introduced you to some of my five <span style="color:red" data-ts="3449.32" data-end_ts="3449.56" title="3449.32" id=c_"3449.32">__year__</span> friends and they were less than generous about, the work you had been doing. But nevertheless, the Euro world seems to be, it, it seems really open to everything. So it's sort of like, yeah, we, we want a great filter. Ooh, we want something that sounds like Ula. Ooh, we want something that sounds like a game boy. Ooh, we want something that sounds like optimist prime, you know, <span style="color:red" data-ts="3473.23" data-end_ts="3473.52" title="3473.23" id=c_"3473.23">__that__</span> it, they want a little bit of everything. 
+</p>
+
+<p>
+<b>Chris: </b>Well, a good example is that Euro <span style="color:red" data-ts="3477.92" data-end_ts="3478.28" title="3477.92" id=c_"3477.92">__homage__</span> or for the Speak <span style="color:red" data-ts="3479.08" data-end_ts="3479.24" title="3479.08" id=c_"3479.08">__and__</span> Read, because I mean, I had done the, the workshop mode conversion just before that and, and it basically got about three, 4,000 hits on YouTube in about three, you know, in about a month or two basically, I think. Mm-hmm. <affirmative>. Well, I let that speak and read go, and within one day I had that many hits. So you, you take this known brand like Moog and, and even what I thought would've been a thirst for a Moog Euro module, and yeah, it was there, but it was nothing like what I was expecting when the 
+</p>
+
+<p>
+<b>Darwin: </b>Speaking, but there, there is something about this that whole speaking whatever thing, and you know, I, Reid <span style="color:red" data-ts="3515.09" data-end_ts="3515.44" title="3515.09" id=c_"3515.09">__Salah__</span> really jumped on on that and got a lot of people excited about it through his, his circuit bending stuff. But you know, you actually kind of bringing it into play in sort of <span style="color:red" data-ts="3526.04" data-end_ts="3526.16" title="3526.04" id=c_"3526.04">__a__</span> instrument. Is anyone doing sort of instruments based off of that, that aren't like purely circuit bent goof? 
+</p>
+
+<p>
+<b>Chris: </b>And I don't think so. I, I think that's one little spot that I could kind of give myself a niche to, to where that's kind of what I want. I I don't want <span style="color:red" data-ts="3540.08" data-end_ts="3540.2" title="3540.08" id=c_"3540.08">__to__</span>, I mean, circuit Ben's a great start. Yeah. It's a great place to, to really kind of dive into it and learn and learn what not to do. You can blow up stuff pretty quickly. But to the challenge at that point <span style="color:red" data-ts="3550.95" data-end_ts="3551.24" title="3550.95" id=c_"3550.95">__then__</span> is how do I get this to where it's usable? Where does this gonna actually fit <span style="color:red" data-ts="3554.64" data-end_ts="3554.84" title="3554.64" id=c_"3554.64">__in__</span> to where people <span style="color:red" data-ts="3555.35" data-end_ts="3555.64" title="3555.35" id=c_"3555.35">__know__</span>, I mean, I saw one of the comments on opia was like, yeah, this is the kind of thing I just buy and I basically neglect and wished I wouldn't have purchased. That's the kind of attitude I really tried to get across that I don't want to have happen. I really want you to be able to dig into it and have it kind of keep rewarding you, you know, even after the 
+</p>
+
+<p>
+<b>Darwin: </b>First, well, you know, I, I wonder to what extent some of the excitement behind something like the speaking read though too isn't because people know what it is. I mean, if you made it for blinging later, right? Absolutely. People would be like, oh, cool, you made a thing and it does a thing. And I don't know if I need that. Right. But if you got a, a speaking speller tool that can blurt out a bunch of words and sound kind of like insane while doing it, who doesn't want that? Right? Well, who can't find a use for that? And 
+</p>
+
+<p>
+<b>Chris: </b>I, I kind of cheesed it up a little bit. I mean, I went straight after the yellow and I went right after the green and <span style="color:red" data-ts="3613.6" data-end_ts="3613.8" title="3613.6" id=c_"3613.6">__the__</span>, and I mean, I made it just look exactly like it, so, 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, it's, it's shocking. And, and how did you do that? I mean, how much of that was just you cutting out the face plate and how much did you have to completely fab and paint? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, I mean, it a 
+</p>
+
+<p>
+<b>Darwin: </b>Whole new thing. Well, 
+</p>
+
+<p>
+<b>Chris: </b>And I mean, some of my background, I mean, that's really what I am. I'm screen printer and, and modular guy. I mean, as far as the, the understanding of building, metal plates for equipment and things that have labels on 'em. I mean, I've got probably over two decades of screen printing metal parts. And so a lot of people don't even know the background that I have that much in screen printing. Right. But then fabrication, I brought fabrication under, and started seeing and seeing building my own panels 'cause mostly out of the, the need to, to make my own stuff, to cut the holes in the top of the synth boys and the shells. Right, right. And so it was more of a fill the need and, and for me that's what learning about learning in life is about because I find myself in the position to where it's like, okay, well I could spend $3,000 and give it to somebody else to have 'em cut these holes in here, or I can just go and spend the $3,000, get the machine and be able 
+</p>
+
+<p>
+<b>Darwin: </b>To cut holes forever, forever, 
+</p>
+
+<p>
+<b>Chris: </b><laugh> absolutely. Teach Man to Fish. I mean, it really is for me. So, but up until that point, I, I can't learn. It's strange. It's, it's like if I sit in front of <span style="color:red" data-ts="3689.68" data-end_ts="3689.8" title="3689.68" id=c_"3689.68">__a__</span>, a book or a TV or a screen and it's not something I can apply directly, man, I just, I cannot retain that information. But if it's relevant to exactly what I'm doing, <span style="color:red" data-ts="3699.36" data-end_ts="3699.48" title="3699.36" id=c_"3699.36">__if__</span> it's <span style="color:red" data-ts="3699.6" data-end_ts="3699.68" title="3699.6" id=c_"3699.6">__right__</span> now, absolutely. I will remember it forever. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. So interesting. So to do all the things it takes to, to make a synth boy or to, or to make a speak and read euro module or to work with a company to make a digital function generator usable as a musical instrument or whatever, it strikes me that you have to kind of know a little bit about a zillion things <laugh>. Right. 
+</p>
+
+<p>
+<b>Chris: </b>That's accurate. 
+</p>
+
+<p>
+<b>Darwin: </b>But with some of this stuff, like for me, I would think that getting the things right, you know, as they're connected to the Game Boy requires like super depth knowledge about a relatively few things. How do you, what, what are the things you, what are the things that you collaborate with people on? What are the things that you do yourself because damnit you're gonna do it, and what are the things that you just don't care about and you'll just let fly <span style="color:red" data-ts="3760.58" data-end_ts="3760.8" title="3760.58" id=c_"3760.58">__it__</span>? 
+</p>
+
+<p>
+<b>Chris: </b>It's tough because there's a lot of different variables there. I mean, there's some things that are just falling into place. There's other, like the, the project I'm working on now, you know, the, the IP is essentially somebody else's. They've actually done the work, but they've kind of dropped the ball and they're ignoring this whole opportunity that that could be if they would just develop it a little bit further, just a little bit further on that teeter-totter. And so it's, it's frustrating because you find yourself sitting and waiting, but at the same time you're, you're trying to figure out how could I use this a little better? How could I refine this? How could I make it work a little better? How could I make it usable? And that all of a sudden builds into what you then kind of somewhat turn into your own product, even though it's based on a lot, you know, on other people's work and other people's stuff. So some people are more open about it. They're, they're willing to accept it and, and, and let it out as public domain. Other people are, are, are more stingy and are afraid that if they, they let it out, that it's gonna go away from 'em and it's no longer theirs. Right. And that's a tough situation. You see that even in modular where people supposedly stealing circuits and different things and you know, unless you, I think you're a hundred percent copying something verbatim, which 
+</p>
+
+<p>
+<b>Darwin: </b>I think we've seen too, 
+</p>
+
+<p>
+<b>Chris: </b><span style="color:red" data-ts="3830.78" data-end_ts="3831" title="3830.78" id=c_"3830.78">__But__</span> Right, absolutely. But if you're bringing something else to the table and you're adding something or some usability or some format or function or accessibility, or you're doing something that's, you know, bringing real usability out of the product, I don't think it's no longer that person's a hundred percent. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, I think the other thing too is that I think that actually some of the, some of the capabilities of the analog side of things, the number of choices that are out there are actually being reduced by the day. Right. So it's getting to this point that if you're gonna do <span style="color:red" data-ts="3865.92" data-end_ts="3866.08" title="3865.92" id=c_"3865.92">__the__</span> analog shift register, you're probably building it off of a specific chip, which is the same chip that everyone else is using, doing an <span style="color:red" data-ts="3873.4" data-end_ts="3873.52" title="3873.4" id=c_"3873.4">__A__</span> s R is using. And so, I mean, given that you're all are using the same engine and powertrain, it, it seems a little odd to call any of it theft. Now I'm sure that, you know, there are other people that would strongly disagree with that, but, I don't know. It's just, it's hard to imagine, it's hard to imagine people getting <span style="color:red" data-ts="3899.66" data-end_ts="3899.88" title="3899.66" id=c_"3899.66">__as__</span> worked up as they do sometimes. Well, 
+</p>
+
+<p>
+<b>Chris: </b>I, I've got a fan in, Perth Australia, her name is Samantha, and she's great because she's focused on the music. She really is, and the music she turns out is <span style="color:red" data-ts="3912.8" data-end_ts="3913" title="3912.8" id=c_"3912.8">__just__</span> pretty fun, you know, just enjoyable. But she's not really on the technical side of it as far as the, the gear and how to modify it and all that. So I find myself just, you know, able to support her in doing what she does. And, and that brings me joy, right. So if the community wants to come after me and say that I'm, you know, solely based on just doing parts of it for money, well, as we all know, money is just the necessary evil in order to keep continuing doing what you're doing. Right. I mean, my first year in instrument was a $20,000 loss, right. So it's not like I'm just sitting on all my, my ducks and just excited, you know, and 
+</p>
+
+<p>
+<b>Darwin: </b>Just <span style="color:red" data-ts="3947.92" data-end_ts="3948.04" title="3947.92" id=c_"3947.92">__I__</span> <span style="color:red" data-ts="3948.12" data-end_ts="3948.24" title="3948.12" id=c_"3948.12">__a__</span> great big scrooge <span style="color:red" data-ts="3949.96" data-end_ts="3950.2" title="3949.96" id=c_"3949.96">__make__</span> duck stack of coin <laugh> 
+</p>
+
+<p>
+<b>Chris: </b>And I, it's hard because Yeah. I mean, I, I've worked hard for my money and you see some of my <span style="color:red" data-ts="3957.28" data-end_ts="3957.44" title="3957.28" id=c_"3957.28">__year__</span>, my toys and you see that I've got a lot of stuff, but what people don't realize is that it's not money coming from the, the synth boy. I mean, that's just a 
+</p>
+
+<p>
+<b>Darwin: </b>Literal Yeah. <span style="color:red" data-ts="3966" data-end_ts="3966.04" title="3966" id=c_"3966">__Well__</span>, you're, you're one of the hardest working people I've ever met. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I just enjoyed tinkering and I love putting out stuff. And like you mentioned the pro look, <span style="color:red" data-ts="3972.56" data-end_ts="3972.68" title="3972.56" id=c_"3972.56">__I__</span>, I'm gonna kind of hit on that a little, you know, that's just from, you know, repeatedly messing things up and failing, you know, I mean, I think I burned out my first couple speaking reads and, and learned what not to do. And a lot of people at that point will get discouraged, right. And then we look, <span style="color:red" data-ts="3989.16" data-end_ts="3989.36" title="3989.16" id=c_"3989.16">__oh__</span>, you know, I saw this guy do it and I should be able to do yet realize that I failed too. Yeah. And that it's okay to fail. In fact, a lot of times you'll discover more things when you fail than you will when it's finished and completed. When I finally did let it go, the, the speak and read <span style="color:red" data-ts="4004.44" data-end_ts="4004.64" title="4004.44" id=c_"4004.44">__your__</span> module, I just thought, you know, for me it was a release like, okay, what's next? 
+</p>
+
+<p>
+<b>Chris: </b>You know, and then all of a sudden it kind of blew up a little bit and you got all this, you know, hubbub about it. And <span style="color:red" data-ts="4013.48" data-end_ts="4013.6" title="4013.48" id=c_"4013.48">__Yeah__</span>. And, and for me it was just like, it's okay, you know, what's next? Yeah. Keep going. Don't stop. You know, just keep working on what you're doing next and if people like what you're doing, then they'll support you. Yeah. And I'm lucky because I do, I have a lot of international support and, and I have to thank a lot of people in Japan and Germany and Australia, uk without those people and I wouldn't be able to continue. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="4035.41" data-end_ts="4035.76" title="4035.41" id=c_"4035.41">__Right__</span>. Well, Chris, I want to <span style="color:red" data-ts="4038.3" data-end_ts="4038.52" title="4038.3" id=c_"4038.3">__on__</span>, on that note, I wanna wrap this up because this has been one of the longer interviews anyway. I apologize for that. No problem. It seemed like we just burned right through the time <laugh>, but it was really interesting to kind of catch your perspectives, but also with the, with the words of saying, Hey, go ahead and blow stuff up. That's absolutely, that's fun. Absolutely. I, I can really, I can really appreciate and resonate with that. So thank you so much. Excellent. And have a great rest of your day. Thanks 
+</p>
+
+<p>
+<b>Chris: </b>Darwin <span style="color:red" data-ts="4065.2" data-end_ts="4065.48" title="4065.2" id=c_"4065.2">__Alright__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>Wow, that was fun. Another great chat in the bag. I want to take the opportunity again to thank everybody involved, everybody that helps make this possible, including Zootopia create digital music <a href="https://en.wikipedia.org/wiki/Cycling_%2774">Cycling '74</a> and most importantly, you, the listeners. Again, as always, if you have any questions, comments, or ideas, please shoot me an email at ddg@cyclingseventyfour.com. Thanks a lot and I'll talk to you next week.
+</p>
+
+    <p><i>Copyright 2014-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
