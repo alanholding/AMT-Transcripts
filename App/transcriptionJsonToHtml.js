@@ -66,7 +66,7 @@ class TranscriptionJsonToHtml {
   }
 
   normalize_html_filename(stem) {
-    return '../HTML/' + stem + (this.audio_file ? '_audio' : '') + '.html';
+    return '../HTML/' + stem + (this.audio_file ? '_audio' : '') + '-to-edit.html';
   }
 
   doit() {
