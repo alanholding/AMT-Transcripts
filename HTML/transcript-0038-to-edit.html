@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0038 - Jim Coker</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0038 - Jim Coker</h2>
+        <h3>Released: Jul 20, 2014</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/2955456/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Before we get started, I just wanna say thanks to everyone that's helping me get, people wrangled together for the podcast, getting a nice, group of people ready for interviews to be published and to actually be performed. So I just want to thank those of you, you know, who you are. Thank you very much for helping out. This week, we're taking a, a dive into, a software package, not max, but, very much of the modular vein. I hope that you enjoy my discussion with Jim Coker Okay. This week we have a very special guest, Jim Coker from five 12, the developers of the Numerology software. Among my modular using <span style="color:red" data-ts="57.61" data-end_ts="58.1" title="57.61" id=c_"57.61">__Friends__</span> Numerology is a very, very popular software package. But it's also very defining in that it, it found a way to very uniquely merge sort of the analog of the digital world. And so I think it's pretty fantastic software and I, I am excited to be able to talk to Jim. So, hi, Jim. How are you? 
+</p>
+
+<p>
+<b>Jim Coker: </b>I'm good. That's a very nice introduction. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, well, it's, it's easy to give you a nice introduction because I'm a big fan of your work. Before we, before we dive into the q and a, for those people who maybe don't know that much about the Numerology software, why don't you, why don't I have you give us a quick overview on what, what's, what that is? 
+</p>
+
+<p>
+<b>Jim: </b>Okay. So it's, it's sequencing software for the Mac and, a lot of programs that are sequencers use a piano roll type of metaphor for organizing things. And that's grown over the years to become what's called a digital audio workstation. And numerology approach is very different. It, it, it grows out of the use of hardware and analog modulars and so forth. So it is a, a virtual modular system that runs a software, but it's focused on sequencing, and it has seven or eight modules specifically for sequencing, and then a whole bunch of other modules to, allow those sequencing modules to do interesting things. And, there are sequencers that are very, very much like analog sequencers. They generate, what would be called CV in the analog world, meaning control voltage, and I call it same thing, but it's controlled value in the computer. 
+</p>
+
+<p>
+<b>Jim: </b>And there are sequencers that generate <span style="color:red" data-ts="152.97" data-end_ts="153.26" title="152.97" id=c_"152.97">__midi__</span>, and all the sequencers are step sequencers, meaning that, the sequence is comprised of a series of steps and each step has a certain length and maybe a pitch or some other value. And the, the interesting part is how you can manipulate how the sequence are placed through those steps. So you can skip steps, you can move forwards and backwards. You can have it randomly jump from one step to another instead of going se sequentially. And it, the whole idea is that it's an an I process that you start with a simple sequence and you just start modifying it, modifying it, modifying it, and you can have several of them going at once, and you can move between them and you don't have to stop the transport. You know, you don't, it's all seamless. So it's this, you know, it's, this composition is activity. And, that was what I was after when I built it. And, and, you know, and with, when working with modular, it's kind of that same thing, right? You start with something and you just keep iterating and iterating it. It's this whole process about creating it that's very, very different from working with a linear sequencer where you're aware, you know, you record some things, you stop, you think about it, you do it again. And that's a, a really good work process, but it's a different work process, 
+</p>
+
+<p>
+<b>Darwin: </b>Right? Well, it's, typically in my podcast, what I do is I start off by asking people to gimme something <span style="color:red" data-ts="235.22" data-end_ts="235.3" title="235.22" id=c_"235.22">__of__</span> their background. But because of what numerology is, I'm actually like really, really interested in the, in the answer, to that because it's clear that this has been informed by a lot of different, backgrounds. You know, you, some of it is really oriented towards hardware, <span style="color:red" data-ts="254.53" data-end_ts="254.82" title="254.53" id=c_"254.53">__like__</span> processes, some of it software, <span style="color:red" data-ts="257.26" data-end_ts="257.5" title="257.26" id=c_"257.26">__like__</span>, so why don't you tell me a little bit about your background so I can understand a little more about where this thing came from. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Well, there, there are basically two sides to that. Part of that is the technical side, because most of my official education is in computer science. It didn't quite start that way, but, I had a Mac when I was in high school, and I started to teach myself how to program. And back then it was <span style="color:red" data-ts="284.18" data-end_ts="284.3" title="284.18" id=c_"284.18">__a__</span>, a 1 28 K Mac, if you remember those. And right, there wasn't a lot in the way of programming tools, but I started with a language called Fourth and learned how to do that. And over the years that developed and developed, and that, that was my primary career was, software development. It still is, but now it's software development for music. And along the way, I, I was also very interested in all kinds of different arts and things. So I was in high school band and a little bit of college band. 
+</p>
+
+<p>
+<b>Jim: </b>In, in college. I got into actually poetry writing for a while, which has this weird correlation with writing code because you're looking at stuff on a, either on a page or on a screen. And it, there's a certain similarity there in the, <span style="color:red" data-ts="329.92" data-end_ts="330.14" title="329.92" id=c_"329.92">__in__</span> the aesthetic of how it looks and how you work with it. Some point in college, I got to become a, you know, relatively serious music collector. <span style="color:red" data-ts="339.12" data-end_ts="339.34" title="339.12" id=c_"339.12">__It__</span> was right when CDs were becoming <span style="color:red" data-ts="342.01" data-end_ts="342.3" title="342.01" id=c_"342.01">__four__</span> and more available and all these new things were coming out and being released. And, me and my roommate at the time were collecting a lot of like classic romantic classical stuff as well as a lot of, you know, typical college radio stuff. And I met a guy who started to turn me on to really, really early music. Like everything from, Rena and Bach and Hildegard <span style="color:red" data-ts="366.06" data-end_ts="366.22" title="366.06" id=c_"366.06">__Lump__</span> <span style="color:red" data-ts="366.22" data-end_ts="366.46" title="366.22" id=c_"366.22">__Band__</span>, and really, really modern stuff like Berg <span style="color:red" data-ts="370.06" data-end_ts="370.26" title="370.06" id=c_"370.06">__and__</span> Berg and everything up to Cage and, and Nik. 
+</p>
+
+<p>
+<b>Jim: </b>And that was kind of an enduring passion for quite a while, and still is. But you know, at the time I was just listening to it like, wow, this is crazy. How do they do this? You know? And, you know, at the time I knew about synthesizers, but I didn't know much about them. And then, at some point I got a regular job and I started to get a little music equipment here and there. And, I met a friend, still a very good friend in Peoria named Eric Williamson. You know him <span style="color:red" data-ts="402.72" data-end_ts="402.94" title="402.72" id=c_"402.72">__as__</span> <span style="color:red" data-ts="402.94" data-end_ts="403.18" title="402.94" id=c_"402.94">__suit__</span> <span style="color:red" data-ts="403.18" data-end_ts="403.3" title="403.18" id=c_"403.18">__and__</span> tie guy? <span style="color:red" data-ts="403.8" data-end_ts="404.02" title="403.8" id=c_"403.8">__Yes__</span>. He makes modules now. Right. And, he had started doing these really low key improvised electronic music shows in Peoria. And I was like, that sounds like fun. I should do that. So, you know, got some equipment together and went down. And I think we only did maybe three official shows total. 
+</p>
+
+<p>
+<b>Jim: </b>We did a lot of studio work together, and, I was using a lot of different things. I was all over the place. You know, I, I used Max early on before MSP was available. I had a chemo system for a while. I used Super CLI Reactor. At one point I was even writing some Java code to do kind of some basic sequencing <span style="color:red" data-ts="444.3" data-end_ts="444.46" title="444.3" id=c_"444.3">__on__</span> our <span style="color:red" data-ts="444.69" data-end_ts="444.98" title="444.69" id=c_"444.69">__ping__</span> stuff. And it kind of just all rolled around, you know, not in any particular direction. And then after os 10 Jaguar came out when it, when it, they first had a really good audio subsystem, that would be os 10.2. So I, I think that <span style="color:red" data-ts="464.91" data-end_ts="465.26" title="464.91" id=c_"464.91">__dates__</span> that pretty well. Right. But, I had some free time. I just finished, a consulting job, so I wasn't really fired, but there wasn't really any work, and I was okay for money, and I thought, you know, I'm really interested in doing some serious music programming with this new stuff. 
+</p>
+
+<p>
+<b>Jim: </b>And, so I thought, Hey, I'll, I'll do my own little step sequencer. I've been trying to do that for a while. I, this will take a few months and then I'll go back to the regular job <laugh>. Yeah. So, you know, eight or 10 months later, I did <span style="color:red" data-ts="496.61" data-end_ts="497.1" title="496.61" id=c_"496.61">__release__</span> Urology one, and shockingly people started buying it. And, you know, and you don't think about it necessarily. I didn't, when I, when I first did it, I was just, I wanted to get this thing done, so it <span style="color:red" data-ts="509.34" data-end_ts="509.46" title="509.34" id=c_"509.34">__looks__</span> like an art project, right? Right, right. You're not thinking about, oh, I'm gonna, you know, sell a bunch of 'em. You're more like, okay, I'm <span style="color:red" data-ts="516.62" data-end_ts="516.66" title="516.62" id=c_"516.62">__gonna__</span>, I'm, I have this idea, I need to get it out. And I got it out. People started buying it and giving me feedback. And then the next thing you know, it's this, you know, rather extended project. 
+</p>
+
+<p>
+<b>Jim: </b>And, you know, and I always, going back to those initial influences, like the, the music I was listening to, the other tools I'd used and the things that I really <span style="color:red" data-ts="536.74" data-end_ts="537.02" title="536.74" id=c_"536.74">__like__</span>, you know, I want to do it a different way and how the users are using it and what they're finding. And, you know, it's just kind of mix of all these different techniques. You know, a big breakthrough for me was the launchpad mapping, which is, you know, the eight by eight grid controller, and it's very easy to write software to it, so you can use the controllers as a grid for the software. And it, it just so happened that it's excellent for programming many sequences 
+</p>
+
+<p>
+<b>Darwin: </b>With. Sure, sure. 
+</p>
+
+<p>
+<b>Jim: </b>And, and I, you know, when I started writing for it, I had no idea how useful and, and, and interesting an approach that would be so that, you know, one of the newer things in, in that I've been working on is expanding that support to other grid controllers and just improving the controller experience in general. And, and <span style="color:red" data-ts="589.38" data-end_ts="589.54" title="589.38" id=c_"589.38">__has__</span>, since bringing it back to when I first started and I was using hardware, 
+</p>
+
+<p>
+<b>Darwin: </b>Boy, there's a lot of stuff. First of all, suit and tie guy rearing his head. That's hilarious. I want to get him on the podcast at some point. But what is it, what is it about coding, about programming that was such a draw for you, even when you were like a teen? 
+</p>
+
+<p>
+<b>Jim: </b>Well, see, it was a bit of a mystery because you've got this machine that, that does things. And, you know, there's just this curiosity about how does it work? You know, it was before the internet and was, was really well known at all, you know, I think it was around in some form, and I'm not quite sure I latched onto it. You know, there's this, thing that happens if you, if you actually start writing code, you, you, it's this little puzzle and you, you figure it out and you get something to happen. You're like, that's cool. You know, well, can I get it to do this? And you, you do it a little more and you get it to do something else, right? And there's a little bit of this <span style="color:red" data-ts="652.5" data-end_ts="652.98" title="652.5" id=c_"652.5">__padlock__</span> effect, you know, <laugh> and, you know, so you just, you get kind of hooked. 
+</p>
+
+<p>
+<b>Jim: </b>Now you'll do things and it will break, you know, something bad will happen, <span style="color:red" data-ts="661.68" data-end_ts="661.9" title="661.68" id=c_"661.68">__and__</span> that can be very frustrating. But I think in the end, the thing that, that made me stick with it is that, you can come up with things in your head, you know, these, these designs for things. And, it's almost like a, a, you know, an architecture, a building in your head. And, and if that idea is, a musical idea or, or if you're a painter, a painting idea, then that's how you express that. And if the idea is more about a, you know, in this, you know, a process or being able to do something, then writing code allows you to express that 
+</p>
+
+<p>
+<b>Darwin: </b>There, there seems to be a pretty interesting correlation when you find people who are, interested in both musical composition or artistic composition as well as coding, if they actually have an interest in both. It's kind of also then interesting how, both sides of the coins starting to look like each other. So what you'll see is, you know, so like with programming, a lot of times you do things, something breaks, you fix it up a little bit, and then you, you keep on working on that until, until it, until it works properly. You see a lot of those people kind of composing the same way. You know, try something that catches their fancy and then tweak it and then move on and do another thing. And, and conversely, the way that the code tends to be, tends to be a little more artistic and tends to be a little more fanciful than, you know, someone who's like banging out Oracle database code. Or at least that's the way I like to imagine it. Maybe because I self-identify that way. I don't know. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah, I think that's a great way to describe it. You know, I have it written in the Oracle database code, but, oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Good for you. 
+</p>
+
+<p>
+<b>Jim: </b>You know, <laugh>, and, there, there is definitely this thing about coming up with an idea and then doing something to realize it and, and then taking that and, and going back and forth over and over again, you know? And, <span style="color:red" data-ts="793.56" data-end_ts="793.78" title="793.56" id=c_"793.56">__in__</span> invariably when I get involved with the, with the musical thing, I, I want it to be based around some kind of improv, you know, improv. Mm-hmm. <affirmative>. So, you know, I, I have a buddy who comes over and he plays guitar, and I'll play some guitar and I'll do <span style="color:red" data-ts="808.22" data-end_ts="808.78" title="808.22" id=c_"808.22">__secretes__</span> and things. And, and it's, it's all pure improv and, it's fantastic. But it's, it's, it's difficult and kind of draining. You're done, you know, it's, it's amazing. And then you're done. You're like, fuck, exhausted. Right? But, you know, <span style="color:red" data-ts="824.01" data-end_ts="824.3" title="824.01" id=c_"824.01">__with__</span>, with code, it is kind of the same thing is that I, I'm, I work alone mostly I'm at home. 
+</p>
+
+<p>
+<b>Jim: </b>Mm-hmm. <affirmative>, over time it can be very, very easy to not do what you should be doing. So the way that I get myself to focus is I think about, okay, what are all the things that are, that I, that need to be done? And I'll, I'll pick something and say, what can I do to get excited about this? And sometimes it could be something very simple, you know, like, oh, what if I tried, you know, drawing this button a different way, you know, or doing something and Sure, okay, I'll try that. Something really small, you know, I'll go and I'll try that and, and then I'll get feedback by running a program, and then I can go back to it and go over and over iterate it. The nice thing is that of course, is that, that, you know, by the time you're done, you have something and then you can take that and then something else you built the day before and combine. And I keep going. And, you know, the thing that's always been hard for me artistically is finishing something. 
+</p>
+
+<p>
+<b>Darwin: </b>It's just, I was just, I was just gonna go there because one of the things that amazes me, and, and this is a case for me, and, I get the sense from you as well, it's, it's that, actually the process of releasing code somehow seems easier than releasing music. And how does that happen? 
+</p>
+
+<p>
+<b>Jim: </b>I, yeah, that's a very good question. And you know, there, there have been music <span style="color:red" data-ts="906.76" data-end_ts="906.98" title="906.76" id=c_"906.76">__pro__</span> projects I finished, but they were always tied to, they have to be tied to a deadline. So performance is a good way to, to force yourself to finish or at least get it to a point where it's sort of finished. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>You know, I mean, software <span style="color:red" data-ts="920.86" data-end_ts="921.06" title="920.86" id=c_"920.86">__is__</span> never finished either. So, you know, I think, I think part of the thing about doing a release is you, you set some goals and if you, once you meet those goals, you say, okay, I, that's, I can release it. Whereas if it's an artwork, you know, you, you kind of know once you're done, you're probably not gonna come back to it. 
+</p>
+
+<p>
+<b>Darwin: </b>I guess, you know, there are some, there are some people that kind of do the same musical piece over and over again. But I, until you said that, I hadn't realized that one of the big differences is there can be a version three of the software. If you try and put out version three of your music release, you're gonna get hit on <span style="color:red" data-ts="963.14" data-end_ts="963.26" title="963.14" id=c_"963.14">__a__</span> head by with a stick. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Yeah. I, you know, recently I <span style="color:red" data-ts="968.5" data-end_ts="968.66" title="968.5" id=c_"968.5">__went__</span>, I went to Portland to visit a friend. It was terrible weather. It, there was a snow storm. Basically the whole city was shut down. And, and there was, I think there was going to be, a <span style="color:red" data-ts="979.48" data-end_ts="979.7" title="979.48" id=c_"979.48">__10__</span> feet or something, you know, a relatively impromptu one. Oh, yeah. Okay. And, yeah, it didn't happen. So we we're, you know, so we, we sat and, you know, at his place and he's like, well, let's, let's, let's hook up our stuff and make some music. You know, I brought a small modular and it had the laptop and so forth. Okay. So we looked it up and we, we started just goofing around and we kind of came with an idea. And, and I let him drive, cuz it's his, it was his space. And, and he had most of the equipment. 
+</p>
+
+<p>
+<b>Jim: </b>And, and I was really curious to see how he worked, because this is someone I known, I've known for years, who has finished quite a bit of work mm-hmm. <affirmative> and, we worked for several hours later in the night and had some very interesting things. And the next day he was like, okay, I want to finish that track. You know, I don't wanna work on a different track. I want to, and I don't wanna make it perfect. I just wanna finish it. And, and we did. And, and it was, you know, enlightening to me to see how you can work and still have some improv. And we started as complete improv, but at least we had some idea. Right. You know, and, we finished a track. And so, you know, I'm still kind of digesting that and say, okay, how do I incorporate that into this project I have with a buddy of mine? 
+</p>
+
+<p>
+<b>Jim: </b>And we've been doing, you know, pure improv stuff for ages. And, I think part of it is, is you, you know, you, you just get going and you go for a while, and then at some point you stop, and then you come back and you have to pick something and say, okay, we're gonna, we're gonna select this piece of music and we're gonna finish it. And, you know, we're, we're gonna try it, we're gonna see how far we get. But, it is a different thing because you, you, you know, say that the, the track is finished, there's not gonna be a.one version, you know? Right. Whereas with the software, it's more like, well, a release is, is a marketing event, <laugh>, 
+</p>
+
+<p>
+<b>Darwin: </b>
+</p>
+
+<p>
+<b>Jim: </b>You know, it really is, you know, and there are certain things we want done. You have to have some milestones, but you know, the next day you're just gonna keep going. You know, you've had, you've had some shows you've done lately in, in Santa Fe, and you had to prepare for those 
+</p>
+
+<p>
+<b>Darwin: </b>And Right. But for me, a performance is a different thing because a performance, if anything, a performance is more like a software release, because if it doesn't go well, I can kind of shrug my shoulders and say, well, I'm gonna get another chance at this. Right. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Where a recording not, not so much I, like you am really focused on improv, and so that adds a lot of extra risk factor to the process as well. <laugh>, do you make it sound like this friend of yours in, in Portland actually is sort of skilled at taking, at coming back the next day and doing what he imagined as a finishing process? I mean, what did that look like? So you did some improv and you kind of got some neat things Yeah. That were, that were a framework. What did it look like to take that material, come to it the next day and finish it? What did, what, what did that look like? 
+</p>
+
+<p>
+<b>Jim: </b>Okay, so, well, part of what made it work is we, we picked a model and, and, and, you know, we kind of started with, I think it was like a, a bumpy baseline. And we were in, you know, we were kind of bummed out <span style="color:red" data-ts="1162.34" data-end_ts="1162.54" title="1162.34" id=c_"1162.34">__cause__</span> of the weather, so we wanted something cheery. So we, it was snow day techno, and we kind of ended up in an area that we thought sounded like some early underworld tracks mm-hmm. <affirmative> and, you know, so that was kind of the model. And, and I had a sequence that was, almost a TB 3 0 3 type baseline, but I was running it through some make noise modules so I could make it sound a little more like a 3 0 3 <span style="color:red" data-ts="1184.58" data-end_ts="1184.78" title="1184.58" id=c_"1184.58">__or__</span> like something else. Right. And he had, this crazy undulating sample going into the computer and he had a, a short buffer and he's resampling and playing cords out of it. 
+</p>
+
+<p>
+<b>Jim: </b>And so you get this huge pad sound. So those were kind of our starting components. You know, we, we, we iterated on those for a while to come up with some variations. We took a break and said, okay, this is what we're doing. You know, we're, we're gonna do a, a nice easy to listen to techno track. It's not gonna be super elaborate. And then I, I, I pretty much let him take the reins in terms of what the arrangement was like. So, you know, one thing he wanted to do was a, a, a big tempo modulation in the introduction and a certain fadeout. So I let him take over in terms of what the arrangement is going to be. Sure. And then I was, you know, I was manning the little modular with baseline on it, and he added, a couple modules with drum <span style="color:red" data-ts="1236.18" data-end_ts="1236.46" title="1236.18" id=c_"1236.18">__hits__</span>. We had the sampler going. And, it was one of those things where we basically ended up doing full passes of the whole track. So that kind of goes back to when I was in high school band or whatever. Right? Mm-hmm. <affirmative>, you know, they give you a new piece of music and you stumble through it a couple times and then you know it, and then you know, they're gonna make a recording, you know, and, 
+</p>
+
+<p>
+<b>Darwin: </b>And it kinda comes together. Right? 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Yeah. Yeah. And, and, you know, some other recordings are better than others and, you know, we, we kind of got a take we were really happy with, and we mostly stuck with that. Okay. And, and he set some rules. There <span style="color:red" data-ts="1273.38" data-end_ts="1273.54" title="1273.38" id=c_"1273.38">__was__</span>, there was gonna be no editing <laugh>. So that really helps. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>You know, so if you know, you can't edit, then you know, you're doing a full take. It's for real. Right. You can't go back and, and tweak notes. This is the take. And then, we did maybe four takes total, and, and by then you kind of know the <span style="color:red" data-ts="1295.1" data-end_ts="1295.34" title="1295.1" id=c_"1295.1">__song__</span>. So I think that's a big part of it, is you go through the whole thing at once, so you, you start to know it. Right. And, and there'll be certain points in the song where, you know, <span style="color:red" data-ts="1303.78" data-end_ts="1303.98" title="1303.78" id=c_"1303.78">__cause__</span> I was, I was writing all kinds of knobs on the modular, you know, in real time. And, and there was a really interesting part where he had set up, a slew control on his system mm-hmm. <affirmative>, and it was, you know, he had independent control over Rise and Fall <span style="color:red" data-ts="1317.94" data-end_ts="1318.14" title="1317.94" id=c_"1317.94">__and__</span> the Slew, and that was controlling pitch on my system. 
+</p>
+
+<p>
+<b>Jim: </b>So we're both controlling the same part of the song at that point. Okay. And, and, and, you know, it, it, it took a few tries to get it right. And then we had <span style="color:red" data-ts="1331.42" data-end_ts="1331.54" title="1331.42" id=c_"1331.42">__a__</span> one where just everything clicked and, and that was it for that. So I, you know, I, I think one thing about it was we had, not only did we have the restriction that, you know, we're going to finish the next day, but okay, we're not going to edit. It's not gonna be more than three and a half minutes. You know, we're not gonna add all these other parts we might add. We're not gonna make it perfect. You know, we're, we're just gonna make something that, that sounds fun. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>You know, the not editing is kind of a very liberating item. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, I wanna, I wanna actually talk about that a little bit too, because if we go, if we take a look at the way numerology works, it actually is an environment that really works best in a no edit kind of zone, don't you think? 
+</p>
+
+<p>
+<b>Jim: </b>Oh, absolutely. Particularly because, you know, there's, you can record audio and you can record midy, but it's basically just stems. Right? <span style="color:red" data-ts="1384.42" data-end_ts="1384.58" title="1384.42" id=c_"1384.42">__Right__</span>. It goes straight <span style="color:red" data-ts="1385" data-end_ts="1385.22" title="1385" id=c_"1385">__to__</span> the file. You don't see a wave form, there's no editing like that. And you know, you, you build the patterns and you can do a live arrangement and, and one of the new things numerology <span style="color:red" data-ts="1396.04" data-end_ts="1396.26" title="1396.04" id=c_"1396.04">__for__</span> is you can record that arrangement. But, it is definitely, you know, along the lines of, you know, and maybe this is just me personally because I tend to not finish these tracks, is, you know, having the things that people typically use to finish them, you gotta go to some other piece of software for that. Right. And, and, and, but it, you know, yeah. I mean, there, there's that, you know, you can build everything you need for a live set and you can run through it as a live set. But you are kind of forced that you have to go through the whole thing if you want to get a clean recording of it. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, yeah. And especially since it has sort of like these pseudo generative things where you can set up, you know, gate sequences different length than the pitch sequence and stuff like this, it has a tendency to, make stuff that either isn't repeatable or just repeats so seldom that you, you, you kind of have to capture it when it happens, otherwise you might never get there again. 
+</p>
+
+<p>
+<b>Jim: </b>Indeed. Yes. You know, I mean, and, and, and those are the things that I think keep you on your toes. Right. Because you know that every once in a while there's gonna be this little something extra that comes along, know. <span style="color:red" data-ts="1466.83" data-end_ts="1467.18" title="1466.83" id=c_"1466.83">__Right__</span>, right. You know, I always wanted it so that you can build it, and then it becomes almost its own performer. And then you're, you're interacting with it. You know, it's, it's not like you like hammered out this <span style="color:red" data-ts="1477.46" data-end_ts="1477.74" title="1477.46" id=c_"1477.46">__cord__</span> progression like five times and you're recorded it and looped it, and now you're soloing on top. It's a little different from that. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, when this first came out, so you said that that numerology version one came out sort of as a result of OS ten two, there wasn't a lot of modular gear floating around at that time. You know, this was, this is prior to the current explosion of modular gear. Absolutely. And, I remember my first uses of it was, with software synthesis, solely, in fact, did you at the time have a modular system or were you just trying to bring something that you remember from modular systems into the digital world? 
+</p>
+
+<p>
+<b>Jim: </b>I, I, I actually did have one. And it was <span style="color:red" data-ts="1527.74" data-end_ts="1527.86" title="1527.74" id=c_"1527.74">__a__</span> mix of <span style="color:red" data-ts="1528.88" data-end_ts="1529.1" title="1528.88" id=c_"1528.88">__fer__</span> and analog systems modules. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. 
+</p>
+
+<p>
+<b>Jim: </b><span style="color:red" data-ts="1534.16" data-end_ts="1534.38" title="1534.16" id=c_"1534.16">__At__</span> a do <span style="color:red" data-ts="1534.7" data-end_ts="1534.86" title="1534.7" id=c_"1534.7">__for__</span> <span style="color:red" data-ts="1534.86" data-end_ts="1535.02" title="1534.86" id=c_"1534.86">__mini__</span> CV box. I still have them all, almost all of them. It was, you know, it was, it was a, it was a really good learning experience because I would, when I first had it set up, I didn't have numerology and, and there wasn't, and you can, you know, you could run as <span style="color:red" data-ts="1549.34" data-end_ts="1549.5" title="1549.34" id=c_"1549.34">__mini__</span> sequencer into the CV box and do that. But, the, the most fun I had was just start with a modular and some cables and start plugging things in. And to see if you could build something that is, that sounds like a, an an arrangement, a piece instead of just a drone or, or burling. And, you know, it was very enlightening. I actually never had a hardware sequencer with that particular setup. Mm-hmm. <affirmative>, you know, we were using a variety of things. I, I used COR <span style="color:red" data-ts="1576.82" data-end_ts="1576.94" title="1576.82" id=c_"1576.82">__Z__</span> one for a while. Sure. You know, a couple times I was using the, there's a sequencer in the chemo system. I've used <span style="color:red" data-ts="1583.46" data-end_ts="1583.7" title="1583.46" id=c_"1583.46">__that__</span>. And, you know, to some extent, I think part of it was just Eric telling me about the details of how, like the Mode nine 60 works. Mm-hmm. <affirmative>, you know, it has skip steps and this, and you can do this and you can do that. I'm like, well, wow. I wanna be able to do that. You know? Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>You know, this was three or four years before you started to see the mode format modules from, from Syntech and synthesizers.com and, you know, so I started building kind of based on that and some things I'd seen in Reactor <span style="color:red" data-ts="1615.06" data-end_ts="1615.22" title="1615.06" id=c_"1615.06">__and__</span> other places. And, you know, and then Robert Rich started touring with his big modular system and, you know, we watched how <span style="color:red" data-ts="1622.82" data-end_ts="1622.94" title="1622.82" id=c_"1622.82">__we__</span> use that. And, and then yeah, at some point it just, you know, I, I'd used the small modular for a while and then still used it, but kind of moved away to different things. You know, how you tend to migrate from one set of tools to another. Sure. And, and then, yeah, the next thing you know, there's this huge explosion of, of new eurorack manufacturers and mode format manufacturers in the us and it's, it's amazing. So now I have a new system that, <span style="color:red" data-ts="1647.63" data-end_ts="1647.92" title="1647.63" id=c_"1647.63">__that__</span> compliments the old system and it's smaller and I can travel with it more easily. 
+</p>
+
+<p>
+<b>Jim: </b>And I, I use, an expert sleepers ES four, which I run AAP for my, my computer interface. And, you know, I, I actually run numerology CV signals directly through that mm-hmm. <affirmative> and, you know, <span style="color:red" data-ts="1667.92" data-end_ts="1668.16" title="1667.92" id=c_"1667.92">__cause__</span> I'm partially <span style="color:red" data-ts="1669.8" data-end_ts="1669.96" title="1669.8" id=c_"1669.8">__because__</span> I like to have a compact system and just to be cheap, I don't wanna have, you know, I don't really have an LFO module because I'll run it into numerology and then it's synced, and I'll use say a couple of those and a couple of CV sequencers and feed those into the modular set <span style="color:red" data-ts="1683.72" data-end_ts="1683.84" title="1683.72" id=c_"1683.72">__up__</span> hardware controls for everything. And then I don't really feel like I'm using a computer. I just, I've got all these tools in there, you know, I have direct access. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well, it is, it does seem like, one of the things that you've done with numerology, especially with this, with the grid connection, with launch pad editing or whatever, is you've made it so you can interact with the software without necessarily having to dwell all the time at looking at the screen. Now I don't, I don't actually use the grid controller when I use it though. What I do do is I set up a lot, I use the preset system a lot mm-hmm. <affirmative> and then set it up so that I have the ability to do a lot of triggering of presets, and then I'll turn away from the computer and I'll just have this preset preset triggering as something I can do with my right hand occasionally, while the rest of the time is spent manipulating the modular. I love working that way. It's, it's fantastic. But that's just one of the, one of the ways to, to interface with this stuff. Beyond what you would like to make for yourself, where do you get the most information about, things to add or things to develop for the software? 
+</p>
+
+<p>
+<b>Jim: </b>Almost always from users or, you know, from my own users, or I, you know, I go to a workshop or a club somewhere and I see people doing interesting things. But a lot of the features you see, particularly numerology four, are basically user requests. You know, either direct requests that, you know, like the support for the Ableton push was a, a big request. Uhhuh, <affirmative>, and it's very natural because it's, it's a grid controller and Angie gets some knobs. Right. So I can map some <span style="color:red" data-ts="1782" data-end_ts="1782.22" title="1782" id=c_"1782">__to__</span> <span style="color:red" data-ts="1782.22" data-end_ts="1782.3" title="1782.22" id=c_"1782.22">__the__</span> knobs. There's always this back and forth, and I have a really great bunch of users, and they're, they're, they're always doing, you know, things that are like, wow, that's an interesting way to do that. You know? Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>The rea I guess one of the reasons I wanted to ask is because like when we were talking about doing music, you found it very advantageous to work with somebody else who would add to the, add to the process of, of making a piece of work. But you also pretty much described yourself as kind of like sitting in your home, cut the code yourself, you know, I know from watching your forums, which unfortunately I can't find a way to sign into, you do interact with the forums a lot. I know that. Do you, do you go out to clubs a, a fair amount or, go to performances, that kind of thing? 
+</p>
+
+<p>
+<b>Jim: </b>I try to go regularly, not as, you know, I'm in Albuquerque's not that busy at town. But if there's something going on here, that is even remotely electronic related, I'll definitely go and check it out. You know, in, in LA I definitely made a point of going out and seeing a couple shows. And something else that I'm finding, you know, very inspirational is the, the, the modular <span style="color:red" data-ts="1851.94" data-end_ts="1852.14" title="1851.94" id=c_"1851.94">__sym__</span> community, particularly the symphony that are going on. Right. And, you know, the energy is just so intense, you know, and, it's, I mean, it's a bit of a disadvantage there because a lot of them are like, well, we don't use computers at all. <laugh>. Some people are like, yeah, we use computers and we're fine, and it's all good. You know, some are like, <span style="color:red" data-ts="1869.48" data-end_ts="1869.7" title="1869.48" id=c_"1869.48">__ah__</span>, I'm not using <span style="color:red" data-ts="1870.3" data-end_ts="1870.42" title="1870.3" id=c_"1870.3">__a__</span> computer, you 
+</p>
+
+<p>
+<b>Darwin: </b>Know? Right. 
+</p>
+
+<p>
+<b>Jim: </b>And, but some of them are like, well, we, we use iPads, you know? So that helps inform me, you know? Right. Because I wanna do something for an iPad. I'm not quite sure. Obviously it would be some kind of sequencer, but, you know, is <span style="color:red" data-ts="1884.74" data-end_ts="1884.82" title="1884.74" id=c_"1884.74">__it__</span> numerology? Is <span style="color:red" data-ts="1885.62" data-end_ts="1885.66" title="1885.62" id=c_"1885.62">__it__</span> gonna be something else? I don't know. 
+</p>
+
+<p>
+<b>Jim: </b>So yeah, I definitely try and get out. I probably don't get out as much as I should. And I don't follow a lot of the online forums at other sites as much as I should, but I, you know, I'm always getting this kind of regular stream of, of bits and pieces from the users. And particularly if there's some new controller that comes out, you know, there could be an announcement. And before I've even read my inbox, they're like, Hey, are you gonna support the push? And I'm like, what? What's that? <laugh>? Oh, it was announced an hour ago. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. <laugh>, 
+</p>
+
+<p>
+<b>Jim: </b>You know, 
+</p>
+
+<p>
+<b>Jim: </b>I don't know, maybe I will. And, you know, and <span style="color:red" data-ts="1931.26" data-end_ts="1931.42" title="1931.26" id=c_"1931.26">__then__</span>, you know, and <span style="color:red" data-ts="1931.82" data-end_ts="1931.98" title="1931.82" id=c_"1931.82">__then__</span> I try to spend a lot of time like backing away from it, you know, get away from it for a couple days, go do something else, and then come back at it as not as, you know, this has been my job for a while, but, you know, what is this? Why am I doing this? What's cool about it? What needs to be fixed? Sure. And that's, that's a pretty good thought experiment because it, it helps me rearrange things so that, you know, if, if a stranger's coming in and looking at it, how can I make it easier for them to get into it? You know, with the new release, a lot of that has to do with making it more livable as, as a working environment. You know, it's been, all the crazy stuff is still there and there's a little more crazy stuff, but I'm also trying to make things a little, a little easier to live with, managing presets, loading and saving pieces of projects, that sort of 
+</p>
+
+<p>
+<b>Darwin: </b>Thing. Right. Well, I think a fair number of people that listen to, my podcast probably have, some sort of background with coding. And I think it's, it would be interesting to get your view of sort of like the creative coding process, but since, since what you're doing is a lot more sort of commercial level, and most people would, I think it'll also be interesting to kind of dive into what you find hard. So I, <span style="color:red" data-ts="2019.26" data-end_ts="2019.66" title="2019.26" id=c_"2019.26">__having__</span> talk with David Zaccarelli some time ago, and, and we were talking about when he first started doing, doing software for music. And one of the really difficulties at that time was coming up with anything that was even close to a stable clocking system right there. Just, there was nothing on the operating level system that was gonna help you out with that at all. And so, you know, it was a really difficult process to get something, something going on that when you started getting into developing software for music, and particularly something like you do, which is a sequencer that has heavy timing requirements. You're doing audio recording, you're interfacing with hardware, you're doing, you know, you actually have, you have different <span style="color:red" data-ts="2067.38" data-end_ts="2067.86" title="2067.38" id=c_"2067.38">__effects__</span> systems that you've written that are tightly integrated. What is the hardest thing for you to work with 
+</p>
+
+<p>
+<b>Jim: </b>Overall? The, the, probably the two biggies, and this is true for all audio programming, is, is living with a multi-threaded environment, which means that the, you know, the computer can be running different parts of the code at the same time and it can jump between them at any time. And that's just, it, it, it's a mindset, you know, and, and I, the inside of numerology is set up to supposedly make it easier for me to understand that, but sometimes you, you look at something and they're like, <span style="color:red" data-ts="2108" data-end_ts="2108.16" title="2108" id=c_"2108">__well__</span>, what's going on here? I know it works, but how does it work? And, the other one, which is closely related to that is when you're doing something that's audio related, so I'm generating, well, or, or sequencing related because that whole subsystem runs at the same time, so I'm generating notes or cvs or processing them or leading 'em to an audio unit or doing my own audio processing, is that there's this whole list of things that, you know, as a programmer working in other realms are perfectly fine. You simply can't do as an audio programmer, so you can't allocate memory. You, you can't write to a file, all these things. You can't do 'em on the particular piece of code that's generating stuff. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>And, you know, it's a pretty big limitation and, you know, you just, you just <span style="color:red" data-ts="2154.51" data-end_ts="2154.86" title="2154.51" id=c_"2154.51">__learn__</span> to live with it. The timing bit, that's not hard in, in terms of running standalone and, and, and credit for that has to go to the OSN audio team because there's very accurate timing information you get from the audio driver. It comes in directly to the app. It's, you know, it's nanosecond accurate or near <span style="color:red" data-ts="2173.54" data-end_ts="2173.74" title="2173.54" id=c_"2173.54">__net__</span>, you know, it's sub millisecond accurate. And you can use that to schedule <span style="color:red" data-ts="2176.9" data-end_ts="2177.18" title="2176.9" id=c_"2176.9">__media__</span> events or running standalone. That's pretty easy when interfacing with other software becomes very difficult for a, a variety of different reasons. And actually, probably even more than the, the threading stuff that's the hardest one is, you know, the, the, the plugin specifications are reasonably well specked out in terms of what they expect you to do, but they don't cover all the side cases. You know, there's always some little surprise somewhere, and every host is a little different, and all the plugins are a little different. And, you know, it just takes a lot of time to get to know what you can do and what you can't do. And numerology in particular, it's tricky because it's not a synthesizer. So it's, it's primary job for, the way most people use it is to generate mii and they're like, oh, I want to use this with pro tools and so forth. So 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I hadn't really thought about that, but, but you're making a plugin that's very different from what most plugin people are trying to accomplish. 
+</p>
+
+<p>
+<b>Jim: </b>Right. And, you know, there's some built in audio stuff, but, as a plugin it's primarily used as a step sequencer to feed somewhere else. And for vsts it's great because vsts, almost every VST host I've ever seen, in fact, everyone I think I've seen is supports <span style="color:red" data-ts="2252.34" data-end_ts="2252.5" title="2252.34" id=c_"2252.34">__media__</span> output and, and the nature of the api, make sure it's accurate. And the latency is very, you know, minimal. On the audio unit side, the, the spec supports mini output, but a lot of the hosts don't, don't use that part. So you use an IAC bus and now you have some latency and it's a good bit harder to generate accurate timing information for <span style="color:red" data-ts="2272.98" data-end_ts="2273.18" title="2272.98" id=c_"2272.98">__sending__</span> the committee. It's still pretty good. It's just not as good as if, so you're using a BST in <span style="color:red" data-ts="2279.82" data-end_ts="2280.14" title="2279.82" id=c_"2279.82">__Ableton__</span>. Right. You know, and <span style="color:red" data-ts="2283.46" data-end_ts="2283.62" title="2283.46" id=c_"2283.46">__then__</span>, and there, there's just so many different permutations on it. You know, in Logic <span style="color:red" data-ts="2289.06" data-end_ts="2289.18" title="2289.06" id=c_"2289.06">__X__</span>, apple now has, at least <span style="color:red" data-ts="2291.46" data-end_ts="2291.66" title="2291.46" id=c_"2291.46">__on__</span>, if you're on Mavericks, the <span style="color:red" data-ts="2293.9" data-end_ts="2294.18" title="2293.9" id=c_"2293.9">__media__</span> effect plugin, and now they support, and in that case, they support media output from the plugin. And usually you get very, very good timing. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I actually just downloaded that and tried that out last night. I was really amazed that it even worked. 
+</p>
+
+<p>
+<b>Jim: </b>And the thing is, is that the trouble I had getting that to work wasn't to transmitting the MIDI bit. There was some other little thing in the code where, I don't know, I, I didn't have the right pre processor define or, or some subclass hook or something. And, I wasn't getting <span style="color:red" data-ts="2321.6" data-end_ts="2321.82" title="2321.6" id=c_"2321.6">__mid__</span> input. <span style="color:red" data-ts="2322.4" data-end_ts="2322.62" title="2322.4" id=c_"2322.4">__Oh__</span>. You know, and it took a while to figure out, oh, this little inconsequential piece of code that's been there for, for five years, I have to change it slightly. You know, those are the things that make you crazy. Sure. But you know, you do it and you get it out and, and, you know, you start getting emails like, <span style="color:red" data-ts="2340.8" data-end_ts="2341.02" title="2340.8" id=c_"2340.8">__oh__</span>, I love the mid effect. I'm just crazy about it. Finally. You know, so that makes, that's what makes it worthwhile. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. So, you've chosen to focus on having this run on, Mac only, no desire to, to take a fire at Windows or, you know, maybe even more interestingly, Linux. 
+</p>
+
+<p>
+<b>Jim: </b>So the issue is always, well, well, when I started, I, I wrote, I even actually started all objective because, you know, os tens what I knew. Mm-hmm. And the tools were there, and <span style="color:red" data-ts="2375.9" data-end_ts="2376.06" title="2375.9" id=c_"2375.9">__they__</span>, you know, objective C is the language, and I, I already knew small talk and some other things, you know, c plus plus and so forth. So I'm like, yeah, objective C sounds fine. And then I ran into issues and, you know, it worked okay, but not great. And then I decided, okay, I'm gonna split it in half, half, <span style="color:red" data-ts="2389.48" data-end_ts="2389.7" title="2389.48" id=c_"2389.48">__but__</span> the, the back end stuff is all c plus plus, and the front end is all objective C. So in terms of porting to Windows, there is this major issue that, you know, there is an objective C compiler and you can even get a certain amount of all the cocoa classes on there. Right. But it's still an unfamiliar environment, and regardless of the time it takes to port it, once I've got it on Windows, then you know, there's this obligation to support those users. Mm-hmm. <affirmative>. And, you know, it's not that I don't want to do it, it's just that I have to balance things out and Well, 
+</p>
+
+<p>
+<b>Darwin: </b>And yeah. I mean, to a certain extent, there has to be a thing where you have to love what you're doing too. I mean, this is one of the, I think maybe it's one of the things that, that you have, available to you that's really cool is because it's a one <span style="color:red" data-ts="2438.82" data-end_ts="2439.02" title="2438.82" id=c_"2438.82">__man__</span> shop, and because you define what it is that you're creating, you get to decide what the limits are. And, you know, if one of 'em is that you enjoy working with the Macintosh in a way that you don't enjoy working with Windows, that's the limit you get to set. And maybe in a way it's a why numerology has a tendency to seem more like an artwork than a commercial program, if you don't mind me saying. Yeah, yeah. 
+</p>
+
+<p>
+<b>Jim: </b>No, I mean, it, it really is, you know, I mean, it's, I'm not in it for the money, you know, that's, that, it took me a long time to realize that that really wasn't important, you know, Uhhuh, that, that, you know, having it be a real product and sustain itself, that's important. Yeah. But, you know, it, it, I'm not trying to take over an industry, you know, by any means. So, you know, and then, and, but then you run <span style="color:red" data-ts="2492.42" data-end_ts="2492.54" title="2492.42" id=c_"2492.42">__a__</span>, you know, and I wanna stay as a single man shopper, maybe, you know, one or two others, right? Mm-hmm. <affirmative> mm-hmm. <affirmative> occasional thing. So I have to think carefully about how time is allocated. And so, right. If I were to stop, you know, I could stop now, I could start porting the windows, maybe it'll come out next year. And then I'm doing a lot of support. 
+</p>
+
+<p>
+<b>Jim: </b>So all the current users, inva invariably are gonna suffer a bit because I won't be taking care of them as well. You know, I'm playing around a bit with some iOS code, and that's a lot easier in terms <span style="color:red" data-ts="2523.82" data-end_ts="2523.98" title="2523.82" id=c_"2523.82">__of__</span> supporting, it's still a good bit of work. Right. But it's, it's, it's, it's still very much a familiar environment. And that process also makes it easier to eventually get to maybe Windows or, or possibly even Linux. Although the interesting thing about Linux <span style="color:red" data-ts="2540.36" data-end_ts="2540.58" title="2540.36" id=c_"2540.36">__for__</span> me isn't really a full-blown computer, but the fact that you can do embedded systems with it. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I've actually started playing around with that. Little microprocessor systems running Linux, gotta tell you. It's pretty exciting stuff. There's some neat, oh, it's amazing. There's some neat stuff out there for a hundred bucks. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Well, or even 50. 
+</p>
+
+<p>
+<b>Darwin: </b>Or even 50, right. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's, that's cool. So there's, that kinda leads me into the next question I had, which is, what is out there that makes you like really excited to, to try and do the next thing? I mean, is there, besides these little microprocessor boxes, is there bits of hardware that you would really like to wrap your head around? Or are there interface tools that you'd like to find a way to integrate into numerology? Or is there like a completely different paradigm you're interested in exploring? 
+</p>
+
+<p>
+<b>Jim: </b>Well, one thing that I'm really looking forward to is, I, I ordered a sound plane from Madrona Labs. Yeah. And, you know, this is this amazing touch controller and, it's, I, I used it for a little bit last year. I, you know, I was in Seattle, went to visit, and I was just amazed at how sensitive it is. As a controller, you can, you can rest your finger on it and wiggle it just a little bit and it'll pick it up and it's, it's a good size. And it's all OSC based. You know, it sends out this huge data stream of OSC events. <span style="color:red" data-ts="2627.35" data-end_ts="2627.7" title="2627.35" id=c_"2627.35">__Right__</span>. You know, if you're, you can use up to I think 10 fingers mm-hmm. <affirmative>, and each finger is, <span style="color:red" data-ts="2631.84" data-end_ts="2632.06" title="2631.84" id=c_"2631.84">__it__</span> can send three different, four different dimensions. And, you know, there's some OSC support in numerology, and I keep trying to update it and make it more robust. And, but, you know, I don't think it's quite ready to handle the full data rate directly. And then I'm not even quite sure how to use it, you know, other than piping it to a, to a software instrument. Right. So that's something that I'm really excited to, to, to get and to use for myself, but also to use it as a motivator to improve that area of neurology, even though that's about as esoteric as it gets. Right. Adding, you know, 
+</p>
+
+<p>
+<b>Darwin: </b>It is, although I was, I was really interested to see that the, the expert sleepers people have embraced it as a, you know, as something that they support directly. And I'll tell you, having used one myself, it is the most instrument <span style="color:red" data-ts="2679.45" data-end_ts="2679.74" title="2679.45" id=c_"2679.45">__like__</span> interface. You know, maybe the only thing close to it is the, Snyder Phonics Manta, which similarly puts out a huge data stream. Right. It also is like very peculiar as, very much an approachable instrument. You start working with those and you start really seeing the limits of what we've imagined software to do. And I'm not sure, I'm not sure I exactly understand what to do better. You know, this is, I, I mean, I do like the fact that Randy with the sound plane, you know, because he kind of controls his controls the Alto environment, he can sort of, and the <span style="color:red" data-ts="2720.95" data-end_ts="2721.3" title="2720.95" id=c_"2720.95">__Chivo__</span> environment, he can sort of build in some interesting support in that software. But I mean, unless everybody's gonna cut their own max or processing code or whatever, it seems like an awful lot of data gets stripped out of it before it ever gets to the point of being in your musical world. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Well, you know, the, the bulk of the market is based around, the, the big dos and plugins that work with those mm-hmm. <affirmative>, and that, that whole metaphor was, you know, oh, it's a whole recording studio on your computer. Right. And that's fantastic. But there, there seems to be kind of this stick in the mud factor, but like, <laugh>, this is how this stuff works, you know? Yeah. You record audio, you record mid, you feed <span style="color:red" data-ts="2770.5" data-end_ts="2770.7" title="2770.5" id=c_"2770.5">__media__</span> <span style="color:red" data-ts="2770.72" data-end_ts="2770.94" title="2770.72" id=c_"2770.72">__to__</span> your plugins, you got instrument tracks, you free things, you bounce things, you know, the routing is linear. That's how it works. You know? And, and that's kind of where I ended up where I am is I, you know, I, it's great for certain things, but it's not what I wanna use to write music <span style="color:red" data-ts="2787.14" data-end_ts="2787.42" title="2787.14" id=c_"2787.14">__with__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's interesting you say that because one of the things that, that I find interesting is <span style="color:red" data-ts="2792.81" data-end_ts="2793.1" title="2792.81" id=c_"2792.81">__when__</span>, boy, I used the word interesting so much, but that's because I get talking to, to someone like you and everything all of a sudden is interesting. So I apologize for that. But, one of the things that I find curious is that when I first started with, you know, computers and MIDI and, sequencing programs, it was a tiny, tiny minority of musicians and computer owners. And so there wasn't much of a market, and everybody was like, <span style="color:red" data-ts="2822.96" data-end_ts="2823.18" title="2822.96" id=c_"2822.96">__oh__</span>, yeah, well, you know, it's a labor of love and we're gonna do it. And it slowly built, built some momentum. But, you know, there was a time when, probably, you know, I was one of the first 20,000 people that was doing MIDI sequencing with samplers and keyboards and stuff, right? 
+</p>
+
+<p>
+<b>Darwin: </b>Mm-hmm. <affirmative>. All right. At least I like to guess that that's the case. Now, you know, at, I think when Ableton announced the push, they also at that same time said something like, over 4 million people had been using Ableton Live, you know, had a copy of Ableton Live, which is <span style="color:red" data-ts="2863.46" data-end_ts="2863.66" title="2863.46" id=c_"2863.46">__just__</span> shocking. But also it sort of says, <span style="color:red" data-ts="2867.2" data-end_ts="2867.42" title="2867.2" id=c_"2867.2">__all__</span> right, this has kind of gone mainline, but now there's, but now what we're seeing is that there's a new, there are several new groups, kind of like microcom communities cropping up around things like modular synthesis or, creative coding or whatever. There are all these little things cropping up that are saying, you know, doing beats on a D A W just doesn't work, or isn't interesting, or isn't, you know, doesn't drive my creativity the way I'd like it to. And so I'm going to jump into this other thing, which I think is cool. 
+</p>
+
+<p>
+<b>Darwin: </b>I think it's really exciting. And, and, you know, luckily I get the opportunity to teach that a little bit at the, at a local college. I definitely get to inter engage with people, you know, through <a href="https://en.wikipedia.org/wiki/Cycling_%2774">Cycling '74</a> But I also, I'm a fan of this stuff, and so I run into 'em at synth meets and stuff like that. It's really exciting. But I'm, I'm already starting to sense, you know, that now this is getting to be a fairly big and kind of common thing, and I wonder what like, the next underground bits and pieces are going, where they're gonna come from. I don't know. Maybe it, maybe it is from things like the sound plane and these data rich environments that force you to go back and have to learn how to interact with an instrument. I don't know. What do you think, what, what do you think is the thing that develops the next community, the community that doesn't exist yet? 
+</p>
+
+<p>
+<b>Jim: </b>Well, I think, you know, definitely there's always some piece of technology that, that kind of leaks into, you know, <span style="color:red" data-ts="2968.68" data-end_ts="2968.9" title="2968.68" id=c_"2968.68">__as__</span>, as a musical application, right? And, you know, it, it, and sometimes it takes a while. So OSC has been around for a while, but we're just now starting to see a little bit more traction in terms of instruments using LSC instead of midi. And the software, as you said, hasn't caught up yet. You know, there's a lot, not a lot of, you know, and, and it's kind of a wild west in terms of how you connect the two and how you come up with a workable solution and all those things that, you know, but often that challenge is what leads you onto a path that you weren't going to expect. You know? You know, as opposed to if you download a big <span style="color:red" data-ts="3005.88" data-end_ts="3006.1" title="3005.88" id=c_"3005.88">__do__</span> and you start working <span style="color:red" data-ts="3006.78" data-end_ts="3006.94" title="3006.78" id=c_"3006.78">__to__</span> build with the built <span style="color:red" data-ts="3007.66" data-end_ts="3007.82" title="3007.66" id=c_"3007.66">__in__</span> sounds, you're gonna probably end up someplace where you expect it to be, which you know, is often what you want, but if you really looking to kind of explore and get lost, you do kind of wanna work with something you're, you're not quite sure how you're gonna get it to work. 
+</p>
+
+<p>
+<b>Jim: </b>Right. You know, and the community thing is, you know, I, I, I don't know, know, you know, I mean, there's certainly plenty of interesting things still in the modular community and, and you know, we touched a bit on embedded systems and, I was talking with somebody just the other day and, and we were talking about Arduinos and LEDs and controlling them and so forth, and he said, yeah, I've got <span style="color:red" data-ts="3045.18" data-end_ts="3045.3" title="3045.18" id=c_"3045.18">__an__</span>, you know, a module with an Arduino in it, and I, I'd seen the module, but I didn't think much about it, you know, <span style="color:red" data-ts="3050.3" data-end_ts="3050.42" title="3050.3" id=c_"3050.3">__and__</span> I went back and looked at it again. I'm like, okay, there's all kinds of crazy things that could happen based on this particular item. Yeah. And, and it kind of combines the two communities between the creative coding community and the hardware community. You know, just to, to fill it out a bit, <span style="color:red" data-ts="3063.42" data-end_ts="3063.62" title="3063.42" id=c_"3063.42">__while__</span> we <span style="color:red" data-ts="3063.74" data-end_ts="3063.82" title="3063.74" id=c_"3063.74">__were__</span>, what I was, you know, he was talking about adding LEDs and some kind of visual performance element to his modular system. 
+</p>
+
+<p>
+<b>Jim: </b>Right. And, I had been playing around with Arduino <span style="color:red" data-ts="3076.86" data-end_ts="3076.98" title="3076.86" id=c_"3076.86">__and__</span> LEDs in terms of, you know, making some kind of controller or, or something, or, or maybe part of an art project or something. Mm-hmm. <affirmative> just goofing around mm-hmm. <affirmative>. And I thought, Hmm, let's see, how could we have CV signals coming into an Arduino and then coming out and driving a, a chain of color LEDs directly. Right. You know, and, you know, and, and, and those things just kind of pop up randomly. Right. You know, you're talking to somebody or, or something. And, so I have to make some notes and figure out, you know, <laugh>, when's, when's a good time to play hooky and try and get something running, you know? 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. It's, the, the Arduino thing is really fun too, because unlike what you were talking about in coding, you know, in some of the things you have to deal with in a multi-threaded environment, there's none of those issues when you're working with an Arduino, you know, there's no operating system. You literally, when you say, Hey, do this thing, it just sort of like says, okay, can I do it on the hardware? Yeah. Okay. Let's do it. Let's do it right now, <laugh>, you know, and it's pretty awesome. It's pretty awesome to not have any barriers sort of between your code and the hardware. It's a lot of fun. 
+</p>
+
+<p>
+<b>Jim: </b>It is. It's, it, it was pretty nice. You know, I, <span style="color:red" data-ts="3146.98" data-end_ts="3147.3" title="3146.98" id=c_"3146.98">__because__</span> I got started with a kit and, you know, specifically I was interested in doing LEDs, but I had several other little servos and things and just ran through the examples. Right. And <span style="color:red" data-ts="3157.04" data-end_ts="3157.46" title="3157.04" id=c_"3157.04">__coping__</span> wise, it's, you know, it's easy to pick up and then I, it just kind of click. It's like, oh, you, you, you write this loop, you know, you initialize stuff and then you write this loop and it just runs as fast as it can and that's it. <span style="color:red" data-ts="3168.19" data-end_ts="3168.54" title="3168.19" id=c_"3168.19">__Right__</span>? Right. That's not, that's all there is. You read your inputs, you generate your outputs, and it's like, okay, this is, you know, <span style="color:red" data-ts="3174.46" data-end_ts="3174.66" title="3174.46" id=c_"3174.46">__cause__</span> I stayed away from it for years because, you know, I embedded this blah, blah that. And you know, at one point I was writing some code for dst, you know, just cuz I just had to mm-hmm. <affirmative> and, it drove me nuts. Oh yeah. And you know, so it, the embedded stuff turned out to be a lot more interesting and easier to live with than I thought it was. So now it's kind of like, okay. You know, make a couple little, like just, you know, personal projects, a couple controllers and things, and then see where that leads. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well there's, there's the whole set, the whole issue of tool chains too. You know, you've, you've been doing this as longer, longer than I have. And you know, that it used to be that, that the idea of free programming tools is a relatively recent, thing. You know, it used to be that, well, if you wanted to get into developing in <span style="color:red" data-ts="3228.3" data-end_ts="3228.42" title="3228.3" id=c_"3228.3">__a__</span> Mac, you had to pour a bunch of money into that. And then if you wanted to do Windows, you had to pour money into that and God help you. If you wanted to get into an embedded system, you had to dump a bunch of money more into development tools for that. And so, oh yeah. You know, it's only been in the last couple years that all of these tool chains all of a sudden started showing up for free. And man, that gives you a lot more ability to just say, I'm gonna dip a toll in this and see what it feels like. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. I mean, he used to be <span style="color:red" data-ts="3256.46" data-end_ts="3256.62" title="3256.46" id=c_"3256.46">__the__</span>, you know, the, the Beagle Bone and the Raspberry Pie <span style="color:red" data-ts="3259.54" data-end_ts="3259.78" title="3259.54" id=c_"3259.54">__used__</span> these, <span style="color:red" data-ts="3259.94" data-end_ts="3260.14" title="3259.94" id=c_"3259.94">__he__</span> relatively powerful arm chips and very, very, you know, very, very inexpensive boards. Right. And you know, I know when the Beagle board in particular, the first iteration was two or 300 bucks and then they dropped <span style="color:red" data-ts="3270.5" data-end_ts="3270.66" title="3270.5" id=c_"3270.5">__at__</span> 44 and now they're back up to maybe 50 or so. And yeah, it used to be, it was an evaluation board, you know, and they're like, gonna charge you $2,000 for, you know, $50 in components. Right. Just <span style="color:red" data-ts="3283.54" data-end_ts="3283.82" title="3283.54" id=c_"3283.54">__because__</span> they can and, and, you know, the whole DIY electronics thing is, is made them reevaluate and go, oh, you know, there's some competition from these smaller groups and you know, they have all these chips <span style="color:red" data-ts="3297.74" data-end_ts="3297.94" title="3297.74" id=c_"3297.74">__that__</span> they make zillions of for cell phones. So there's, there's a bit of a trickle down. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Jim: </b>And it, you know, because it, yeah. Four years ago, you, you look at what you can do on a, on an iPod Touch or an iPad, and it's so much compared to trying to do embedded anything that it's, it's like, oh, okay. But now it's a little different. You know, now you can get an embedded system that has a comparable amount of power and it's, it's cheaper and you can even add a screen and it's not too bad. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. I was pretty surprised the first time I got a raspberry pie and I saw, oh, it's good HTMI connection. I plugged something in and it lights up with a whole graphic ui, you know, for $35. I'm like, <span style="color:red" data-ts="3338.97" data-end_ts="3339.26" title="3338.97" id=c_"3338.97">__geez__</span>. Yeah. That's crazy. 
+</p>
+
+<p>
+<b>Jim: </b>I think there's still a lot of room to explore there. It used to be, if you wanted to put out a piece of hardware for music, you know, it was a, a big thing. Right, right. You know, big projects and a big budget and it's a thousand dollars <span style="color:red" data-ts="3354.11" data-end_ts="3354.46" title="3354.11" id=c_"3354.11">__cause__</span> it's only a certain market size. And, and now there's like this whole range of things depending on, you know, you can just do a module and you can hand build your own circuit boards and you <span style="color:red" data-ts="3363.98" data-end_ts="3364.06" title="3363.98" id=c_"3363.98">__can__</span> put it out for a hundred bucks or, you know, you can do a hardware sequencer and you know, you can go like just crazy with it and sell a few for a grand or two and everything in between. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. It's stunning. Well, I'm using up a lot of your time. I really appreciate you sticking with me. I, before we go, I want to hear a little bit about numerology four. Three has been out for a long time. I know you're baiting four. I've been using the beta a little bit. Not a little bit a fair amount, but, I see a lot of things changing there. Why don't you fill us in on what Numerology four is going to introduce? 
+</p>
+
+<p>
+<b>Jim: </b>The most visible change is, more hardware support. It <span style="color:red" data-ts="3409.24" data-end_ts="3409.66" title="3409.24" id=c_"3409.24">__sports__</span>, <span style="color:red" data-ts="3409.76" data-end_ts="3409.98" title="3409.76" id=c_"3409.76">__the__</span> launchpad, like numerology three, but you can have as many as you want. I've had like, I think five up at once. Oh, it's fun. Sounds 
+</p>
+
+<p>
+<b>Darwin: </b>Same going <laugh>. Yeah. 
+</p>
+
+<p>
+<b>Jim: </b>Cause you know, when, when you start to add more and more, then it's like, well, each one can be its own parts. You got one for drums and one for a bass and one for another synthesizer and one for presets. Or you, you can just, you know, set 'em all up. So it's one big sequence, you know, and then you just got lights going crazy. But, so that's a practical issue. And then, support for the push and the m I'm working on hopefully getting support in for the APC series. So you can have, some controller that's, that's relatively well set up for mixers. You got banks switching and so forth. Mm-hmm. <affirmative>, in the ui, the big change is, what I just <span style="color:red" data-ts="3461.82" data-end_ts="3462.02" title="3461.82" id=c_"3461.82">__call__</span> the browser and it'll, you know, be familiar. Ones use Ableton or a lot of other programs is the left <span style="color:red" data-ts="3467.18" data-end_ts="3467.42" title="3467.18" id=c_"3467.18">__hand__</span> side. 
+</p>
+
+<p>
+<b>Jim: </b>There's now one integrated browser between, your modules. All the presets for those modules that you make yourself are now all in one place. You can export and import stacks and there's a whole separate area for those. There's a browser for audio files and, you know, that's, that will continue to be leveraged as a, as a, as a workflow improvement. It's 64 bit, that's obviously very important these days. The audio <span style="color:red" data-ts="3493.54" data-end_ts="3494.06" title="3493.54" id=c_"3493.54">__immediate__</span> effect is very, very important for anybody who uses logic. They have to be on the latest logic on, on Mavericks or later. But it works pretty well. A lot of little things I, I tend to forget about that are still a pretty big deal. There's, there's, undue redo for a lot of operations. There's, the OSC API has been extended quite a bit. There's a, you know, a bunch of things, you know, I work on it, I work on it, and then I'm like, what was all in this stuff? 
+</p>
+
+<p>
+<b>Jim: </b>You know? But really when you get down to it, a lot of it is just workflow improvements. Sure. And then there's a few special things. Oh, one thing, you know, a big thing is, there's a, there's a real time automation thing, so it's a way to record short gestures from, you say you've got a, a knob mapped Oh, yeah. Right. To <span style="color:red" data-ts="3535.82" data-end_ts="3536.18" title="3535.82" id=c_"3535.82">__filter__</span> cut <span style="color:red" data-ts="3536.5" data-end_ts="3536.66" title="3536.5" id=c_"3536.5">__off__</span>. Sure. You know, so you can trigger it and it'll be, quantized to a bar and it'll record for some number of beats and then loop it, and then you can, it's very simple. There's no editing. You, you record it and you can let it record, you know, let it play back indefinitely. You can mute it, you know, you can have it set up for one preset not for another. 
+</p>
+
+<p>
+<b>Darwin: </b>That gives you almost like another level of this pseudo, generative stuff where you can set up a loop of real time manipulation that might even be separate from your other loop settings. 
+</p>
+
+<p>
+<b>Jim: </b>Yes. Oh, that 
+</p>
+
+<p>
+<b>Darwin: </b>Sounds cool. You, that sounds 
+</p>
+
+<p>
+<b>Jim: </b>Really interesting. You <span style="color:red" data-ts="3567.62" data-end_ts="3567.66" title="3567.62" id=c_"3567.62">__know__</span>, and I, and I set it up so that <span style="color:red" data-ts="3568.86" data-end_ts="3569.06" title="3568.86" id=c_"3568.86">__you__</span>, you can have it fully quantized or completely un quantized mm-hmm. <affirmative>. And you know, so there, there's, <span style="color:red" data-ts="3575.42" data-end_ts="3575.58" title="3575.42" id=c_"3575.42">__you__</span> know, like a lot of numerology splits between kind of a more traditional step <span style="color:red" data-ts="3579.98" data-end_ts="3580.26" title="3579.98" id=c_"3579.98">__based__</span>, you know, base or beats type of thing or, a completely generative abstract type of approach. And it, and it, and it works either way, you know, depending on what side of that fence you wanna sit on or if you want to combine them. Sure. There are lots and lots of little things like, there's a cord sequencer in numerology and it came with a builtin set of like the most commonly used cords. And I went through and read everything I could find on lots of different cords and, and added, I think it doubled the number of chords, you know, so there, there're a bunch of ninth cords, 11th, 13th. Sure. Changed it so that when you pick a cord, or you pick a, you <span style="color:red" data-ts="3619.02" data-end_ts="3619.26" title="3619.02" id=c_"3619.02">__pick__</span> a cord and you pick a scale, it will automatically adjust which cord it picks slightly to make sure it fits the, the scale you pick. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, okay. Sure. 
+</p>
+
+<p>
+<b>Jim: </b>You know, so lots, lots and lots of little things to kind of like, just, just fill in things, make it a lot easier to use. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, I have to tell you, as a user of the software, one of the most, one of the, one of the best things you just said though, goes back to using a bunch of launchpads and the fact that you still have fun with your own software. How hard is that? How hard is it to keep? Cuz you've been doing it, what now? For when did first version come out? Like 2005? 
+</p>
+
+<p>
+<b>Jim: </b>No, I think it was even before that. Maybe 2002. I'd have to check. <span style="color:red" data-ts="3667.65" data-end_ts="3667.94" title="3667.65" id=c_"3667.65">__Geez__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>So well over a decade old then. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah. Yeah. No, I mean, that was always the thing was <span style="color:red" data-ts="3674.06" data-end_ts="3674.22" title="3674.06" id=c_"3674.06">__that__</span>, is that when I was doing version two, I did a complete rewrite and it was gonna take a while. I told everybody, look, this is gonna take a while. There's not gonna be released, but I'm here. You know, this is, this is something I'm gonna keep uhhuh. And, you know, and that's, that's kind of the thing. A lot of companies come and go, but I just, you know, keep chugging away at it. Sure. And, you know, and it, it's flexible enough that I can take in a different direction. So over time, I, I, I approach it differently in terms of how I use it myself. Mm-hmm. <affirmative>, you know, for a while I was just using it self-contained and then, but now I'm much more likely to use it. It's just, it's an extension of the modular. Right. You know, and, and that's how I see it. It's, I've got some hardware controllers and numerologists running the modular, but I'm, I'm focused on that and, and it's more of a, a almost a plumbing type of thing, so I can take it in either direction. 
+</p>
+
+<p>
+<b>Darwin: </b>That's cool. All right. Well this sounds really exciting. I'm sure that, everyone out there is going, if they don't already use numerology, go out and check five 12, that's f i v e <span style="color:red" data-ts="3735.8" data-end_ts="3737.02" title="3735.8" id=c_"3735.8">__twelve.com__</span>. You can check out the numerology stuff. You'll actually find a lot of the information actually exists on the forum rather than on his static webpages. You gotta up <span style="color:red" data-ts="3748.46" data-end_ts="3748.62" title="3748.46" id=c_"3748.46">__the__</span> update those man <laugh>. 
+</p>
+
+<p>
+<b>Jim: </b>Yeah, I know. I, I'm gonna do that. Just made a note. I'm gonna go and do that this afternoon, <span style="color:red" data-ts="3754.53" data-end_ts="3754.82" title="3754.53" id=c_"3754.53">__that__</span> link version four. 
+</p>
+
+<p>
+<b>Darwin: </b>All right. Good. But, I'm really excited to continue to see the stuff that you do. And again, I'm, I'm glad to hear that you remain excited not only about, not only about the software, but kind of the whole, the whole world, that all of this. Listen, I think it's easy once you start doing it and you start getting paid for it or what <span style="color:red" data-ts="3778.74" data-end_ts="3778.94" title="3778.74" id=c_"3778.74">__that__</span>, whatever, it's also real easy then to start kind of like losing your enthusiasm and excitement for the world of it. And I'm just glad to see that you're <span style="color:red" data-ts="3788.3" data-end_ts="3788.42" title="3788.3" id=c_"3788.3">__staying__</span>, you're staying there. That's really great. So thanks, thanks again for your time. I way blew my time schedule on this. I wanted to not be too invasive on you, but what the heck. It was a great conversation. 
+</p>
+
+<p>
+<b>Jim: </b>It was great. <span style="color:red" data-ts="3802.96" data-end_ts="3803.18" title="3802.96" id=c_"3802.96">__All__</span> right. 
+</p>
+
+<p>
+<b>Darwin: </b>A lot of fun. Yeah. Thanks a lot. And I'll touch again soon. 
+</p>
+
+<p>
+<b>Jim: </b>All right. Take care. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that went all over the map, didn't it? I think that was a lot of fun. I hope you enjoyed it as much as I did. I certainly did enjoy it. A couple things I want to do right now. First of all, I want to pimp out a release that I was just a part of, Gregory Taylor. And I just did a duet album called <span style="color:red" data-ts="3827.96" data-end_ts="3828.18" title="3827.96" id=c_"3827.96">__Tur__</span> Solo on the Palace of Lights Label. It features a couple of my friends as sort of a side artist as well. So it was a really cool effort and it's kind of the thing that Gregory and I do where he develops very gammon <span style="color:red" data-ts="3843.93" data-end_ts="3844.22" title="3843.93" id=c_"3843.93">__like__</span>, entities. I work with him from there. It's kind of the opposite of our live work, but it's really pretty interesting in its own right. So you can, take a look at that. 
+</p>
+
+<p>
+<b>Darwin: </b>It's in palace of lights.com, and available at fancy CD shops, near you. Beyond that, I want to thank all the people that help out and, support the podcast. Shout outs to Syn Topia. Shout out to create, create digital music. CDM and Peter K's crew there, particularly Marsha. Hey Marsha, hope things are going well. And finally, I want to thank my employer <a href="https://en.wikipedia.org/wiki/Cycling_%2774">Cycling '74</a> for being very, accepting of me doing this podcast. So with that, I bid you farewell. See you next week, where we're gonna have another great interview. Thanks. Bye.
+</p>
+
+    <p><i>Copyright 2014-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
