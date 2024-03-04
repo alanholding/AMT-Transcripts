@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0090 - Miller Puckette</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0090 - Miller Puckette</h2>
+        <h3>Released: Aug 2, 2015</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3711025/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Hello all, Darwin here. I'm in a hotel halfway between Lincoln, Nebraska and Des Moines, Iowa. Getting ready for tonight's show. But I need to get this podcast out, so I'm gonna <span style="color:red" data-ts="22.525" data-end_ts="22.645" title="22.525" id=c_"22.525">__need__</span> <span style="color:red" data-ts="22.685" data-end_ts="22.805" title="22.685" id=c_"22.685">__a__</span> quick overview. This is Miller Puckett, the developer of Max pd, an amazing book. <span style="color:red" data-ts="31.395" data-end_ts="31.685" title="31.395" id=c_"31.395">__This__</span> sounds like he has a couple more books in him. I hope you enjoy this. I really did. There's an amazing amount of information in this one. One note, my stinking task <span style="color:red" data-ts="42.795" data-end_ts="43.085" title="42.795" id=c_"42.795">__scam__</span>, audio deck, which is what I used for this in-person, interview, kind of went to toilet on me, during the front end of the podcast. So the audio quality is really crap. But I hope you'll look past that into what's being said because it's an amazing interview. I didn't want to dump this one. It was too good. But we have to talk about what I'm gonna do about this recorder thing 'cause it's pretty awful. Anyway, here you go. Enjoy. I'll catch you on the backside. Miller Puckett and I have crossed paths a few times. Never really gotten a chance to spend much time together, but we had a fantastic dinner this evening. And now we're gonna talk a little bit about, about Miller. So with that, hi <laugh>. Thanks. Thanks a lot <span style="color:red" data-ts="95.445" data-end_ts="95.605" title="95.445" id=c_"95.445">__for__</span>, for, for doing this. It's really cool. I'm glad that I caught you while you were in town. What are you, what are you doing in town again? 
+</p>
+
+<p>
+<b>Miller Puckette: </b>Well, I'm here because, for two reasons. One is I'm teaching summer school here. But that's sort of the way to make it all be possible to happen. And, and the true purpose is that I'm here as part of the Atlas Research Center is in the University of Colorado Boulder. And they are trying to, essentially reboot, I guess is the right word <span style="color:red" data-ts="122.725" data-end_ts="123.005" title="122.725" id=c_"122.725">__there__</span>, their, approach to electronic music in some way. Oh, that's 
+</p>
+
+<p>
+<b>Darwin: </b>Fantastic. 
+</p>
+
+<p>
+<b>Miller: </b>And so what they're, what they're looking for is people around Boulder, but also people around the world who might be aligned with 'em and, and might actually help find some kind of direction that <span style="color:red" data-ts="135.365" data-end_ts="135.605" title="135.365" id=c_"135.365">__Alice__</span> can take that will distinguish it from other places that are trying to do electronic music, but, but do it in a way that's appropriate to whatever the affordances are that they might find around Boulder. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, for those people who might not know who you are, and I can't imagine there are more than two of 'em listening to the podcast, but why don't you give us a quick kind of, why don't you tell us how you identify yourself? 
+</p>
+
+<p>
+<b>Miller: </b>Alright, well, I never actually know how to identify yourself. There you 
+</p>
+
+<p>
+<b>Darwin: </b>Go, 
+</p>
+
+<p>
+<b>Miller: </b><laugh>. That's it. I usually tell people what I'm not. So I studied mathematics. I'm a mathematician by training and ran away from the world of mathematics, essentially, to become a musician, except that my way of becoming a musician was to learn how to program computers to make sounds 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. 
+</p>
+
+<p>
+<b>Darwin: </b>
+</p>
+
+<p>
+<b>Miller: </b>And that started happening when I was, I think 20 when I was <span style="color:red" data-ts="185.805" data-end_ts="185.965" title="185.805" id=c_"185.805">__an__</span> undergraduate at MIT and just took the course that MIT had then in computer music. This, it was 79, MIT was one of maybe five or six places where you could do computer music at the time, 
+</p>
+
+<p>
+<b>Darwin: </b>Who was teaching that 
+</p>
+
+<p>
+<b>Miller: </b>Barry Ko, who is the originator of C Sound, was a professor at your <span style="color:red" data-ts="203.525" data-end_ts="203.725" title="203.525" id=c_"203.525">__com__</span> at, sorry, at MIT for many, many years between the seventies and the, almost the tens, but maybe the zeros. Right. And he ran computer music or made computer music happen at MIT for, for many, many years. And, also was very active about getting composers to get to his studio and do things. I don't know how he did it. But he made MIT a real center of what you might call experimental computer music, in the, in the years, in the eighties, I would say would be the heyday. People who came in were Bill Albright. Let's see, let's, let's try to get a reasonable selection of these people, <laugh>, lots of people. Charles Dodge, I remember, da Jim Dasho, there would be about 10 of these people that I would name that really made pieces at MIT that I now regard as really part of the, part of the best, best of what was computer music in the early eighties. 
+</p>
+
+<p>
+<b>Darwin: </b>Didn't, weren't some of these people located in computer music studios of their own can think of like Charles Dodge <span style="color:red" data-ts="274.115" data-end_ts="274.405" title="274.115" id=c_"274.115">__Cash__</span>? 
+</p>
+
+<p>
+<b>Miller: </b>Well, yes. Charles Dodge. Charles Dodge in particular was for a long time professor at, at the, I'm gonna get this wrong, Brooklyn College, I believe. <span style="color:red" data-ts="283.705" data-end_ts="283.925" title="283.705" id=c_"283.705">__Oh__</span>, okay. Which actually really had a serious electronic music presence. But for Dodge, somehow coming to MIT was a new thing in a way because in fact, the sort of the kind of music that he started making there was radically different from what he'd made before. Interesting. Perhaps because of the new possibilities at MIT but perhaps also because he always was looking for something different. If you look over his repertory, he, he, he would never get on a, on a groove. He would always actually look for something 
+</p>
+
+<p>
+<b>Darwin: </b>That's more radical. Yeah. He was kinda searching or surfing the edges all the time. Right, yeah, yeah, yeah. 
+</p>
+
+<p>
+<b>Miller: </b>Pushing <span style="color:red" data-ts="320.165" data-end_ts="320.445" title="320.165" id=c_"320.165">__them__</span> too. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Do you think maybe some of that, 'cause one of the things, you know, I, I'm trying to kinda cast my own brain back to that time period, and would it be kind of true also to say that that was a time where electronic music and computer music were kind of two really different things? 
+</p>
+
+<p>
+<b>Miller: </b>I think that's a fair statement. I think that electronic music really became thoroughly dominated by computers only in the very late nineties. Yeah. That though, my way of thinking about it, and in fact maybe the moment to, maybe the turning point was when Max MSP came out Mm-Hmm. <affirmative>, which might've been 98, 99, I'm not sure 
+</p>
+
+<p>
+<b>Darwin: </b>MSP Yeah. Came out in 98. Right. 
+</p>
+
+<p>
+<b>Miller: </b>Okay. So at that point, really in principle, anyway, things that you could do on a synth, you could also do on a computer. 
+</p>
+
+<p>
+<b>Darwin: </b>Right, right. 
+</p>
+
+<p>
+<b>Miller: </b>But before then, that wasn't true, except in certain particular ways and in certain centers. So yes, computer music was really radically different from electronic music. And furthermore, people, people were proud of the differences <laugh>. So, for instance, I heard Barry tell someone, yeah, there are no analog synthesizers here. We don't do that. Yeah. Right. So analog synthesis was, a practice that was, that was practiced in real time and was, a lot about tape recorder technique as well as synthesizer technique. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, that's what I was just thinking too, is that, you know, when you mentioned that the analog <span style="color:red" data-ts="403.195" data-end_ts="403.545" title="403.195" id=c_"403.195">__stent__</span> kind of went along with the analog tape deck, and that was what made the studio 
+</p>
+
+<p>
+<b>Miller: </b>Yes. That was very much the studio and the, gosh, the late sixties through, through, through 
+</p>
+
+<p>
+<b>Darwin: </b>The eighties, that's a 20 year reign. I know. 
+</p>
+
+<p>
+<b>Miller: </b>Where you had to have your scent and you had to have your tape machine, and that was how you put the music together. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>That's amazing. 
+</p>
+
+<p>
+<b>Miller: </b>But meanwhile, computer music go, goes back to the late fifties. But certainly, you know, for instance, Charles Dodge's work in the early seventies would, would be computer music. Right. He was, he was doing things that you could do on a computer that you simply couldn't do on a synth. Right. And as I understand it, the computer music was so much harder to pull off than synthesizer and tape music, that it was only populated that world of computer music was only populated by people who were so rigorous in their thinking that the things that they could do, they wouldn't make the compromises that the synthesizer, forced them to 
+</p>
+
+<p>
+<b>Darwin: </b>Make, forced <span style="color:red" data-ts="459.465" data-end_ts="459.665" title="459.465" id=c_"459.465">__them__</span> to make sure. Yeah. Well, you know, if I think to some of the, some of the early com, you know, true computer music pieces too, oftentimes they were about expressing things in a way that would simply be impractical with the typical <span style="color:red" data-ts="476.135" data-end_ts="476.425" title="476.135" id=c_"476.135">__anal__</span> analog thing. You know, something with for sure, with 90 oscillators, well, nobody at that time, no government hardly could have afforded <laugh> 90 oscillators. Right. There's 
+</p>
+
+<p>
+<b>Miller: </b>A, there's a story that Luciano Barrio, when he first came to Icom, I think in the late seventies, said, yes, we're going to start a new group in Icom, and we're going to make a machine that has a thousand oscillators in it. That was, I don't know if this is true, but they say this around Icom. Yes. Rio's plan was a thousand oscillators, and they hired someone to maybe realize bar's vision. Right. And the result was, no, we're going to have a <laugh>, we're going to have a programmable digital machine. Right. That's what you tell us to do instead. Right, right. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, that's funny. So, how did you, how did you move on from, from, this class? What is it about Barry's class that kinda lit a fire under you? Or was it already lit? 
+</p>
+
+<p>
+<b>Miller: </b>I, I have no idea what kind of a person I was when I was 20. So I don't know how to tell you, but <laugh>. Right. But, 
+</p>
+
+<p>
+<b>Darwin: </b>I, I, I can tell you I was a jackass <laugh> 
+</p>
+
+<p>
+<b>Miller: </b>Too, but, but I'm thinking intellectually, right? <laugh>. Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Right, okay. <laugh>. 
+</p>
+
+<p>
+<b>Miller: </b>Yeah. I mean, I knew that music was cool and I knew that, I knew that musical instruments were horribly limited because you had to actually do things with 'em. And they only had ranges and impossible loudness, impossible speeds you could play them at. And, and they couldn't change into other things. Like you, it sounded like a violin. It wasn't gonna be able to sound like a piano, the next phrase and all that. So, so, musical instruments were things that you had to compromise with. In my understanding. I, I grew up not really playing any musical instrument terribly well, so I didn't actually know what, you know, the point of the point to a violin is that it throws all these limitations in your face. Right. 
+</p>
+
+<p>
+<b>Miller: </b>But me, you know, I just saw that as a limitation. Right. And why can't you go down to 50 hertz? Well, <span style="color:red" data-ts="592.945" data-end_ts="593.365" title="592.945" id=c_"592.945">__diving__</span> file in, you know, it's stupid. It's physical. Right. All you have to do is say 50 hertz. If it's a computer, you just type in the number <span style="color:red" data-ts="599.645" data-end_ts="599.925" title="599.645" id=c_"599.645">__15__</span>. You got it. So, to me, it was just kind of a, kind of obvious that computers were going to be a much, much more powerful musical instrument than any of the physical musical instruments. And that was of course, you know, delusional. But, but at the same time, it was true in, in another sense. I mean, it really was true that the computer could do anything that you want could think of to make it, to do, you had to think of it and Right. The thing that I didn't appreciate at the outset was that he lost so much when you lost the ability to actually touch the thing in order to make it make sound. Sure. Because of course, musicianship is this thing that we can't explain, but we can somehow learn, which is this thing all about touching instruments and, and doing things at the right time and feeling time, which has to be done in real time. 
+</p>
+
+<p>
+<b>Darwin: </b>What was your enjoyment level of computer music? Because the computer music at that time was, I would say in most cases, aggressively difficult as for a listener. Right, 
+</p>
+
+<p>
+<b>Miller: </b>Right. Right, right, right. 
+</p>
+
+<p>
+<b>Darwin: </b>How is it that you could bridge, 'cause I assume at some point you were a teenager listening to rock and roll, and then all of a sudden, you know, it's not like you, you know, you fall off your chair and, and you're desiring to listen to Charles Dodge's work. What was sort of the things that lit you up <span style="color:red" data-ts="681.865" data-end_ts="682.085" title="681.865" id=c_"681.865">__ear__</span> in, in kind of some early cases that made that a desirable pursuit? Can you think of any, or, gosh, 
+</p>
+
+<p>
+<b>Miller: </b>That's a wonderful, 
+</p>
+
+<p>
+<b>Darwin: </b>Or didn't it, or didn't it attach to you that way? That's a 
+</p>
+
+<p>
+<b>Miller: </b>Wonderful question, but I don't know if I can answer it honestly. <span style="color:red" data-ts="697.075" data-end_ts="697.365" title="697.075" id=c_"697.075">__That__</span> the thing is, you could, even as a child to <span style="color:red" data-ts="701.805" data-end_ts="701.965" title="701.805" id=c_"701.805">__me__</span>, even me as a child, I knew that there was such a thing as, as, you know, hardcore squeaky bonk, experimental music that didn't have a beat, didn't have a key Mm-Hmm. <affirmative>, you know, had the minor knights and all that kind of stuff. You know, I knew that that existed. You saw it on, on tv. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, that's, that's true. I mean, even like talk shows, occasionally they would bring the wacky composer on Johnny Carson. That's 
+</p>
+
+<p>
+<b>Miller: </b>Precisely it. Yeah. So I knew <span style="color:red" data-ts="728.165" data-end_ts="728.325" title="728.165" id=c_"728.165">__that__</span> that stuff, and of course, the fact that it was wacky out there was an attractor to, to me Sure. <span style="color:red" data-ts="733.165" data-end_ts="733.365" title="733.165" id=c_"733.165">__Because__</span> of course, I knew how to strum my guitar just fine. But this was something that I didn't know how to do and didn't even know how to listen to. Sure. <span style="color:red" data-ts="740.485" data-end_ts="740.645" title="740.485" id=c_"740.485">__It__</span> was a code of some kind. Right. And that to a certain kind of a mind is, is an attractor. So for me, I really had a strong intellectual interest in that kind of music, even though I didn't actually have any desire to dance to it or to, or to listen to it on the radio or anything like that. It was more like, this is a thing which some people think, <span style="color:red" data-ts="758.545" data-end_ts="758.765" title="758.545" id=c_"758.545">__in__</span> particular people around universities think is the future of music that turned out to be kind of false, but okay. 
+</p>
+
+<p>
+<b>Miller: </b>They, they thought so, and some people still think so. And, anyway, the part of what it's about is pushing past conventions of the past and pushing music into the future in a way. And, you know, if it sounds strange, that's 'cause the future feels strange, and maybe that's just a thing that you accept about the future. So intellectually, at least I was able to, to, to think, you know, this could be a, this would be a wonderful thing to learn because it's difficult, it's prickly. Right. It's, it's, it's mysterious. It's got lot, it's 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="796.605" data-end_ts="796.645" title="796.605" id=c_"796.605">__Like__</span> an extreme puzzle almost. Right. 
+</p>
+
+<p>
+<b>Miller: </b>It's a puzzle. Yeah. It was a puzzle and, and the puzzle aspect of it, you know, really appealed to the mathematician in me. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>One of my good friends, Jimmy here in town is, is a mathematician, but he talked, he eventually ended up kind of re refocusing his career on like, like folk dance. Right. And the reason was because he felt like the world of the mathematician was one where it was difficult to make a personal discovery that most of your time is spent either rediscovering stuff that was discovered in the 16 hundreds or following blind alleys in the wrong direction. Right. Conversely, the world of computer music at that time was probably looked like there was no end of new stuff that you could make. Is there, I'm trying to get a sense of why you would say I <span style="color:red" data-ts="858.245" data-end_ts="858.565" title="858.245" id=c_"858.245">__train__</span> as a mathematician, but it's this music thing that, that I can hang my hat on. 
+</p>
+
+<p>
+<b>Miller: </b>Actually you said it better than I could have <span style="color:red" data-ts="866.605" data-end_ts="866.805" title="866.605" id=c_"866.605">__the__</span>, I I went all the way through a PhD in mathematics and it really was a hard thing to do. Yeah. It's hard to make new mathematics. Yeah. I have a feeling I'm, in fact, I'm quite certain that the little tiny piece of new mathematics that got me my PhD was pretty insignificant in the large, really in the large scheme of things. That's 
+</p>
+
+<p>
+<b>Darwin: </b>Got a, yeah, I could see where that could be a little disturbing almost. 
+</p>
+
+<p>
+<b>Miller: </b>Right. And that was after spending many, many years, trying to come up with something new in mathematics and failing altogether. So <laugh> so mathematics is a, is a tough field. And in fact, I gotta say my hat's off to people who actually can practice the field of mathematics. It was too hard for me. Right. And so, it's not that I quit it consciously. It's not like I left the field of mathematics, but, I did not try to pursue a career in it because I was so busy doing computer music that I didn't have time to keep the mathematics going. 
+</p>
+
+<p>
+<b>Darwin: </b>So somewhere now between MIT and <span style="color:red" data-ts="930.865" data-end_ts="931.085" title="930.865" id=c_"930.865">__you__</span>, you eventually end up at <span style="color:red" data-ts="932.755" data-end_ts="933.045" title="932.755" id=c_"932.755">__Chem__</span>. What happened in between? Was there an in-between 
+</p>
+
+<p>
+<b>Miller: </b>What happened is that in 1985, if I remember correctly, Barry Ko, my professor at MIT hauled me over to Erko where he had a Guggenheim <span style="color:red" data-ts="944.605" data-end_ts="944.685" title="944.605" id=c_"944.605">__Fest__</span>, fellowship to, to essentially do some research leading to a new piece of music. Okay. So we had an Icom commissioned <span style="color:red" data-ts="951.125" data-end_ts="951.165" title="951.125" id=c_"951.125">__the__</span> Guggenheim Fellowship. I'm getting, yeah, yeah. That was how <span style="color:red" data-ts="953.765" data-end_ts="953.965" title="953.765" id=c_"953.765">__it__</span> was. And so he hauls me over to help him do the programming. And so I helped him do the programming. And my eyes sort of went kind of wide when I saw the inside of Icom, because although MIT was really cool, ICOM was doing it at a much higher artistic level than actually at the same well, in some respects, at a higher artistic level, at a different artistic level. But they had the forces, they actually had, musicians at their disposal that they could call <span style="color:red" data-ts="980.645" data-end_ts="980.765" title="980.645" id=c_"980.645">__on__</span> the studios and, and, and work with. 
+</p>
+
+<p>
+<b>Miller: </b>They had famous composers coming through all the time. Yeah. There were always five or six productions going on at the same time. Whereas Icom, sorry, whereas MIT was able perhaps to support one, one composer at a time, ICOM would've had half a dozen studios say, and <span style="color:red" data-ts="999.245" data-end_ts="999.365" title="999.245" id=c_"999.245">__there__</span> there'd be composers going in and out all the time. Sure. So for me, it was like, a kid in the, in the sticks goes to the big city for the first time, <laugh> suddenly sees all the possibilities. So, so I talked them into hiring me back and they started hiring me back a little bit at a time. They introduced me to a couple of composers that they thought could use some help, Tino and Phi <span style="color:red" data-ts="1024.965" data-end_ts="1025.245" title="1024.965" id=c_"1024.965">__<inaudible>__</span>. And, my job at Icom starting in 19, <span style="color:red" data-ts="1030.345" data-end_ts="1030.565" title="1030.345" id=c_"1030.345">__it__</span> started at the end of 1985, I think, was to get ready for a premier, which was to take place concert that was to take place in 1987. That was, oh my 
+</p>
+
+<p>
+<b>Darwin: </b>Goodness. That was the kind of timeframe you needed, huh? 
+</p>
+
+<p>
+<b>Miller: </b>It took two years to do a piece. Wow. Because doing a piece involved things that I'll describe later if you don't know in gory detail, but Yeah. Well, basically <span style="color:red" data-ts="1049.365" data-end_ts="1049.525" title="1049.365" id=c_"1049.365">__Will__</span>, it was hard. It was very hard and they didn't know how to do it, and the composer didn't know how to do it, and neither did the researchers and stuff had to get invented. Sure. And so that to me was just heaven, like, oh, no kidding. I <span style="color:red" data-ts="1061.205" data-end_ts="1061.285" title="1061.205" id=c_"1061.205">__did__</span>, I could get away with not having any musical knowledge whatsoever because I could just ride on people's backs. Who would, who would just have that <span style="color:red" data-ts="1068.285" data-end_ts="1068.445" title="1068.285" id=c_"1068.285">__<crosstalk>__</span> who were masters. Yeah. We're masters. Yeah. Although I didn't really even appreciate it at the time. The, the level of, the level of people I was working with as, as I <laugh> as I sort of grew into the field. 
+</p>
+
+<p>
+<b>Miller: </b>Oh yeah. This is the, this is the stuff <laugh>, this is as good as it gets. Right. And it, and it really was. And the contemporary music field. So yeah. So yeah, I started working in, in, I think it was Winter of 95, toward, toward an April 90, 19 87 premiere. Actually a pair of them. <span style="color:red" data-ts="1097.365" data-end_ts="1097.565" title="1097.365" id=c_"1097.365">__One__</span> by Lino and one by Manie. Okay. For which, since that was the way it was done at the time, it would <span style="color:red" data-ts="1103.725" data-end_ts="1103.885" title="1103.725" id=c_"1103.725">__be__</span> necessary to write software from scratch, that would be compatible with the notions of these composers, and what they wanted to, to accomplish musically. 
+</p>
+
+<p>
+<b>Darwin: </b>And what kind of hardware was this running on? 
+</p>
+
+<p>
+<b>Miller: </b>This was running on the famous four <span style="color:red" data-ts="1118.925" data-end_ts="1119.045" title="1118.925" id=c_"1118.925">__x__</span>, ah, 
+</p>
+
+<p>
+<b>Darwin: </b>The Aircom, 
+</p>
+
+<p>
+<b>Miller: </b>The great processor <span style="color:red" data-ts="1121.635" data-end_ts="1122.125" title="1121.635" id=c_"1121.635">__machine__</span>. The, the first Aircom machine, the big Aircom machine. Not, not even the first, but the big one, the, the one that <span style="color:red" data-ts="1127.875" data-end_ts="1128.165" title="1127.875" id=c_"1127.875">__Hype__</span> <span style="color:red" data-ts="1128.165" data-end_ts="1128.445" title="1128.165" id=c_"1128.165">__pole__</span> was played on by, by <span style="color:red" data-ts="1129.925" data-end_ts="1130.045" title="1129.925" id=c_"1129.925">__<inaudible>__</span>. Oh, sure. Right. So <span style="color:red" data-ts="1130.965" data-end_ts="1131.125" title="1130.965" id=c_"1130.965">__on__</span> like that. And the Fourex when I got there, needed some cabling. So the first thing I did was get a wire wrap tool and actually connect a couple of things. <laugh>, <span style="color:red" data-ts="1144.245" data-end_ts="1144.365" title="1144.245" id=c_"1144.245">__I__</span> was doing that kind of stuff, you know, it was like, alright, we got this four x, we <span style="color:red" data-ts="1150.825" data-end_ts="1151.045" title="1150.825" id=c_"1150.825">__got__</span> <span style="color:red" data-ts="1151.045" data-end_ts="1151.205" title="1151.045" id=c_"1151.045">__it__</span>. Turn <span style="color:red" data-ts="1151.485" data-end_ts="1151.685" title="1151.485" id=c_"1151.485">__in__</span>. I, I, there's a lot to say about this, but the four x was developed as a prototype at Racom by, at least by 1982. I showed up four years later by which time they had, contracted with a commercial company to turn it into, <span style="color:red" data-ts="1165.145" data-end_ts="1165.365" title="1165.145" id=c_"1165.145">__to__</span> printed circuit boards. Right. And the printed circuit boards arrived, started arriving in 1985, late. Okay. And by, right by the end of 1985, there were starting to be card cages with four X in it. Okay. That needed to get running. And so I arrived there Right when you had the four x and you had to then figure out what was between figure 
+</p>
+
+<p>
+<b>Darwin: </b>Out to make it work. 
+</p>
+
+<p>
+<b>Miller: </b>Yeah, yeah. Exactly. Wow. And of course, the creator was there, Pino de <span style="color:red" data-ts="1191.365" data-end_ts="1191.525" title="1191.365" id=c_"1191.365">__Junior__</span> was there. So although he was working on the next thing at the time, you could, you know, he, he was helpful. Sure. And there were technicians and, and researchers driving signal processing codes and stuff like that. So, so there, there were, there were a lot of people to work with. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Miller: </b>But as far as a person who could interface with the musicians as to say, like work on musical production, I was kind of thrown in there with, <span style="color:red" data-ts="1212.885" data-end_ts="1213.205" title="1212.885" id=c_"1212.885">__alright__</span>, you're the, you gotta do this now. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>So before, before you went to Air <span style="color:red" data-ts="1218.125" data-end_ts="1218.365" title="1218.125" id=c_"1218.125">__Camp__</span>, what kind of hardware did you have to develop for, like at MIT what kind of hardware did they have that could do computer music? What was the process of, prior to working with Forex, what was the process like of making music? First of all, I assume it wasn't real time <affirmative>. 
+</p>
+
+<p>
+<b>Miller: </b>Well, yeah. The <span style="color:red" data-ts="1238.365" data-end_ts="1238.565" title="1238.365" id=c_"1238.365">__stories__</span> rather complicated. The, the system that Barry Ko wrote C Sound right on the <a href="https://en.wikipedia.org/wiki/Pure_Data">PD</a>P 11 mm-Hmm. <affirmative>. And that would do about a million operations per second, which was about one 100th of what you needed to do, sort of average complexity computer music at the time. Right. So things were far out of real time. It was an hour wait for a minute of music, or sometimes 10 hour wait for a minute of music, depending on how bad you, how hard you wanted to make it work. At the same time, when I got to the experimental music studio, they had received the gift of a thing called an array processor from, a company called Analogic Friend of, I'm not exactly sure how this worked. They built digital analog converters and Barry made friends with them in order to be able to build a digital analog converter <span style="color:red" data-ts="1285.125" data-end_ts="1285.245" title="1285.125" id=c_"1285.125">__to__</span> put on the <span style="color:red" data-ts="1285.605" data-end_ts="1285.725" title="1285.605" id=c_"1285.605">__P__</span> 11. 
+</p>
+
+<p>
+<b>Miller: </b>This wasn't, computers didn't have sound output at the time. Right. So you had to do something. So, Barry got himself in, in, in cahoots with <span style="color:red" data-ts="1296.605" data-end_ts="1296.765" title="1296.605" id=c_"1296.605">__the__</span>, with the guy who was, was an analog to digital and digital analog converter, manufacturer. Right. Route 1 28 outside of Boston, you know, this sort of technology <span style="color:red" data-ts="1306.525" data-end_ts="1306.765" title="1306.525" id=c_"1306.525">__built__</span> <span style="color:red" data-ts="1306.765" data-end_ts="1307.085" title="1306.765" id=c_"1306.765">__around__</span> Boston. And, and somehow as a result of that, they gave, the analogic gave Barry an array processor. Wow. The array processor was able to do 3 million multiplies a second and 6 million <span style="color:red" data-ts="1324.865" data-end_ts="1325.085" title="1324.865" id=c_"1324.865">__as__</span> a second, if I'm remembering correctly. And that was enough to run a few oscillators in real time. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Real basic sound output, right? 
+</p>
+
+<p>
+<b>Miller: </b>Yeah, pretty much. And this was, sitting in the machine room next to the PTP 11, waiting for someone to program it. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh. 
+</p>
+
+<p>
+<b>Miller: </b>And so I said, I'll do this. How do, where do I start? <laugh> <span style="color:red" data-ts="1347.625" data-end_ts="1347.845" title="1347.625" id=c_"1347.625">__can__</span> be a hint, right? Yeah, right. Exactly. <laugh> and, started, started writing real time computer music programs to run on these array processors. That was the first one of <span style="color:red" data-ts="1356.245" data-end_ts="1356.325" title="1356.245" id=c_"1356.245">__the__</span> series. Then there was the next array processor in a couple years, and that was it. Yeah. So I interfaced a keyboard to the array processor and interfaced the array processor to some old digital analog converters and made myself a little keyboard synth. It was fully programmable digital. 
+</p>
+
+<p>
+<b>Darwin: </b>That's outrageous. It 
+</p>
+
+<p>
+<b>Miller: </b>Was the Analogic music, or AP 400 array processor. So I called it Music 400 Uhhuh and hacked on that for a couple years, and then hacked on Music 500 for a couple years on the Next Generation Array processor. So that by the time I got to ucom, I actually already had notions about how to do a real-time. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, that's, 'cause that's, that's what I was missing kind of in my head, is the idea of going from AC sound based rendering system to, I mean, I have talked to people over the years who, when, when we talk about like their history with computer music, so many of them, one of their earliest memories is they went someplace where the, where <span style="color:red" data-ts="1418.545" data-end_ts="1418.765" title="1418.545" id=c_"1418.545">__ear__</span> cam was doing a demo Uhhuh of the four x and, you know, they would do something where it was, where it was a realtime resynthesis basic re realtime resynthesis or something, and how these people were floored and they knew that they had to spend the rest of their life chasing after this stuff. Right, right. 
+</p>
+
+<p>
+<b>Miller: </b>I knew it immediately. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Yeah. 
+</p>
+
+<p>
+<b>Miller: </b>Oh, <span style="color:red" data-ts="1440.725" data-end_ts="1440.885" title="1440.725" id=c_"1440.725">__look__</span>, you know, this has to be in real time. It has to, it has to react when you play 
+</p>
+
+<p>
+<b>Darwin: </b>It, I think for a lot of people at that time. That was almost unimaginable though. So for you, finding a way to take a specific piece of hardware and kind of wedge the improbable out of it is pretty interesting. 
+</p>
+
+<p>
+<b>Miller: </b>Well, that became my calling. Yeah. Pretty much, 
+</p>
+
+<p>
+<b>Darwin: </b>I guess. Right. And that's probably then also what opened the door for you to do the programming work, both with Barry and, and then eventually with Ear <span style="color:red" data-ts="1468.285" data-end_ts="1468.485" title="1468.285" id=c_"1468.285">__Camera__</span>. Right. 
+</p>
+
+<p>
+<b>Miller: </b>I think that's true. Yeah. Now to give Barry his dude, he was actually working on realtime, on realtime, electronic music systems at the same time as he was doing C Sound. Oh, interesting. Even somewhat. Well, he did both software synthesis of the C Sound sort both at Princeton, where he came out of <span style="color:red" data-ts="1486.325" data-end_ts="1486.525" title="1486.325" id=c_"1486.325">__and__</span> <span style="color:red" data-ts="1486.885" data-end_ts="1487.005" title="1486.885" id=c_"1486.885">__t__</span> Mm-Hmm. <affirmative>. But at the same time, he was working on a design for a realtime digital programmable processor of the same ilk as the four x, perhaps. Right, right. As early as 1973, I believe. Oh, really? At least by 76. Oh, wow. I'm not sure about the dates here, but I didn't know that he, he, he saw far into the future and other people were as well at the time. For instance, Stanford had a real time digital processor at the time. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Miller: </b>But the Forex was the one that really was the one that that first really arrived. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I, you know, again, like I said, there, there were people for whom that was, that was the light bulb when they saw the four x work. That was, that was the light bulb. So anyway, so you get to, to ear <span style="color:red" data-ts="1526.885" data-end_ts="1527.045" title="1526.885" id=c_"1526.885">__cam__</span> and you start working on it. Now, what's interesting to me is to think of the development of a composition, like, like Philippe's work, for example, that ends up sounding, the way you describe it sounds a lot more like a software development cycle than it does a musical composition cycle. And clearly it was, you had to create stuff. To what extent were there libraries of sort of like common tools that you could access? Or were you making all that stuff up on the fly? How much core development was necessary just to be able to, to implement some of these compositions? 
+</p>
+
+<p>
+<b>Miller: </b>There was, for instance, an oscillator. There was, in other words, there was an oscillator routine that you could get for the fourex. Actually, there were, there were several because everyone had his own version of the oscillator. Okay. There, there, there was no such thing as a standard library. People would, would borrow code from each other and throw it into their thing and then, and then reuse it. So, although it was never called a library, there was a lot of, there were a lot of examples around that you could pick out of and, and, and put things together. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. That's interesting. 'cause I was, I was curious to what extent there was an internal development management system kind of a thing within <span style="color:red" data-ts="1602.345" data-end_ts="1602.565" title="1602.345" id=c_"1602.345">__Air__</span> <span style="color:red" data-ts="1602.585" data-end_ts="1602.805" title="1602.585" id=c_"1602.585">__Cam__</span> that that forced it, it sounds more like it was like you happened to know the guy who had the routine that you wanted <span style="color:red" data-ts="1609.545" data-end_ts="1609.765" title="1609.545" id=c_"1609.545">__see__</span> to ask him for it. 
+</p>
+
+<p>
+<b>Miller: </b>That's exactly, it <laugh> you, you had to know people and you, and you had to be able to speak their language. And if you wanted an oscillator, you would go look over someone's shoulder and see what kind of oscillator they had. You had, you would've to understand the oscillator yourself. 'cause you would have to adapt it. It wasn't very reusable. Right. But you could get it, and then you could, you could make it into an oscillator you could use. Yeah. So it was, it was all very informal. 
+</p>
+
+<p>
+<b>Darwin: </b>So when is it that you developed patcher? 
+</p>
+
+<p>
+<b>Miller: </b>Oh, that was the second piece. Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. 
+</p>
+
+<p>
+<b>Miller: </b>The first piece that came down in 1987, actually it was a para of pieces. One with Philippe Man and one with Tino. That persuaded me that, eCom needed a way to reuse software in a more, in a more ready way than simply retyping people's oscillators and filters. Right. And, so I immediately, as soon as, as soon as that concert was over, I started trying to think about how to essentially put together a thing that would make it not necessary for you to write a new computer program from scratch every time you had a computer music piece to, to, to premiere. Right. And so I, the next premiere they called Fleet back to do another one, and that was to be July 88. And the other one was April 87. Okay. And so, over the summer of 87 <span style="color:red" data-ts="1699.025" data-end_ts="1699.245" title="1699.025" id=c_"1699.025">__and__</span> the fall of 87, I was starting to make this graphical programming environment and, and on the Macintosh for controlling the Forex that eventually became the Patrick. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>What are your influences to have made, you know, made the visual programming language and to use the metaphors you have? I, I have actually, you know, I'm in a lucky position of working with visual programming languages for a living. So I, I have a really wonderful gig, but part of it was my desire to find out where some of this came from. And so, you know, I went back to a lot of historical documents about early visual programming languages. There was actually a society of visual programming languages for a while that kind of, I think, folded up shop after producing a few journals. But nevertheless, a lot of the, the conceptual groundwork <span style="color:red" data-ts="1757.185" data-end_ts="1757.405" title="1757.185" id=c_"1757.185">__you__</span> laid didn't seem to have a clear precedent. What, what were you using as the influences for, like, choices about how the graphical thing worked and, the development of the, the, the, the development of the functions behind the visual facade? How, where did, where did those come from? <span style="color:red" data-ts="1783.765" data-end_ts="1784.005" title="1783.765" id=c_"1783.765">__Were__</span> there, was there something that was sort of informing you of a direction? 
+</p>
+
+<p>
+<b>Miller: </b>It's, again, it's hard to put myself in the state of mind I was in. Sure. But my understanding of it now is that I actually didn't set out to make a visual programming language at all. That in fact, what I wanted to make was a real <span style="color:red" data-ts="1800.845" data-end_ts="1801.005" title="1800.845" id=c_"1800.845">__time__</span> scheduler that could, that could be used in a musical situations Mm-Hmm. <affirmative>. And in particular, it would have to be a scheduler that waited for inputs and then reacted to them as, as a musical instrument does, as opposed to a real <span style="color:red" data-ts="1813.365" data-end_ts="1813.485" title="1813.365" id=c_"1813.365">__time__</span> scheduler that has its own plan about how Right. The future is supposed to unroll, <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>Way, 
+</p>
+
+<p>
+<b>Miller: </b>Real time scheduling, sort of, you know, you give it these jobs and then in <span style="color:red" data-ts="1822.045" data-end_ts="1822.125" title="1822.045" id=c_"1822.045">__the__</span> end you tell, okay, have done this job by this time and have done that job by that time. Right. And music doesn't work that way. The music, whatever you do is what you do right now. And so a large part of it was making a scheduler that basically was built around what to do right now as opposed to how to plan the future. Sure. And so I was thinking in a very kind, very formal and computer science kind of way about how to make a now based scheduler how things should intercommunicate, how things, how things should time off each other. In other words, what should this, what should caus out, how should causality work in a situation like that? And, and also how, how do you mix, signal processing, that's to say the making of the sound with the other things that we knew had to have had to happen, like decision making. 
+</p>
+
+<p>
+<b>Miller: </b>Right. Which is not so much signal processing, <span style="color:red" data-ts="1869.245" data-end_ts="1869.405" title="1869.245" id=c_"1869.245">__but__</span> something else. I'm not sure how you describe that. And so I was thinking for, for years, in fact, even starting with my work at MIT about, you know, abstractly, how do you set up a system that can be that way? Sure. And it was clear to me from the outset, I'm not sure why, but it was that, max Matthews's idea about using, about conceptualizing scheduling as being a bunch of different agents that, that, could kick each other, trigger each other as he called it. Right. That, that was essentially the right way to think about, real <span style="color:red" data-ts="1901.965" data-end_ts="1902.125" title="1901.965" id=c_"1901.965">__time__</span> scheduling. And then when you do conceptualize the world as being these agents that <span style="color:red" data-ts="1909.945" data-end_ts="1910.165" title="1909.945" id=c_"1909.945">__say__</span> that, that that trigger each other, then after a long period of sort of denial, it becomes clear that it would be easy to understand this for the user if those were actually shapes on a screen, they 
+</p>
+
+<p>
+<b>Darwin: </b>Were elements with connections. Right. 
+</p>
+
+<p>
+<b>Miller: </b>So in fact, the, the structure preceded the, the graphical. That's 
+</p>
+
+<p>
+<b>Darwin: </b>Really interesting. That's, that's amazing. Because I think most people, most people would have assumed the other, which is that there was some reason, you know, I guess if, if I would've had to pretend to come up with a history, I would've said, ah, you wanted people to do their own programming and you wanted to work on the course so you could, you work on this visual thing because it's a mechanism by which artists can more easily interact with programming. Now that's true. But it's interesting to hear that that wasn't the motivation on why it became what it was. 
+</p>
+
+<p>
+<b>Miller: </b>Right. That wasn't the original thought. Yeah. In fact, it's clear in retrospect that things were much, much too hard to do and that any, any way to make any way you could make it a little easier. <laugh> was obviously going to be very helpful and very important. Right. But in fact, I wasn't scared about difficulty, you know, it was fine for me to have text files describing all these relationships. And of course, figuring out how to structure the text files was hard to, hard to do. And I was working for years on that. But the idea of <span style="color:red" data-ts="1993.225" data-end_ts="1993.445" title="1993.225" id=c_"1993.225">__can__</span> I just make it be shapes and actually blow off the text file thing altogether except as a saving format. Right. That, yeah, that took me a while to, to arrive at. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Well, it certainly <span style="color:red" data-ts="2004.025" data-end_ts="2004.245" title="2004.025" id=c_"2004.025">__has__</span>, ha has, maintained its legs. That was a, that was, an amazing turn. And, but it's, it is also interesting to, to think of, to kind of peer inside your mind about how you think of these things and, and you know, the fact that, 'cause there was a lot happening in computers at the time, but not a lot of it necessarily looked like, looked like atypical versions of, of programming. I mean, you had HyperCard doing its thing and you had, you had some kinds of like, construction kit type tools that sort of were a, a form of simplified programming. But, you know, I think especially like in the gaming world, there were some construction kits, but there wasn't a lot that was oriented towards end user programming. And so at what point did you realize that like this graphical structure thing allowed you to kind of short circuit the typical, you know, what, what I can imagine as the typical composer working with a developer to create <span style="color:red" data-ts="2075.125" data-end_ts="2075.245" title="2075.125" id=c_"2075.125">__a__</span> end result and maybe somehow short circuit that process and allow the composer to work directly. I mean, is it something that once you got the graphics working was <span style="color:red" data-ts="2085.645" data-end_ts="2085.765" title="2085.645" id=c_"2085.645">__a__</span> natural? Or did you kind of present it to someone with trepidation and like, you know, what do you think? 
+</p>
+
+<p>
+<b>Miller: </b>Well, you know, I was working with Fleet Manari and so the, he was always, he was always much more autonomous than other composers at Aircom. He was much more willing to basically sit down and try to work stuff out by himself because he knew that that gave him more control. Okay. So I found myself basically wanting to empower him to do more and more things on his own <span style="color:red" data-ts="2116.765" data-end_ts="2117.045" title="2116.765" id=c_"2116.765">__steam__</span>, because I knew that that would be more, more what he wanted than if he had some assistant do it for him. Sure, sure. So there was a continuous process of me pushing more and more of the production work on Philippe so that he could really do it himself. Right, right. And every time I found a way to make that more possible that went into the program <laugh>, and then he learned it immediately and then he went with it. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>So it's funny now that now we would call that paraprogramming in an agile environment, but it was the, sounds like the most efficient way to get it done with a guy who has that personality. 
+</p>
+
+<p>
+<b>Miller: </b>That's right. You need, you need the right composer to do this <span style="color:red" data-ts="2154.195" data-end_ts="2154.485" title="2154.195" id=c_"2154.195">__type__</span> 
+</p>
+
+<p>
+<b>Darwin: </b>Thing. Right. Indeed, for 
+</p>
+
+<p>
+<b>Miller: </b>Sure. Indeed, it would not have worked with Boulez and it would not have, well, it wouldn't work with most people. Right. But literally, I was giving Philippe a new version of Max every day <laugh> for, for for months. Right. Like, okay, here, for instance, to, to make one simple example, there used to not be a thing called Send and Receive in, in Max, which is, which is the thing <span style="color:red" data-ts="2175.965" data-end_ts="2176.125" title="2175.965" id=c_"2175.965">__where__</span>, <span style="color:red" data-ts="2176.125" data-end_ts="2176.365" title="2176.125" id=c_"2176.125">__where__</span> you can give something a name and then in some other perhaps vastly different part of the program, you could get it right. Instead, in the first version of Max, every single thing that carried information had to be a wire. Mm-Hmm. <affirmative>. And as a result, pretty soon the screen was black with wires. Right. Just black with it. So, so the invention of non-local connections, invention of making a name and, and a point where you could put your thing here and then get it in some other place on the screen, that was like an epiphany. Right, right, right. And, and that was just one day, alright, okay, let's do this. Yeah. And then the next day was, I forget what sub patches I on and on and on, I went, I mean, you're like, gotta do something. This is not, let's, let's, let's make this better. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, that, that must have been pretty exciting. So getting a sense of your personality and the things that you enjoy and that, it sounds to me like you were in your own kind of personal heaven there. 
+</p>
+
+<p>
+<b>Miller: </b>It was great. Yeah. It was, it was, it was hog heaven. Yeah, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2235.275" data-end_ts="2235.765" title="2235.275" id=c_"2235.275">__Exactly__</span>. <span style="color:red" data-ts="2235.765" data-end_ts="2235.885" title="2235.765" id=c_"2235.765">__Right__</span>. So why are you not still there? 
+</p>
+
+<p>
+<b>Miller: </b>The reason I'm not still there is, I think partly for a very specific reason. And maybe that's part of <span style="color:red" data-ts="2246.805" data-end_ts="2246.925" title="2246.805" id=c_"2246.805">__a__</span> more general reason. The specific reason is that I got interested in graphics. Ah, and something made me think that, all right, this is cool making all these sounds, but we're going to have to be able to use other media as well, because there's obviously going to be a convergence between digital audio and digital video. Right. And your <span style="color:red" data-ts="2264.075" data-end_ts="2264.365" title="2264.075" id=c_"2264.075">__comm__</span> was not able to do digital video for a political reason. It, it's, <inaudible>, it's, it's, it's niche that was given to it by the, or kept open to it for it by the French government, was right to do music, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2280.625" data-end_ts="2280.845" title="2280.625" id=c_"2280.625">__Do__</span> music and <span style="color:red" data-ts="2281.205" data-end_ts="2281.365" title="2281.205" id=c_"2281.205">__audio__</span>. And there was a, 
+</p>
+
+<p>
+<b>Miller: </b>A completely parallel organization called INA, the Institute for something in, I forget Institute National <span style="color:red" data-ts="2289.905" data-end_ts="2290.125" title="2289.905" id=c_"2289.905">__or__</span> <span style="color:red" data-ts="2290.165" data-end_ts="2290.805" title="2290.165" id=c_"2290.165">__OL__</span> maybe something like that. Right. The <span style="color:red" data-ts="2292.445" data-end_ts="2292.725" title="2292.445" id=c_"2292.445">__<inaudible>__</span>. And anyway, <span style="color:red" data-ts="2293.445" data-end_ts="2293.645" title="2293.445" id=c_"2293.445">__the__</span>, those people were the people who had the oh, had the, had the image thing going. Sure. And they were doing stuff in parallel with <span style="color:red" data-ts="2300.765" data-end_ts="2301.125" title="2300.765" id=c_"2300.765">__aircon__</span>. There was very little communication between the two, a little bit, very little. And so I was starting to feel constrained by Ucomm, by the fact that I was not gonna be able to work on images there at all. Right. The other thing is that the aircom management, of course, had its own plans for the future of, of Max as it was then called. And it didn't really dovetail perfectly with my idea about how the future should be. Sure. They wanted to re-engineer the whole thing. And I didn't really think it needed to be re-engineered. I thought it needed to be pushed in more artistic directions. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Miller: </b>And so there, there were, there were things that I thought I could do better if I really just had the freedom to do it the way I thought it should be done. 
+</p>
+
+<p>
+<b>Darwin: </b>You, you mentioned something right there that I want to probe on a little bit, which is you said, at which point it was named Max, who named it? 
+</p>
+
+<p>
+<b>Miller: </b>I'm afraid I named it <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>All right. Well, congratulations. You get the award 
+</p>
+
+<p>
+<b>Miller: </b>Right? I named it for Max Matthews. Sure. And it was in, you know, it was in gratitude, I guess, for his, having invented the idea of, of real time scheduling by having essentially different functions or program lets, that we're able to communicate to each other, to tell them to do things in real time. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Interesting. Okay. Well good. That's, that's been cleared up. 'cause I think that's one of those things that nobody actually knew the answer to. So now we know. 
+</p>
+
+<p>
+<b>Miller: </b>Yeah. It, it was me <span style="color:red" data-ts="2379.865" data-end_ts="2380.085" title="2379.865" id=c_"2379.865">__and__</span> I think I, I actually named it Max before there was anything graphical. Like even in 85 when I first Deer <span style="color:red" data-ts="2386.365" data-end_ts="2386.525" title="2386.365" id=c_"2386.365">__Con__</span> Okay. At MITI was even working on a thing that I had already titled Max <laugh>, which was a bunch of things that would talk to each other by, by sending each other triggers. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's kind of interesting because I, I think that most people when they think of Max Matthews wouldn't necessarily think of that as an I identifying trait. But when you say it, and then you think, especially for anyone who's got a background in software development, the ubiquity of that kind of mechanism, and especially in in media programming in general, the ubiquity of that concept is, is, I mean, it's everywhere. And so yeah. It's, it's a, it's a, it's a great achievement to have been the person who kind of laid that groundwork. 
+</p>
+
+<p>
+<b>Miller: </b>Right. And I think, I'm not <span style="color:red" data-ts="2433.205" data-end_ts="2433.365" title="2433.205" id=c_"2433.205">__that__</span> sure about this, but I think it really was Matthews who conceptualized that. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. 
+</p>
+
+<p>
+<b>Miller: </b>And he of course claimed influences. So like, we could go, you know, we could go back and, you know, say, well, this aspect of it came from here and so on. 
+</p>
+
+<p>
+<b>Darwin: </b>He's a very generous 
+</p>
+
+<p>
+<b>Miller: </b>Guy. Yeah. He was indeed <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>So, so you, you left to kind of scratch your graphics itch. Where did that take you? 
+</p>
+
+<p>
+<b>Miller: </b>Well, that took me to the University of California, Uhhuh 
+</p>
+
+<p>
+<b>Darwin: </b><affirmative>, 
+</p>
+
+<p>
+<b>Miller: </b>University of California, San Diego. And this was a very, unexpected development. They, their music department hired me. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, really? Which, 
+</p>
+
+<p>
+<b>Miller: </b>I think at the time I was literally the only music professor in the world who couldn't read music <laugh>. It's really kind of the wrong idea. Right. <span style="color:red" data-ts="2483.665" data-end_ts="2483.885" title="2483.665" id=c_"2483.665">__And__</span>, and if you think, if you think anything about music as it should be practiced, if you want to be a music prof, you should have musical culture. You should know a little bit <span style="color:red" data-ts="2492.605" data-end_ts="2492.685" title="2492.605" id=c_"2492.605">__of__</span> music history. <span style="color:red" data-ts="2493.405" data-end_ts="2493.525" title="2493.405" id=c_"2493.405">__You__</span> should <span style="color:red" data-ts="2493.645" data-end_ts="2493.845" title="2493.645" id=c_"2493.645">__know__</span> music theory. You should play an instrument adequately, and you should be able to read music. You should be iterate 
+</p>
+
+<p>
+<b>Darwin: </b>One would think. Yeah. 
+</p>
+
+<p>
+<b>Miller: </b>And, I didn't acquire any of those things. I knew music history just fine. 'cause I knew everything that had happened since about 1979 electronic music. 
+</p>
+
+<p>
+<b>Darwin: </b>You were in the middle of it. Yeah. <span style="color:red" data-ts="2511.105" data-end_ts="2511.325" title="2511.105" id=c_"2511.105">__We__</span> talked to all those people. 
+</p>
+
+<p>
+<b>Miller: </b>Yeah. <span style="color:red" data-ts="2512.525" data-end_ts="2512.645" title="2512.525" id=c_"2512.525">__It__</span> was <span style="color:red" data-ts="2512.725" data-end_ts="2512.805" title="2512.725" id=c_"2512.725">__an__</span> <span style="color:red" data-ts="2512.805" data-end_ts="2513.125" title="2512.805" id=c_"2512.805">__aircom__</span> and everyone came through. So I, so I had my, whatever that was eight years of music history down pat. Right, right. But, before, say, before, Boles, before the end of the second World War, when Boles wrote <span style="color:red" data-ts="2525.225" data-end_ts="2525.445" title="2525.225" id=c_"2525.225">__Ma__</span> <span style="color:red" data-ts="2525.595" data-end_ts="2525.885" title="2525.595" id=c_"2525.595">__Toal__</span>, I think I was kind of clueless. Uhhuh <affirmative>. And, and that was only because I knew that from <span style="color:red" data-ts="2531.525" data-end_ts="2531.685" title="2531.525" id=c_"2531.525">__your__</span> <span style="color:red" data-ts="2531.685" data-end_ts="2531.885" title="2531.685" id=c_"2531.685">__kind__</span> culture. Right. So for me, music history starts really at the end of the second World War. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Oh, that's, that's wild. So S-U-C-S-D hires you and to do what 
+</p>
+
+<p>
+<b>Miller: </b>They don't tell you what to do. In fact, I, I wanted autonomy and I got it because, you know, you don't tell a professor what to do. You just tell them to do something that is so good that they'll want to keep you. Right. Right. <span style="color:red" data-ts="2555.485" data-end_ts="2555.605" title="2555.485" id=c_"2555.485">__I__</span> <span style="color:red" data-ts="2555.605" data-end_ts="2555.725" title="2555.605" id=c_"2555.605">__mean__</span>, you just, you just have to figure out what your research problem is and then do it. Mm-Hmm. <affirmative> And, for me that was easy because I knew that I wanted do some things with images and wanted to, <span style="color:red" data-ts="2566.605" data-end_ts="2566.725" title="2566.605" id=c_"2566.605">__I__</span> had various kinds of ideas about new kinds of real time capabilities that I wanted to think about making. And so I had plenty of research agenda, and they were cool with that, and they apparently saw it as valuable, so they hired me. Right. And I've been there for 21 years now. That's 
+</p>
+
+<p>
+<b>Darwin: </b>Awesome. Well, clearly that's a place you enjoy as well. 
+</p>
+
+<p>
+<b>Miller: </b>It works pretty well. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. What is, what is it that led you to do Pure Data to do pd? Because, you know, there again, there's, there's, maybe there's conjecture from a lot of people's standpoint, but I don't know that you've actually talked specifically about your motivations to do it and, and how it became what it is. 
+</p>
+
+<p>
+<b>Miller: </b>Well, okay, the moment was 1995. I should have been 94, I guess. And I think in 1995 was about the time I started doing Pure Data. Okay. Might, I might be off by <span style="color:red" data-ts="2624.125" data-end_ts="2624.285" title="2624.125" id=c_"2624.125">__you__</span>. I'm not <span style="color:red" data-ts="2624.565" data-end_ts="2624.685" title="2624.565" id=c_"2624.565">__that__</span> sure about that. So the situation at that point was there was no such thing as MaxMSP. Right. So Max was a program that ran on Macintosh's. Right, right. Max System nine and or system, whatever it was then. Not, not, not, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2637.645" data-end_ts="2637.765" title="2637.645" id=c_"2637.645">__I__</span> mean <span style="color:red" data-ts="2637.925" data-end_ts="2638.045" title="2637.925" id=c_"2637.925">__E__</span> six, <span style="color:red" data-ts="2638.335" data-end_ts="2638.685" title="2638.335" id=c_"2638.335">__maybe__</span> something like that. Right. 
+</p>
+
+<p>
+<b>Miller: </b>Okay. And, and then there was another max, there was a thing called Max that ran at <span style="color:red" data-ts="2645.045" data-end_ts="2645.325" title="2645.045" id=c_"2645.045">__<inaudible>__</span>, which ran on, 
+</p>
+
+<p>
+<b>Darwin: </b>The Jmax system, right, Eric? 
+</p>
+
+<p>
+<b>Miller: </b>No, no, not Jmax, just plain Old Max. It ran on Eric Lindeman's box, the ISPW. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, yeah. Okay. Which, right. 
+</p>
+
+<p>
+<b>Miller: </b>I was in the design team for the ISPW after the Forex. Mm-Hmm. <affirmative>. So by 94, Eric had left ear <span style="color:red" data-ts="2662.485" data-end_ts="2662.685" title="2662.485" id=c_"2662.485">__com__</span> and I had left Ear <span style="color:red" data-ts="2663.805" data-end_ts="2664.005" title="2663.805" id=c_"2663.805">__Comm__</span>. And Icom had these I pws that could run a version of Max, it was called Max FTS, actually that is the correct name for it. And it had signal processing in it. And, and here, there a lot of complicated tourings and froing went, went back and forth. But, of course it was a desire of David Zellis at <a href="https://en.wikipedia.org/wiki/Cycling_%2774">Cycling '74</a> to make, to get a version of MaxMSP that could actually run on, on off the shelf hardware on McIntosh's. Right. But it wasn't ready at that point. David Zicarelli, actually, I don't want to reveal anything that would be scurrilous or anything like that, but, David had worked at least for a, a year at <span style="color:red" data-ts="2709.905" data-end_ts="2710.125" title="2709.905" id=c_"2709.905">__Kom__</span> on getting a Macintosh version of Max FTS so that he could run signals on the Macintosh version of Max. And technically it was clear that the whole thing was possible, but California has one legal system, France has another <laugh>. It became impossible to actually get the legal problems worked out so that this thing that was clearly in evidence at eCom that belonged to eComm could actually be commercialized through a California company, 
+</p>
+
+<p>
+<b>Darwin: </b>Uhhuh <affirmative>. 
+</p>
+
+<p>
+<b>Miller: </b>So, and this was going on for years. And meanwhile I was, seeing that things were kind of at loggerheads and seeing that it was basically not going to work for me to do work on that because it would, you know, if you're working on a project that has, that is under, that is under negotiation between two other parties, each of which contain parts of the copyright, you don't know whether your work is ever gonna see the light of day. Right. And so for me, that made it rather clear that what I should do is just hightail it and write something else. Sure. So it was clear to me that I couldn't work on Max MSP because that was the thing that was contractually stuck at the time. Right. And also, I couldn't do graphics on it because here come graphics. No. So I just started a whole new thing, and I had a graduate student, mark Danks, who's now a famous computer games developer. Right. Who wrote a graphics package for Max, the MIT, sorry, the ear version of Max, which I had a copy of uhhuh <span style="color:red" data-ts="2808.365" data-end_ts="2808.565" title="2808.365" id=c_"2808.365">__and__</span> could not distribute <laugh>, so he couldn't distribute his thing. So we were just sort of stuck there until finally I just threw it all out and started over. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. How was that tied into your research work at the university? Was that kind of supported by the, by as as your primary research there? 
+</p>
+
+<p>
+<b>Miller: </b>
+</p>
+
+<p>
+<b>Darwin: </b>Or did you have to do other research as well? 
+</p>
+
+<p>
+<b>Miller: </b>No, <span style="color:red" data-ts="2833.545" data-end_ts="2833.765" title="2833.545" id=c_"2833.545">__the__</span>, that was my primary research activity. 
+</p>
+
+<p>
+<b>Darwin: </b>So now you decided to make it a, an open source product. And what, what's interesting to me, and maybe it's just because I was really embedded in the computer music where I wasn't embedded in other practices, but it seems to me, like in the music world, we had a number of things that were open source. We had, you know, pure data as it was being developed. Certainly C Sound was out there. And then people were doing like little add-on programs for CSS sound that were all kind of out there as open source tools. I never really, I didn't really see that in a lot of other practices, you know, it, and, again, I wasn't, I wasn't embedded into the Linux world, you know, where I probably would've saw a ton of it, but certainly, you know, I was a Mac Macintosh <span style="color:red" data-ts="2883.885" data-end_ts="2884.085" title="2883.885" id=c_"2883.885">__and__</span> Windows guy. And in that world, you know, if you were doing graphics, you were buying a bunch of graphics programs, if you were gonna do video work, what little you could do at the time, you were buying very expensive packages to do it, and a lot of times very expensive hardware to make it happen. What, what caused you to say, well, the open source thing is, is the direction I'm gonna go with this? 
+</p>
+
+<p>
+<b>Miller: </b>Well, for me it was very, it was a very simple thing. I had seen that when you tried to write a software that was commercial, that was for money, 90% of the effort that you put in was not writing the software. Mm-Hmm. <affirmative>, <span style="color:red" data-ts="2924.165" data-end_ts="2924.365" title="2924.165" id=c_"2924.165">__what__</span> was related to commercialization. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Miller: </b>And if you turn that around, that means that you can do 10 times as much stuff if you just don't commercialize it. Sure. So, to me, it was a no-brainer, <laugh>, it's just there was simply no way you were gonna get me to multiply my workload by 10 in order to try to 
+</p>
+
+<p>
+<b>Darwin: </b>Commercialize <span style="color:red" data-ts="2942.005" data-end_ts="2942.285" title="2942.005" id=c_"2942.005">__that__</span> thing. Just Yeah. Just to, just to get a, a little check <laugh>. 
+</p>
+
+<p>
+<b>Miller: </b>Exactly. It was not going to be worth it. Right. And, and of course, I wasn't the first person to think that way. Right. Barry Ko, of course, distributed C Sound for free. Mm-Hmm. <affirmative>. And even before him, I believe Max Matthews distributed Music five, 
+</p>
+
+<p>
+<b>Darwin: </b>Music five was for free. <span style="color:red" data-ts="2962.995" data-end_ts="2963.285" title="2962.995" id=c_"2962.995">__Yeah__</span>, 
+</p>
+
+<p>
+<b>Miller: </b>Absolutely. Or for the cost of the stack of cards anyway. Right. I think, 
+</p>
+
+<p>
+<b>Darwin: </b>I think he, I think you could actually send him a box of cards and he would use your cards. That sounds right. <span style="color:red" data-ts="2972.575" data-end_ts="2972.695" title="2972.575" id=c_"2972.575">__He__</span> had to pay for postage. 
+</p>
+
+<p>
+<b>Miller: </b>That sounds right. So he would, he would do it for cost, right. Basically. Yeah. And that was, that would be hugely subsidized because the machine that punched the cars was probably going out for, you know, dozen. 
+</p>
+
+<p>
+<b>Darwin: </b>Just <span style="color:red" data-ts="2983.895" data-end_ts="2983.935" title="2983.895" id=c_"2983.895">__the__</span> air, just the air conditioning probably cost an arm and a leg. Right, right, right. 
+</p>
+
+<p>
+<b>Miller: </b><laugh>. So I actually don't know how Max was able to get Bell Labs to allow him to distribute software for free. Because I believe formally everything that he did belonged to Bell Labs. Right. Unix, for instance, belonged to Bell Labs. Mm-Hmm. <affirmative>, which was not related, but a similar project. Right. But as it turned out at UCSD, if I wrote software, it belonged to me 
+</p>
+
+<p>
+<b>Darwin: </b>Uhhuh <affirmative>. 
+</p>
+
+<p>
+<b>Miller: </b>So my, the software I wrote at Aircom <span style="color:red" data-ts="3011.895" data-end_ts="3012.055" title="3011.895" id=c_"3011.895">__all__</span> belonged to ucom. But 
+</p>
+
+<p>
+<b>Darwin: </b>That's interesting. I thought that, I thought that the University of California had a pretty heavy hold on the work that it's research. 
+</p>
+
+<p>
+<b>Miller: </b>Well, God help you if you do something that's patentable. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, but there you go. 
+</p>
+
+<p>
+<b>Miller: </b>Software is in a different class. That's a copyrightable thing. And so, for instance, if you write an epic poem, it's the copyright is yours. Right. And if you write a program, the copyright is yours by, I believe exactly the same reasoning. 
+</p>
+
+<p>
+<b>Darwin: </b>I see. Okay. But if you write the, an algorithm that they can patent, then he might be in trouble. Huh. 
+</p>
+
+<p>
+<b>Miller: </b>Then they want their <laugh>, then they want to control it. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Interesting. Oh, I, I didn't, that was something I didn't understand because it was hard for me to understand how you were doing this as part of your research, but it didn't get just gobbled up by the University of California. Right. 
+</p>
+
+<p>
+<b>Miller: </b>Actually, I spoke to someone in the, and I, I was under the impression when I was writing <a href="https://en.wikipedia.org/wiki/Pure_Data">PD</a> that since it was the only paradigm I knew having been from <span style="color:red" data-ts="3071.485" data-end_ts="3071.885" title="3071.485" id=c_"3071.485">__<inaudible>__</span>, oh, of course <a href="https://en.wikipedia.org/wiki/Pure_Data">PD</a> belongs to UCSD. What I would like to be able to do is, is get UCSD's permission to allow me to, release it with a permissive copyright. Right. So I call someone in the technology transfer office, and we had a nice conversation where I told him what was going on, and he said, I don't believe UCSD owns this thing. I believe you own this thing <laugh> on the basis of what you told me. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Alright. That's probably the mo <span style="color:red" data-ts="3096.665" data-end_ts="3096.885" title="3096.665" id=c_"3096.665">__the__</span>, the one honest lawyer in the, in the state of California. Good for you for finding them <laugh>. 
+</p>
+
+<p>
+<b>Miller: </b>It <span style="color:red" data-ts="3103.485" data-end_ts="3103.605" title="3103.485" id=c_"3103.485">__was__</span> actually, maybe I was luckier. Maybe, you know, it's just the uc, corporate culture. Right. People, you know, are really thinking about, people think that the researcher is the person who's doing the important work, and therefore they're all about trying to make it easier for them to do their thing. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. But one of the other things that, that you've done and kind of as an extension of your work on, on pd, but also probably is some of the, some an extension of the work at the university, is you wrote, what I would suggest is probably the, the most complete electronic music programming book. The . What is the name of it? It help me out with that, 
+</p>
+
+<p>
+<b>Miller: </b>The theory and technique of electronic music. 
+</p>
+
+<p>
+<b>Darwin: </b>That's right. That's the theory and technique of electronic music, which is amazing in its breath, but clearly took a lot, a lot of time to, to put together and a lot of thought. How much was that related to what you were experiencing? Like, I mean, my assumption is you teach, right? Oh, 
+</p>
+
+<p>
+<b>Miller: </b>I do. Yes. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>How much of that was related to what you were seeing in, in the classroom or your difficulty in finding materials to use for teaching material, and how much of it was just your desire to write a book and put some of these thoughts down? 
+</p>
+
+<p>
+<b>Miller: </b>Well, it was two things. There was nothing that I could use as a textbook at the time. Right. Because the existing textbooks, simply didn't tell you how to do it. They told you what it was, but they didn't give you a thing that would, that you could actually do in order to get there. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Miller: </b>And then the, of course, the software systems came with manuals and they would tell you how to do the specific things, but there was simply no easy way to connect the, what I would think of as the lore of electronic music with the, with available tools that would <span style="color:red" data-ts="3220.565" data-end_ts="3220.725" title="3220.565" id=c_"3220.565">__argue__</span> <span style="color:red" data-ts="3220.925" data-end_ts="3221.165" title="3220.925" id=c_"3220.925">__<crosstalk>__</span> 
+</p>
+
+<p>
+<b>Darwin: </b>The actuality of code. Yeah. Right. 
+</p>
+
+<p>
+<b>Miller: </b>Yeah. And so I wanted to write something that not only told you what was going on, but but made it possible with live examples so that you could, so that you could see it happening and do it yourself. Right. And so that was the impetus for the book. The other thing that, that was one impetus for the book, there might have been two impetus. The other of which was I always felt like computer music was underutilized in the sense that there were all these things that you could do with a computer, and there was a sort of a gap between the possibilities of the computer and the things that musicians could really actually get their hands on. And so for a long time, I've been trying to figure out a way of making there be examples of things done in computer music that are so transparent that you can actually understand what the examples are doing. Sure. And also use them, get them. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, one of the things I think that's really important about that book, and subsequently there have been some other books, the nature of, of Code is a, is a good example. Farrell's book on, 
+</p>
+
+<p>
+<b>Miller: </b>Oh, right 
+</p>
+
+<p>
+<b>Darwin: </b>On Designing Sound <span style="color:red" data-ts="3291.745" data-end_ts="3292.165" title="3291.745" id=c_"3291.745">__Farnel__</span> 
+</p>
+
+<p>
+<b>Miller: </b>Or 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="3292.685" data-end_ts="3293.005" title="3292.685" id=c_"3292.685">__Farnel__</span>, I mean, yeah. 
+</p>
+
+<p>
+<b>Miller: </b>Andy Farnell Designing 
+</p>
+
+<p>
+<b>Darwin: </b>Sound. Yeah. Designing sound. One of the things that I think is really important about that, but it really started with your book, was this sense of saying, here's the, here's the paths that have been explored. You don't have to struggle to find these basic paths. Let's talk about the basic paths the way they are. I think, I was actually, when you were first doing it, you had, you were putting up chapters and like preliminary versions up as, as <a href="https://en.wikipedia.org/wiki/Pure_Data">PD</a>Fs for people to kind of review and, and, and get something. I was an avid follower of that while you were doing it. It was, it was cool. But I thought it was, I thought that powerful thing there was, it sort of set it, it sort of set the path of that explor where exploration had occurred. So people don't have to say, well, I don't know if anyone's ever tried this. I don't know if anyone's tried that. I mean, they're free to try it, but also they're free to understand that that's part of a continuum of research that someone might have taken. And your, your book kind of brought that together to me at least. I thought, 
+</p>
+
+<p>
+<b>Miller: </b>Wow. That's that's great to hear. I didn't realize that <laugh> that was accomplishing anything like that. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, but I think that there have been books like that throughout. I mean, it's, it is one of the things that I think is kind of interesting about electronic music is that there have been some of these seminal books that sort of set paths, right. I think of, the computer music book that, that Curtis Rhodes edited and then also his microphone book. Right. I think that those are two <span style="color:red" data-ts="3388.465" data-end_ts="3388.685" title="3388.465" id=c_"3388.465">__or__</span> two books where it was like, here are paths that have been explored. You're free to explore them and you're free to build off of these. But these are, this is the trunk of the tree. Mm-Hmm. <affirmative>. And here are some branches. And feel free to go from there. I felt like that's what your book did in a very, in a very useful <span style="color:red" data-ts="3407.865" data-end_ts="3408.085" title="3407.865" id=c_"3407.865">__and__</span> very detailed way. 
+</p>
+
+<p>
+<b>Miller: </b>It was all about the detail, actually. Yeah. I thought the detail was important. Sure. And I stayed away from a bunch of things that would've made the book a lot lot bigger. Like for instance, compositional tools. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, right. Yeah. 
+</p>
+
+<p>
+<b>Miller: </b>Well anyway, lots and lots and lots of things just didn't touch so that you could just hone in on synthesis, which is what it's really about. 
+</p>
+
+<p>
+<b>Darwin: </b>So do you have an itch to write that next book about compositional processes? <span style="color:red" data-ts="3434.825" data-end_ts="3435.045" title="3434.825" id=c_"3434.825">__No__</span>, I'm afraid 
+</p>
+
+<p>
+<b>Miller: </b>I got three books. I want to write some, actually not about composition processes specifically. Oh really? But, one of them is just about how real time works. Uhhuh <affirmative> you real time interactivity. And what really is the, you know, what, what's a good <span style="color:red" data-ts="3450.165" data-end_ts="3450.405" title="3450.165" id=c_"3450.165">__middle__</span> model for thinking about getting stuff done on time and right when to do it? And I <span style="color:red" data-ts="3455.045" data-end_ts="3455.285" title="3455.045" id=c_"3455.045">__wanted__</span> to write something about, this will never happen. You know, maybe I'll get some of this happening, but little but some little surface of it. But another thing is, examples of computer music more fully realized, oh, in other words, here's a piece of computer music and here's the, here, here's <span style="color:red" data-ts="3472.805" data-end_ts="3472.845" title="3472.805" id=c_"3472.805">__an__</span>, here's 
+</p>
+
+<p>
+<b>Darwin: </b>How you got there. Yeah. Here, 
+</p>
+
+<p>
+<b>Miller: </b>Here's what it's about. And here's how you, <span style="color:red" data-ts="3477.115" data-end_ts="3477.405" title="3477.115" id=c_"3477.115">__here__</span>, here's <span style="color:red" data-ts="3477.765" data-end_ts="3477.885" title="3477.765" id=c_"3477.765">__the__</span> realization of it for perhaps in some cases, but also sort of an in depth, but more specific. Alright, so to do this, you had, there's a spatialization step, but before that, there's a synthesis step. And before that there's analysis step and how did they all work together? And then how would the parameters controlled? And then how did that thing all get sequenced? And, and then what, you know, what do you do in order to realize this is a piece on the stage? Sort 
+</p>
+
+<p>
+<b>Darwin: </b>Of. See, it's funny though, because that kind of breakdown, it seems like the antithesis of how people talk about their work right now. Right Now, if you see something that you find compelling and you talk to the people that were involved in creating it, most often the way that they'll talk to you about it is like, oh, it was so hard and I worked so hard. And it does at least 50 magical steps and I can't even really explain it. And, but yeah, it's cool, isn't it? <laugh> and it's <span style="color:red" data-ts="3531.005" data-end_ts="3531.165" title="3531.005" id=c_"3531.005">__really__</span>, you come away from that. It's, it's like you sit at the table for dinner and you come away and you're still hungry. Right. <laugh>, I feel like there, I feel like that kind of detailed breakdown. And, and also if you do get breakdowns, oftentimes it's a technical breakdown, but you very seldom get the conceptual breakdown. And I think this is an interesting idea you have, but also something that kind of ties to your background when you were at Ear Camm working with composers, or when you were at MIT working on composition, working with those people sort of meant decoding the intentionality of the things that you were doing so that you could properly implement them in code. Or at least it seems to me like that's a, a primary task though. 
+</p>
+
+<p>
+<b>Miller: </b>That very much is, and in fact, a large part of what Max and <a href="https://en.wikipedia.org/wiki/Pure_Data">PD</a>R is, he's sort of a 30 year process of trying to decode 
+</p>
+
+<p>
+<b>Darwin: </b><laugh> intention, <laugh> 
+</p>
+
+<p>
+<b>Miller: </b>Decode composer's intentions. Right. In a general enough way that Right. That whatever your intentions are, maybe you can map them onto this thing Sure. <span style="color:red" data-ts="3596.105" data-end_ts="3596.325" title="3596.105" id=c_"3596.105">__Or__</span> realize them in this thing. 
+</p>
+
+<p>
+<b>Darwin: </b>Well boy, I've used up about three times as much time as I, I suggest that I would, but before, oh man. I wish there was more time, a lot more time, and maybe we'll do this again soon. But, what, what do you see as the exciting next, next steps in, in the world of your work? What are the things that you're excited about doing next? 
+</p>
+
+<p>
+<b>Miller: </b>Oh gosh. Well, I could tell you what I'm doing now. Yeah. But that's maybe not what I'm doing next. Well, 
+</p>
+
+<p>
+<b>Darwin: </b>But let's hear what you're doing now. That's a good start. 
+</p>
+
+<p>
+<b>Miller: </b>So what I'm doing right now is I'm trying to understand how to do real time computer graphics, interactive graphics in the context of a full dome theater. Okay. So I'm, I'm trying to figure out how, how to get, the same kinds of interactive processes that underlie Max and Pure data available in a, in a stack of machines all running Windows XP or something like that. Right. All driving projectors that are pointing in different directions that are going to weave together a tapestry of light that will be, displayed on the hemisphere. And the reason I understood in that is because I just got an opportunity a year ago to do a short, piece in, in such a theater. And I'm working with a singer, Juliana Snapper, who also got excited about the idea of messing around with the Dome Theater. So we have a duo now. And so right now I'm thinking about how to make it possible for us to do things that involve music and graphics in an extremely surround kind of situation. 
+</p>
+
+<p>
+<b>Darwin: </b>So you mentioned earlier in the evening before I started taping, you, you mentioned that you were doing a performance in the, in the, dome here in Boulder. 
+</p>
+
+<p>
+<b>Miller: </b>Right. There's a, there's a Fisk Planetarium Right. As part of the University of Colorado Boulder campus, part of the astronomy or astrophysics department. I'm not sure precisely how that works. And they were doing a festival of the, starting the week of August 3rd, and they've invited us to do a performance on August 6th. So, assuming everything actually works, 'cause it doesn't yet 
+</p>
+
+<p>
+<b>Darwin: </b><laugh> 
+</p>
+
+<p>
+<b>Miller: </b>We 
+</p>
+
+<p>
+<b>Darwin: </b>Will Well, you got two weeks, right, 
+</p>
+
+<p>
+<b>Miller: </b><laugh>? Yeah. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>I <span style="color:red" data-ts="3732.165" data-end_ts="3732.325" title="3732.165" id=c_"3732.165">__don't__</span> know. You used to, you used to have two years to implement something. Now it's two weeks 
+</p>
+
+<p>
+<b>Miller: </b><laugh>. That's right. The time always does go somewhere after <span style="color:red" data-ts="3740.325" data-end_ts="3740.485" title="3740.325" id=c_"3740.325">__All__</span>. Right. Indeed. So, yeah. So, assuming we're there, assuming we're all together at the right time, we'll be doing a new performance of, of, of very new work, in about two, actually it's three weeks from now. Right. Way. <span style="color:red" data-ts="3753.045" data-end_ts="3753.125" title="3753.045" id=c_"3753.045">__I__</span>, and yeah, that's, that's not actually different in kind from anything that I've done before, but something about the scale and quality of that work is very reminiscent to me of how it felt like to be using the four x back in 85. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well, this, this idea of spanning things across machines, <span style="color:red" data-ts="3774.285" data-end_ts="3774.405" title="3774.285" id=c_"3774.285">__I__</span> mean, have you done a lot of that <span style="color:red" data-ts="3775.445" data-end_ts="3775.645" title="3775.445" id=c_"3775.445">__kind__</span> of work before? 
+</p>
+
+<p>
+<b>Miller: </b>Well, the Fourex was eight processors. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Oh, good point. That, yeah, of course. The 
+</p>
+
+<p>
+<b>Miller: </b>ISPW was six processors. Mm-Hmm. <affirmative> then processors got nice and fast. So then computer music, as it was understood, could be done on a single processor, say by the year 2000. So I quit worrying about making things work on multiprocessors. Right. But suddenly when you're pumping, what, 8,000 by 8,000 pixels, you can't do it. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="3802.085" data-end_ts="3802.325" title="3802.085" id=c_"3802.085">__<crosstalk>__</span>. Yeah. The <span style="color:red" data-ts="3802.565" data-end_ts="3802.725" title="3802.565" id=c_"3802.565">__scale__</span>, the scale of a planetarium is, is overwhelming. 
+</p>
+
+<p>
+<b>Miller: </b>It's thoroughly nuts. And I still don't really know what the purpose of this is, but I can tell that it's an interesting and very hard problem <laugh>, and it definitely is a, is a good way to make me stay up nights trying to figure out on how I'm gonna solve the next issue. Well, 
+</p>
+
+<p>
+<b>Darwin: </b>I'll tell you from, from the story that you've just told me though, it sounds like the the perfect place for you to live. Because again, what a puzzle, right? 
+</p>
+
+<p>
+<b>Miller: </b>It's, yep. It's a hard, it's a tough nut to crack. Right. <laugh>. And people haven't really cracked it terribly well 
+</p>
+
+<p>
+<b>Darwin: </b>Yet. Yeah. That's a <span style="color:red" data-ts="3838.045" data-end_ts="3838.205" title="3838.045" id=c_"3838.045">__fact__</span>. That's 
+</p>
+
+<p>
+<b>Miller: </b>True. And so it's, you know, maybe we'll fall flat on our faces, but, it'll be a whole lot of fun to try. 
+</p>
+
+<p>
+<b>Darwin: </b>Right, indeed. Well, Miller, I want to thank you so much for taking the time, and just, just kinda 
+</p>
+
+<p>
+<b>Darwin: </b>Walking 
+</p>
+
+<p>
+<b>Darwin: </b>With us through the history of it is amazing. 
+</p>
+
+<p>
+<b>Miller: </b>It's been fun. Alright. It's been a great pleasure. 
+</p>
+
+<p>
+<b>Darwin: </b>Thanks a lot. 
+</p>
+
+<p>
+<b>Darwin: </b>And there it is. What an amazing man, what an amazing body of work he's produced. Thanks so much for him taking time out of his schedule to talk to me. It was really a wonderful evening. Those of you in the Boulder area, I hope that you caught wind of that performance that's happening on the sixth. I know I'll be there. I hope that you will be too. Beyond that, everybody please keep an eye out for what he's doing This work on Full Dome Planetaria is really gonna be pretty awesome. And if we can do real time visual work in that environment, it's gonna be great. Otherwise, thank you so much for listening. Thank you so much for your continued support of the podcast. Please share this with your friends, family, other people that you meet. If you're in Des Moines tonight, please stop by, tonight being Sunday night. Please stop by the Des Moines Social Club here. Me and Mark Walsh play a little bit. Otherwise, I will see you next week. Thank you so much.
+</p>
+
+    <p><i>Copyright 2015-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
