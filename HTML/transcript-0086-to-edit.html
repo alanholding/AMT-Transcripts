@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0086 - Chris Vik of Ethno Tekh</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0086 - Chris Vik of Ethno Tekh</h2>
+        <h3>Released: Jul 5, 2015</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3656215/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Okay. This week I'm very happy to introduce you to, a rather new friend of mine, somebody that I kind of contacted out of the blue. And we've started a short discussion, but I immediately wanted to jump into a podcast chat with him because of the kinds of work that he does. His name's Chris Vic. And, the way that I would suggest he has, he does, his thing is he uses motion control. And, the, the stuff I saw frankly, was related to the use of the Connect, which is something that I've always found really exciting and interesting. So, with that, I'm going to, say hi to Chris. Hi, Chris. How are you? 
+</p>
+
+<p>
+<b>Chris Vik: </b>Yeah. Good day, Darman. Thanks for having me. Good. 
+</p>
+
+<p>
+<b>Darwin: </b>Thanks a lot for being on the podcast and, and, for being willing to kind of open this door. It's, it's really good to get to know you. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, it's a pleasure to be here. Thanks, man. 
+</p>
+
+<p>
+<b>Darwin: </b>So why don't we kick this off by having you, tell the listeners a little bit about what you do in what your primary interests are. 
+</p>
+
+<p>
+<b>Chris: </b>Right. So look at, at the moment, I've sort of built up a number of years of doing performances, and a lot of exploration with motion control. And like you said, it's been with the Connect at the moment. So I've, I sort of started a few years ago when I was doing, a bachelor degree in Fine Arts in Sound. And I had a performance class and was looking for interesting ways to engage the audience. 'cause I always had a problem with, like laptop music performances. I always found them extremely dry. And, I always sort of was looking for a way that it could be a little bit more interesting for the viewer and a little bit interesting as a, from the performance point of view from, like from my point of view, I didn't just wanna press play, so I ended up seeing people using the Connect. 
+</p>
+
+<p>
+<b>Chris: </b>It was like 2011, I think people were starting to really do all these hacky projects with it and three d printing and scanning. And, there was a really bare <span style="color:red" data-ts="146.735" data-end_ts="147.015" title="146.735" id=c_"146.735">__bone__</span>, simple open source, application called OSC Ellerton or OSCs Skeleton. Right. Which just output, OSC. So I sort of got my mind ticking in. I remember I did a, a, a class, with a teacher called, Paul Dawn Bush, who was, teaching my Maxims <span style="color:red" data-ts="166.175" data-end_ts="166.295" title="166.175" id=c_"166.175">__P__</span> class. And I never really touched Maxims p before that. I had a couple of classes with him and then I thought, <span style="color:red" data-ts="171.535" data-end_ts="171.735" title="171.535" id=c_"171.535">__oh__</span>, I think, Maximus p can can do something with, OSC. So I gave it a crack and, and there I was ended up, doing quite a number of performances with the Connect as a, like a music tool. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. What were, what did some of the first stuff that you did look like? Was it kind of simple control of like note and volume or, 'cause OSC can be kind of anything, so I'm just wondering what your initial experiments were with that. Yeah. 
+</p>
+
+<p>
+<b>Chris: </b>Well, I, I suppose I like the, the initial experiment was just like one-to-one continuous control. Okay. So like a cc, like a knob, like a Right. And the idea was just to modulate something in a, like in an audio track and, and see where that sort of went. And then as I sort of got the hang of modulating that with one parameter of a hand, I sort of went, oh, I can, I can attach another parameter there, <laugh>. And so I ended up, creating some controllers. One of them has, I think seven, seven parameters mapped to different, axes speeds and positions. So it gets rather complicated very quickly. Yeah, so it started off very simple. It was just like a, it was, it was literally just a, a one-to-one mapping of, of maybe my ex of my hand. And I was just changing a note. Sure. Just <span style="color:red" data-ts="249.965" data-end_ts="250.045" title="249.965" id=c_"249.965">__a__</span> pitch. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. So, I am, I'm kind of curious, one of the things I like to do is kind of explore people's backgrounds. And this actually sounds kind of interesting because it sounds like prior to taking this performance class, you weren't really tech guy. 
+</p>
+
+<p>
+<b>Chris: </b>Right? Well, I, I wasn't away, but it was always, I, I've always been interested in programming and music, but there were always very separate entities for me. I see, okay. As I was growing up. <span style="color:red" data-ts="282.685" data-end_ts="282.845" title="282.685" id=c_"282.685">__But__</span> yeah, so I was always very scared of the idea of programming in music. And I'd actually looked at a number of people's, you know, patches and things like that, and it was sort of very overwhelming. And I didn't, for some reason there was a, a big disconnect between the idea of a performance or the idea of making music and having some kind of programming preparation. I suppose it was the preparation that was, was kind of scary. I thought you could just lay out music and then perform somehow <laugh>. Right. You know, I didn't sort of, so I mean, <span style="color:red" data-ts="314.485" data-end_ts="314.645" title="314.485" id=c_"314.485">__what__</span> was, since I was 12, I remember my brother introducing me to QBasic and, things like that. 
+</p>
+
+<p>
+<b>Chris: </b>And I ended up, just sort of messing around in Pascal. And it was back in the, probably before the internet was a bit of a thing, and maybe mid nineties or something. And I started going on BBSs, I don't know if you're, , yeah. Familiar with the old Absolutely. Boards. Yep. And, I ended up getting a framework, this is when I was about 12 or 13, and I got a framework for building little plugins for BBSs. And so I ended up just coding these little front <span style="color:red" data-ts="352.265" data-end_ts="352.485" title="352.265" id=c_"352.265">__end__</span>, you know, news like article generators and things like that. And at the same time, I was also in a crew, like a little music making crew, on one of the BBS sort of groups, over here in Melbourne. And, we were making music with like a plug trackers, like a mod mod Trackers, I think it was. Mm-Hmm. Impulse Tracker was one that I used. Oh, sure. Mod Plug Tracker. Yeah. So, I mean, that's really where I started making music, back, you know, when I first first initially started composing things. Well, 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's interesting because to a certain extent, isn't I, I've never used Trackers, even though I <span style="color:red" data-ts="392.835" data-end_ts="393.125" title="392.835" id=c_"392.835">__kind__</span> of came through that period of time. I didn't use Trackers, but a lot of people I know did and were really influenced by 'em. But isn't there a sense to which even a tracker sort of has a programmatic like, quality to it? 
+</p>
+
+<p>
+<b>Chris: </b>Oh, right. It's, it's, it's a grid. It's, it's, it's very, it's very data sheet. Like you sort of look at it, right. It doesn't look 
+</p>
+
+<p>
+<b>Darwin: </b>Like data <span style="color:red" data-ts="416.125" data-end_ts="416.245" title="416.125" id=c_"416.125">__sheet__</span>. That's a great way to say it. Right. Yeah. Interesting. 
+</p>
+
+<p>
+<b>Chris: </b>So I, I, I guess you, you're really right. And there's, it's, I mean, in terms of programming, I guess it's similar because there's, you know, you use like hex codes to, to change the, the pitch or the, the velocities of the, of the notes. And you, it's very strict and, very highly controlled in terms of it's, it's, tempo and control, right. It's flow and everything. So I suppose in that way it's kind of programmatic, but there's a one-to-one thing again, where you've got, you know, you, you put down a note and you hear a sound. There's no, I suppose the difference there with the programming is that a program sort of requires some kind of, <span style="color:red" data-ts="460.265" data-end_ts="460.485" title="460.265" id=c_"460.265">__or__</span> to some degree anyway, people could argue, but there's some amount of preparation, sort of required to get that kind of, just say there's a control mechanism that you wanna build. You know, you sort of have to think about how you want that to be implemented. And I suppose with, something like a tracker, it's, you know, it's still, you know, you put down a sound by clicking a button kind of thing. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. So let's, let's talk some more about, about the connect and the use of use of that for, for artistic stuff. I mean, one of the things that I've seen a lot of is in, is relatively, oh, I would say immature use of the connect. You know, it's sort of like wave an arm, get a squeal or whatever. Yeah. But, you've put a lot of time in this thing and you've built a lot of sophistication into the kind of things you're doing. Right. What, what would you say are the things that add sort of a, a layer of maturity to that kind of work? 
+</p>
+
+<p>
+<b>Chris: </b>So, iteration was a huge, a huge part of the system, and I really quickly learned that it wasn't just a, like a fancy controller, it was like legitimately I was sort of creating a new way to have an instrument. So I sort of very much felt like once I got past the, the point of knowing how to attach things to other things and, you know, grab, pull the parameters and sort of useful data out of the Connect, I think it was just a pure obsession with the concept that drove me to spend all my time sitting at the back of my classes, you know, while, while everyone was doing, you know, having discussions and I was coding my, my software to try and get the, the next thing ready for my next performance. And so I suppose, it was a lot of dedication to make that concept into something that was like legitimate. 
+</p>
+
+<p>
+<b>Chris: </b>I really wanted to legitimize not to everyone else, but to myself. I wanted to make it, I, I, I sort of saw a pathway for me to feel comfortable performing because before, before this I, I, I didn't like performing, like I made electronic music and I performed a number of times using Ableton in a, you know, like a push button controller or something. But I never, I never sort of felt comfortable with that as an instrument. I always felt like I was pressing play to some degree. Sure. No matter how much complexity I'd add, I always felt like unless I was making these tracks live looped and in real time, it wasn't a real performance for me. I think I had a really bad, like, big sort of problem with that kind of performance. Yeah. So, so I think, in terms of making them, the, like, the nuance behind the connect as a controller was, I mean, really just, I mean, I, I, I'm not sure I've, I've really built a, instruments for other people. I have recently with, some installations that we've been, I've made through, ethno <span style="color:red" data-ts="638.965" data-end_ts="639.125" title="638.965" id=c_"638.965">__Tech__</span>, which is a collaboration I've working on. I mean, really, I always <span style="color:red" data-ts="644.205" data-end_ts="644.405" title="644.205" id=c_"644.205">__spend__</span> a lot of time making it for myself as a controller. So I think that working at how I move, how I felt comfortable, and then it just a shitload of, muscle memory, I think. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. Well, it's, now I, I wanna explore this a little bit because one of the things I'm fascinated with is the process that people go through in the development of an instrument, whether it's one for other people to use or sort of a personalized instrument. Right. Especially when it comes to electronic stuff, because there, to me, it seems like it's kind of an insane balancing act, right? You have to make, you have to make something that works reliably, but isn't so prescribed that it's, you know, the, the press a button play a song. 
+</p>
+
+<p>
+<b>Chris: </b>Right. 
+</p>
+
+<p>
+<b>Darwin: </b>You know, you're not trying to be a dj, you're trying to be something else. Additionally, you mentioned this idea of muscle memory. It seems like <span style="color:red" data-ts="709.525" data-end_ts="709.645" title="709.525" id=c_"709.525">__a__</span>, a thing that is important for the development of an instrument is providing some sort of physical interface that, again, is reliable, but where certain things are gonna be repeatable. You can learn riffs or techniques, right. Using this tool that you can kind of depend on. How do, how do you approach some of these balancing acts, and what are some of the other things that you consider important as part of instrument design? 
+</p>
+
+<p>
+<b>Chris: </b>So specifically with something like the Connect, and any motion control that doesn't have a, some kind of a a button interface is you don't have discreet events that you can trigger. So you don't have a a button, you don't have a pad. There's nothing in the air that looks like something you can press. So you are sort of stuck with a whole bunch of continuous controls, from that sort of standpoint. And so in order to make something that's, user-friendly, I suppose, as well as has nuance to some degree, is I had to balance between how much I'm gonna automate or how much I'm gonna protect myself against playing bad notes. Right. <span style="color:red" data-ts="788.005" data-end_ts="788.125" title="788.005" id=c_"788.005">__And__</span> especially with trying to trigger notes, you know, it's, very much a case of if I wanna play live performances that are the way I wanna play them, which is sort of, you know, there's this upbeat sort of electronic, stuff that I was doing Mm-Hmm. 
+</p>
+
+<p>
+<b>Chris: </b><affirmative>, I, you know, as opposed to sort of, very slow ambient kind of glitchy stuff, which sort of lends itself to not being in <span style="color:red" data-ts="813.025" data-end_ts="813.245" title="813.025" id=c_"813.025">__key__</span> <span style="color:red" data-ts="813.245" data-end_ts="813.445" title="813.245" id=c_"813.245">__or__</span> in, you know, <span style="color:red" data-ts="814.065" data-end_ts="814.285" title="814.065" id=c_"814.065">__it__</span>, <span style="color:red" data-ts="814.285" data-end_ts="814.445" title="814.285" id=c_"814.285">__it__</span>, it has a lot more room to, to, to sort of breathe. You know, I had to use, quantizer, so, you know, it would lock down to 16th notes or something like that, like to start with, and then I'd have it, so I'd program a key so I could never go outta key. So, to some degree there's a layer of abstraction from a traditional sense of what a musical instrument is in that, there is still preparation between having to change, between keys or between tempos. And I suppose it's simplified in, in that way, in order to afford me the use of a continuous controller without discrete buttons. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Although, you know, it's interesting that you say that because you almost sound apologetic when you talk about it, but I, right. For, for Father's Day here in the States, my family bought me, a Native American flute Sure. Native American flute, which has five holes in it. It plays a pentatonic scale. You, if you want <span style="color:red" data-ts="876.845" data-end_ts="876.965" title="876.845" id=c_"876.845">__to__</span> change keys, you have to change flutes, you know? Yeah, <span style="color:red" data-ts="880.405" data-end_ts="880.565" title="880.405" id=c_"880.405">__yeah__</span>. So to a certain extent, there's a very simple interface, but what that does, what, in the case of the Native American flute, the, the level of difficulty isn't in the selection of notes, it's in the use of your breath and your fingers to develop nuance in the, within the framework of this limited note selection. Right. 
+</p>
+
+<p>
+<b>Chris: </b>Right. <span style="color:red" data-ts="905.685" data-end_ts="905.885" title="905.685" id=c_"905.685">__Yeah__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>So it seems to me like, especially with something like a connect where you, you know, you're talking about three dimensional location information and stuff like that, it strikes me that you would almost have to clap down some of the parameters to make it even usable, but there's still plenty of room for nuance. 
+</p>
+
+<p>
+<b>Chris: </b>Right. And you 100% correct. Like, totally. The, I suppose the, the reason why I, I sort of talk about it as if it's a, a bad thing and sort of maybe apologetic towards it is because I suppose I, it's the one thing that I, I wish that there was a solution for that I could quickly make without having to, you know, have a, a glove or something like that. Right. So I suppose it's one of those things that I definitely built around that, and Sure. Like the, the nuance is built on top of that for sure. So, you know, just say triggering notes is done, you know, by, it constantly triggers a note. Just say, so you've always got a note triggering. Right. And then if I lift my hand over a certain point, that's when it opens up a filter to, you know, to let that note through. 
+</p>
+
+<p>
+<b>Chris: </b>Or there's a certain point in which the notes start triggering, when I move my hand up and down. And then you'll use maybe your right hand or your left hand, or whichever, you know, you're not triggering the notes with, to change a bit of <span style="color:red" data-ts="988.005" data-end_ts="988.125" title="988.005" id=c_"988.005">__a__</span> brattle like modulation of the filter, a bit of reverb. You can sort of attach all those things to it and then end up with quite an expressive, expressive note generator and, and, and synthesize a control. Right. So I suppose that there is a lot of, especially when you've got a bit of muscle memory going and you've been practicing those sounds out of those, the mechanics it is, ends up being definitely not just about the, you know, the notes being played, but, it's also about the ex expression behind how those notes are being articulated. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. I first actually caught wind of view based on a, a trip that you're gonna make to the West Coast of the United States, and part of that is that you're going to go to the, the isa, which is ISEA conference that's gonna be held in Vancouver. What are you going to be doing there? 
+</p>
+
+<p>
+<b>Chris: </b>So this is actually not a connect based thing. Oh, okay. Yeah. Yeah. So it's, it's actually something else that I've, it's a, it's a previous work, that I did with Brad Hammond who's, my collaborator in ethno <span style="color:red" data-ts="1055.485" data-end_ts="1055.645" title="1055.485" id=c_"1055.485">__tech__</span>, who's the, you know, it's the collaboration that I was, working on for the last three years. And we built a, like a generative geometric shape called vex. And, vex is basically a, it uses a bunch of movement, sort of algorithms, I suppose. And it's, it's kind of broken to some degree. So it sort of fit the, it fit the, the, I see a theme of disruption. Right. But basically we use that, that broken mechanic and <span style="color:red" data-ts="1090.995" data-end_ts="1091.285" title="1090.995" id=c_"1090.995">__turn__</span> that into a part of the instrument. So the geometric shape basically controls the whole bank of, granular synthesizers. And so it means that there's like a direct one-to-one relationship between the glitching and the moving and the sort of, pulsating of, of the geometric shape, and it being a, like a musical instrument at the same time. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Okay. 
+</p>
+
+<p>
+<b>Chris: </b>So, but, basically I'll be doing a performance with Vex, which will be the first time I've performed with it. You'll see how that goes. It'll be interesting, <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, if nothing else, it sounds like it's going to be disruptive to your life. 
+</p>
+
+<p>
+<b>Chris: </b>That's right. Absolutely. It'll be a challenge. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I always, I'm always nervous whenever I take some new creation out of the, out of the garage for the first time. Right. 
+</p>
+
+<p>
+<b>Chris: </b>Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, is, is your software development still primarily in Max? 
+</p>
+
+<p>
+<b>Chris: </b>It is. So my, my personal develop, software development is, yeah. Is pretty much solidly in Max with a bit of Java and JavaScript and whatever I need sort of alongside to develop it. But the framework is always, is always in max. 
+</p>
+
+<p>
+<b>Darwin: </b>When you took this performance class that you're talking about, was that the first time that you actually ran into Max? 
+</p>
+
+<p>
+<b>Chris: </b>Right, so it was, it was actually the year before, when I had this, like computering and music class. <span style="color:red" data-ts="1173.505" data-end_ts="1173.725" title="1173.505" id=c_"1173.505">__Oh__</span>, okay. And yeah. And so I think there were, I think there was four sessions of, of doing Max. It was just like a really basic introduction and they showed how to connect stuff and, and look, this is probably five, five or six years ago. Yeah. Probably five years ago. And, I didn't touch it for the whole year after, after that, I sort of, I, I jotted it down and noted, I'm like, <span style="color:red" data-ts="1195.765" data-end_ts="1195.885" title="1195.765" id=c_"1195.765">__no__</span>, too hard basket. I'm <span style="color:red" data-ts="1197.605" data-end_ts="1197.725" title="1197.605" id=c_"1197.605">__not__</span>, right. Sure. There's, there's no need for me to dig into that. And I suppose when we were doing the performance class, and I, at the same time, a friend was showing me all the Connect stuff and I heard, oh, oh, it sends out OSC with this open source package. That's when it clicked. And I go, oh, I've got a, a reason to actually dig down and, and have a look <span style="color:red" data-ts="1217.025" data-end_ts="1217.245" title="1217.025" id=c_"1217.025">__at__</span>, at what it can do. 
+</p>
+
+<p>
+<b>Darwin: </b>That's actually interesting you say that, because one of the things that, you know, so my involvement with, with <a href="https://en.wikipedia.org/wiki/Cycling_%2774">Cycling '74</a> is part of the educational part of it, and one of the things that I <span style="color:red" data-ts="1229.085" data-end_ts="1229.285" title="1229.085" id=c_"1229.085">__so__</span> often run into is people who say, I wanna learn Max. And I'm like, my first question to them is, I think that's fantastic. What are you wanting to do with it? 
+</p>
+
+<p>
+<b>Chris: </b>Right. 
+</p>
+
+<p>
+<b>Darwin: </b>And so often they, the response I get is, well, I don't know, but I hear that it's cool. Yeah. And I wanna learn it. And it strikes me that there's, that there's something that the programming world has learned that the artistic world hasn't yet about programming, which is that it doesn't make sense to learn a tool unless you are going to actively pursue a project with it. Right. 
+</p>
+
+<p>
+<b>Chris: </b><span style="color:red" data-ts="1269.595" data-end_ts="1269.885" title="1269.595" id=c_"1269.595">__Yeah__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>And so it's interesting to hear that you went through that process of learning it to, to learn, and then it went into the two hard pile. 'cause I think that that's a common, that that's a common thing, and it's not specific to Max. I think it's a common experience with creative coding in general. Right. Yep. So the question I have then is, <span style="color:red" data-ts="1294.585" data-end_ts="1294.805" title="1294.585" id=c_"1294.585">__and__</span>, and I'm curious because I I don't often get a chance to, to talk about this with people. What was, when you started doing, you know, I guess you've got a history with doing some coding, but when you started doing like the creative coding, the coding for music and coding for visuals or whatever, what was the, what was the approach that you took? How did you, what was, what made it so that it worked for you, and what made it so that Max happened to be the thing that worked for you? 
+</p>
+
+<p>
+<b>Chris: </b>So in, in the context of making, like, something to make music with, you mean? 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. 
+</p>
+
+<p>
+<b>Chris: </b>So, and <span style="color:red" data-ts="1338.485" data-end_ts="1338.605" title="1338.485" id=c_"1338.485">__the__</span>, and the question was what, what made it work for me? As in how did Max end up being the thing that I, <span style="color:red" data-ts="1346.445" data-end_ts="1346.565" title="1346.445" id=c_"1346.445">__I__</span> sort of used as a tool? 
+</p>
+
+<p>
+<b>Darwin: </b>Right? And, and also, how did you learn it? Because Max, like so many other programming tools, it has this tendency to, to look, look simple for the first three minutes that you try using it. Right. And then all of a sudden you're like, oh, I need something that does x does that. Yeah. And then you go in a list and there's a list of 800 things, and then the tears start forming in the corners of your eyes. And, you, you realize, oh my God, I might have fallen into the two <span style="color:red" data-ts="1377.965" data-end_ts="1378.205" title="1377.965" id=c_"1377.965">__hard__</span> <span style="color:red" data-ts="1378.205" data-end_ts="1378.525" title="1378.205" id=c_"1378.205">__thing__</span>. 
+</p>
+
+<p>
+<b>Chris: </b><laugh>. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>How did you get past that? 
+</p>
+
+<p>
+<b>Chris: </b>Well, I, I, I think I, I hit that wall so many times in developing it, and I was really determined to, I knew, I knew stuff could happen. Right. I knew, I knew I could make it happen. And, it's funny, if I sort of looked at one of the first patches that I, I made to, you know, to get this OSC into midi, it would be, it probably pretty hilarious. And it would take me about, you know, half a minute now or, or whatever. And it probably took me about three weeks to <laugh> to do back then. But, but, but I, I think, I think it was a case because I, I was really, I was super determined to make it work. And I, I knew the, the boxes were ticked with, with using Max. And, I had a friend, Josh Batty who, was studying his PhD in the same, uni that I was at. 
+</p>
+
+<p>
+<b>Chris: </b>And he was, he actually told me to, to give Maximus <span style="color:red" data-ts="1437.165" data-end_ts="1437.445" title="1437.165" id=c_"1437.165">__PA__</span> go. And sort of helped me out a little bit with some, <span style="color:red" data-ts="1439.755" data-end_ts="1440.045" title="1439.755" id=c_"1439.755">__with__</span> some initial patches. So I suppose I had someone there that I sort of knew that if I got stuck, you know, he would, he could, give me a hand if I needed it. But I just, I really just locked the door and shut myself away for about two or three weeks while I, while I got the basics down. Sure. But look, <span style="color:red" data-ts="1457.085" data-end_ts="1457.205" title="1457.085" id=c_"1457.085">__and__</span>, and, and then, and then I kept, like I said, I, I think I hit the wall so many times where I'd get to the point where I'd built up enough knowledge and then looked at all the stuff that I'd done previously and rebuilt from scratch over and over. And I think I built, I built my Connect software maybe four times from scratch over and over and over again, just because you'd sort of learn this, like you, like you said, there's like 800 or something objects that you confronted with. And then realize that some zany patch that you've put together is, is actually something that comes as an external Right. That does it far more efficiently. So, <span style="color:red" data-ts="1489.355" data-end_ts="1489.645" title="1489.355" id=c_"1489.355">__okay__</span>. And I, I think that excites me. Like, for some reason it excites me to go, I, <span style="color:red" data-ts="1493.805" data-end_ts="1493.925" title="1493.805" id=c_"1493.805">__I__</span>, it's probably part of the perfectionist in me, but I sort of really like ripping things, you know, back to, to start and building it all over again and, and making it, you know, even better and better and better. And it's, it's a blessing and a curse. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. I hear that. Now, you, you said that as part of your quoting you do Java, JavaScript as well as Raw Max. So again, clearly you have some of what we would consider standard programming chops. Where are the, where are the cases where you, where you feel like that's important? And how do you feel like, how important do you think it is for, for media artists to have kind of standard textual programming chops in their, in their holster? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I think it's, I think it's a, a very limiting thing. To be stuck with a node based editor is your only method of creation if you're gonna be doing programmatic things. I think there's, a very big paradigm difference between obviously the two, the two ways of, of working. And I think that I was <span style="color:red" data-ts="1568.745" data-end_ts="1568.965" title="1568.745" id=c_"1568.745">__cut__</span> quite scared, 'cause I did, I actually did two years of computer science before I dropped out, when I was 18 and 19. That was like the first thing that I did out of high school and realized that it was a lot more dry than making computer games and fancy <laugh> Yeah. Is what I wanted when I, when I first started. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, nobody tells you you're gonna have to write compilers, right? 
+</p>
+
+<p>
+<b>Chris: </b><laugh>. Yeah. It, it was pretty dry. But, I think that it <span style="color:red" data-ts="1595.645" data-end_ts="1595.845" title="1595.645" id=c_"1595.645">__give__</span>, it gave me that first little toe in the water. I think I did a little bit of CC plus plus. I've forgotten all of that by now. But, I think I was used to knowing about how functions work and variables and, and, and all the basics. And I think as a, a meter artist in, in order to get a, a result quickly, you could spend, you know, an hour building some really annoying patch to make where you need to make, you know, 40 objects of something and connect all the cables together. And then if you change one thing, you have to go back and, you know, change all of those, all 40 of those objects again. Right. <span style="color:red" data-ts="1634.525" data-end_ts="1634.925" title="1634.525" id=c_"1634.525">__Whereas__</span> if you just use a bit of JavaScript, you can do a little <span style="color:red" data-ts="1637.105" data-end_ts="1637.325" title="1637.105" id=c_"1637.105">__for__</span> loop and it's done in five lines. So I think that there's definitely, knowing when the strengths of the, sort of the paradigm that you are using or where those strengths are is really important if you want to, you know, get things done quickly as a, as a media artist for sure. So I, I, I think learning at least something like JavaScript is, is really beneficial to, to anyone that's doing node-based programming. 
+</p>
+
+<p>
+<b>Darwin: </b>I appreciate that. That's, that's awesome. Let's talk a little bit now about, you've brought it up a couple of times. This collaboration you have called Ethno <span style="color:red" data-ts="1674.325" data-end_ts="1674.525" title="1674.325" id=c_"1674.325">__Tech__</span>. What does that group do and how is that different from your solo work? Or is it all kind of mashed together at this point? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. Well, so I, I think the collaboration, was, it started because there was, I was doing Connect stuff and Brad, who, is, the other guy or the, the other guy, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1698.645" data-end_ts="1698.925" title="1698.645" id=c_"1698.645">__It's__</span> Brad Hammond, right? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, that's right. Brad Hammond. Yeah. He was doing sort of visuals and he was also working with the Connect as well, but wasn't anything to do with music. And I think we caught up for a beer and had a really good chat one day, and he was telling me about he was, putting on an installation and, it'd be cool to do a collaboration together. So we started, I think we started putting together some really basic prototypes of audio visual based, connect controlled instruments. Okay. So it was like a, some weird abstract noisy kind of, sounds generated from, from some zany reactor patch. And it was sort of, you know, had this big ball of generative, visuals sort of going over the top and just had people walk through and, and play around with it. And we, I think we got really inspired by that concept. 
+</p>
+
+<p>
+<b>Chris: </b>And we really base this collaboration around the idea of, having like audio visual instruments that are controlled without having to touch anything. Right. Because we realized the, the value in having an installation, that people didn't have to fumble around with, with picking something up or, I, I think it, it's slightly easier to approach <span style="color:red" data-ts="1777.665" data-end_ts="1777.885" title="1777.665" id=c_"1777.665">__in__</span>, in, in some ways it is, in some ways it's, it's not. But we, we definitely found the value in having something that was touch <span style="color:red" data-ts="1786.325" data-end_ts="1786.605" title="1786.325" id=c_"1786.325">__free__</span>, and kind of cool for, for people to play with. So I think that the, basically the collaboration is very much around, AV performance and like interactive installations as well. So that was <span style="color:red" data-ts="1800.745" data-end_ts="1800.965" title="1800.745" id=c_"1800.745">__our__</span> main, that's our main sort of driving, work in ethno <span style="color:red" data-ts="1805.165" data-end_ts="1805.365" title="1805.165" id=c_"1805.165">__tech__</span>. Sure. We used things from the Connect and Leap motion was more of a recent thing. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. I was going to ask if you had played around with that much. 
+</p>
+
+<p>
+<b>Chris: </b>Right? Yeah, so I mean, we, we wrote a, a piece of, software called, tectonic, which is like a, a leap motion control system. And, it's like a <span style="color:red" data-ts="1830.125" data-end_ts="1830.325" title="1830.125" id=c_"1830.125">__mini__</span> controller, but, it uses, like three D physics and things like that. 'cause Brad works in, unity. Okay. So it's sort of lends itself very well to getting game objects with physics. <span style="color:red" data-ts="1844.835" data-end_ts="1845.125" title="1844.835" id=c_"1844.835">__Yeah__</span>. And I thought that that would be a really interesting way to control an environment that has three dimensional objects moving around with physics-based interactions. Right. So we built a whole, like a bit of, MIDI and OSC controller software around that paradigm. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. So I'm always curious with people who are in significant collaborative things, how, how things like the deli, the division of labor works. So it sounds like Brad might be more involved in the image stuff and you more in the sound. Would that be fair? 
+</p>
+
+<p>
+<b>Chris: </b>That's, yeah, that's completely how it is. Yeah. Okay. 
+</p>
+
+<p>
+<b>Darwin: </b>Do you, do you ever have to dabble with, with visuals or do you, or do you just stay the hell out of it? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, we 
+</p>
+
+<p>
+<b>Chris: </b><laugh> we never, I don't, I don't think we ever, have gotten into the point where we're sort of dabbling in, sound or me dabbling in visuals or <span style="color:red" data-ts="1904.405" data-end_ts="1904.845" title="1904.405" id=c_"1904.405">__<inaudible>__</span> sound. I think we, we both from the start, we just focused on getting stuff done. And I think that there was, yeah, there's always been something where we've, wanted to try and teach each other how, you know, this system works or that system works and we have to some degree. But, all in all, when we're getting stuff done, we, we pretty much stay out of the, the opposite sides of the spectrum. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well, that's, that's actually, I, I think it's not, it's not such an easy thing to, to do because one of the issues with <span style="color:red" data-ts="1943.545" data-end_ts="1943.765" title="1943.545" id=c_"1943.545">__be__</span> being a media artist, and especially one that has, some chops with, with coating is that conceivably to some level, you can make a mess of everything. Right. Right. It's, it's really easy to make a three D mess and a, two d mess and a sonic mess and a bunch of mess with sensors and motors and everything else. And finding a way to, you know, put up a fence and say, well, this is the, these are the areas where I am, you know, I feel like I have a strong voice. It's kind of, it seems, it seems really hard for people somehow. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I, I think it's, it's definitely a case of I really wish I, you know, could spend the time or did spend the time or sort of got out of my comfort zone and, and messed around. But I guess most of the time it's when we're doing projects, they're very rushed. So, you know, you, 
+</p>
+
+<p>
+<b>Darwin: </b>It's not time for fooling around. Yeah. 
+</p>
+
+<p>
+<b>Chris: </b>I mean, you, you're locked down to a contract and then it gets delayed and delayed until you, you sort of see, you sort of all gets confirmed and then all of a sudden you need to make something that you specked out for three months takes, you get one month. You know, so it's sort of a case of like <span style="color:red" data-ts="2020.405" data-end_ts="2020.565" title="2020.405" id=c_"2020.405">__every__</span> all hands on deck, let's, let's sort of get this built. Sure. And it, unfortunately, I think that there's a lot of experimentation that, or a lot of potential for really interesting results from experimentation when you're jumping on the other side of the fence. So like, making those messes and those, those sonic and visual messes, I think there's always, or there's almost always something that sort of is, is birthed there in a, in, in some kind of a, a broken mess. Right. There's something sitting in in there that actually might have a bit of leg to, to run on that the person whose job it is to do, you know, visuals, they might never have approached it in that particular particular way. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That's actually a really interesting thing to point out because, you know, I, it's funny, I, lately I've been spending a lot of time with a modular synthesizer. Right, right. And one of the things when, when I first was getting into it, I, my patching styles, I mean, I've, I've used them for a long time, but there was a, a significant period of time that I hadn't, and when I got back into it, I was doing what I would consider almost like, like Catholic patches, right. Very, you know, standard, you know, plug these oscillators into this mixer, into this filter, you know, basically finding all the varieties of making a mini <span style="color:red" data-ts="2108.865" data-end_ts="2109.085" title="2108.865" id=c_"2108.865">__mug__</span> or whatever. Sure. And one day I was, I was, my, my oldest son was kind of asking me some questions about how it worked, and I was showing some him some stuff, and he was like, well, what happens if you do this? And he just like, connected something that, you know, in my, in my very Catholic way was like, that's wrong. That's wrong. <laugh>, what are 
+</p>
+
+<p>
+<b>Chris: </b>You doing? 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2135.915" data-end_ts="2136.205" title="2135.915" id=c_"2135.915">__Yeah__</span>. Yeah. And all of a sudden the, the thing kinda lit up and made this amazing tone. And I was like, that's awesome, <laugh>. It <span style="color:red" data-ts="2144.685" data-end_ts="2144.765" title="2144.685" id=c_"2144.685">__was__</span>, it's like, whoops. Yeah. Really. Whoops, let me write that down. <laugh>. Yeah. 
+</p>
+
+<p>
+<b>Chris: </b><span style="color:red" data-ts="2148.715" data-end_ts="2149.005" title="2148.715" id=c_"2148.715">__Yeah__</span>. <span style="color:red" data-ts="2149.005" data-end_ts="2149.165" title="2149.005" id=c_"2149.005">__Yep__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>And so there is this sense where almost some naivety in, in, what you're doing can reveal interesting things. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I think it's not even naivety as well, like it is, it is definitely that as a component, but it's also like the way that your brain works and Yeah. The way that you, you piece stuff together. So like, my, my brain works on a way that of all the experiences that I've sort of had making music is probably a very specific way that's very different to, you know, how Brad was approaching his visuals. Sure. And, and I think that, that it's a combination of not knowing what's right and what's wrong kind of thing, as well as having a particular take on, on the birth of an idea, I suppose is the two main things that, that drive or that have potential in terms of, making something beautiful out of those, those silly, little experiments. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Of, of all of the work that you've done, what are some of the things you're most proud of? 
+</p>
+
+<p>
+<b>Chris: </b>
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2208.365" data-end_ts="2208.485" title="2208.365" id=c_"2208.365">__I__</span> think definitely <span style="color:red" data-ts="2208.685" data-end_ts="2208.765" title="2208.685" id=c_"2208.685">__or__</span> that, or that blew you away that you were excited by? 
+</p>
+
+<p>
+<b>Chris: </b>I mean, definitely the, the first, the first experiments with the connect were amazingly exciting. Like, that was a quite a, a wild time. I, I suppose for me, I ended up, doing quite a number of performances around and sort of, it had a bit of a momentum to it. So I sort of had, you know, I did like almost 20 performances in, in one of the years. And, like for me, that's a, that was a lot from going on from basically nothing. Right. So I suppose when I, when I first started coming up with the, with the controllers and when I made a full, you know, like a 20 minute electronic live set, I think was something that I was extremely proud of, that I'd identified something earlier on in my life that I was unhappy with the way that I approached it. 
+</p>
+
+<p>
+<b>Chris: </b>So, you know, laptop music and me being bored with that paradigm. And then overcoming that and feeling like, you know, I, I kind of pave paved the, like a way for me to use this initial idea and to follow it through into something that I felt like comfortable performing with. And I felt like it was expressive, and things like that, that I was, I sort of aiming to, to get to. I felt like I, I got to, to some degree. Sure. So de definitely being given those opportunities was, was was some big moments. Like <span style="color:red" data-ts="2294.885" data-end_ts="2295.005" title="2294.885" id=c_"2294.885">__a__</span>, some of the big performances that I did were, you know, like huge. I never would've seen myself on a, on a stage in Germany, for a really big tech conference that we did a opening performance for for CB. And that was, you know, that was massive. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. CB is enormous. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I was shooting my pants. The actually <laugh> the, it, it, it's amazing. It's sort of, we flew up there, we spent over a month working on that project, both over here in Australia. And then we flew over for a couple of weeks, to work on the final bits of the, the opening Mm-Hmm. <affirmative>. And with the team that they had there, they were doing, sort of video content and we were mixing the video content with our generative content. And then I was writing the music basically like a backing track and then creating a bunch of instruments that I'd control on stage. So that was, <span style="color:red" data-ts="2348.825" data-end_ts="2349.045" title="2348.825" id=c_"2348.825">__so__</span> how we did it, especially for big performances, you sort of lock it down to a, a set backing track and then, perform over the top with the instruments automatically switching. Right. So I sort of didn't have to have messy foot pedals and things like that that they didn't want there. We'd practice this, I don't know, 20 times on the stage that we were meant to be practicing on, you know, in all states lights off, let's do a full run through. They wanted to make sure it was 100%, you know, strictly as tight as possible. Sure. Because it was, you know, a, a sort of big deal, although 
+</p>
+
+<p>
+<b>Darwin: </b>Show coordinators don't want any surprises. 
+</p>
+
+<p>
+<b>Chris: </b>Right. And that, that, that, I totally get that, that makes a lot of sense. You know, with, with having, you know, 10 or 20 practices. 'cause it was the opening literally the first thing that that happened for that, that whole festival, that whole event. Okay, great. So it was the big opening and, and I jumped up on stage, <span style="color:red" data-ts="2399.985" data-end_ts="2400.205" title="2399.985" id=c_"2399.985">__you__</span> know, after they introduced me and I sort of walk up and standing there and I, I didn't have any kind of feedback from up at the control booth where Brad was sitting, like maybe 50 meters away, sort of all the way back up, up the room <laugh>. And I'm sort of standing there and I've got a little fold back so I can see what's happening on the screen. And there's meant to be a little skeleton of, you know, of, of me standing there when the connect picks me up and the, the skeleton didn't appear and I'm sort of standing there and the backing track started playing. 
+</p>
+
+<p>
+<b>Chris: </b>Right. And because I, at the start of the performance, I had control, I had an effect, which was like, like a bit crush and filter that I had, that I was meant to be controlling with my hands as an opening thing to sort of open up the, the big track. Right. And I, and I heard the backing track kicking in with that effect on 50%. And I'm, so it sounds like a, a bit crushed sort of mess sort of slowly fading in. And, and I was standing there and I'm sort of holding my posture as if, you know, I'm waiting for everyone to be silent and there's a dead silent room with this little bit crushed track going over the top. And, the sort of beat started kicking in and I moved up my hands as if I was, I was doing something <span style="color:red" data-ts="2475.565" data-end_ts="2475.725" title="2475.565" id=c_"2475.565">__and__</span> I was trying desperately to hope that the connect would, would come and start tracking me. 
+</p>
+
+<p>
+<b>Chris: </b>So obviously it didn't, it hadn't got tracking. Right. And, it was just before the big sort of epic sort of drop that all of a sudden I saw my skeleton appear. Oh, wow. And my hand started controlling it. And this is <span style="color:red" data-ts="2491.245" data-end_ts="2491.365" title="2491.245" id=c_"2491.245">__a__</span>, like, I, I think I looked at the footage and it was a minute after I <span style="color:red" data-ts="2496.765" data-end_ts="2496.965" title="2496.765" id=c_"2496.765">__got__</span> stood on the stage waiting for it to lock in. It was a whole minute that it wasn't working, you know, in Unreal in front of three and a half thousand people. Yeah. And I probably, I I, I don't know how I didn't have a puddle <laugh> that I walked out from <laugh>, but that was easily the most like scary. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, that's unnerving 
+</p>
+
+<p>
+<b>Chris: </b>Adrenaline rush thing in my life. You know, you spend sort of a month or two working on something and then something so simple as, you know, needing to step forward, you know, one step so the connect can track you. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's kind of, it's actually kind of interesting because if you think about it, you know, you're doing this whole show and you have this enormous production and it's all based off of a thing that costs 110 bucks. Right. Working. Right. That's like, it seems so strange for us to put that much trust into something that is almost 
+</p>
+
+<p>
+<b>Chris: </b>It's consumer as well. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>It's toy <span style="color:red" data-ts="2550.885" data-end_ts="2551.085" title="2550.885" id=c_"2550.885">__like__</span> almost Mm-Hmm. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>Unreal. <span style="color:red" data-ts="2553.705" data-end_ts="2553.925" title="2553.705" id=c_"2553.705">__No__</span>, you're right. And, and, and you think about the, the, some of the vision gear that you're, you're putting your, you know, your, your system through, and you, you're going from, from these systems running on, on Windows with this dodgy software that you've written to, to drive it. And that's going through like $40,000 vision switches and, and mixes and into, you know, a hundred thousand dollars projectors and there's, and there's maybe 40 people working on, on the site to, to make the show happen. And then you've got some little weak little link in the chain. Yeah. Yeah. It, it's kind of crazy that, <span style="color:red" data-ts="2587.515" data-end_ts="2587.805" title="2587.515" id=c_"2587.515">__that__</span>, that the whole thing's resting on. Yeah. Like you said, $110 <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Of, of consumer plastic. That's Yeah, 
+</p>
+
+<p>
+<b>Chris: </b>That's, that's right. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>So, what do you see coming, I, I always like to asking this of people, particularly people that are in areas I'm not super familiar with. What in the area of like, motion control, motion capture, motion handle, management, what do you see coming that you think that that seems exciting to you? Is there new tech coming around the corner that you think is gonna shake things up? 
+</p>
+
+<p>
+<b>Chris: </b>Right. So I think, I think <span style="color:red" data-ts="2629.765" data-end_ts="2629.965" title="2629.765" id=c_"2629.765">__that__</span> there's been a big revolution in like optical tracking, obviously. Also the connect thing has been around for a while. It's kind of maturing a little bit, but it's still fairly experimental. And there's a lot of problems with occlusion and all that kind of jazz. The big thing that I think everyone sort of sees at the moment, and I'm, look, I'm a, I've always had a, a bit of a gaming background, like that's been something that I've done. I probably don't have time as much to game anymore, but I'm still very interested in, in what's happening. And definitely like the Oculus Rift thing, you know, that happened about two or three years ago, sort of now. Like I got one straight away with the Kickstarter. 'cause I was really excited about Yeah. That whole technology and how it's, you know, it's almost ready for consumers. 
+</p>
+
+<p>
+<b>Chris: </b>And I think, you know, there's a number of companies that are coming out in Sony and, Oculus Rift and, and a whole bunch of other Gear VR and ones that you plug your phone in, you know, you stick your phone in and you've got vr. I think virtual reality, augmented reality, mixed realities are all something that I think is a lot more valid than, you know, the impending, three D TV thing that, that happened and flopped on the ground. I, I, <span style="color:red" data-ts="2699.285" data-end_ts="2699.405" title="2699.285" id=c_"2699.285">__I__</span>, so I, I think definitely, virtual reality is gonna be something that is coming out. I think, you know, sort of this year, next year, I think it'll have a really big consumer boom after it's sort of managed to go through. Its <span style="color:red" data-ts="2709.885" data-end_ts="2709.965" title="2709.885" id=c_"2709.885">__all__</span> its beta stage. Right. So I, I, I think that that's a really big thing. 
+</p>
+
+<p>
+<b>Chris: </b>And, I suppose combining the technologies of, the connect and optical tracking and, virtual reality makes a lot of sense. I, I use the Oculus Rift and sort of the first time I put it on, I was a little bit disappointed because I sort of, you know, you get immersed visually, you feel immersed, and then you look down at your hands and they're not there. Right. And, and you, and that's, that's a deal breaker for me. I, I, I couldn't, I couldn't, make that jump between my brain convincing me that it was virtual reality until I saw my body virtually there. So one of our first experiments was, with, with Brad was to make a connect <span style="color:red" data-ts="2758.245" data-end_ts="2758.485" title="2758.245" id=c_"2758.245">__based__</span> tracker rig a skeleton in there, and then look at your body and sort of move around and see yourself moving, see yourself inside the virtual reality. And I, I swear you, you have a very strong sense of connection with that skeleton, with that visual that you're seeing. It almost feels, it, it almost has a, a direct connection. You almost feel like it's, it's actually there. And I think that, 
+</p>
+
+<p>
+<b>Darwin: </b>That's an exciting, you're saying, you're saying even without any extensive skinning, even at the most basic Right. When you do that, you, you have a physical connection to you sense a physical connection to the skeleton. 
+</p>
+
+<p>
+<b>Chris: </b>Sure. <span style="color:red" data-ts="2796.405" data-end_ts="2796.605" title="2796.405" id=c_"2796.405">__That__</span>, <span style="color:red" data-ts="2796.605" data-end_ts="2796.765" title="2796.605" id=c_"2796.605">__that__</span>, that's exactly right. So even, even a basic thing that's just moving in, you know, roughly the, the way that you are moving, I think I felt a sense of connection with that skeleton, to the point where it almost fooled me is where my limb was. You know, just say the, the skeleton doesn't quite, it sort of wigs out a little bit and it's moving in a little strange sort of way. It almost feels like I could be tricked that that's how I felt my arm was sitting. Sure, sure. As opposed to how it actually was sitting <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2826.115" data-end_ts="2826.405" title="2826.115" id=c_"2826.115">__Yeah__</span>. 
+</p>
+
+<p>
+<b>Chris: </b>So I, that's interesting. I, I, I think, I, I think that kind of technology and my real interest is in how those kinds of technologies can be used to use, to make creative things. So like, especially in music. So being able to have a virtual and spatial interface to make music, would be, you know, something that I suppose I'm really interested in. And there's a bunch of research, I think there's a few people, around the joint sort of doing, papers and thesis on, on things like that. So it's still very new. And, but I think that there was, there'll be a bit of maturity coming once people have done some more experiments with that kind of interface. Like, I think that, you know, it's still very early days for, for that kind of interaction model. So it's pretty exciting for me. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's, that does sound like a, like a neat future. One last thing before we head out. I appreciate you taking the time. We've burned through our time really quickly <span style="color:red" data-ts="2885.325" data-end_ts="2885.565" title="2885.325" id=c_"2885.325">__here__</span>. Something I like asking people, especially people who are in like really fast changing environments, what would you say to somebody who's just getting started now, where would you suggest that they put their focus? Again, one of the issues that a lot of people have when it comes to sort of the media art world, and you are embedded in it, whole hog, one of the issues they have is, is saying is, is even imagining how to get started. Now you're in a position where you're getting, you know, you're in this, you're in this, collaborative team, you're getting these big contracts. You are getting out and shitting yourself in front of 3000 people, <laugh>. There are gonna be a lot of people that aren't gonna be like, man, I want, you know, how do I get these opportunities? How, how does that happen? How, what would you suggest to people who look at this and say, this is, this is the way I'd like to live my life. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I think, like, and that's always the, the trickiest thing, isn't it? Like the, it is the, the idea of of having something in your head that you build up as what you want to do and what you could see yourself doing. And I mean, without that, you kind of almost have nothing. Like, if you can't imagine where you might want to see yourself in a number of years, then you've, it's sort of hard to imagine that you could, drive yourself or push yourself towards that <span style="color:red" data-ts="2976.905" data-end_ts="2977.125" title="2976.905" id=c_"2976.905">__and__</span> towards this anything, you know. So I think that the, the strangest part was for me, is once all this was happening, I really didn't have a sense as to what I was doing in five years. I, I was really just determined on an idea. And I, I'm sure over the years I pushed and I struggled and I sweat and I, I got really self-conscious about stuff and I, I'm sure I, I got really upset that there wasn't something that existed that did this <laugh>. 
+</p>
+
+<p>
+<b>Chris: </b>And I think at the end of the day, it was, it was a matter of me just finding something that was a combination of all things that I felt like I was good at or that I was interested in, and not really looking at anyone else. At that point in time, I was very much, Hey, I am really interested in this and I don't, I don't know anyone else doing this. And I dunno, I'm just gonna combine all my shit together and, and see what happens. I, I think it was really the, the once, once I started that I kept on pushing myself to just mo motivate myself on basically all the obstacles that I'd created in front of me. And I think once, once I put away the idea of doing something that someone else was doing or, or looking at what someone else had and sort of following that as a direction, I think that that it's really difficult to, to work like that because you end up, you have this kind of false little bridge <span style="color:red" data-ts="3067.865" data-end_ts="3068.085" title="3067.865" id=c_"3067.865">__or__</span> of connections and, and everyone sort of makes their own way to, to where they want to go. 
+</p>
+
+<p>
+<b>Chris: </b>And so to sort of look at someone else and to imagine the way that they got there is a really difficult set of challenges that you give yourself because you know you are gonna struggle with certain things more than maybe that that person did. Like maybe your direction needs to come from a slightly different angle. Right. I think being com being comfortable with your strengths and weaknesses, and then knowing when to actually challenge yourself and, and push yourself towards, something that you don't know and gets that outside of your comfort zone, I think is, is a really good thing to keep in mind as well. 
+</p>
+
+<p>
+<b>Darwin: </b>How important do you think collaboration and working with other people is to that? Did you find that it helped you or did, or was it really, was the better part of it really your solitary push to, to become what you, what you are? 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. Look, I, I, I think they've got their, their own places. I, I, the, I needed to do the things that I did to start with in order for me to feel comfortable about where I wanted to sort of push myself. And I think without having done the stuff I did by myself first, I would've sort of gone into that collaboration probably a little bit unsure of, of myself and, and where I wanted to take it. Right. I mean, it might be better for some people, but I think in the, the way that sort of steps that, that I went, like, so to do <span style="color:red" data-ts="3154.995" data-end_ts="3155.285" title="3154.995" id=c_"3154.995">__solo__</span> stuff first and then to go into this collaborative sort of venture was I think what I needed to do personally. Sure, sure. I, 
+</p>
+
+<p>
+<b>Darwin: </b>I think give you the confidence you're saying to. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. Right, right. Exactly. Like I, I think I tried, collaborations before that, you know, like sort of meet up with people and, you know, see where things sort of go. And <span style="color:red" data-ts="3173.885" data-end_ts="3174.125" title="3173.885" id=c_"3173.885">__nothing__</span> really, you know, sort of happened, you know, I was 27, something like that in 28, and I'd still never had any kind of, solid collaborations into that degree. So I suppose like not, not expecting a collaboration to save me at the same time <span style="color:red" data-ts="3192.505" data-end_ts="3192.725" title="3192.505" id=c_"3192.505">__as__</span> not expecting that a collaboration is gonna go any further than just a, a meetup and a, a hangout and a one project kind of thing. Right, right. And just going with the flow was, was really good. But definitely look, having a collaboration there and, working directly with someone to such a close degree on very large projects, it definitely helps. Like, it's, it's so hard doing these, you know, really large scale projects in short amount amounts of time. And to not have anyone there that's, you know, you, you're feeding off each other, you know, you're sort of pushing each other to, to put the hours in and to, and to, and, and also ideas wise, like you, it's, it's very easy to bounce off certain people. So I think finding someone that you can bounce off is super good. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Makes a lot of sense. Well, Chris, I want to thank you so much for your time and, for, for being willing to talk about all the different things that you do. It's, it was really interesting. 
+</p>
+
+<p>
+<b>Chris: </b>Yeah. I really appreciate you having me. Thanks <span style="color:red" data-ts="3247.245" data-end_ts="3247.565" title="3247.245" id=c_"3247.245">__Dylan__</span>. Alright, 
+</p>
+
+<p>
+<b>Darwin: </b>No problem. And, I hope to get a chance to see you when you're in the States. That'll be a lot of fun. 
+</p>
+
+<p>
+<b>Chris: </b>Awesome. Thanks man. Alright. 
+</p>
+
+<p>
+<b>Darwin: </b>Talk to you soon. Bye. 
+</p>
+
+<p>
+<b>Nobody: </b><i>Bye. </i>
+</p>
+
+<p>
+<b>Darwin: </b>And there it is. Thanks a lot to, Chris Vic for talking with us, man, that story about <span style="color:red" data-ts="3270.285" data-end_ts="3270.525" title="3270.285" id=c_"3270.285">__CB__</span> freeze your blood, won't it. So a couple of notes. First of all, thanks so much to opia for <span style="color:red" data-ts="3278.005" data-end_ts="3278.245" title="3278.005" id=c_"3278.005">__again__</span>, helping get the word out. It's always fantastic when they give us a blurb, and love the <span style="color:red" data-ts="3285.965" data-end_ts="3286.205" title="3285.965" id=c_"3285.965">__sight__</span>. So if you get a chance, go over there. That's opia.com. Secondly, it looks like the Midwest mini tourist coming together from itself, mark Moser. So that'll be happening August 1st through third. August 1st will be in Lincoln, Nebraska, August 2nd in Des Moines, Iowa, and August 3rd apparently in Lawrence, Kansas. So if you live in one of those three places or nearby and want more details, shoot me an email at ddg@cyclingfour.com and I'll get you the info. Other than that, I want to thank you so much for listening. I hope you enjoyed this podcast as well as all the previous, and I'll talk to you next week. Bye.
+</p>
+
+    <p><i>Copyright 2015-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
