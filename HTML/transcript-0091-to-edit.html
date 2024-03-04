@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0091 - Dan Trueman</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0091 - Dan Trueman</h2>
+        <h3>Released: Aug 9, 2015</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3723951/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Today's podcast is based specifically on some work that I recently did with some of my coworkers at Cycling 74 related to updating some of the, some of the canonical objects that people have been using. In this case, this group put together an updated version of the percolate objects, which are physical modeling and other kind of obscurities that are just pretty amazing. This is all done through our little hack site called Max. It uses the Club tld, so that's Max Do Max Club. You can check it out there. But in the meantime, I hope that you enjoy this amazing interview with Dan Truman, one of the people that was involved in the creation of the Percolate Object Set. Here you go. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. Today, I am, pleased to introduce you to someone who I've had an opportunity to play with and, and certainly talk to over the years. Someone who I find, particular inspiration and someone whose work I've just been interacting with. And so I was really excited to get him, on the podcast. His name's Dan Truman. And I will let him explain at least some of what he does. He's got a resume that'll make your teeth hurt. It's amazing, but I'll let him kind of identify himself. So with that, I say hi to Dan. Hi, Dan. How are you? 
+</p>
+
+<p>
+<b>Dan Trueman: </b>I'm doing great. Hi, Darwin How are you? <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>All right. Thanks a lot for, taking the time to be, part of the podcast. So why don't we kick this off by having you explain to people what, how you think of yourself. Okay. 
+</p>
+
+<p>
+<b>Dan: </b>I'll, I'll do my best. So I guess ultimately, I just view myself as a musician, has got my finger in, in a lot of different pots. I grew up playing the violin, but I also grew up with a, a scientist father, and so I was always drawn to analytical things and sort of hard science and programming and stuff like that. And, so a lot of what I do now, reflects those starting points. So I, I perform a lot as a fiddler sometimes with electronics. I code a lot. I really like to code. And so, I spend a lot of time building things that I can then fiddle with, sometimes literally with the fiddle, and sometimes, you know, more metaphorically just messing around with something. And then I try to compose music in the process. Sure, sure. I also, I teach a fair bit. I teach at, at Princeton, so I teach all of these things in various different guises. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. That's, that's neat. And really your love of both playing and coding is I think something that's going to resonate with a lot of listeners. Certainly resonates with me. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Your past has got, you know, if you do a little research in the Dan Truman Google search, you run into, a pretty amazing treasure troves of things that you were involved in. And, and most particularly, and I don't know if we say you get recognition or blame for this, but you are the developer of the laptop orchestra, right? 
+</p>
+
+<p>
+<b>Dan: </b><laugh>, yes. <laugh>, 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Depending on, depending on how people feel about laptop orchestras. There you go. But I find them to be an incredible, resource and especially in a teaching environment. <span style="color:red" data-ts="228.235" data-end_ts="228.525" title="228.235" id=c_"228.235">__Yeah__</span>. I've gotten a chance to work with the Boulder Laptop Orchestra, which is based outta CU Boulder. <span style="color:red" data-ts="234.035" data-end_ts="234.325" title="234.035" id=c_"234.035">__Yeah__</span>. I would like to hear a little bit more about the development of that. Before we get into some of the other questions, I'm just curious on what was in your head when you just said, let's make an orchestra outta laptops? 
+</p>
+
+<p>
+<b>Dan: </b>Yep. Yeah, it's a great question. And I think it comes back to some of what we were just talking about. You know, as a violinist, as a fiddler, I really love to make music with other people sitting in the room with me, you know, and at the time, so this was sort of in the years before this, we started the laptop orchestra in 2005. So in the years leading up to that, I was teaching electronic music, at Princeton and before that at Colgate and Columbia. And, always with people working alone for the most part in their studios. And then they would make a track and share that track. So you'd sit back and listen, or you'd go to an electronic music concert and sit down and listen to something that was played over speakers, which is all, it's all great. And I'm, what I'm saying here is not meant to in, you know, be critique of that, but it doesn't have this social music making component to it, this, this fiddling aspect sitting or chamber music aspect. 
+</p>
+
+<p>
+<b>Dan: </b>This, this part where you're sitting down and making music with somebody else. And in the classes teaching the classes, I just always felt very lonely sending the students off and, and having them make these things rather than actually getting them all in a room together and trying to make music together. So that really was the main motivation for it. And so I remember at the time, bouncing this idea off of Perry Cook, who was my colleague at, in computer science here at the time. And, you know, I don't know, you of course, you know, Perry and, and, and some, I bet many of your listeners do, you know, one of the just powerhouses of computer music, right? <span style="color:red" data-ts="355.825" data-end_ts="356.045" title="355.825" id=c_"355.825">__And__</span> also a great thinker and an inspiring thinker, and somebody who is absolutely game to try just about anything. And so he was, he lit up about this idea. 
+</p>
+
+<p>
+<b>Dan: </b>And it <span style="color:red" data-ts="368.445" data-end_ts="368.525" title="368.445" id=c_"368.445">__al__</span> also really fed into or off of a bunch of things that we've been working on the previous decade, really including, we had been building these spherical speakers together. And the point of these spherical speakers was to make a home for electronic sound in the kitchen, let's say, you know, rather than having these big speakers that you're directing at, at people, these are meant to be speakers that sit next to you and fill a room with sound, roughly the way an acoustic instrument like the fiddle does. And so he and I had been building these speakers, and at the same time, we had also been sticking sensors all over my violin bow and reading the sensor data, processing it max, and, and using that to, control synthesis and signal processing in various ways. And so the laptop orchestra became a perfect venue to bring those things together, and not only ourselves, see what we could do with them, but see what a bunch of students would do with them. 
+</p>
+
+<p>
+<b>Darwin: </b>So that's very interesting. I was really curious about how those hemispheric speakers tie into it, because it seems like that's one of the identifiers that makes like a random group of laptop people become one of these laptop orchestras, and it's because it actually, there's something about that, something about having that speaker and, you know, right next to the laptop that actually makes it seem much more of an instrument than having it piped through a pa. 
+</p>
+
+<p>
+<b>Dan: </b>Yep. Right. So also at the same time period leading up to the laptop orchestra, I had been playing for a number of years with, Curtis Bond, a wonderful bass player and composer and musician, and also somebody who spends a lot of time, hacking in Max. And he and I had a duo, called Interface. And we were doing a lot of improvisations with these instruments we were building. And I remember early on we did what, what a lot of electronic musicians do. We just plugged into a PA and played. And that's also great. I love it. I've done that with you. And it's, you know, I love doing that, but it is also hard to know who's doing what. And, we, we wanted to try these speakers in that context in part, just to try to get us grounded a bit in terms of who's doing what and how do these things relate to one another. So I think you're right. I think, that the laptop orchestra didn't really make sense to me as a concept until we had this idea of these speakers that really make sound local to the player and fill the room and, and allow you to blend sounds in a room that come from many, many separate places. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well, I know from working with working with them <span style="color:red" data-ts="543.105" data-end_ts="543.325" title="543.105" id=c_"543.105">__as__</span> with the Boulder Group, one of the things that happens is all of a sudden your sense of volume management management also becomes a very much like an acoustic instrument. You start thinking of yourself as, how am I blending in? How am I loud enough so that other people respond to me and they know it's me because of the location that they can get from it? Mm-Hmm. <affirmative>. <span style="color:red" data-ts="567.165" data-end_ts="567.285" title="567.165" id=c_"567.165">__But__</span> it's, but also, how am I kind of like fitting into the overall sound? It's a really different kind of playing style than you normally find when you're, you know, working with a laptop in front of people. 'cause let's face it, a laptop has the ability to make all the noise. Right, <laugh>. That's right. And so, and so this is almost like a way to sort of damp that down a little bit. <span style="color:red" data-ts="592.305" data-end_ts="592.525" title="592.305" id=c_"592.305">__Yep__</span>. <span style="color:red" data-ts="592.525" data-end_ts="592.725" title="592.525" id=c_"592.525">__But__</span> also be <span style="color:red" data-ts="593.545" data-end_ts="593.765" title="593.545" id=c_"593.545">__on__</span>, kind of honor the fact that there's an audience in the room. Mm-Hmm. <affirmative> Mm-Hmm. <affirmative> by saying, here are the players in what they're doing. Right. It's, it's really cool. 
+</p>
+
+<p>
+<b>Dan: </b>Cool. Yeah. Thanks. I mean, and, and I, I, it's funny, I of course am a big fan of these and of the way they encourage certain kind of music making together. But on the other hand, you know, it's, it's funny, they're not for everything. And there are times when it's really, it's, it's not the right solution. And, and bringing in a, a pa or some other kind of speaker system in your monitors, whatever, sometimes that's the right way to go. Right. But one of the things I like about these is that, so at the time, it felt like the assumption was always that there was gonna be a pa in the room, Uhhuh <affirmative>. And now with these, it feels like, well, there, there are options, right? There's ways of thinking about how sound and electronic sound might be in a room together and how acoustic sound, electronic sound might coexist. There are options, there are ways of thinking about it. And that's what I really like about it. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well, and it's also, it, it's clear that there's a connection to your being a, a fiddle player in that it kind of has this thing of being like, you know, Hey, I could be a busker with this thing. Right? <span style="color:red" data-ts="665.325" data-end_ts="665.445" title="665.325" id=c_"665.325">__Yep__</span>. That's right. So I'll put my hat out at the subway and make a few bucks. Right, 
+</p>
+
+<p>
+<b>Dan: </b>Right. Well, it's funny, you know, you say that the, the Dublin laptop orchestra, in Ireland, that was one of their premises. And they wanted to make their systems completely battery powered so that they could just walk out <span style="color:red" data-ts="684.205" data-end_ts="684.405" title="684.205" id=c_"684.205">__onto__</span> Grafton Street, put out a hat and play. I'm not sure they fully succeeded in doing that, but that was, that was the intention at the beginning. 
+</p>
+
+<p>
+<b>Darwin: </b>That's a cool intent. 
+</p>
+
+<p>
+<b>Dan: </b>And actually, you know, Scott Smallwood, he's done a bunch with solar powered, electronic instruments, and he even, I've seen 'em outside with a big solar panel powering a hemispherical speaker, and everything's being powered right there. It's super cool. 
+</p>
+
+<p>
+<b>Darwin: </b>That's awesome. That's cool. So, let's talk a little bit about, about your background. One of the things I like to kind of dive into with my conversations is to talk about how you became the, the artist that you are. And in your case, it sounds like it's gonna be pretty complex because it has these two, it's, it's almost like a tree with two trunks. Mm-Hmm. <affirmative>, you have such a strong grounding in technology and such a strong grounding in music making and composition, and I'm curious how those grew together and Mm-Hmm. <affirmative> and, how they compliment or distract from each other. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. So I've been playing violin for as long as I can remember. I started when I was four. And that has been a constant throughout my life, almost in a ball and chain kind of way. I remember there'd be times where like, <span style="color:red" data-ts="765.825" data-end_ts="766.045" title="765.825" id=c_"765.825">__oh__</span>, geez, if I, if I don't practice for a week, I'm not gonna be able to play for the following month. I'll be all outta tune. And so I, so I've always felt like I gotta be practicing. But, you know, it's just always been there. And at the same time, like I, I mentioned earlier, my, my father is a theoretical physicist at Brookhaven Lab, on Long Island. My parents also liked to build instruments. And so I remember when I was a kid, they built two harps accords and a clavichord. And, and my dad builds loots. And we have in my, the living room where I grew up, a harpsichord that they built and a piano, a wall covered with recorders, another wall covered with lutts that my dad made. 
+</p>
+
+<p>
+<b>Dan: </b>And I remember, playing music on these instruments with my sister and my parents. Right. When I was, when I was growing up, we used to play, you know, baroque trio sonatas and stuff, <laugh> with my mom and the harp's accord and my, and my dad on, on the recorder, me on on the violin. My sister, actually, my sister's, a older sister, is a professional musician, a terrific pianist and composer and singer. And she'd often be either playing recorder or, or harpsichord whatever, whatever we needed. And so I, I grew up with that in the house. <span style="color:red" data-ts="844.865" data-end_ts="845.085" title="844.865" id=c_"844.865">__It__</span> seemed all normal at the time, <laugh>. Right. I didn't really realize that wasn't, you know, building harps accords in the house wasn't <laugh>, you know, 
+</p>
+
+<p>
+<b>Darwin: </b>Living standard. 
+</p>
+
+<p>
+<b>Dan: </b>That's right. And actually, it's funny, I remember, at some point it became my job to tune the harps accord. I loved tuning the harps <span style="color:red" data-ts="863.525" data-end_ts="863.765" title="863.525" id=c_"863.525">__accord__</span>. It had <span style="color:red" data-ts="864.245" data-end_ts="864.445" title="864.245" id=c_"864.245">__the__</span>, the, you know, double sets of strings and so on. So I'd have to tune both sets, and I really enjoyed that. And I think that is also might account for some of the weirdness that, that cropped up later <laugh> Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Dan: </b>That, you know, that was me sort of musically growing up. I <span style="color:red" data-ts="882.365" data-end_ts="882.645" title="882.365" id=c_"882.365">__play__</span>, you know, it's funny, I, I grew up pretty far out on Long Island, and I had pretty much a standard classical violin training. Even though I had asked to really learn fiddle music, there wasn't much fiddle music out there, or we couldn't find anybody. And so, it wasn't until much later that I actually got into fiddle music. I had this whole identity crisis growing up, playing Mozart and Brahms, and, you know, I love that music, but it was clearly not the music that I was meant to be playing. And it took me many years to find that I, I'll talk about that a little bit later. 'cause that gets to the, the hard <span style="color:red" data-ts="922.685" data-end_ts="922.845" title="922.685" id=c_"922.685">__iron__</span> fiddle, which has been one of my main instruments for the last 20 years. But just again, back when I was a kid, the, the, the, all this music. 
+</p>
+
+<p>
+<b>Dan: </b>But at the same time, my, my dad, a physicist, my mother's a painter. I was very interested in science. And when I went to college, I, I actually majored in physics. I didn't get a degree in, in music. I got my undergrad degree in physics. And I just, I loved it found, I just, in fact, I loved it for a lot of reasons. I loved the, I love the analytical aspect, the, the, the rigorous aspect, the, the writing of equations and the solving of equations to actually make things work, to give you hard numbers, you know, <span style="color:red" data-ts="968.565" data-end_ts="968.605" title="968.565" id=c_"968.565">__<laugh>__</span>. Right. But I also, there's an aesthetic aspect to it. I remember learning about Maxwell's equations. There's these four equations that govern electromagnetism, and there's something really elegant and beautiful about them. Of course, physicists talk about elegance and simplicity as being aims, as, as being parameters that they use to judge whether a theory is successful. 
+</p>
+
+<p>
+<b>Dan: </b>And yet, at the same time, when you study Maxwell's equations, you, you find that there are these stray elbows that are sticking out these constants that they have to add on to make the equations work. It's as if nature is saying, you've almost got me, but not quite. Yeah. <laugh>. And, I love that. And that actually very much appeals to me about music, too. When I'm writing music, I usually feel like if I actually fully understand what I'm writing and what I'm doing, that it's, it's usually boring when there's the odd elbow that's sticking out when there's something I really don't fully understand that usually feels like I'm, I'm on the right track. Like, I'm onto something. So that, you know, that really came, came from, from studying physics. Sure. So, anyhow, I, <span style="color:red" data-ts="1036.965" data-end_ts="1037.085" title="1036.965" id=c_"1036.965">__I__</span>, those things were operating, all along, for me through college and, and, and later, so sometime after college, well, actually, I, I've been applying to graduate school in physics, and I remember when I, I dumped all the applications in the trash. 
+</p>
+
+<p>
+<b>Dan: </b>'cause I, I, I reached the realization that I was gonna have to effectively quit playing violin if I was going to go to graduate school in physics. Sure. And I couldn't face it. So I said, all right, I'm gonna take a couple years off and be a musician. And that's basically where I am now. I took a couple years off and a couple years off led to a couple more years off. And, and I'm still doing it <laugh>. So, very fortunate. Yeah, exactly. Yeah. So, it's funny how those things, those things go, but, so I was just outta school, working for a while. And in fact, this is, this was interesting. I, I, I ended up in Seattle and I was trying to find a way to make a little bit of money while also spending time making music. And, and at that time, it meant I was a beginning composer. I had just started composing and I wanted to practice more violin and, and continue to, to grow that way. But I needed to make a living. And so I, I sent around a resume, <laugh> sort of preposterous, but I sent a resume to all the scientists in the atmospheric science and oceanography department at the University of Washington. Oh, my saying, I'm an aspiring musician with a physics degree, and I'm looking for 20 hours a week of work wondering if any of <span style="color:red" data-ts="1134.205" data-end_ts="1134.325" title="1134.205" id=c_"1134.205">__you__</span>, you would like to hire me 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. 
+</p>
+
+<p>
+<b>Dan: </b><span style="color:red" data-ts="1136.745" data-end_ts="1136.965" title="1136.745" id=c_"1136.745">__And__</span> so, and it was hilarious. I actually got several responses. Oh my goodness. I goodness. Including this one scientist, <span style="color:red" data-ts="1142.045" data-end_ts="1142.925" title="1142.045" id=c_"1142.045">__Steven Harrison__</span>, who, who was a researcher at, in oceanography out at, at Noah, at in Seattle, right. On the, the lake there. And he was fascinated by the fact that I wanted to be a musician and, but that I could also program and so on. And so he hired me for 20 hours a week to work on this physical model of the, of, of El Nino, this ocean effect out in the Pacific <laugh>. So, and <span style="color:red" data-ts="1172.605" data-end_ts="1172.725" title="1172.605" id=c_"1172.605">__I__</span>, so I was programming for, for that group for, for I guess about a year or so. Which was really, I think that's an important, now that I, now that I'm talking to you about it, I haven't actually ever talked to anybody about this. 
+</p>
+
+<p>
+<b>Dan: </b>'cause that was my first time really programming. And I discovered two things. Number one, that I was pretty good at it, and I liked it, <laugh>. Right. I love pressing, you know, compiling and having something work. Right. There's a sense of closure Yeah. That you get from programming that I don't get from a lot of other things. And even writing a piece of music or a particular performance, there's always stuff that I, you know, that I'm critical of or wish was better. And programming, there's, there's it, like it works, or it doesn't, of course, it could be better, but just the fact that you can get it to work incredibly satisfying <laugh>. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, what's interesting is if you kind of like put a musical bent on it, doing programming a lot of times is like, is like composing for an audience that's sitting right there. And the second you get a good compile, the audience reacts by being pleased. Right? <span style="color:red" data-ts="1249.355" data-end_ts="1249.645" title="1249.355" id=c_"1249.355">__Yeah__</span>. <span style="color:red" data-ts="1249.645" data-end_ts="1249.805" title="1249.645" id=c_"1249.645">__Yeah__</span>. It's the kind of turnaround you never get with actually doing music opposition. 
+</p>
+
+<p>
+<b>Dan: </b>That's right. <laugh>. That's right. No, it's true. It's, it's immediate and concrete in a way. Yeah. That's, that's really satisfying. So that was became part of my awareness. Although it's funny, after that, I, went to Cincinnati. I, I somehow persuaded them to take me into their master's program in composition. I will say that during the years off after college without a music degree, I obsessed on studying music on my own. Right. And it seemed, I learned later that I basically overcompensated <laugh>, I studied and had done much more than most people do in an undergrad. Yeah. So I got to Cincinnati and, some of the composers there would ask me, the faculty would say, oh, you know, got a physics degree, you should do computer music. And I said, oh, I don't wanna do computer music. Oh, that's the last thing I want <span style="color:red" data-ts="1307.765" data-end_ts="1307.845" title="1307.765" id=c_"1307.765">__to__</span> do. 
+</p>
+
+<p>
+<b>Dan: </b>I just wanna, I wanna play violin and fiddle and write music for chamber ensembles and improv improvisation. So on computer music just didn't interest me at all. Right. And so I, I completely stayed away from it as much as I could. I took the obligatory electronic music courses where, you know, we spliced tape and so on. Although I did get my first experience with Max at that time, I remember being, being shown max and programming some, some things there for the first time. But it, it wasn't until, I'm not sure when, probably a couple years into my time in Cincinnati that Brad Garten showed up. <laugh>, Brad Garten, who you know, well, <laugh>, 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, Brad. He's like the Johnny Apple seed <laugh> 
+</p>
+
+<p>
+<b>Dan: </b>For 
+</p>
+
+<p>
+<b>Darwin: </b>A lot of people. It's unreal. 
+</p>
+
+<p>
+<b>Dan: </b><span style="color:red" data-ts="1357.665" data-end_ts="1357.885" title="1357.665" id=c_"1357.665">__It__</span> <span style="color:red" data-ts="1357.885" data-end_ts="1357.965" title="1357.885" id=c_"1357.885">__is__</span>. Yeah. I mean, it <span style="color:red" data-ts="1359.225" data-end_ts="1359.445" title="1359.225" id=c_"1359.225">__is__</span> actually, and at that point, I was done with academia. Yeah. I was like, I'm outta here <laugh>, I'm gonna, I'm gonna move to, to Nashville and try <span style="color:red" data-ts="1368.925" data-end_ts="1369.045" title="1368.925" id=c_"1368.925">__a__</span> fiddle there, or I'll move to New York and see what can happen there. I was looking into seeing if I could do an internship, like a digit design or something, you know, I was, I anything but being in the academic composition world. And so Brad shows up and I still remember, I mean, of course, Brad Gar is this great charismatic character and, and his love of music and of computers, programming is infectious. And I remember sitting down with him, and he, I don't, I think I asked him to do this, and he maybe was a little perplexed as to why, but he wrote probably <span style="color:red" data-ts="1408.825" data-end_ts="1409.025" title="1408.825" id=c_"1408.825">__in__</span> 45 seconds, a little program that would print out the values of each sample in a sound file. 
+</p>
+
+<p>
+<b>Dan: </b>Mm-Hmm. <affirmative>. And I was just completely turned on. I was like, oh my gosh, I can see the sound. Right. I can see everything in there, and I can imagine getting my hands on it. Right. And that was the moment I was like, wow, okay. I, I wanna do this. I, I can program. And this is exciting to me, being able to get down on the low level and, you know, possibly, even if I don't do it, but imagine that I could pull the sound apart bit by bit was super exciting. So that was a, you know, that was a, <span style="color:red" data-ts="1449.485" data-end_ts="1449.605" title="1449.485" id=c_"1449.485">__a__</span> i, it's one of those moments I remember where I was sitting and, you know, and Brad showing me this program and, and talking to me about it. It was, it was really life changing moments. So, that's, I think that's really where I started putting things together and not having an allergy for combining these things that I love. I, it's funny, I, I think I had an allergy for this notion of bringing my science side and my music side together. I didn't wanna build violins or study acoustics. This is what people talk about often. Right, right. Oh, you do physics, you should study acoustics. I was like, I'm not interested in acoustics. That's not what interested me about, about physics. <span style="color:red" data-ts="1493.735" data-end_ts="1494.085" title="1493.735" id=c_"1493.735">__Right__</span>. But somehow this, this sense that I could grab hold of the sound in a very, methodical way and, and, and manipulate it, was really appealing. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1510.465" data-end_ts="1510.685" title="1510.465" id=c_"1510.465">__All__</span> right. So once you, once you finally gave the idea of computer music an embrace, and you could conceivably go in there and reach around and swirl your finger in the mu in the music Mm-Hmm. <affirmative>, right? Yeah. What is it that you found, and what is it that, what is it that kept you in it? Because frankly, some people do that and they're like, <span style="color:red" data-ts="1536.955" data-end_ts="1537.245" title="1536.955" id=c_"1536.955">__yeah__</span>, there's nothing interesting in there for me. Right. Mm-Hmm. <affirmative>, obviously the opposite happened for you. What did you find? What was the, what was the magic mushroom in it? 
+</p>
+
+<p>
+<b>Dan: </b>Yeah, <laugh>. It, I think at first there were lots of them, that were small and kept me interested for relatively short periods of time. And yeah, so I remember a piece of Brad's also called Approximate Rhythms. And this is a piece where he had built a model, basically of a, of a, of a drum ensemble, and used it to algorithmically generate a really compelling rhythmic track to this textured piece that he'd made. Mm-Hmm. <affirmative>. And I found that really interesting, this notion of, of building algorithms that somehow have, some kind of sense of humanity in them. Right. <span style="color:red" data-ts="1598.685" data-end_ts="1598.885" title="1598.685" id=c_"1598.685">__They__</span> 
+</p>
+
+<p>
+<b>Darwin: </b>Became players. Yeah. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. Yeah. Ultimately, I, I moved away from that interest. I've, I've not been interested in myself in pursuing algorithmic composition or building, virtual musicians that I play with, but that was something that, that was really intriguing to me. There was also just some, I mean, sonic things that really appealed to me. I remember this algorithm that I think Brad wrote in response to something that Terry Pender asked him to write. Of course, you know, Terry, well, also Terry was at Cincinnati at the time. And it was called Cloudify. The Cloudify was this RTC <span style="color:red" data-ts="1644.505" data-end_ts="1644.725" title="1644.505" id=c_"1644.505">__mix__</span> script that would take a sound and ize it Sure. In this beautiful, harmonic way, making these clouds sounds, I just thought this was stunningly beautiful. Sure. So I think, you know, the combination of, of being able to get my hands on it, this just the sonic, possibilities and this notion of sort of algorithms and, and bodies, people actually making music, those things kept me in it. 
+</p>
+
+<p>
+<b>Dan: </b>Right. I made probably two or three, you know, what they called tape pieces at the time. You know, tracks just where you would, you know, a fixed media piece that you could, you could share. Right. I'll be honest, that left me cold pretty quickly coming back to the same reason. I just felt like once I had done that, the conversation was over. Right. Right. It was, for me, there was, for me, the most interesting part of the conversations were always in the making of the music with other people, not in the consuming of the music as sound after the fact. So, I, I, I, you know, I wasn't gonna do computer music if that's what it meant. And so, right around this time, the computers, this is probably, let's see, nine. So that was Brad was 93 or 94, and I was, so I messed around with these things for two or three years. 
+</p>
+
+<p>
+<b>Dan: </b>And then in 96, I think it was, or 97 computers became fast enough to do some things in real time with sound, with audio. And so this is when MSP came out, right. This is when Super Collider came out. Right. And that was immediately interesting to me. 'cause there was a sense, okay, maybe I can do some of these things like cloudify, that Cloudify algorithm. And when we'd done Cloudify, it was like, you know, you'd, you'd type your script and enter it and go get a cup of coffee and come back and then, and then listen to it. Right. Or maybe go to bed and come back the next day <laugh> and listen to it <laugh>. But, in this case, there was this sense that, wow, we could actually do this as we're playing. And yeah. So I, this really came together in a powerful way for me with MSP in 1997 with Curtis Bond. 
+</p>
+
+<p>
+<b>Dan: </b>I remember Curtis and I sitting in one of the studios together here at Princeton, messing around with, with MSP, which had just come out. And I wanted to do something like Cloudify, but with my violin sound being cloudified as I played it. And it wasn't apparent to me how I could do that with Max and MSP directly. And obviously people have done that since. But to me, at the time, it was like, I'm gonna do this. And, and because I liked program or I was learning to program more, I delved into the whole process of making external objects for, for Max. And, and so the very, I think the first object I made for Max my memory could be wrong here, but was this object called the, the Munger, which is basically a real time izer. The idea is to cloudify as you play. So I could play my fiddle and within, you know, 200 milliseconds this cloud of grains would come out. Right. And I could manipulate those grains and get different textures and so on. But that was the result of sitting in the studio and, and learning how to hack a Max Ex external and taking that external and wrapping it in a big max patch, and making music with it. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Well, it's a actually interesting segue because, one of the reasons why I am talking right now in particular, not that I don't want to talk to you, but <laugh> <laugh>, but is that, I just got done working with a team at cycling. There's a group of us, kind of a kind of a little tiger team that, that basically finds really important old object sets, and we, we try and refurbish them to bring 'em up to speed, right? Mm-Hmm. <affirmative>. <span style="color:red" data-ts="1913.195" data-end_ts="1913.485" title="1913.195" id=c_"1913.195">__Yeah__</span>. And, we were talking about, you know, what we wanted to attack, and I kind of threw out the idea, well, what about percolate? And a bunch of people, you know, for me, percolate was like blow tar and other physical model things, right? <span style="color:red" data-ts="1931.445" data-end_ts="1931.605" title="1931.445" id=c_"1931.445">__Yeah__</span>. Right. But there were two people that specifically for them, percolate means Munger. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, you know, that's all they want. They need one object outta the whole set. It's that one. Right. It's, it's really funny. But, it's interesting because I got a chance to sort of like live in your head for a little while. I got the chance to work with your code, which I'm 
+</p>
+
+<p>
+<b>Dan: </b>So sorry. I'm so sorry. <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>Led me to a bout of drinking <laugh> <laugh>, of course. But the end result was pretty cool because you take a really interesting approach on, on how you attack the code, but also you, it was, you know, especially working with the physical model stuff where you were finding ways to take other people's work and bringing them into that, into that, stuff as well. Particularly Perry Cook's physical modeling stuff. Now, what, where was his code running prior to you putting it into, into the, these max objects? 
+</p>
+
+<p>
+<b>Dan: </b>Right. So Perry has, a toolkit called the synthesis toolkit, right. STK, that's AC plus plus toolkit that he made, in the mid nineties with, I think the sole purpose of it was to, avoid answering emails <laugh>. So people would send him an email and say, well, how does this, you know, flute physical model work? And, and instead of trying to an having to answer, you know, a hundred emails that said that, he'd say, look, go to the STK, and the answer is right there. And so he made this, nicely commented, c plus plus code with, you know, a, a wide collection of these physical models. That's amazing. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. Yeah. And so that was a, that was great. I mean, for me it was like, I want these, but I need them in a place where I can use them. Right. And, and use, and I, I had actually built some instruments from the ground up in c plus plus and was, was trying to play with them. And the, the, for me, the, the, the process of coding and trying was, and experimenting with what I was making was so slow and frustrating that I was like, I, I can't work this way. And so that's where like having the physical models and having these objects wrapped up in an environment like Max, where you can work really quickly and prototype things and hook this into that and try stuff out and save presets and so on. All of that was, was super important. So that was the mission, original mission behind Percolate was, at least for me, right, was to take Harry's synthesis toolkit and this small handful of other objects like the Munger and the Scrubber and a couple other things, and some things that Luke Deis was making Mm-Hmm. <affirmative> and basically wrap them up into a big package that, that we could use and that other people could use. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well, the percolate stuff, I remember when it, when it first kind of came out, it was sort of like one of those <span style="color:red" data-ts="2120.795" data-end_ts="2121.085" title="2120.795" id=c_"2120.795">__draw__</span> droppers, like, I can't believe, I can't believe my computer could do this thing <laugh>. You know? Right. It was really amazing. And, and again, like you say, because you're working in Max, you can kind of drop it in and, you know, it's like, let's try the blow tar, no, let's try the, let's try the regular guitar. No, let's try the loot. No. You know, you can kinda swing through things like that in real quick order. It was really, really pretty awesome. Yeah. How hard was it for you to get that working? Or was it, or once you got into it, was it relatively straightforward? 
+</p>
+
+<p>
+<b>Dan: </b>Well, I'll try to remember 
+</p>
+
+<p>
+<b>Darwin: </b>Because <span style="color:red" data-ts="2158.045" data-end_ts="2158.165" title="2158.045" id=c_"2158.045">__I__</span>, a lot of people don't even remember, or maybe weren't even around when it was hard for a computer to do realtime audio at all. 
+</p>
+
+<p>
+<b>Dan: </b>Oh, right, right. I, I think is one of the interesting things about the physical models is that for the most part, they're actually not particularly intensive in terms of computation. What they do require is very short feedback lines, feedback delay lines, so that you can feed a sample back into itself very quickly. And so they, you know, mostly, I think the physical models ran pretty quickly, the actual creation of the objects. It was a big learning curve for me at first, but once I had one running, I think as I remember, porting others was sort of, you know, an after dinner project. Right. Which is really, really nice. But, you know, here's the thing. When you do that, and you, and you dig into the code a bit, as you know, you know, you see things and you, and you, and you see opportunities to try stuff. 
+</p>
+
+<p>
+<b>Dan: </b>So you've mentioned the blow tar, the blow tar doesn't actually exist in Harry's synthesis toolkit. In fact, I think the blow tar still only exists in Percolate. And it is the result of a conversation I had with Perry where he pointed out that the physical model for the flute is basically identical to the physical model for the electric guitar. Which, you know, you hear that sentence and go, <span style="color:red" data-ts="2264.155" data-end_ts="2264.445" title="2264.155" id=c_"2264.155">__what__</span>? How could that be <laugh>? It's just not possible. But basically it's true. And it's just a question of which knobs you give the user in terms of what they can control. Mm-Hmm. <affirmative>. And so the blow tar was, an effort to make that possible. So basically you could explore this space between the flute and the electric guitar. But what was funny is that even in doing that, I found some slight differences between the models. 
+</p>
+
+<p>
+<b>Dan: </b>And so I, I used those differences to create other noobs so that you could sort of fade between one kind of filter in the flute model and it's, you know, analogous but slightly different filter in the electric guitar. Right. Then you get all these other crazy effects. Yeah. So, you know, this, that to me was empowering and also a real lesson in terms of the value of getting your hand dirty, you know, really getting in and making your own stuff. So, you know, these days when I, I teach, especially like our graduate students <span style="color:red" data-ts="2324.345" data-end_ts="2324.565" title="2324.345" id=c_"2324.345">__and__</span> our, and our program here, there's so many high level tools and a lot of 'em, oh, I just wanna use what's out there and what's given to me. And of course that's totally <span style="color:red" data-ts="2331.595" data-end_ts="2332.085" title="2331.595" id=c_"2331.595">__thought__</span>. But what you don't get when you just work with high level tools is this type of opportunity where you, you're getting your hands dirty and you see, wait, if I hook this to this and I turn this knob a little bit, oh my gosh, I get this whole other crazy thing. And that's just so fun. 
+</p>
+
+<p>
+<b>Darwin: </b>That blow tar object is actually, it reminds me so much of like the great and almost uncontrollable in instruments, right? <span style="color:red" data-ts="2361.825" data-end_ts="2362.045" title="2361.825" id=c_"2361.825">__Yep__</span>. I mean, it does have that sense of like a guitar in front of a wall of Marshall amps. Right? That's right. You, you turn it on, and if the knobs are right, you can wail and if the knobs are wrong, it'll squeal and and you'll just rush run for the door. Right. 
+</p>
+
+<p>
+<b>Dan: </b><laugh>. Exactly. You 
+</p>
+
+<p>
+<b>Darwin: </b>Know, you'll, you'll go hit the power switch or it won't do anything. Right. 
+</p>
+
+<p>
+<b>Dan: </b>Exactly. Sometimes, you know, it'll be squealing and then you turn the knob one tick, and the whole thing just goes silent. <laugh>, what happened, <laugh>? I know. It's a very moody beast. I 
+</p>
+
+<p>
+<b>Darwin: </b>Love <span style="color:red" data-ts="2393.525" data-end_ts="2393.765" title="2393.525" id=c_"2393.525">__about__</span> it, but yeah, on the other side, it's, I mean, calling it a beast is right, because it seems almost alive, which that's something that's a rarity in these days where, you know, there are safety bumpers put on our software to prevent us from cocking things up. Right. <laugh>. And, and one of the things I like about some of these models is no bumpers, man, you're, you're running right. And it's, it's really fun and really, really pretty inspirational, I think. 
+</p>
+
+<p>
+<b>Dan: </b>Well, yeah, and, and also you mentioned back in the, at that day, <span style="color:red" data-ts="2426.585" data-end_ts="2427.565" title="2426.585" id=c_"2426.585">__90, 19 97__</span> or whenever it was to, to be able to even hear just the flute physical model mean the flute physical model. Beautiful. Right. And to hear that sound coming outta the computer and changing as you're turning a knob, 
+</p>
+
+<p>
+<b>Darwin: </b>Nobody had ever imagined No, 
+</p>
+
+<p>
+<b>Dan: </b>No. And, and, and to be able to wrap it up in certain ways in your own sort of customized environment. <span style="color:red" data-ts="2446.905" data-end_ts="2447.125" title="2446.905" id=c_"2446.905">__Oh__</span> man, that, so talk, you asked me earlier about things that, you know, sort of kept me going and kept me interested, these sorts of things, just being able to get your hands dirty, but then get sound like that. I mean, just so exciting. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Now, to this day, what, what are the computer music tools that you're still using? 
+</p>
+
+<p>
+<b>Dan: </b>Right. So today, I, my my workbench consists of Max Chuck, which, is a text-based programming language that was actually developed here at Princeton while the laptop orchestra was developing. 
+</p>
+
+<p>
+<b>Darwin: </b>That's really oriented towards real-time coding. Right. 
+</p>
+
+<p>
+<b>Dan: </b>Well, that was one of, the original idea. So go <span style="color:red" data-ts="2491.805" data-end_ts="2492.085" title="2491.805" id=c_"2491.805">__along__</span> is the, at, at Stanford, and he was a grad student here at the time. He developed Chuck, and that was his dissertation. And his idea was that it would be a live coding environment. I've never live coded in my life, <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. 
+</p>
+
+<p>
+<b>Dan: </b>Alright. To me, it's, it's really quite a beautiful language and a really wonderful complimentary language to Max in that it really is so different than Max that it's like you're putting a totally different brain on when you're working with it. And I really like that. I like having these two environments that, offer really different ways of thinking about particular problems or really different ways of just messing around with things. So, and I can talk more about that if you like, but, basically those, those two languages are the ones that I use when I'm trying to solve a problem or trying to mess with an idea and see where it gets me. Sure. So I, you know, I use Pro Tools and Sebelius and so on otherwise, but I think the Max and Chuck are really where I do most of my work. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Let's go back a little bit to the fiddle, because we, I mean, it's clear, it's easy to hear the passion in your voice when you're talking about, technology and, and coding and the excitement of making a, making a computer wake up or crash Mm-Hmm. To its knees or something. Right. <laugh>. But, you, you are equally passionate about the fiddle and particularly the kind of fiddle you use now, which is, I, before I actually saw you use it, I had never even heard of, a hard dinger fiddle. Is that Yep. How we say it? <span style="color:red" data-ts="2602.745" data-end_ts="2602.965" title="2602.745" id=c_"2602.745">__Yep__</span>. Perfect. It's a, it's a Norwegian fiddle, right? 
+</p>
+
+<p>
+<b>Dan: </b>It's Norwegian norian folk fiddle. Yeah. It's been used in folk traditions for centuries. As far as I know, it's been around as long as the violin. It's typically used for playing dance music, for playing weddings. I actually <laugh>, I played it for a wedding just just last month. And also they have a whole repertoire music, which they call listening tunes, which are tunes meant to be played in concert and not dance <span style="color:red" data-ts="2637.565" data-end_ts="2637.765" title="2637.565" id=c_"2637.565">__to__</span> I 
+</p>
+
+<p>
+<b>Darwin: </b>See. What is, what's the difference between this fiddle and a typical violin? 
+</p>
+
+<p>
+<b>Dan: </b>It's a bit of a contraption. So it, it's got the four strings and on the bridge and everything, but it also has an additional set of sympathetic strings. Okay. That run underneath the fingerboard and through the middle of the bridge. So, <span style="color:red" data-ts="2657.845" data-end_ts="2658.085" title="2657.845" id=c_"2657.845">__well__</span>, 
+</p>
+
+<p>
+<b>Darwin: </b>It it runs parallel to the regular set of strings, 
+</p>
+
+<p>
+<b>Dan: </b>Right? Exactly. It's parallel and, and underneath. Yeah. That's weird. It is weird. And it's funny, if you, if you hold up the, you know, the instrument sort of backed by its butt and look through the bridge, you'll see this, this opening where the resonating strings actually rest on their own part of the bridge. And then there's a tunnel underneath the fingerboard that the strings go through. And then they come out the top where we've got a whole mess of peg of pegs, for tuning both the mainstreams and these as in Norway, they call them under streams, <laugh> strings that are underneath. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that explains a bunch. 'cause I remember when you first pulled it out of the case, I was like, oh, well, whatever fiddle this is, it's the big fiddle, because it just seemed like it was physically much more, imposing. 
+</p>
+
+<p>
+<b>Dan: </b>Right. Well, that's interesting actually. So the fiddle that you're talking about is not a traditional Norwegian instrument. The fiddle you're talking about is the first of its kind <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2726.635" data-end_ts="2726.925" title="2726.635" id=c_"2726.635">__Dear__</span>. 
+</p>
+
+<p>
+<b>Dan: </b>Yeah. Yeah. So I, there's two fiddles that I play. One is the hardanger fiddle, the traditional hardanger fiddle that's been around for hundreds of years. It has these sympathetic strings. Okay. And it's actually, the body on that fiddle is a little bit smaller than a regular fiddle. Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Really? Okay. Yeah. 
+</p>
+
+<p>
+<b>Dan: </b>It's smaller and it's, and the instrument's tuned up quite high. The strings are a little bit shorter, and it's not as loud as a regular fiddle. If you try to play regular fiddle and hard <span style="color:red" data-ts="2752.645" data-end_ts="2752.805" title="2752.645" id=c_"2752.645">__and__</span> fiddle together, it can be a bit of a struggle for the hard <span style="color:red" data-ts="2754.965" data-end_ts="2755.125" title="2754.965" id=c_"2754.965">__and__</span> fiddle to actually hold its own right. But it's got this high, sparkling type of sound, and, and a relatively small body. So yeah. Let me tell this story actually, 'cause I think it's relevant to everything we're talking about here. I love this instrument and I love the sound of it and <span style="color:red" data-ts="2775.285" data-end_ts="2775.445" title="2775.285" id=c_"2775.285">__the__</span>, these resonating strings. Harry always described them as being <span style="color:red" data-ts="2779.205" data-end_ts="2779.325" title="2779.205" id=c_"2779.205">__a__</span>, as them basically, simulating a built-in reverb unit with, carefully tuned modes. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Dan: </b><laugh>, so the strings are tuned to support particular, you know, pitch pitches or overtones. Sure. And so some notes that you play really engage them and make the instrument ring while other notes that you play don't so much. So it, it's, it's got these carefully tuned modes, but the whole, it's got this beautiful reverberant sparkle and it's in all the wrong keys if you're a fiddler. 'cause it's <span style="color:red" data-ts="2813.765" data-end_ts="2813.885" title="2813.765" id=c_"2813.765">__a__</span>, basically a whole step higher. So it's mos natural keys B or F sharp. Oh, awesome. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. So everyone else in the band loves you. Exactly. <laugh> 
+</p>
+
+<p>
+<b>Dan: </b><laugh>. Well certainly like, like playing with other fiddlers, it's like, <span style="color:red" data-ts="2826.905" data-end_ts="2827.125" title="2826.905" id=c_"2826.905">__oh__</span> man, I just, I can't do all the double stops that you guys do. Right. Because I'm in the wrong key. And if I, if I tune it down, then the instrument gets all flabby and weak and loses its magic. Sure. So, you know, like I was talking about with the laptop orchestra, I liked <span style="color:red" data-ts="2843.815" data-end_ts="2844.215" title="2843.815" id=c_"2843.815">__playing__</span> music with other people. And, I, I found this frustrating. And, and after some years of thinking about this and playing with various fiddlers and also working with some American fiddlers who play five string fiddles. So in addition to having the, you know, the normal four strings, they'll have a low string, sort of like a violin and a, a viola put together. So I commissioned a Norwegian maker, great Norwegian maker of hard <span style="color:red" data-ts="2869.925" data-end_ts="2870.085" title="2869.925" id=c_"2869.925">__armor__</span> fiddles to make me a five string hard <span style="color:red" data-ts="2873.125" data-end_ts="2873.325" title="2873.125" id=c_"2873.125">__armor__</span> fiddle that was meant to be tuned at a four 40. 
+</p>
+
+<p>
+<b>Dan: </b>And this guy, wonderful spirit, his name is Salve Haal, and I sent him this idea over email and he just went bananas and started sending me sketches for what the instrument would look like. Maybe nine months later, I went to his shop in Norway and he had made this absolutely stunning instrument. And it is the one that you're talking about. 'cause it's actually the size of a small viola, so it's bigger right. Than a violin. And it's got the low string and it's <span style="color:red" data-ts="2907.685" data-end_ts="2907.845" title="2907.685" id=c_"2907.685">__tuned__</span> <span style="color:red" data-ts="2907.845" data-end_ts="2908.005" title="2907.845" id=c_"2907.845">__at__</span> a four 40. It's quite powerful. Right. And really, I can play very high, very low, but it still has the sympathetic string so that it rings and reverbs and sparkles the way the heart <span style="color:red" data-ts="2919.005" data-end_ts="2919.165" title="2919.005" id=c_"2919.005">__under__</span> fiddle does. So even with the fiddle, I haven't been able to resist mucking around with it. <laugh>, <laugh>. I'm trying to, you know, make it do what I want it to do <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well that's, that's interesting because also it seems like this fiddle is almost like a technological, it's like violin 2.0 in some way. Yeah. <laugh> or like, you know, or maybe like the, the three legged <laugh> version, you know, the, the mutant, violin. And That's right. To what extent is that a draw for you? Just the fact that it's peculiar, but also has this kind of unique, unique power? 
+</p>
+
+<p>
+<b>Dan: </b>You know, I think part of the draw of it being peculiar, and this is true with the original hard <span style="color:red" data-ts="2972.565" data-end_ts="2972.725" title="2972.565" id=c_"2972.565">__armor__</span> fiddle actually as well, is that it's liberating because I, and I grew up playing, like I said, violin playing Mozart and Brahms and, and feeling like that was not my music. Right. Feeling like I was wearing somebody else's clothes or something. And to this day, whenever I pick up a classical violin and put it under my chin and start playing, that music comes back because that's what I grew up playing. And it starts to feel like this alien creature under my chin rather than something that I'm meant to explore and invent and play and, and so on. Whereas the hard onger fiddle and then this new five string fiddle that I have, they're enough different that I don't feel that at all. But at the same time, the years of having practiced with my, you know, fingers in order to get them to play in tune and try to draw a decent sound from the instrument, that training is still there. It's just, it gets, you know, turned sideways by five degrees and now it's a completely different world. And I'm not hearing Mozart and <span style="color:red" data-ts="3040.285" data-end_ts="3040.565" title="3040.285" id=c_"3040.285">__bronze__</span>. Instead, it's like, well, what am I hearing? It's trying to invent stuff there, trying to come up with new music there. So I think the peculiarity has, <span style="color:red" data-ts="3048.505" data-end_ts="3048.725" title="3048.505" id=c_"3048.505">__is__</span>, is, is in this case the, it's what makes it liberating. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's really interesting because one of the things that I often kind of like, you know, rant and do my street Peacher thing about is the fact that a lot of people in the electronic music world don't spend the time to become virtuoso <span style="color:red" data-ts="3069.905" data-end_ts="3070.125" title="3069.905" id=c_"3069.905">__or__</span> something before the next new shiny object comes along. Right? Mm-Hmm. <affirmative>. And it seems like at least in this variant of technology, which is like advanced violin technology Mm-Hmm. <affirmative>, you found a way to sort of like maintain you, you find a way to pivot so that you could do new and interesting things while still maintaining your virtuosity, for that particular instrument. Right. 
+</p>
+
+<p>
+<b>Dan: </b>I think there's something to that and, and part of it, I, I, I think that the technique that we learn through studying traditional instruments is not accidental. It's not without value in its own right. Apart from the specific instrument that you play. You think about playing the piano or even for that matter, typing. I mean, there's a certain inherent value in, in, in our ability to type, regardless of whether we're using that, that skill to type words or not. So, leveraging that has always seemed to me to be not only smart just because it's there, but I like the violin, just the pose that you have playing it with one arm, drawing a bow across the strings and the left hand stopping strings with your fingers. I mean, that as a, as a physical way of making music seems to be, to be, have more value than just being about playing the violin. 
+</p>
+
+<p>
+<b>Dan: </b>Right. And, so I, I found that to be useful when thinking about building new instruments and so on, that how we are engaging physically with whatever it is, whether it's a, a, a, you know, a piece of wood with strings on it or something that's coated up digitally, being aware of the fact that there are certain physical things that seem to have some kind of value or power. I, I think that's, that's, at least for me, that's been very useful. And, and it's not, it's funny, I have a real really mixed feelings about virtuosity in the sense that, <span style="color:red" data-ts="3198.515" data-end_ts="3198.635" title="3198.515" id=c_"3198.515">__I__</span>, a lot of what I do as a fiddler depends on having played and practiced, and I've practiced a lot over the years, you know, definitely put in way more than my 10,000 hours. Right. And I can't, I couldn't do a lot of what I do without that. 
+</p>
+
+<p>
+<b>Dan: </b>But on the other hand, with computers and like I think about the laptop orchestra, one of the things that I really love about the laptop orchestra is that you can, in some ways define that barrier to entry differently. You can make things that don't require that, but still might have real value as, as a musician. In fact, I think about, you know, like this is one of the early pieces for, for the Prince and laptop orchestra that go Wong made called clicks, CLIX, incredibly simple thing where you're typing on the, on the computer to, to just basically fill a buffer full of clicks that then gets synchronized via a network. There's basically no skill involved, right. You can teach somebody to play this piece in five to 10 minutes, and yet it's extraordinarily fun. And what I've seen happen again and again with that piece is that a group of people will sit down and say, oh, well cool, well what if we try this? 
+</p>
+
+<p>
+<b>Dan: </b>And what if we try to move it around the room this way? <span style="color:red" data-ts="3281.295" data-end_ts="3281.515" title="3281.295" id=c_"3281.295">__And__</span>, and people start thinking musically even if they haven't really been in an ensemble before. And so, yeah. So I guess what I'm saying is, is that I do, I definitely value virtuosity and I value spending a lot of time with a particular approach. But I also feel like, especially with computation where there's so much to do and so many possibilities, just thinking about different ways in and trying to make ways in that are inviting and fun and maybe don't require more than five minutes as opposed to 10,000 hours, that's also super valuable and interesting. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, to a certain extent, doesn't electronic music almost, I mean, speaking of leverage, doesn't it almost like leverage your thinking time into being kind of part of that 10,000 hours and beyond that the thinking time of the person who made the software gets leveraged by the person playing and all of a sudden that clicks thing doesn't happen in the first five minutes of everyone involved. Right, right, 
+</p>
+
+<p>
+<b>Dan: </b>Right. Absolutely. Then I remember talking about this with, with Curtis Bond, who I mentioned earlier <span style="color:red" data-ts="3357.985" data-end_ts="3358.275" title="3357.985" id=c_"3357.985">__when__</span>, 'cause when we were, we gigged regularly for probably eight years. And, each gig would be different because the instruments that we were building would be in a new stage. 'cause we were constantly hacking at them and we'd be hacking at them even between tombs on stage. And so on some level it was always new to us and we were sort of beginners with the instruments. But on the other, on the other hand, it was sort of like our practice was an instrument building practice and performing and building became sort of one and the same thing. And so there were loads of hours put into the whole process and practice, even though, even if there might've been only like five minutes of experience and, and five minutes of hacking that went into that particular moment. 
+</p>
+
+<p>
+<b>Dan: </b>But there are also loads of hours having spent improvising and working together and developing sort of some sensibilities, I guess, for how we <span style="color:red" data-ts="3417.365" data-end_ts="3417.605" title="3417.365" id=c_"3417.365">__want__</span> <span style="color:red" data-ts="3417.605" data-end_ts="3417.765" title="3417.605" id=c_"3417.605">__to__</span> play music together and how we wanna fill a room with sound. Sure. Yeah. So this, it's interesting sort of, part of what I'm thinking of is, is not wanting to pass judgment too soon. Like we make things. And sometimes you're right, like it's Oh, <span style="color:red" data-ts="3436.655" data-end_ts="3437.005" title="3436.655" id=c_"3436.655">__Rod's__</span> onto the next gadget. <laugh>. And I think one of the things that's that, sorry, one of the things that's important is to is to make things, integrate things and spend time with them and see what happens after you've maybe even grown <span style="color:red" data-ts="3452.695" data-end_ts="3453.045" title="3452.695" id=c_"3452.695">__bored__</span> with them. So that's sort of a longer process. It's not really about virtuosity, but it is about sort of experience and taste and judgment and so on. 
+</p>
+
+<p>
+<b>Darwin: </b>Right, right. Well, boy, I have blown through the time we had set aside for this and then some, but before we go, I have one, last question that, one kind of thought exercise I want to throw at you. <span style="color:red" data-ts="3478.035" data-end_ts="3478.325" title="3478.035" id=c_"3478.035">__Okay__</span>. You had a very interesting route to get to where you are now. What advice would you give to a 20 year old version of yourself to either make it easier or make it harder or change focus or, or would you not want to talk to that person at all? 
+</p>
+
+<p>
+<b>Dan: </b>It's funny you asked that. I had a conversation very much like this just last week with a, a student at, at Soci. This is the so percussion summer institute that's held here at, at Princeton. Mm-Hmm. <affirmative>, every summer. And there was a percussion student there who is a percussion in physics major. Okay. Chapman College. And he found out I had been a physics major and wanted to talk to me. And I hadn't talked about this in a while. And he was talking about asking questions about, you know, for a senior project about how to do something that brings, you know, his physics and his music interests together. And, you know, people similar to me saying, oh, well you should do something with acoustics. And him feeling, ah, I don't really <span style="color:red" data-ts="3546.405" data-end_ts="3546.525" title="3546.405" id=c_"3546.405">__wanna__</span> do something. And, and, and so yeah. So my, I I actually feel like, 
+</p>
+
+<p>
+<b>Darwin: </b>Sounds like you almost met a 20 year old version of yourself 
+</p>
+
+<p>
+<b>Dan: </b><laugh>. It's true. It's funny. <span style="color:red" data-ts="3560.705" data-end_ts="3560.925" title="3560.705" id=c_"3560.705">__Yep__</span>. Yes, <span style="color:red" data-ts="3562.625" data-end_ts="3562.845" title="3562.625" id=c_"3562.625">__it__</span> was really, he's super smart, really fun to talk to. And, but I, I, I was thinking about, as I was talking to him, I was like, you know, I actually think one of the things that I did that was, I don't know if it was right, but it was important, was to not try to bring them together. I never tried, in fact. And that's not even just with technology and, fiddle music. It's actually like with fiddle music and composition, like, you know, writing string quartets or something like that, or, or writing chamber music pieces and working with technology. I have never been interested in bringing things together. I've always felt like I want to just follow each one of these to where they interest me most individually. So with the hard onger fiddle, just going completely bananas with this traditional, telemark music and not really worrying about whether it has anything to do with anything else, I'm doing <laugh>. Right. And same thing with, with developing electronic instruments or coding. Just really following my nose, and seeing what's most interesting to me there. 'cause the last thing you want to do is find the lowest common denominator. Sure. Is. Find the thing that, oh, this is the overlap and it's the thing that sort of least interests me about both of these 
+</p>
+
+<p>
+<b>Darwin: </b><laugh> or all of them. 
+</p>
+
+<p>
+<b>Dan: </b>Right. Exactly. Rather, you know, find the things in your disparate interests that are most interesting and go there and not worry about it. 'cause it's funny, I've found them to come together again and again and again. In spite of my best efforts to keep them apart. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh> on their own. They do it 
+</p>
+
+<p>
+<b>Dan: </b>Right. That's right. And that's been great. That's 
+</p>
+
+<p>
+<b>Darwin: </b>Fantastic. Well, Dan, I wanna thank you so much for your time. For people that want to check out, some of your work, where's the best place for them to look? 
+</p>
+
+<p>
+<b>Dan: </b>Many arrows music.com is my website and I've got a bunch of music up there, some software up there and, and so on. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's fantastic. And, in the outro, I'll let people know where they can get, their hands on the percolate stuff. Great. Which was just updated for max seven, so that's really exciting as well. 
+</p>
+
+<p>
+<b>Dan: </b>It is. Thank you so much, Darwin 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, thank you. It was great talking to you. You too. To you soon. Bye. 
+</p>
+
+<p>
+<b>Dan: </b>Bye-Bye. 
+</p>
+
+<p>
+<b>Darwin: </b>And there you have it. What an incredible conversation and what a cool, way to go through your life kind of combining music performance with coding and composition and teaching. Dan leaves a pretty charmed life. Again, if you want to try and experience the Percolate objects with Max seven, you're going to want to get the updated version, which is available, through Max Club. It's an amazing thing, and you heard me kinda raving about the blow tar. It's one of the coolest little sound objects you're ever gonna run across. But at Max Ology Club, you also see some Tom Hall's work developing some max for life tools with it. As well as some other, tutorial information. So head on over there, grab the percolate objects, you're gonna have a blast with them beyond that. I just want to thank everybody for their continued listenership. I want to again congratulate Miller Puck on an incredible performance this last, this last week. I also want to thank Mark Moser for, helping me put together a great little mini tour. We had a blast. But with that, I'm signing off for the week. I'll catch you next time around. Bye.
+</p>
+
+    <p><i>Copyright 2015-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
