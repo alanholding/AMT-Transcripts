@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0106 - VJ Manzo</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0106 - VJ Manzo</h2>
+        <h3>Released: Nov 29, 2015</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/3981893/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Okay, today I have the, the pleasure of introducing you to somebody, who I kind of know without having actually known. I know him because I've been following his work for quite a while. His name is Vij Manso, and he is an author of a number of books now about music technology, and particularly music technology that utilizes Max MSP. Additionally, he has been the developer of an interesting library of max tools, and he has, he's working on a lot of kind of curriculum. He's a really busy guy, and so I was really pleased to get a little bit of his time, to have a chat. So, with that, I'm gonna say hi to pj. pj. Hi, how are you? 
+</p>
+
+<p>
+<b>VJ Manzo: </b>I'm doing great, Dar. How are you? I'm great. I'm really honored to be speaking with you. Thank you for having me. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, and likewise, I, I, again, I feel like I've known you because I've read your work and, I'm really kind of floored by the approaches that you're taking. So, with that, let me have you kind of introduce yourself to the listeners. 
+</p>
+
+<p>
+<b>VJ: </b>Sure. <span style="color:red" data-ts="82.665" data-end_ts="82.885" title="82.665" id=c_"82.665">__Ab__</span> absolutely. You know, I always tell, my students, it's a funny story how I even got interested in technology and Max in general. My background is as a guitar player and really as like a rock guitar player, who, who later fell in love with classic rock, then progressive Rock, and then into classical music as sort of a natural extension from that. And, sometime in my teenage years, I got tired of paying recording engineers to record our little project albums and whatnot. I got my first piece of software to start recording and, and sort of my love of doing production things started to epha. I started to then emphasize, well, what can the computer do in <span style="color:red" data-ts="127.245" data-end_ts="127.365" title="127.245" id=c_"127.245">__a__</span> recording situation? And then a live situation that a human kind of can't do? And, and, and that's, that's when I first got exposed to Max. 
+</p>
+
+<p>
+<b>VJ: </b>It was sort of in a, a synthesis class. And, I, I guess like most max people, I started looking at this software and said, well, what do you even do with this thing <laugh>? You know, what, what, what does one do with Max? You know, and then, then I started <span style="color:red" data-ts="152.685" data-end_ts="152.885" title="152.685" id=c_"152.685">__to__</span>, to think about my own interest with music. And I'm, I'm primarily interested in diatonic harmony and chords and this notion of algorithmic composition. And I started looking, can Max do any of those things? And maybe it can help me explain theory concepts to some of my, composition students and music students. And, and that was kind of my, when I started falling in love with Max <laugh> as a programming language I had not programmed before. So it was entirely new to me. But, I, I guess because of my familiarity with plugging in guitar pedals and, you know, effects processors into, signal chains, you know, max kind of felt comfortable. 
+</p>
+
+<p>
+<b>VJ: </b>And, and as, as you know, as many people know, it doesn't take very long to start learning some of the key objects and what they do. And, and for, for my interest with starting to compose and really teach about, about scales and dito harmony chords and such, max Max was great. I was trying to do things in Excel, actually, which was really, really funny. Trying to show how like different scales were related in Microsoft Excel, and, and to maybe I'll have an interactive tool like Max, made it much more exciting. So it was from, it was really from, from that idea of starting to organize scales and whatnot into, I made a little toolkit called the Modal Object Library, which, some people may have downloaded. And, it, it was, it was one of those things where I noticed that Max strategically didn't, force people into the notion of diatonic harmony and chords and these types of things. 
+</p>
+
+<p>
+<b>VJ: </b>So I, I just made a bunch of things that suited my needs as a composer and as a teacher. And that was it really. After that, I started thinking about the students that I was, I was teaching middle school at the time, and, and I started thinking about the difficulty that they were having playing chords and, and scales and these types of things. And my objective as, as a teacher, was to, to teach these concepts and get them to figure it out. And I thought, well, maybe there are some ways in max that I could make it easier for them to play simple progressions and whatnot. Maybe not even using a traditional instrument, just using the keyboards or other types of controllers for the purpose of being able to explain then what, what was happening, what, how were these chords kind of functioning and whatnot. 
+</p>
+
+<p>
+<b>VJ: </b>And, that idea caught on. I started then doing, I guess, what a lot of Mac users do, which is getting cool sensors and getting different types of control interfaces, patching 'em into these same types of, systems I was developing to play chords and scales. And, and I started releasing these little apps for, for my students. We called the Project Amir and I made a little website am amir.org. And, and the, the goal there was to put up a bunch of small apps that kind of did one thing, you know, they, they, to, they let you play chords in the key of whatever. They let you play scales in the key of whatever, using a little color tracking thing, or using a little pressure sensor or whatnot. And it was all free. And, and the idea has kind of stuck around and, it, it kind of made a bit of, a bit of a platform for me to some extent, to talk about these things. And, and that a few books later, that's kind of, <span style="color:red" data-ts="344.265" data-end_ts="344.485" title="344.265" id=c_"344.265">__the__</span> <span style="color:red" data-ts="344.485" data-end_ts="344.685" title="344.485" id=c_"344.485">__short__</span>, the short story of, of how I got into this, this world. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. So for for listeners, let's first of all, spell out that website because they're gonna want to go and check it out. It's Amir, EAMI r.org, right? Correct. Yeah. Okay. So, you have a massive amount of stuff on there, which is really, which is really cool and really interesting. But you also wrote a number of books, and I want to talk a little bit about that. But before anything, you dropped a couple of, tidbits there in your discussion about yourself that I want to dig into a little bit. You said that you've kind of, you kind of got into music, through the route of rock guitar to prog rock to classical, which is, I think, a not completely unfamiliar path for <laugh> people who've become serious musicians. Sure. Let's, let's go back even earlier. So how did you start with the guitar? I mean, were you the typical middle school kid who just needed something to do, or, did your parents kind of push you into it? Or how did that, how did you get started? 
+</p>
+
+<p>
+<b>VJ: </b>That That's a a great question, actually. It was nothing like that at all. I, I grew up in a very, I don't wanna say a very strict religious house, but it was a very religious house. And, we didn't listen to secular music or, you know, music other than our, our church music, really. So I actually didn't was, and I went to a private school, so I actually was, didn't have music lessons or anything in my small, church school. There was no music program. None of my friends played a musical instrument. And so it was, I guess it was part of my being 13 years old, coming of age, what do I wanna do with my life, sort of quest that, I, I got interested in electric guitar. There happened to be a guy in, in my church group that was an older man who played guitar. 
+</p>
+
+<p>
+<b>VJ: </b>And, and I started to study with him, but, I, I didn't know how to read music. I didn't know, in fact, he, the guy that I was studying with didn't know how to read music. Everything was just sort of informally learned. So it wasn't really until I was 17 that I started saying, okay, I, I gotta learn how to read music. I gotta learn all about this stuff. But we were kinda like making up our own music theory at that time. Right. You know, which I, which a lot of guitar players do. In fact, most musicians don't read music. That's, that's actually a very small percentage of the population I've come to learn, that, that do. In fact, most guitar players do not. So, so a lot of what I was doing was, kind of, again, because it <span style="color:red" data-ts="507.605" data-end_ts="507.765" title="507.605" id=c_"507.605">__was__</span>, kind of taboo to listen to music on the radio, I would sneak listen to music on the, on the radio and record things on a tape, if any of your listeners remember what, remember what tapes are, <laugh>. 
+</p>
+
+<p>
+<b>VJ: </b>But I would, I record these things and, and try and figure out the chords to, you know, Radiohead or stunt pilots or, you know, Weezer and all these types of things. It wasn't like it was, you know, I, in the nineties, it wasn't like it was now where you could just go on YouTube and Right, right. You know, find a billion videos of kids shredding or whatever it was, <laugh> much more difficult to do then. But, you know, and so we, we kind of made up our own. My brother, I've, two younger brothers that are all <span style="color:red" data-ts="549.965" data-end_ts="550.125" title="549.965" id=c_"549.965">__two__</span> musicians they studied, started playing music shortly after I did. And so we kind of made up our own music theory. Some of it was kind of right <laugh>, but, but, we, we, we wrote a lot of songs and I played in a band, and, and that was, that was a really great outlet for me to, to learn to compose and, and do that sort of thing. 
+</p>
+
+<p>
+<b>Darwin: </b>You and I kind of share this background in common. I, I too grew up in this really, religious background and one that one that kind of kept you away from an immersion in pop or rock music. And so the result I think is that by the time you actually discover it, you end up really hungry and you end up enjoying all kinds of music because it's all strange and it's all almost equally weird, you know, 
+</p>
+
+<p>
+<b>VJ: </b>Abso Oh, absolutely. I totally know. I totally know. Yep. 
+</p>
+
+<p>
+<b>Darwin: </b>And so, I'm, I'm also curious then, when I run into other people that went through this track, how did your parents feel about you getting into music and, how do they still feel about it? 
+</p>
+
+<p>
+<b>VJ: </b>That's, that's a good question. My dad is, was a pastor. And so I, I think he was, they were both very supportive of me doing something with music because I think, I, I was very privileged to have parents that that still wanted me to, even though it, it teeter-totter on the line of going off into the world of secular musicianship. They were still very, very encouraging and supportive of me doing something that I enjoyed and that I valued. And, and I always say, you know, now I, now I teach undergrads, but when I talk to their parents, you know, any, any kid that's excited about anything in 2015 <laugh>, like, to me, that's like a miracle, you know? Right. So, like, you know, and, you know, something proactive and something beneficial. So, my parents were also like that too. I think when I started to become 1415 and, and started to kind of push the envelope and say, you know what guys, I, I really like Led Zeppelin, I really love Queen, and I'm gonna start listening to this, this sort of music. 
+</p>
+
+<p>
+<b>VJ: </b>They were, they were, I say they were liberal enough to say, alright, he's becoming sort of an adult type person. You know, they didn't completely squash it like they did when I was, you know, parents can be protective, you know? Yes. So they, they, they didn't wanna be me to be exposed to, you know, a lot of the crazy things that were happening in when I was nine years old, 10 years old, that sort of thing. So, but, they, I, I did play in my dad's, church music team for, for many years. And the music that we wrote was, was not violent. It didn't really promote anger or anything like that. So, so I, they, they were very supportive and, and still continued to be supportive, as I, as I went on with, with music and whatnot. So I, I do feel, it's, it's, that's not the typical path, you know, for, for people who it can go another way, you <span style="color:red" data-ts="739.125" data-end_ts="739.165" title="739.125" id=c_"739.125">__know__</span>, for, for people, you know, in that scenario. So. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's great. And it's, it's cool to, to be able to have that. 'cause I mean, for, for some people, certainly taking that path sort of cuts the cord with family and, and that can be a really difficult path to take, you know? 
+</p>
+
+<p>
+<b>VJ: </b>Yeah. Yeah. I, I, I get that. You know, again, I was always, <span style="color:red" data-ts="763.355" data-end_ts="763.645" title="763.355" id=c_"763.355">__what__</span>, when I played in, in my dad's, you know, church music team, it was an every Sunday commitment for, for years, and it was a, it was a very sort of, non-denominational, sort of contemporary rock church. Mm-Hmm. <affirmative>. And, and, you know, when I think back of those years, okay, we played some music that maybe was not like my favorite thing in the world to play as a 14, 15-year-old <laugh>. But, but it was, it was liberal enough where I was performing in front of people every single week all the time. So it, it got me to, to perform a lot and to get really used to live performance. It was also a bit of a safe feeling. So I was able to improvise and, and get used to the notion of, of making things up on the fly. 
+</p>
+
+<p>
+<b>VJ: </b>So it, it, it actually was a very valuable experience when you, when you compare it to the types of experiences that your typical K through 12 teacher might try to create for their students, like, you know, two or three performances a year. Right. And maybe you encourage 'em to play a gig for, for a community center or whatnot. You know, growing up in, in the, the type of environment that I did, we performed all the time, all the time. So it was, it was, it was actually very good to mess up on stage and in a, with a safety net, you know, and try things out. And, when I started getting interested in, technology in live performance, it had its roots in, in the things I was trying to do in my church, the playing with tracks, for example, you <span style="color:red" data-ts="854.285" data-end_ts="854.325" title="854.285" id=c_"854.285">__know__</span>, with backing tracks and triggering loops and whatnot. The guys that I was playing with were, you know, <laugh> fairly tolerant of, of me, you know, creating noise on stage and, doing all of that. And again, it's things were, are a lot more solid now than they were in the early two thousands, you know, when when we were trying to use things with computers there, there were lots of blue screens of <span style="color:red" data-ts="876.245" data-end_ts="876.445" title="876.245" id=c_"876.245">__death__</span> back then. Right. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Well, it's, it's interesting though. I hadn't really thought about it, but you're, you're right. Which is that doing that kind of performance thing, I mean, first of all, you learn sort of like the consistency of having to do something at, you know, to do something every week. I think that that's valuable. I also think it's valuable though, to, to be performing and learning about how to, how audiences respond and how to help them respond in, in useful ways and how to, how to become comfortable being, having your own voice in front of other people. That's, that's pretty smart. And it's also, you, you say that it's different from what a typical teacher might provide for their students, but it's even worse for many people who learn music, you know, now using YouTube in their bedroom. I mean, they may be looking at almost never being able to do, to perform. And so it's a really interesting switch <span style="color:red" data-ts="937.645" data-end_ts="937.845" title="937.645" id=c_"937.645">__up__</span> that, that you were provided. 
+</p>
+
+<p>
+<b>VJ: </b><span style="color:red" data-ts="942.305" data-end_ts="942.595" title="942.305" id=c_"942.305">__Yeah__</span>. Yeah. It's, it, yeah, it was, it was a very <laugh>, interesting thing. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>So now you said that you kind of, one of the things that helped you move towards technology was kind of what you were trying to do on stage, but also your familiarity with the guitar, with the technologies you're using, with the guitar, and Max eventually ended up being a thing that you found comfortable. I think that's interesting because Max, which is sort of like this box with wires connecting to it, does have a real parallel to guitar pedals, but it's like at a lot lower of a level. How did you, how comfortable were you in the, going through the process of learning and what, what did you personally do to learn to be a programmer? 
+</p>
+
+<p>
+<b>VJ: </b>That, that's, that's an excellent question. I was, again, when, when I took a class in Max, it was a graduate level class and it was actually a class in Synthesis. And 
+</p>
+
+<p>
+<b>Darwin: </b>Where was this at? 
+</p>
+
+<p>
+<b>VJ: </b>This was at NYU. Oh, okay. And, and so it was, it was actually Luke deis was, was teaching, the class small world <laugh>. And, and you know, he was demoing some aspects of synthesis, which I had known about by using different synth plugins and different synth hardware. But, he was using Max to demo how, how these things actually work, you know, by combining waves together and different types of noise sources together. And I thought that was really interesting from a pedagogical perspective. Like, alright, he's building these things kind of on the fly, and I thought that was, that was kind of cool. So seeing him demo that live, I thought, well, what if, when I was explaining, trying to talk about scales and how scales relate to each other and chords and, different harmony functions in general, I thought, how great would it be if I could use this max thing to do that? 
+</p>
+
+<p>
+<b>VJ: </b>And so that, that was my motivator for using <span style="color:red" data-ts="1060.935" data-end_ts="1061.155" title="1060.935" id=c_"1060.935">__Max__</span>, was it was trying to just do something very simple, just I wanna click a button and it shows the notes of the <span style="color:red" data-ts="1068.835" data-end_ts="1068.955" title="1068.835" id=c_"1068.835">__C__</span> major scale. But then I can click, any other different tonic d and it'll show <span style="color:red" data-ts="1075.125" data-end_ts="1075.285" title="1075.125" id=c_"1075.125">__that__</span> <span style="color:red" data-ts="1075.285" data-end_ts="1075.405" title="1075.285" id=c_"1075.285">__as__</span> a d major scale. Well, what about other modes beside besides major and minor modes? So, so I, I did these really primitive, I guess you'd say, scale objects. So there's one object in the modal object library, <span style="color:red" data-ts="1089.655" data-end_ts="1090.005" title="1089.655" id=c_"1089.655">__which__</span> later formed out of this was one called Modal Change that, just you, you pick a tonic, you <span style="color:red" data-ts="1096.085" data-end_ts="1096.285" title="1096.085" id=c_"1096.085">__take__</span>, you pick a diatonic mode from, from major or minor, whatever. And and then you have the notes inside of Max. And then, so that, that was, that was my intro to Max was just kind of figuring out what do you do with this thing? So, you know, I looked at all the different objects and the thing that was most helpful for me in learning it was, looking at the reference list, you know, so it used, it used to be this see also box that you would have in the bottom right of the corner max. I started using Max when I was, when I was first learning it was max four. Right. You couldn't zoom in <laugh>. So <laugh>, I think my eyesight is damaged. <laugh>. That 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Sorry man. <laugh>. 
+</p>
+
+<p>
+<b>VJ: </b>Yeah, it's okay. No worries. No <span style="color:red" data-ts="1141.965" data-end_ts="1142.165" title="1141.965" id=c_"1141.965">__lawsuit__</span> or anything <laugh>. But, but I, I, that was what it was. So I, I found like, for example, like I remember when I discovered the match object, I was like, wow, this is so great. And then I looked at the C also and then I saw like, well, there's the select object and then there's all these other ones. And just trying to think about, well, in what different scenarios would I use these types of things. And, and the thing that just impressed the, the heck outta me with Max was that you could unlock the help files and make <laugh> make new things from, just by virtue of copying things in the help file you can make, put them right in your patch. I thought that was such a novel thing. And and I don't know of any other, program that that really does something like that, but it was really helpful for me to see, alright, here's a working implementation of that and now, now I can string things together. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Yeah, that makes a lot of sense. And I think that that unlocking the help file thing, that's one of those tricks that once people learn it, it it's like, oh my God, there's sort of like a whole library of stuff I can just totally snag something 
+</p>
+
+<p>
+<b>VJ: </b>Ab Absolutely. Right. So, so now I do like a lot of work with, with educators, right? Or part of the Amir project in general is to try to encourage educators that use technology or a thing about using technology to really get in, in the game. And, and do that by considering learning how to program something. Like if you'll see on the Mir website there, there, like you mentioned, there are a bunch of different projects out there, but they're not all like, you know, the all in one suite to learning everything there is to know doing anything there is to know about <span style="color:red" data-ts="1236.965" data-end_ts="1237.125" title="1236.965" id=c_"1236.965">__music__</span>. No. They, they tend to be very one trick pony type apps that maybe help you play chords or progressions in some way. But for, for me and part of the project is I have some idea of how I'd like to teach this thing or how I want to get this particular student, or we do a lot of things with students with disabilities. 
+</p>
+
+<p>
+<b>VJ: </b>I have this one idea about how I wanna get that person to play music, and I'm gonna do it. I'm gonna make this, this app that does it. And, from speaking with a lot of teachers over the past, seven years, the <span style="color:red" data-ts="1268.125" data-end_ts="1268.325" title="1268.125" id=c_"1268.125">__Amir__</span> Project is now, eight years old. And, I, I've been trying to encourage teachers and show them, and really that's part of the book too, that you can do this, you can, you don't need to have experience with programming languages. I certainly don't, you know, and, you can get into this and you can come up with really cool ideas that are unique to you and unique to whatever <span style="color:red" data-ts="1291.045" data-end_ts="1291.245" title="1291.045" id=c_"1291.045">__you__</span> is you want to teach. And you can use <span style="color:red" data-ts="1293.865" data-end_ts="1294.085" title="1293.865" id=c_"1293.865">__Max__</span> to do it. It's, it's a whole lot easier than, than other types of languages that are out there. And there's something that's also sort of intuitive about this, this sort of flow language. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Now, I, so in, in talking about, when you talk about educators, you're specifically focused on working with music educators, right? 
+</p>
+
+<p>
+<b>VJ: </b>Yes. 
+</p>
+
+<p>
+<b>Darwin: </b>And, so let's talk a little bit about your book. So your first book was, max MSP and Jitter for Music, if I recall the title right? Correct. Correct. Right. Yeah. And that, and that, that was one of the first sort of really tutorial type books that people had written for Max. And it was interesting because it was very clearly from a musician or from a music education standpoint, it didn't try. And, and this is where it goes back to something you just said, it didn't try to be a catchall for everything. Instead you kind of focused on, you know, you're learning music and here's this max thing, and you can kind of use music to learn Max and Max to learn music. Absolutely. And I thought that that was a really interesting and unique approach. How much did you use this concept in the classroom before you wrote the book? 
+</p>
+
+<p>
+<b>VJ: </b>Oh, I <laugh> entirely. <span style="color:red" data-ts="1375.485" data-end_ts="1375.605" title="1375.485" id=c_"1375.485">__I__</span>, when, I was, I was getting my PhD at the time, when I was working on the book. In fact, it delayed my degree a little bit while doing it. Not that I'm <span style="color:red" data-ts="1386.465" data-end_ts="1386.685" title="1386.465" id=c_"1386.465">__ba__</span> regretting any of that, but, I was <span style="color:red" data-ts="1389.985" data-end_ts="1390.205" title="1389.985" id=c_"1389.985">__te__</span> also doing, some adjunct work teaching music technology. Mm-Hmm. <affirmative>. And, but even before the book came into existence, I was developing different types of strategies for how I would introduce certain topics. And, the, the, now when I look back at the book, I can see that week one of such and such a class, I would teach the concept of the button, you know, <span style="color:red" data-ts="1414.525" data-end_ts="1414.725" title="1414.525" id=c_"1414.525">__right__</span>. Button trees. So, so the book came almost entirely from lectures that I gave in, in my music tech class over, over several years, you know, and, a lot of the ways that I would talk about things and, try to introduce common pitfalls and you know, or how to get around common pitfalls, that all came from being in, in the classroom and some undergraduate voice major saying, this thing's broken, this doesn't work. 
+</p>
+
+<p>
+<b>VJ: </b><laugh> <span style="color:red" data-ts="1442.165" data-end_ts="1442.325" title="1442.165" id=c_"1442.165">__what__</span>, you know, you know, like, like I think we all are familiar with, someone, if you teach Max the, the patch cord is stuck to the mouse and everywhere they're clicking <laugh>, you know? 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. My favorite and the one that still catches me every time is, somebody who likes really tiny objects. Oh, yeah, yeah, yeah. And so they'll squeeze 'em close together, but then all the inlets are like right next to each other. Yeah. <laugh>. And they'll just like, you know, they'll be connecting things to any random inlet and it's like, I can't even tell what you connected that to. It's <span style="color:red" data-ts="1475.135" data-end_ts="1475.485" title="1475.135" id=c_"1475.135">__crazy__</span>. 
+</p>
+
+<p>
+<b>VJ: </b>I know, I know. Exactly. Yeah. It's, it's funny. Yeah. So a lot <span style="color:red" data-ts="1479.965" data-end_ts="1480.045" title="1479.965" id=c_"1479.965">__of__</span>, a lot of those little things in the book are, explicitly because <span style="color:red" data-ts="1484.255" data-end_ts="1484.605" title="1484.255" id=c_"1484.255">__stuck__</span> to me in a classroom. What did you do <laugh>? <span style="color:red" data-ts="1486.365" data-end_ts="1486.565" title="1486.365" id=c_"1486.365">__Why__</span> did <span style="color:red" data-ts="1486.685" data-end_ts="1486.925" title="1486.685" id=c_"1486.685">__this__</span> work? Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>So now, you have, teamed up with somebody, I don't know, a named Wil. 
+</p>
+
+<p>
+<b>VJ: </b>Oh, Wil <span style="color:red" data-ts="1494.725" data-end_ts="1495.005" title="1494.725" id=c_"1494.725">__Coon__</span>, yeah. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>To make, a new book that came out earlier this year called Interactive Composition. And I just recently picked up, in fact, I'm holding it in my hand right now. Oh. I, I had been, I bought it, when I went on this little family vacation here, and I read through it and I was kind of knocked out again. So in the first book you did this really cool thing of saying, music teaches Max, max teaches music. And that was a really neat conceptual basis. In this one, you took on something that I think is really gonna resonate with a lot of people, which is that you use Ableton Live and Max for live as sort of the tech technology element, but you really approach the teaching from a, from a stylistic standpoint. So you talk in terms of dubstep or in terms of, hip hop or in terms of different styles of music, and you use the style as almost a way to break down the technology to make it, to sort of like bring the technology, to, or to, to control the technology using styles rather than letting the technology determine the style. 
+</p>
+
+<p>
+<b>VJ: </b><span style="color:red" data-ts="1580.925" data-end_ts="1581.215" title="1580.925" id=c_"1580.925">__Yeah__</span>, yeah, yeah. Well, it's funny, will is, is a friend of mine, I've known him for a number of years too, he's out in Ohio and, we, we tend to go to a lot of the different music tech and music ed conferences, together. And he's, he is interested in, like live DJing and doing a lot of these, these things live. Whereas I'm more of a like rock ensemble type of guy myself. But we, we would always talk about the, the role of technology in these things. And I, I guess my viewpoint tends to slant toward, using technology to facilitate an idea that you have, as opposed to, I guess his might be more like, get into the tech. Well, both really, but get into the technology and then from the technology come up with the idea. Okay. 
+</p>
+
+<p>
+<b>VJ: </b>And, you know, both are, both are great and both, both really work. So, and I, I was happy with, yeah, collaborating with Will on this book. We, I I like to think that we were able to get a little bit of both of those perspectives, you know, into this thing. Certainly the idea of looking at a style and saying, well, how, how do you compose in that style? And what are the tools that are being used? To us it seemed, it seemed novel. And I I appreciate you saying what you said, about that. It's funny, I think if you go to enough, concerts and you read enough program notes, you know, you hear composers talking about their work, you know, this is an interpretation of an enigma, of a <laugh>, you know, sometimes <laugh>, what does, what does this even mean? 
+</p>
+
+<p>
+<b>VJ: </b>Right. You know, what am I even getting at? And and I guess it's natural that, you know, we don't really like to talk about how, what are the mechanics behind what you compose? You know, we like to think that we just breathe magic all day and, you know, and float on fairy dust and then all of a sudden there's this piece of music there. You know, you don't, <span style="color:red" data-ts="1690.965" data-end_ts="1691.125" title="1690.965" id=c_"1690.965">__you__</span>, you don't wanna think like, alright, there were actual processes and steps I had to follow to, to do this thing. And, you know, here are the ones that tend to emerge in a given style, you know, <span style="color:red" data-ts="1701.725" data-end_ts="1701.885" title="1701.725" id=c_"1701.725">__of__</span> pop and rock music. How are these people composing with that electroacoustic music, you know, or dubstep or hip hop, you know, what <span style="color:red" data-ts="1708.205" data-end_ts="1708.285" title="1708.205" id=c_"1708.205">__are__</span>, what are the things that people tend to do? What are the types of effects that people tend to use in these things? And, and just like you would, you would say, if you, if you're gonna compose in the style of, Beethoven or, or Brahms or, or the Beatles, you would, you would look at certain nuances of those styles and you'd say, well, here, here are the things that tend to tend to pop up. Sure. <span style="color:red" data-ts="1729.405" data-end_ts="1729.605" title="1729.405" id=c_"1729.405">__You__</span> <span style="color:red" data-ts="1729.605" data-end_ts="1729.685" title="1729.605" id=c_"1729.605">__know__</span>, the types of instruments that tend to pop up too. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, I think what was interesting about this book too is the way that you, you sort of like normalize the concept of build your tools, you know, which is, which is kind of interesting and unique and I think really an important thing for modern musicians to consider, because at this point you can kind of get on a website somewhere and, you know, through the application of a credit card, get all sorts of tools that'll do stuff for you. But I think by, by saying, Hey, it's not only, you know, it's not only for this course, this coursework, but also in general, you should be thinking about making your own tools. I think that opens some really interesting doors, you know, 
+</p>
+
+<p>
+<b>VJ: </b>A ab Absolutely. You know, I, I think, I, having now I have lots of, composition students and they always talk about finding their voice and, you know, how, how are you gonna do that if, you know, if you don't try and do a lot of this stuff on your own, you know? And, certainly now it's a lot easier, with technology to try lots of things out. And, you know, if you just invest a few hours and it doesn't work out, you can try something else out, you know? And, when I first heard about the Max for Live thing, I went to, I guess there were two max conferences, the first one in, in San Francisco when they were first talking about Max for live. I thought like, that's it. This is like exactly what I was hoping for this I, and I'll never use another doll besides Ableton Live again. 
+</p>
+
+<p>
+<b>VJ: </b>Like, it's just, it's like all integrated there. That, that was one of the things for me that, I, I felt like Max was, I had to come up with a couple workarounds for how I was gonna get synth sounds into, into Max. That's why I appreciated a lot of the objects that you made, Darwin and a lot of the different toolkits for doing synth type things that also allowed you to bring in, you know, VST instruments and whatnot. But, but then getting set up with the max for live environment, you know, it, it's, it's a great starting ground for any type of idea that you have. There are some different templates that I know that I, that I use all the time that probably wouldn't make sense for the average person who's gonna write their own music. But I know when I get started writing some piece of music, I can just go to my Ableton session that has my Maxs for live patches in there, and it's got all my work stuffs, you know, kind of spaced out. And, and I feel like that is a part of my signature, you know, part of my voice <span style="color:red" data-ts="1877.665" data-end_ts="1877.885" title="1877.665" id=c_"1877.665">__to__</span> contribute. 
+</p>
+
+<p>
+<b>Darwin: </b>That's cool. That's, that's really neat. And I just, I'm really again impressed by, not only the approach, but the way that it helps people that read this book are gonna, it's gonna change the way that they think of working, because frankly, most people look at a DAW and say, well, what came with it? That's the thing I can do. And what this book really points to is the idea of Max for Life is kind of swinging the door open to allow you to do whatever you can imagine if you're willing to put some sweat into it. So that's, that's really neat now. Absolutely. Earlier this year, in addition to this interactive composition book, Amazon tells me that something called Foundations of Music Technology was released. What's, what's that? And yes, 
+</p>
+
+<p>
+<b>VJ: </b>That, that is, my other book this year, <laugh> that's, Jesus 
+</p>
+
+<p>
+<b>Darwin: </b><laugh> and yeah, take a break. You might wanna think about a vacation for yourself here. Yeah, 
+</p>
+
+<p>
+<b>VJ: </b><laugh>. Exactly. Well, you know, I got a mortgage and I've gotta, you know, keep moving and there you go, thing down. But, we, it's, it's a textbook. It's designed for the classroom, typically the undergraduate classroom. But, anyone who is interested in learning about how does, what is music technology really, you know, how do, how do I get into this? It's written in sort of the VJ Manzo ultra friendly tone. I like, I'd like to think that I have, you know, it's, it's, super, <span style="color:red" data-ts="1968.685" data-end_ts="1968.805" title="1968.685" id=c_"1968.685">__I__</span> I think they're really simple explanations. And, to go with that is this piece of software, which, which you can get from the website. It's, it was all written in Max, but they're very simple examples that demonstrate the concepts that are discussed in the book. So when we talk about, like sine wave oscillators, like you can then demo one using this, this Max software. 
+</p>
+
+<p>
+<b>VJ: </b>And when we talk about different types of synthesis at <span style="color:red" data-ts="1992.885" data-end_ts="1993.005" title="1992.885" id=c_"1992.885">__them__</span>, synthesis am or granular, you can then just use this piece of software and go to the lesson indicate in the book. And then you've got this piece of software that you can, you can demo these things. So the idea behind the book really was to make it, my, my editor used the term software agnostic, right? And, you know, and so the idea was that, there <span style="color:red" data-ts="2014.045" data-end_ts="2014.205" title="2014.045" id=c_"2014.045">__are__</span> tons of books out there, foundations of music technology using GarageBand or using Logic or using, you know, so, you know, that's for me, I don't wanna be editing the book every two weeks when, you know, <laugh> you know, when when it gets updated version 
+</p>
+
+<p>
+<b>Darwin: </b>6.35 comes out. 
+</p>
+
+<p>
+<b>VJ: </b>Exactly, exactly. Yeah. So the idea was, I, I'll make the things in <span style="color:red" data-ts="2035.625" data-end_ts="2035.845" title="2035.625" id=c_"2035.625">__Max__</span> and, demo, here's what an A DSR curve looks like, and you will encounter this same type of thing inside of any do that you, you choose, you know, and here, but here's what it looks like. So again, teaching concepts instead of just like a piece of software, you know, these are the types of things you will encounter in this type of recording environment. So like, there's a recording illustration in <span style="color:red" data-ts="2058.825" data-end_ts="2059.045" title="2058.825" id=c_"2058.825">__Mac__</span> in this, max app, and it does the same things that a, a music student who's just getting into music technology will need to know you gotta arm track, you gotta select the input, you know, you can, you can turn all the different monitoring on, and then you click record. And that's, and that's it. So it's, it the tool and really the book talks about these concepts and then talks about here's how you would actually make this happen. Now here's how you do it in this app. Now hopefully those skills will transfer to any dot that you, you choose. I think we, a lot of users are familiar if you have to do a recording session on, on Pro Tools and you're a logic guy or <span style="color:red" data-ts="2092.525" data-end_ts="2092.645" title="2092.525" id=c_"2092.525">__your__</span> Ableton guy, whatever, you just look for the same types of stuff that you're used to seeing and then you <span style="color:red" data-ts="2097.275" data-end_ts="2097.565" title="2097.275" id=c_"2097.275">__Yeah__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2097.565" data-end_ts="2097.725" title="2097.565" id=c_"2097.565">__You__</span> record Enable Button. Yeah, exactly. You record button on the transport. Yeah, right. 
+</p>
+
+<p>
+<b>VJ: </b>Exactly. Right. And, and hopefully the different manufacturer hasn't labeled it some new vernacular that only they know <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, this is really interesting because in a way you've kind of come almost full circle, because your introduction to Max was in a synthesis course that Luke was teaching, and he used Max to sort of like develop little examples, and now you're kind of doing that for the next generation. That's really interesting. 
+</p>
+
+<p>
+<b>VJ: </b>Thanks a lot. Thanks a lot. Yeah, he, he definitely had a big influence and, it, it's a great way to learn, you know, and seeing someone do that stuff live, you know, and seeing somebody demo Max live, it, it takes a lot of the mystique away from it, you know, and, you can, you can, <span style="color:red" data-ts="2145.785" data-end_ts="2146.005" title="2145.785" id=c_"2145.785">__it__</span>, it's easily easy to open up a Max Patch and what's happening, all these patch cables and whatnot too. But, you know, if you, if you break it down and, and the things are somewhat well organized and you can look into what's going on and, and see, well, maybe it's not the most intimidating thing in the world. In fact, the foundations of Music Tech book ends with, with two chapters as an introduction to Max and, and the software that comes with the book, the source code is given too. 
+</p>
+
+<p>
+<b>VJ: </b>So, so it kind of ends with, with students being able to deconstruct this tool that they've been using all along and see just how the patches were made and, you know, all the stuff that I do is, is free and I always give the source out for everything. So, you know, there are, there are tons of great composers and artists out there that they're also giving away their, their stuff. So, <span style="color:red" data-ts="2194.265" data-end_ts="2194.485" title="2194.265" id=c_"2194.265">__if__</span>, if they are only exposed to me and the stuff that I'm doing, they at least have a lot that they can open up these patches, take a look at the guts and see, okay, I can see what this guy did. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. So you go to these different music education conferences and stuff like that, and now you've developed this body of work. Do you, do you end up sort of like doing a lot of exchanges or interchange with other educators? Is there a, is there a community of these educators that swap patches and stuff? Or is it kind of everybody in their own little silo? 
+</p>
+
+<p>
+<b>VJ: </b>Well, you know, it, it's funny that you say that, the, again, the first Max conference that, that I guess was had in the us, I remember David Z saying, you, you all build the same patch over and over again, <laugh>, you know, and, and I was just laughing 'cause it's hysterical because, you know, gosh, I build the same patch every single day, you know, and then, you know, the guy next to me is doing the same thing too. There, there, there are always different pockets of people that are working in silos, but part of the <span style="color:red" data-ts="2257.645" data-end_ts="2257.765" title="2257.645" id=c_"2257.645">__I__</span> Mirror project was to, and again, in a non profiteering way, just kind of make a, an environment where people who did value this, this certain type of application, certain type of development, where they could all get together and, and contribute to each other's work. So we made a development kit called the er, SDK, which is free, which, which I actually talk about in one of the books. But, it has the modal objects inside of it. The ER website has become sort of an exchange where people can, can post ideas of this nature and post their project of this nature. And hopefully <span style="color:red" data-ts="2291.665" data-end_ts="2291.885" title="2291.665" id=c_"2291.665">__the__</span>, the community will then sustain that project and then make derivative apps and, you know, and compile their own version of it. And here's my own tweak that has this thing in there. 
+</p>
+
+<p>
+<b>Darwin: </b>Wow. Well, I just, I just looked here and I see that we've already just like burned through the time, remarkably quickly, <laugh>, I've got about, like 50 other things I'd like to talk about, but what I'm mostly curious about right now is what's next for vj? Because, you put out two books this year, I'm, I'm sure you well for at the rate that you're, you go at stuff, my assumption is you've got three more books ready or something <laugh>, I don't know. But what's next? What's next for you? 
+</p>
+
+<p>
+<b>VJ: </b>Well, the big thing that's happening right now is that, Amir is now a registered 5 0 1 C3 nonprofit. So, we were fortunate the Max Objects database, for example, max objects.com, Matthew and <span style="color:red" data-ts="2348.645" data-end_ts="2348.725" title="2348.645" id=c_"2348.645">__Ian__</span> had been hosting that for, I don't know, over, over 10 years or so. And they recently bequeathed it to, to, to me and to, and to my university, WPI. So, we're trying to build up a mirror in such a way that people who are interested in developing these types of apps can, can go to this website, get example objects, example patches, example applications, use the resources of the Max Objects database and, and other parts of the Max community, and, and, and really incentivize people to, to make their own apps and to get involved in, in this type of project. So that, that's really what's coming down the pike. 
+</p>
+
+<p>
+<b>VJ: </b>There are lots of different ways to, to get involved, and we're, we're trying to encourage educators now to use this new feature called the Create a Project portal. So if an educator has an idea, they can describe their idea of something that they might use in a classroom to teach music. And then the incentive is on them through the website, they can actually fundraise so they can ask their friends and colleagues and family to support their unique idea. And then, once, once their project is fundraised, max developers can then go to the website and submit a, a grant application, and then that money will go to them to, to develop, at least get this project started. So, you know, max developers, I guess, are used to making the same patch all the time and sort of making, projects in for a term assignment or something like that. 
+</p>
+
+<p>
+<b>VJ: </b>And then for, for some people, those projects don't ever see the light of day again after that. So if, if we could somehow incentivize, the developers and these teachers to really see something get into the hands of students, get into the hands of, of kids with, with disabilities, I, I think it would make the <span style="color:red" data-ts="2459.805" data-end_ts="2459.965" title="2459.805" id=c_"2459.805">__world__</span> <laugh> the world a better place. You know, and, and certainly I think all of us artists are, are used to, not being able to find any, any money for grants and to do these types of projects. So to have a, a, a project like Amir where money can be coming in to incentivize these, these things to, to actually happen, it would, it would, it would make for a different, <span style="color:red" data-ts="2481.725" data-end_ts="2481.845" title="2481.725" id=c_"2481.725">__an__</span> alternative to all of us hitting up the National Endowment of the Arts for $50 and a pat on the back <laugh>, you know? 
+</p>
+
+<p>
+<b>VJ: </b>So, so that, that's, that's one of the ideas that's, that's sort of coming down there. <span style="color:red" data-ts="2495.025" data-end_ts="2495.245" title="2495.025" id=c_"2495.025">__And__</span>, and, you know, it's twofold because teachers at the same time are, are used to having very small budgets. A lot of my teacher friends just end up paying for software out of their own pockets. And, with Amir, nobody's, nobody's making money off this thing. It, we're trying to keep everything free and in constant development. So, it, you know, it, it, it is not like someone's gonna profiteer off of your contribution, even if you have just a regular idea that you wanna post up there. Some teacher will download that and, and make it, you know, it'll be their bread and butter in a, in a classroom situation. So 
+</p>
+
+<p>
+<b>Darwin: </b>That's really interesting. That's, that's a fantastic thing you're putting together there, man. 
+</p>
+
+<p>
+<b>VJ: </b><span style="color:red" data-ts="2532.905" data-end_ts="2533.125" title="2532.905" id=c_"2532.905">__Tha__</span> thanks. Thanks Darron. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay, so well with that, I'm gonna have to have to call it quits. That's a, a fantastic overview of what you've been up to as well as your vision for the future. I really take, thank you for taking the time out of your schedule to have a chat with us. 
+</p>
+
+<p>
+<b>VJ: </b><span style="color:red" data-ts="2550.395" data-end_ts="2550.685" title="2550.395" id=c_"2550.395">__Okay__</span>. Thank you. Thank you so much, Dar. All right, 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2552.205" data-end_ts="2552.365" title="2552.205" id=c_"2552.205">__Dan__</span>. Bye now. 
+</p>
+
+<p>
+<b>Darwin: </b>Hey, <span style="color:red" data-ts="2568.565" data-end_ts="2568.725" title="2568.565" id=c_"2568.565">__all__</span> Darwin here. I'm literally on the road. You probably can hear the road noise behind me a little bit, but I just want to thank BJ Manslow for doing a fantastic little chat. I had a great time talking to him and was pretty inspired to go over to <span style="color:red" data-ts="2585.445" data-end_ts="2586.245" title="2585.445" id=c_"2585.445">__er.org__</span>, EAMI <span style="color:red" data-ts="2587.525" data-end_ts="2588.245" title="2587.525" id=c_"2587.525">__r.org__</span> to check out that site. There's a lot of cool stuff there. You can also go to any retailer, book retailer and find his books, really enjoying reading them. With that, I just want to thank everybody. I want to thank my friends over at OPIA for, helping introduce the podcast to some people. I want <span style="color:red" data-ts="2611.325" data-end_ts="2611.365" title="2611.325" id=c_"2611.325">__to__</span> thank you for listening and for sharing, continue to share with friends, family, and enemies, everybody, let 'em all know. And with that, I'll check in next week. Bye.
+</p>
+
+    <p><i>Copyright 2015-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
