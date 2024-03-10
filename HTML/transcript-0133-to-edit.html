@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0133 - Cory Metcalf</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0133 - Cory Metcalf</h2>
+        <h3>Released: Jul 3, 2016</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/4488720/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Okay. This week I have the pleasure of introducing you to someone that has become a really good friend of mine. He's a coworker at Cycling 74. He was part of my cohort coming up through the University of Denver Master's program. He also kind of came up with me as an adjunct teacher for University of Denver recently, both he and I moved away from Denver. He went west, I went east. And so we are diverging, so I figured I better get him on the horn. And as a result, we have this interview with <span style="color:red" data-ts="46.775" data-end_ts="47.125" title="46.775" id=c_"46.775">__Corey__</span> Metcalf. Hey Corey, how's it going? 
+</p>
+
+<p>
+<b>Cory Metcalf: </b>It's going great. Thanks for having me on Darwin It's really exciting to be a part of this series. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, thanks a lot. It's great having you. I've been wanting to get you on here for a while and I just haven't followed through and something about not all of a sudden living in the same town as you, made it really important for me to talk to you, <laugh>. 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, no, I, I completely understand how that goes. That's, it's, something about not always having that FaceTime can really push, both collaboration and dialogue in a totally different direction. So yeah, exciting to be here. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Fantastic. So you moved to where now? 
+</p>
+
+<p>
+<b>Cory: </b>I'm living in Montrose, Colorado right now. And, actually a lot of people even in Denver would always say, where is that? Montrose is what, and it's out on the Western slope. It's kind of near Telluride is where most people have the, the kind of most common frame of reference for it. So it's kind of high desert reminds me a lot of, Northern New Mexico, which is actually where I grew up, mixed with a little bit more moisture that you find in Colorado. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. It's funny because, my parents live out in western Colorado, so I'm familiar with the area and it's kind of hard to think of that as having more moisture than any place other than the surface of the moon. <laugh> 
+</p>
+
+<p>
+<b>Cory: </b><laugh>. Yeah. If you spend, even, even being here, I drive into New Mexico and like right away your lips start chopping and you just feel the moisture being wicked outta your being 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Right. Well, it's interesting to, to kind of hear about that because one of the things I like, learning about in the podcast is a little bit about people's background, but before we get into that, why don't we quickly touch base on, what you do, what you do for a living, and what you do for your artistic pursuit? 
+</p>
+
+<p>
+<b>Cory: </b>Okay, cool. So the, the two are actually pretty closely related though. I never really thought I'd be able to say that. Just kind of lucked into that position. And so in terms of my professional work, what I do, there's a couple different things. As you mentioned in the introduction, I've been doing adjunct teaching at University of Denver for the last five and a half years where I was teaching a lot of, visual programming. So teaching, max MSPA lot. And then also teaching things like installation art, interactive design, walking people through project development, all of that kind, all that kind of stuff. So pretty much working in new media and, programming for artists is kind of the main areas. And so that's kind of been a side gig that I just let go of as I moved out to Montrose. 
+</p>
+
+<p>
+<b>Cory: </b>And I'm gonna actually see if there's some possibilities out here to do some, more home brew kind of teaching. There's a MakeSpace out here that I'd like to get involved with. So I hope to keep up the educational aspect of what I do. But my main gig is, as you know, working with you at Cycling 74 where I'm one of the support technicians and I do some educational materials development. And so a lot of that can be, you know, anything from just helping people get authorized to helping people look at, larger structural issues and different approaches in their patching 
+</p>
+
+<p>
+<b>Darwin: </b>Right now that actually is really closely related to your art practice as well, because you are a member of Noyce Fold, which in my experience has, has used one of the most gnarly large scale patches I've ever run across 
+</p>
+
+<p>
+<b>Cory: </b><laugh>. Yeah. I showed it to, Emmanuel <span style="color:red" data-ts="265.265" data-end_ts="265.485" title="265.265" id=c_"265.265">__Ti__</span>, who's one of our coworkers, and he said that it was the craziest patch he'd ever seen. So that was, that was, you know, I don't know if that's quite a compliment 'cause it's an overarching behemoth. But yeah, noise <span style="color:red" data-ts="278.125" data-end_ts="278.405" title="278.125" id=c_"278.125">__fold__</span>. So, noise <span style="color:red" data-ts="279.875" data-end_ts="280.165" title="279.875" id=c_"279.875">__fold__</span>. We actually just celebrated our 10th year as a group, which is, it's kind of wild to me that I'm getting to be old enough that I can say I've done anything consistently for 10 years. Right, 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Cory: </b>And what's really fun about that is that even after 10 years, it continues to be something that really pushes me forward and helps me break new ground. So noise <span style="color:red" data-ts="301.405" data-end_ts="301.685" title="301.405" id=c_"301.405">__Fold__</span> is a collaboration between myself and David Stout, David Stouts and Artist with a pretty diverse background in music and new media arts in general. And I'll talk a little bit more about our history probably later on in terms of how the collaboration, started and stuff. But just to get, a sense of what we do, we basically do installation and performance work using real time animations and sound production in <span style="color:red" data-ts="332.465" data-end_ts="332.685" title="332.465" id=c_"332.465">__Max__</span>. And the kind of central conceit of what we do is that we generate live visuals and then turn that visual information into the sonic information. And so it's a big trans coding thing. We're always trying to find areas where sound and image can interact in novel ways. 
+</p>
+
+<p>
+<b>Cory: </b>And so the more traditional thing that a lot of people are familiar with is visualization of sonic information where Sonic input results in a visual output. Right. And while we do do a little bit of that, the primary thing that we do is the opposite. So we're creating an image, turning that into some kind of sound information, and that has a lot of different manifestations. Our, our performance work tends to be pretty bombastic and high intensity as the name Noise Fault suggests. We do work a lot with noise as a kind of sonic template. Right. But we use it more as a, we're not interested so much in just like a big noise assault. We use it as kind of a metaphor for the way that we approach filtering out sound and, and working with that to generate a wide range of timbers so we're not just a noise group, even though that's a part of what we do. And so the performance stuff can be pretty intense. Installation stuff on the other hand often is actually quite slow and really works with kind of, suspending an audience's sense of what we normally experience in a new media environment and really trying to get people to sink into and spend a lot of time with the material. And so we do cover a lot of different range. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. Well, it's, most of my experience, my direct experience with your work was, has been in the performances. I've seen you guys perform, you know, at least a half a dozen times. It's really hard for me, or it was hard for me to imagine, what your installations were like until a couple years ago when I was down at the Currents new media festival and you and David were there putting in an installation. And it was interesting 'cause I recognized everything that was in the installation, but the timeframe of it was different. It was the sense that instead of being drawn in a direction, I was kind of allowed to make my own timeframes for it. And it was a very interesting experience because in every way it felt like noise <span style="color:red" data-ts="481.765" data-end_ts="482.045" title="481.765" id=c_"481.765">__fold__</span>, but it was a very different experience. 
+</p>
+
+<p>
+<b>Cory: </b>I think you kind of, tuned right into what we hope to achieve in the installation works, which is that we don't really, while we set up an environment that I think you could spend a great deal of time in, our hope is that you could come into it for just a moment and get a sense of a compelling environment, and then that could open up into whatever duration you'd like to spend with the work. But we do definitely try and create more of an open environment for people to ex to kind of experience and explore as opposed to trying to kind of provide a particular dramatic arc that we want every visitor to experience 
+</p>
+
+<p>
+<b>Darwin: </b>Right now. One of the things that I find really curious with what you guys do is sort of the nature of your collaboration. Because in most collaborations of this type, what it really is is two people with a similar technical agenda like, driving each other mad with code or whatever. But, you and David actually have very different roles that you play within the group, or at least you certainly have had in the past. And it leads to a little different look of the <span style="color:red" data-ts="554.165" data-end_ts="554.365" title="554.165" id=c_"554.165">__ca__</span> collaboration one that maybe is a little bit more refined, but also one where each person's influence is more, maybe more clearly stamped on the, on the, the thing. When you look at the work, does it feel that way to you? 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, and I, I think that while those lines are starting to blur a little bit more than they did in the past, it is a really, interesting collaboration. It's something that I've actually done some writing about. And, when I, when I talk about collaboration in classes that I teach or when we do lectures, it's something that we try and stress a little bit because it is, it is not the usual situation, particularly when you're dealing with this kind of technology. And so, just to speak to that a little bit, David is not a programmer. David has a pretty broad background in, music production, film production. He was actually a choreographer, a dance choreographer way back when and started out as a painter. And so he has a pretty broad range of different artistic disciplines, but he is definitely not a computer programmer. 
+</p>
+
+<p>
+<b>Cory: </b>What that means is that in our collaboration, everything we're doing is software based, and that's all designed by me. But the way that we've approached it is that we create a modular, it's, it's a very modular approach. So we create a wide range of different modules that can interact in a, in a recombinant way. And David is an expert explorer of those kinds of environments. And so what often happens is that I'll come up with a few different possibilities, set up a template and throw it at him, and he begins to actually mine those different modules for many different behaviors that I actually am not really aware of when I'm programming them. Mm-Hmm. <affirmative>. And so it's this feedback loop where I design something, he explores it intensely and then sends me something back kind of demonstrating different directions that we might take with it. 
+</p>
+
+<p>
+<b>Cory: </b>And so when we're getting ready for performance, there's been times where I've come out to visit David. He lives actually down in Denton, Texas. I live up here in Colorado. And so we don't get to have that much face time, but I've gone down there a couple times and we'll be getting ready for a show. And I get there and he'll have come up with, I think there was one time literally about 500 different behavioral states that he'd created in one of our instruments. And so he just shows me, you know, hundreds of different things that he's created with it. And then we'll go through that filter down to a few that we find the most interesting, and then we expand on it from there. And so there is often this dialogue where I create the tool, David creates the foundation for what we'll be working on. 
+</p>
+
+<p>
+<b>Cory: </b>I come back in and then we mine that for further potential and refine things that he's created as sort of the platform for that particular performance or installation. And that has started to break down a little bit more in the sense that I have been contributing more foundational elements to the actual mm-Hmm. <affirmative> finished works these days. Mm-Hmm. <affirmative>. But there is this pretty clear sense of us working in these different terrains. David also has a more, a lot more experience in actually working with synthesizers and stuff for sound. And so he does tend to do a lot of kind of developing that base level of sound that we work with. 
+</p>
+
+<p>
+<b>Darwin: </b>I see. As I am always curious about this, I am definitely curious in your case to find out what your background is and how you got to have this really unique sensibility. Because I <span style="color:red" data-ts="764.365" data-end_ts="764.445" title="764.365" id=c_"764.365">__would__</span>, I would say that you talk about yourself as if you're the technologist of this collaboration, except as we went through the master's program at University of Denver, I always found your work intensely artistic, but also very introspective. You have the way that you approach things is, is you, you are able to kind of like dive into conceptual, you know, into a conceptual conceit and find the nugget of interesting in there. Right. I found it fascinating and I always, and I always thought that, you know, in comparison to me, I thought that you had kind of an alien brain of some sort <laugh>, right? So I'm kinda curious about where you come from, and obviously maybe this, maybe this alien brain comes from just a complete lack of moisture that New Mexico brings. I don't know. But why don't you tell us a little bit about how you grew up and how you got to be, involved in the arts, but also involved in technology and how the two came to meld themselves together? 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, sure. I'd be happy to. So I grew up in Taos, New Mexico, and Taos is, for anyone who's not familiar with it, it's kind of like a Sedona or a Boulder or a Creststone. One of these places where you have a lot of different kind of new age people involved in various spiritual traditions, all in one small town. And so it's much smaller than Boulder or Sedona. It's probably about these days it's probably close to 20,000 people. And so what that meant for me is that by the time that I was done with high school, I'd been exposed to pretty much all of the different, Eastern philosophies. I grew up around a lot of people that had parents directly involved with a Hindu ashram, <span style="color:red" data-ts="879.365" data-end_ts="879.525" title="879.365" id=c_"879.365">__the__</span> a <span style="color:red" data-ts="880.195" data-end_ts="880.485" title="880.195" id=c_"880.195">__Kali__</span> Baba Ashram ashram, dedicated to Hanman the monkey God. And so while a lot of people in their teens might have been, you know, maybe still going to church or something, I was staying up all night chanting to this statue of a monkey God. 
+</p>
+
+<p>
+<b>Cory: </b>And so I was a little bit, and I wasn't directly involved, but I would definitely join my friends. And so I came out of, my time in Taos with a pretty broad idea of what might be out there in the world, even though I'd never actually left Taos for more than a few weeks. And so I hadn't really done any traveling or anything like that, but I had a good sense of how a lot of different people in the world thought about things. And so that led me to maybe operate a little bit more on that introspective mode that you were talking about, where I was trying to understand some of the mysteries of what it is to be. And so in terms of how I got involved in art and kind of a story that brings those two together, one of the things that I kind of pinpoint as being crucial to my own development was an experience, a very phenomenological experience of sitting in a park in Albuquerque when I was about 16 on a real hot day and talking with a friend, and all of a sudden realizing that I couldn't hear my friend clearly, that their voice was distorted, and then suddenly I couldn't hear them at all. 
+</p>
+
+<p>
+<b>Cory: </b>And my own voice was distorted, almost like hearing a, a vocoder or something like that. There were whole slices of my voice just missing. And this all happened really fast. It was probably the space of a couple of seconds. And before I could realize what was really happening, I just knew that there was something huge in my environment that was changing everything. And what it ended up being was the sound of cicadas rising up in unison in this really intense chorus. There was something about this sense of the totally I invisible force dominating my experience of reality in that moment that just made me, really dive into trying to understand what perception is about. And, that led to being pretty obsessed with cicadas for a long time. <laugh>, I went to like really obsessed with them. And this was kind of back in the early, very early internet days. 
+</p>
+
+<p>
+<b>Cory: </b><span style="color:red" data-ts="1024.815" data-end_ts="1025.015" title="1024.815" id=c_"1024.815">__It__</span> was probably like 99, I guess is what it was. Okay. And, what I found at that time, even at the beginnings of the internet, is that there were these whole communities of people online with a similar obsession. People who had had similar experiences to that, that just couldn't help but suddenly start to try and understand everything they could about Cicada Song and about cicadas in the environment in general. And so, that's kind of a segue because when I went to the College of Santa Fe the next year, I was, there to do basically just film school. And I met David Stout who is teaching this thing called Imagine. And Imagine was the realtime video synthesis software that came out of Stein developed by Stain <span style="color:red" data-ts="1069.885" data-end_ts="1070.045" title="1069.885" id=c_"1069.885">__of__</span> Ulka and Tom DeMeyer. And it had just, I think, been released in 97. And so this was the second year that they were teaching this new software. 
+</p>
+
+<p>
+<b>Cory: </b>And when I saw people using this to do some live, live video performance, I decided I wanted to dive in and see if I could try and in some way create that experience that I'd had of the cicadas sort of taking over an environment. And so my first experience in working with Real <span style="color:red" data-ts="1096.925" data-end_ts="1097.165" title="1096.925" id=c_"1096.925">__Time__</span> Media was to try and create a real <span style="color:red" data-ts="1100.235" data-end_ts="1100.525" title="1100.235" id=c_"1100.235">__time__</span> cicada sampling and visualization engine. And so I was working in OSS nine on Imagine to kind of try and get across this experience that I'd had in like 2002 or something like that. I ended up doing an installation that was part of a much larger installation environment that had like 20 different artists installations and a bunch of different screens, 16 channel sound or something like that. And it was counting all of the people moving through the space. And at certain thresholds, cicadas would take over all of the visual displays and really loud Cicada song would take over the speakers for a very brief period of time, and then it would subside back in. 
+</p>
+
+<p>
+<b>Cory: </b>And so it was my kind of first experience trying to get at this phenomenological layer of what emergence can look like. Mm-Hmm. <affirmative>. And that was marginally successful, but I was pretty hooked on working in real time media at that point. And so the rest of my time at the College of Santa Fe, I, I pretty much exclusively worked with, with new media. I did get film production skills and stuff, but I pretty much moved, completely into working in, software like Imagine and Is Adora, though at the time I wasn't working in Max at all. 
+</p>
+
+<p>
+<b>Darwin: </b>Before we go too far, I, I just need to ask, why film? Why did you decide film? Was that just a thing that seemed to be a creative area that you wanted to check out? Was it, did it just happen to be a thing you could get into? And so you did it because it seems like that just sort of like put you in the right spot to actually find what, what your passion was gonna be. But, but why did you, why did you start off saying, well, I'm gonna go to film school? Because that always seems people who say, I'm gonna go to film school. I, I envy them for being able to say it, but I never quite understand why they would choose it. 
+</p>
+
+<p>
+<b>Cory: </b>Well, for me it was, I, I was, in high school I did a lot of theater, and so I really enjoyed acting. I really enjoyed the idea of that kind of spectacle. But probably the, the thing that actually made me wanna do it was an experience of sitting down to write a screenplay with a friend. A really, at, at this point, I could say a really piss <span style="color:red" data-ts="1245.585" data-end_ts="1245.875" title="1245.585" id=c_"1245.585">__poor__</span> screenplay about really uninteresting things, <laugh>, but it doesn't matter. What happened was that after 10 hours of writing, I realized I hadn't thought about food. I hadn't thought about going to the bathroom. I hadn't thought about time. Yes, something happened where everything else fell away and I was able to just sink into that flow state. And for me, that was something that I'd had a hard time finding in kind of anything that I'd looked into. 
+</p>
+
+<p>
+<b>Cory: </b>And while screenwriting wasn't exactly my interest, film provided a platform to be able to explore visual art, sound, art, writing performance, all of those things seemed possible in that environment. Mm-Hmm. <affirmative>. And so it was kind of the direction that I went in. The other direction I could have gone in, it was more of a math and engineering, math and science and engineering. 'cause that was more of my strong suit actually, in terms of academia. But it was never, it was something I enjoyed a lot outside of a classroom environment and didn't enjoy studying a lot. And so I decided I didn't wanna kill my passion for those things by going to school for them. Right. You know, they, I could have gone in a different direction. Sometimes I wonder if, if what that would've been like. And instead I went to the College of Santa Fe where I think statistics was probably the most advanced math that you even had access to. Mm-Hmm. <affirmative>. So I didn't kill my passion for it, but I also didn't continue to study it that much. 
+</p>
+
+<p>
+<b>Darwin: </b>I think that a a lot of people who become interested in coding, kind of have that, have that sort of passion and especially what we now call creative coding. It, it's funny because at the time that you ran into Imagine and Isadore on these things, there was no concept of creative coding just in the same way when I first ran into Max, no, there was no name for that. Right, right. But somehow it met a need that certainly was rattling around in each of our heads, which is, we like the way that you solve puzzles in technical ways. We like, like the result of making something and seeing it come to fruition in an engineering <span style="color:red" data-ts="1385.155" data-end_ts="1385.445" title="1385.155" id=c_"1385.155">__like__</span> way. But we also like the artistic and or musical and or performative nature of, of the arts. And so finding a mechanism that all these things come together ends up being these programming <span style="color:red" data-ts="1401.275" data-end_ts="1401.565" title="1401.275" id=c_"1401.275">__like__</span> tools. 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, absolutely. And like, like I was saying, the, the whole appeal of film was that it was so encompassing of so many things. Right. And what I found almost immediately when I was actually trying to do film production is that once you made the decisions, you were so anchored to 'em. By the time that I finished editing something, it was like, well, that's fixed. It's done. It's nothing to do with it. <laugh> and I never wanna look at it again. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Yeah. 
+</p>
+
+<p>
+<b>Cory: </b>And so as soon as I found these, these other platforms, imagine as Adora and of course later Max, it didn't have that quality. <span style="color:red" data-ts="1437.705" data-end_ts="1437.925" title="1437.705" id=c_"1437.705">__And__</span> in fact, if you wanted to get it to be the same again, you had to really work at it. It was like playing music. You had to, you had to rehearse and rehearse and practice and practice to get it close, and yet it would never be identical. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. 
+</p>
+
+<p>
+<b>Cory: </b>And so <span style="color:red" data-ts="1450.765" data-end_ts="1450.845" title="1450.765" id=c_"1450.765">__to__</span> that's the magic. And I just, I just could never go back 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1454.865" data-end_ts="1455.085" title="1454.865" id=c_"1454.865">__At__</span>, at what point did you start using these tools? Sort of like, as like your, your instrument or as your paintbrush or whatever. I mean, was it like, as soon as you got into it, you just dropped everything else? 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, pretty much though. I mean, I don't, I don't know how many people out there ever had a chance to work with. Imagine it was <laugh>, it was, if we wanna call it a paintbrush, it was a very crude paintbrush. It was more like a stick that you'd frame the edge on or something like that. I mean, it was amazing. But you could literally play back. We had conversations all the time about what if you could play two movies at the same time? It was basically one movie, a couple layers of still images. And when I say one movie, like a three 20 by two 40 QuickTime movie Mm-Hmm. <affirmative>. And somehow even that at the most elemental level was fascinating enough that it was, it was where I put all my focus. And so yeah, I guess it was probably about 99 or 2000, probably 2000 that I pretty much committed myself to that method of working. 
+</p>
+
+<p>
+<b>Cory: </b>In terms of, when I really started to develop that more, it was, I think in 2004 we got a residency. We, being David and I got a residency at Harvest Works, and at the time I was really just David's assistant and he decided to bring me along. Okay. And we got to sit down with Luke Dubois to do a lot of programming for us on a, a really simple kind of artificial ecosystem with, very primitive predator prey dynamics. It was called the Hundred Monkey Garden. Okay. And in that visit, I watched Luke Programming and Max with total facility. It was just like, it, the, the programming language was like a second language in watching him do it. Mm-Hmm. <affirmative>. And so something shifted for me at that point because there was a pretty big difference between the Imagine approach and the Max approach. 
+</p>
+
+<p>
+<b>Cory: </b>And imagine everything was pretty much like these buttons turn on these effects and they have a certain range of possibility, and you can load in media and manipulate that. It was pretty much pre-made for you to explore within a certain confined range. And Max, to me, as soon as I opened it up, I remembered, Daniel Sno, who is the creative director at Stein in the early two thousands, was the first person that showed me Max. And when I saw it, I said, okay, I'll never be able to do that. That's just beyond me <laugh>. And something about watching Luke playing with it made me realize that I could learn it. Because like you said, when I started with this stuff, there was no like, creative code at the time. I know Max was out there. But it wasn't doing video. It wasn't addressing what I needed it to do. Right. And so I just hadn't thought of that as a possibility. And so the idea of moving into programming seemed totally unapproachable to me. But just seeing somebody doing it and doing it second nature and really well made me, shift my perspective and think, okay, this might do everything I want it to do. I'm gonna invest in it. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That's really interesting that, that watching someone play with that, could do it. But it also makes sense from one standpoint, which is you talk about, like, when you talk about doing the screenwriting and it like absorbed you and made you forget everything around you, that there's something, that there's something happening there. You, it's, you know, I can't remember the guy who wrote the book and I couldn't pronounce his name if I could remember him, but the book, the About Flow, it's, you know, that kind of concept is really important. But in coding terms, there has to be a certain kind of balance between getting results and having to do research to get deeper understanding of the language and trying things and failing, but having the failure not be so catastrophic that you wanna walk away, but instead being still inviting you into try and fix it and make it better. Right. Yeah, 
+</p>
+
+<p>
+<b>Cory: </b>Absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>And finding a tool that can, that can, for you walk the balance. It is difficult, but I think it's why there are so many programming languages. I think there's always been this desire to sort of like have the grand unifying programming environment that every everyone could support. Right. But I don't think it really exists because in fact, some people really feel that with a c plus plus compiler and other people really feel that with, I don't know, HTML. And some people really feel that with Max. Right. 
+</p>
+
+<p>
+<b>Cory: </b>That's always been such an important thing for me with the approach, this idea of being able to kind of try and fail, but have something come back outta that failure. <span style="color:red" data-ts="1775.325" data-end_ts="1775.525" title="1775.325" id=c_"1775.325">__In__</span> film school, I had no computer background at all. And so the whole way that I actually learned computing was, was, was basically that just poking. And I, I think a lot of people learn this way, it's just poking through menus, seeing what the possibilities are, and then trying things. And when you're doing that, you're, you're gonna mess things up once in a while, <laugh>, right. And sometimes in, sometimes in major ways. But there was something about Max that just allowed me to, I guess it's that even when you make really bad programming decisions, if there's not a stack overflow or a total crash, you can get away with a lot of mistakes. 
+</p>
+
+<p>
+<b>Cory: </b><laugh>, you can have very <span style="color:red" data-ts="1812.725" data-end_ts="1813.005" title="1812.725" id=c_"1812.725">__efficient__</span> methods, and they still run. We get asked a lot, noise <span style="color:red" data-ts="1817.915" data-end_ts="1818.205" title="1817.915" id=c_"1817.915">__fold__</span> in our work, what we're doing the work in. And when we would tell people that it's Max and Jitter, they say, oh, I didn't know you could do that in jitter. I think that partly what led to us having sort of novel approaches is that we're not trained in this stuff at all. We don't have a computer science background. It's a total hacker approach. And so we, we don't know the best practices. We don't use the right thing in a lot of cases, <laugh>, where you should be using the right thing. And so we, it's, it's Aus approach. We're forcing something to fit into a box that it's not meant to fit into. And even having learned better practices later on, there's a lot of early experiments that become, that have become like critical modules in what we do because they lead to novel kinds of output that you wouldn't get doing it. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Cory: </b>And so I really appreciate, and I think there's probably this area in any language, but there's something about in any environment, I really love the kind of glitchy area where you can force something that wasn't meant to work in a certain way, to work in another way. It's the, and I think that's where the idea of transcoding, became so pivotal in what we do. This idea of saying, okay, this data set means one thing. What happens if we interpret it as something else 
+</p>
+
+<p>
+<b>Darwin: </b>Right now? Well, it's funny that you bring up transcoding because there is a, an extent to which every time I've seen you perform, and like I said, I've seen you perform probably half dozen if not more times. There have been different efforts at doing transcoding. So there's some transcoding that's like built into what noise <span style="color:red" data-ts="1926.445" data-end_ts="1926.725" title="1926.445" id=c_"1926.445">__fold__</span> does, which is this idea of, sonifying visuals. Right. And so that's kind of built up into the concept, but also I used to see you use things like directional microphones looking for resonances in a room, and then for a while you had like some kind of squiggly touch. It looked like something you made up out of, leftover, you know, military surplus pieces or something that <laugh> you would, you know, and cranks and stuff like that. You, you, you've explored a lot of different ways to gain or to get data in the system. 
+</p>
+
+<p>
+<b>Darwin: </b>So your transcoding isn't just visuals to audio or whatever, but it's a lot of like physicality, the physicality of the space or the physicality of you as players. And it's especially driven home by the fact that when you play, you stand up and you're like facing each other almost as if it's a, like a competitive thing, you know, it looks like face the Nation or something. Right. Or, some kind of a game show. It's, it's a really interesting layout. And I'm just interested in, in how, how this concept of transcoding how you sort of like jump past the idea of transcoding this media into that media and instead approach this idea of transcoding physical movement and facial expression or the sonic contents of the space or whatever, how you bring those into play and, and how that became a part of your work. 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, sure. So I had mentioned that I was in, in, high school. I was really into theater. I also had in college, a lot of, I did a lot of aerial dance performance work. And then David also had a lot of background in both musical performance and dance performance. And so for both of us, physicality has always been a really important part of our own just physical discipline in the world, way of being in the world. Mm-Hmm. <affirmative>. And so I think that it was really challenging for either of us to, to consider just doing the laptop performance thing of just sitting behind a laptop and letting it do its thing. Our very first collaboration was actually supposed to be me sitting in to do extended vocals to manipulate imagery and some of David's earlier performance work. And so that also, requires if you've ever seen like, <span style="color:red" data-ts="2092.125" data-end_ts="2092.445" title="2092.125" id=c_"2092.125">__yacht__</span> Blanc perform or Joan Lebar Right. 
+</p>
+
+<p>
+<b>Cory: </b>Any of those people doing extended vocal work, it requires actually a lot of physical manipulation of your face and your vocal chords to get some of those sounds. And so I think that that was sort of from the very beginning of our collaboration kind of built into it. And then a lot of it comes from actually watching a lot of laptop performance and wanting us wanting to have that feeling of understanding decisions that are being made that you have whenever you watch a more traditional instrumentalist, for example. Mm-Hmm. <affirmative>, when a drummer's playing, you watch that physicality and there's a virtuosity that's a part of that, that's just, as an audience member, it's just compelling to watch a performer. And so while I wouldn't say that what we do on stage is anything like watching a Virtuoso kit drummer, we always try and work towards having a little bit more of an engagement with the material that we're generating. 
+</p>
+
+<p>
+<b>Cory: </b>It also gives a little bit more, room as a performer to explore than just mapping everything to a bunch of faders and knobs and key buttons. And so I think that's a part of it as well. And this is something that we continue to, to explore. So like in the last solo performance that I did, which actually was down at the Currents Festival in Santa Fe, I was, working with these images in a particle system that I made for the Denver Botanic Gardens that generate botanical <span style="color:red" data-ts="2187.035" data-end_ts="2187.325" title="2187.035" id=c_"2187.035">__like__</span> forms. That's the kind of basic behaviors that are programmed in. Okay. And so I was trying to figure out a way of interacting with them and performing them that made more sense than the kind of traditional thing that I do where I'm maybe using proximity sensors. Some of the things that you described earlier, picking up resonant sounds, anything like that. 
+</p>
+
+<p>
+<b>Cory: </b>And what I came up with was modeling a, a breath controller with Arduino so that I could basically have this transpiration dialogue with these forms where when I'm breathing out, I'm animating these forms and pushing light through this, this blow tube that has LEDs embedded in it, pushing the color through that tube into the forms. And so there's this sense of kind of trying to get at that dialogue that we actually have with plants where we're breathing in what they breathe out, and they're breathing in what we breathe out. And so there's often an, an attempt in any way to get the performative mechanisms we use to try in some way to mirror what we're doing with the visual space and the sonic space. 
+</p>
+
+<p>
+<b>Darwin: </b>Got it. Interesting. Very interesting. Now, with your own work, so most of the, most of what you've been doing over the last 10 years has, in, in terms of performance and stuff, has been with <span style="color:red" data-ts="2272.815" data-end_ts="2273.165" title="2272.815" id=c_"2272.815">__noise__</span> <span style="color:red" data-ts="2273.165" data-end_ts="2273.445" title="2273.165" id=c_"2273.165">__fold__</span>. You've done a lot of traveling and touring. You've done a lot of residencies and stuff like that. But I know for a fact that over the last couple years your solo work has, has started to be getting some legs. Right. What kind of things are you doing solo and how does that end up being different than your collaborative work? Because sometimes when people do collaborative work, it can be really, it, it can sort of like, take over their brains and then their solo work just becomes a different version of what they're doing in collaboration. How are your solo and collaborative works different? 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, that's an interesting question for me to, to contemplate more as well. And something I've been trying to kind of dig into because I think you're right. And in my case, certainly, the collaboration with noise <span style="color:red" data-ts="2325.205" data-end_ts="2325.485" title="2325.205" id=c_"2325.205">__flow__</span> tends to dominate what I think about in terms of, making work in general. Mm-Hmm. <affirmative>. And so for a long time it was pretty hard to break back out of that. But I think that in that, one of the things that I focus on a lot more in my work when I'm working solo is getting back to these ideas of, of the phenomenological layer of experience, that very personal layer where we <span style="color:red" data-ts="2352.045" data-end_ts="2352.245" title="2352.045" id=c_"2352.045">__have__</span> an experience that someone next to us might have, and yet the impact on us can be miles apart. And so, like the cicada work, which again, I was in a packed park when this happened, I don't think anyone else had their life changed by that moment. 
+</p>
+
+<p>
+<b>Cory: </b>I could be wrong. But I really try and focus on the things that are really impacting me in my life while I'm making the work. And so in the last three or four years, I've become really deeply interested in meditation and in achieving altered states of consciousness through introspection and, and self-reflection. And so a lot of the work that I'm doing is based much more directly on trying to emulate those experiences for people. And so, an example of that I made, several years back this piece called Signature Sound, which was a sort of a steampunk new media oracle. And so it was using projection mapping on the back of a mirror and <span style="color:red" data-ts="2422.885" data-end_ts="2423.005" title="2422.885" id=c_"2422.885">__a__</span> simple little key input where you could put in your birth date, and then it would calculate like your eastern and western astrology, it would calculate your, tarot personality cards, your Cardi cards, all of these different sort of oracular systems that used the birthday as a source. 
+</p>
+
+<p>
+<b>Cory: </b>And then it would combine all of those things. And every person who used this was supposed to put a small glass vial at the bottom of the mirror and all of the light from these different aspects that it calculated about you would then drain into this little bottle and you could take that away with you. And so there's something about, I guess I really wanna try and create these very personal individual experiences with my audience members. And I think that's extending into my, performance work and not just my installation work. And so I tend to do things that are much more time domain independent, kind of like what we were talking about with the noise <span style="color:red" data-ts="2483.365" data-end_ts="2483.645" title="2483.365" id=c_"2483.365">__fold__</span> installation work, but I think even a little bit more extreme than that. Where I, I really try and get people to sink in with the work for very long durations of time, often even uncomfortably. So <laugh>, just from some of the feedback that I've gotten Mm-Hmm. <affirmative>. And so it's, it's a little hard for me to nail down exactly what the difference is, but it's much more focused on this idea of, of individuated experience and self-reflection. And so in noise fault, I think it's often much more about trying to get people to contemplate the unknown and the impossible object space. With my work, it's much more human and much more inter intrapersonal. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. Yeah. Because I would say certainly sometimes noise <span style="color:red" data-ts="2538.755" data-end_ts="2539.045" title="2538.755" id=c_"2538.755">__fold__</span>, it, it almost borders on sort of like the experimental cinema sci-fi ish kind of stuff, right? 
+</p>
+
+<p>
+<b>Cory: </b>Yeah, absolutely. 
+</p>
+
+<p>
+<b>Darwin: </b>And, having seen your work, it's very biological, but also this idea of being kind of introspective to the point of being individualistic, doesn't that kind of set up a potential problem, which is that it's difficult to do introspective and individualistic art that's going to be displayed for a large number of people in any way. Yeah. 
+</p>
+
+<p>
+<b>Cory: </b><laugh>, absolutely. And so some of the, some of the ways <span style="color:red" data-ts="2588.045" data-end_ts="2588.325" title="2588.045" id=c_"2588.045">__that__</span>, that I've considered handling that split because yeah, it's really challenging. I, I'd love for the work to basically be like one viewer at a time kind of work <laugh>. Right. Right. And that's just not very practical. And so some of the ways that I've considered approaching that are doing things that are a little bit more coming out of the, like the old school performance art world where you're basically setting up this terrain and then you do these very long-term endurance-based performances of that material. And so the expression of the material is hyper-focused on the individual involved in generating it, if that makes sense. Right. And so, so in a really simple way, it might be that you have a space set up that's active in a particular way unless an individual sits down on a meditation cushion in that space for an extremely extended period of time. 
+</p>
+
+<p>
+<b>Cory: </b>And so I'm talking like, you know, nothing even happens for 20 or 30 minutes. Uhhuh <affirmative>. And then after that it un unfolds over the next three or four hours. And so an environment like that functions in one way that I would always wanna have be just as compelling if nobody's actually performing it. Right. But completely transforms when the individual comes in to actually just occupy that space in a particular way. Mm-Hmm. <affirmative>. And so that would allow there to be this sense of a on display environment that everybody gets to experience. Mm-Hmm. <affirmative> and a very different version of that experience that one individual can actually create in that environment. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Now the the one thing, <span style="color:red" data-ts="2690.425" data-end_ts="2690.645" title="2690.425" id=c_"2690.425">__and__</span>, and we're running out time, I can't believe it. Yeah, no, that's, this happens every time, you know, but I'm just, I have like a whole bunch of questions I'd like to ask about this, but I'll just ask one, that I'm really curious about, which is, it seems like you're putting yourself in, in a position to need to explore some pretty uncomfortable territory, right. Uncomfortable for yourself, let alone the audience. But the reason I say that is because meditation by its very nature is meant to be personal. It's meant to be not on public display. Right. Similarly, you know, some of the kind of like experiential things that, that you want to explore seem to me to be very personal. And again, very things that people generally want to keep hidden. How difficult is it to say, well, okay, that's gonna be my performance practice now. How, how difficult is it to say, well, I'm gonna just put it out there? Or is it just a different version of any performance? I don't know. 
+</p>
+
+<p>
+<b>Cory: </b>Well, I think I'm, I'm in, in sort of an easier position than I might be with it because I have another body of performance work that I continue to do. Hmm. And so it, it allows me to kind of take that risk and I don't have to completely tie my identity to that being what I do. I see. But it is, it is challenging and I, I mean, the first time that I did one of these pieces, this was this mirror piece, by the time that I was ready to show it, it was so different than the rest of my work. And it was so, so the opposite of these totally alien, abstract environments that I was creating for years that I actually, like, I literally broke down when it was time to actually go and show the work and was like, I just don't wanna do it. I was telling my wife like, I just can't do it. I can't go. And it ended up being extremely positive, but it did lead to a, a pretty major confrontation with my own idea of how I wanna be perceived in the world, because I think there's a comfort in being, mysterious and 
+</p>
+
+<p>
+<b>Cory: </b><laugh>. There's certainly a lot of, it's very easy and, and certainly something I'm guilty of to just write off anybody exploring the stuff as being new age and, and not give it another look and say that it's a surface level exploration of things that have been talked about for thousands of years. Right. 
+</p>
+
+<p>
+<b>Cory: </b>And so there's, I think it, for me, as far as my own sense of who I am in the world, it is quite challenging to put it out there because it's very, it's very intimate and very personal. And it's not that the noise <span style="color:red" data-ts="2868.605" data-end_ts="2868.845" title="2868.605" id=c_"2868.605">__fold__</span> work is not, it's just that you can always say, well, it's just abstraction. You can see whatever you want in it. Whereas if you see somebody sitting on a meditation pillow and there's, you know, incense burning or something like that, it's pretty, well, I could still say it's whatever you <span style="color:red" data-ts="2886.565" data-end_ts="2886.765" title="2886.565" id=c_"2886.565">__wanna__</span> interpret it as. There's a pretty, solid grounding in other, other disciplines and other philosophies that people can point to pretty quickly. And it is involved in those things. Sure, 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Wow, what a great discussion and one that certainly we could expand to, in great detail. But we're going to, let's let it lie there for now and come back to this at some point because it's really fascinating, but it's <span style="color:red" data-ts="2920.285" data-end_ts="2920.405" title="2920.285" id=c_"2920.285">__a__</span> also that's you're, we're starting to dance in the area of personal fear and performance, and that's a, that's a charge subject, right, 
+</p>
+
+<p>
+<b>Cory: </b><laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>So, but I wanna, I want to thank you so much for taking the time to, to talk with, talk with me about this and kind of explore some of this stuff. 
+</p>
+
+<p>
+<b>Cory: </b>Thanks very much for having me on here. Hopefully there's some stuff in here for any of the listeners to dive a little bit more into. And, it's just really an honor to be a part of this series. Really wonderful series. Thank you, Darwin Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Thank you so much. I really appreciate it. And one last question before we go then. What, what do you think is next for you? Where do you, where do you think you're gonna go? Do you think you're gonna further explore this inner landscape? Do you have some other thing that you're hoping to bust out? What, what do you think is the next big turn for you? 
+</p>
+
+<p>
+<b>Cory: </b>Well, I'm actually moving in a, in a very different direction at this very moment, which is, I'm gonna be doing a residency up at the Pilchuck Glass School outside of Seattle. And so I'm actually gonna be doing some physical object creation, for the first time in quite a while. And I don't know if that'll end up being the major direction, but that's definitely gonna be the next big thing. And then in terms of the other stuff, I'm just gonna continue to let the different projects feed <span style="color:red" data-ts="3007.775" data-end_ts="3008.015" title="3007.775" id=c_"3007.775">__back__</span> into each other. So I will be furthering my solo work that's really looking at these inner landscapes and seeing how that cross pollinates with the noise <span style="color:red" data-ts="3016.725" data-end_ts="3017.015" title="3016.725" id=c_"3016.725">__fold__</span> work. 
+</p>
+
+<p>
+<b>Darwin: </b>Wow, that sounds really exciting. And, and I have to say, man, I am envious of, of, you taking advantage of the options that you're taking advantage of, but also being well <span style="color:red" data-ts="3028.645" data-end_ts="3028.765" title="3028.645" id=c_"3028.645">__in__</span> <span style="color:red" data-ts="3028.765" data-end_ts="3028.885" title="3028.765" id=c_"3028.765">__your__</span> kind of like, throw yourself into the lion's <span style="color:red" data-ts="3031.965" data-end_ts="3032.045" title="3031.965" id=c_"3031.965">__den__</span>. It's pretty amazing. Thank you so much for your time. I really appreciate it, man. 
+</p>
+
+<p>
+<b>Nobody: </b><i>Thank you. </i>
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="3038.745" data-end_ts="3038.965" title="3038.745" id=c_"3038.745">__All__</span> right. Bye. Okay, many thanks to Corey for spending the time talking with us. Really fascinating guy. I feel honored to have gotten to know him. So with that, I want to thank you all for listening. I want to thank all the supporters out there for spreading the word. And, I'm gonna just ask for you to show up again next week so that we can talk to another really interesting person about the artwork that they do. Catch you later. Bye.
+</p>
+
+    <p><i>Copyright 2016-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
