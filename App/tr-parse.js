@@ -21,7 +21,8 @@ generate plain html from json, filtering out cruft
 
 Usage:
   tr-parse.js plain <json> -s <speaker>... -r <release-date>
-  tr-parse.js audio <json> -s <speaker>... -r <release-date> -o <audio-offset> [ -a <audio-file> ]
+  tr-parse.js plain <json> -s <speaker>... -r <release-date> -d <dataid>
+  tr-parse.js audio <json> -s <speaker>... -r <release-date> -d <dataid> -o <audio-offset> [ -a <audio-file> ]
   tr-parse.js --help | -h
   tr-parse.js --version | -v
 
@@ -33,6 +34,7 @@ Options:
   --speaker -s <speaker>...         speaker(s) 
                                     NOTE: Each speaker needs to be preceded by '-s' (or '--speaker')
   --release-date -r <release-date>  e.g. 'November 13, 2019'
+  --dataid -d <dataid>              e.g. 4606597
   --help -h                         Display help
   --version -v                      Show version number
   --audio-offset -o <audio-offset>  only valid and required for 'audio' command. Offset when speech
@@ -75,6 +77,7 @@ function main() {
     argv['<json>'], 
     argv['--speaker'], 
     argv['--release-date'], 
+    argv['--dataid'], 
     argv['--audio-file'], 
     argv['--audio-offset'], 
   )

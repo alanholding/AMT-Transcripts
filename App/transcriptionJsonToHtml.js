@@ -40,11 +40,12 @@ class Speaker {
 
 class TranscriptionJsonToHtml {
 
-  constructor (json, speakers, releaseDate, audio_file, audio_offset) {
+  constructor (json, speakers, releaseDate, dataid, audio_file, audio_offset) {
     this.json = json;
     this.speakers = speakers.map( i => new Speaker(i) )
-    this.guests = speakers.slice(1)
+    this.guests = speakers.slice(4)
     this.releaseDate = releaseDate
+    this.dataid = dataid
     this.audio_file = audio_file
 
     if (audio_file && !fs.existsSync(audio_file)){
@@ -229,7 +230,7 @@ class TranscriptionJsonToHtml {
         <h3>Released: ${this.releaseDate}</h3>
     <br>
     <p>
-      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/INSERTPODCASTIDHERE/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/${this.dataid}/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
     </p>
     <br>
     `
