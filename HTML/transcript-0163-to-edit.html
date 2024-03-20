@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0163 - Andrew Ikenberry</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0163 - Andrew Ikenberry</h2>
+        <h3>Released: Feb 12, 2017</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/5076427/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>Okay, today I have the great honor of talking to somebody whose work I've been following for a while. Kind of been a fan boy here. His name's Andrew Eikenberry and he is, a mastermind here behind the company Qubit. Now I was, I think I was user probably number one and a half or so of the Nebula when it first came out. And I've always found their work to be intriguing because it, it takes ideas and takes them to their proper conclusion. I think. So, with that kind of a ridiculous, introduction, let's say hello to Andrew. Hey Andrew, how are you? 
+</p>
+
+<p>
+<b>Andrew Ikenberry: </b>Great, Darwin. How are you? 
+</p>
+
+<p>
+<b>Darwin: </b>Alright. Thanks a lot for taking time to talk to us. I really appreciate it. 
+</p>
+
+<p>
+<b>Andrew: </b>Sure. Thanks for having me on. 
+</p>
+
+<p>
+<b>Darwin: </b>So, let's talk first of all a little bit about Qubit and what you guys are working on right now. Well, you started off with the, Nebula, but you have quite a stack of modules now, right? 
+</p>
+
+<p>
+<b>Andrew: </b>Yep, yep. We just announced four new ones at namm. 
+</p>
+
+<p>
+<b>Darwin: </b>That's awesome. What can you tell, tell us exactly what they are. 
+</p>
+
+<p>
+<b>Andrew: </b>Sure. So we announced the chance, which is a random voltage generator, sort of the, a successor to the nano <span style="color:red" data-ts="91.765" data-end_ts="91.925" title="91.765" id=c_"91.765">__end__</span>. It, it really takes all the concepts we were experimenting with there to the next level and sort of gives it a, a, a different sort of interface that we realized was really useful. So the crux of the design, it's got three unique types of random CV outputs. It has a smooth voltage output. It's got a, a discreet random voltage output. So that's just like running white noise through a sample and hold. And then it has a wave table output. So this is similar to the narrans different algorithms, if you're familiar with that. Sure. But by, by breaking them out to their individual, their own, jacks on the face plate, it lets you dial in the voltages more specifically to what you'd want them to be and use them simultaneously, which is really useful and something I always missed about the nand. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure, that sounds great. And I know I played around with the, with the NAND a bit, and frankly, this sounds really interesting to me because I often sort of had the desire to get those modes available at once. So that's really cool. What else do you got? 
+</p>
+
+<p>
+<b>Andrew: </b>So we also announced the contour, which is a quad envelope generator. It's really something that we wanted to make that paired well with the cord because of its four outputs, you know, so we made a quad envelope generator. Each one has attack <span style="color:red" data-ts="169.245" data-end_ts="169.405" title="169.245" id=c_"169.245">__and__</span> decay knobs as you'd expect, as well as CV for both of those really useful feature that I think it's overlooked sometimes. And then, an at 10 inverter on each output. So you can scale it between plus 10 all the way to negative 10 volts on your envelope, which is really useful. 
+</p>
+
+<p>
+<b>Darwin: </b>That is, yeah. 
+</p>
+
+<p>
+<b>Andrew: </b>And then each channel can loop or be triggered and then, shape controls let you switch between linear and exponential shapes on the output. Sure. So it's a really useful, really useful module. I constantly find myself running out of envelopes. Every patch, basically <laugh>. So we thought, let's just make enough in a small enough package with the features you want, you know, an attenuator CV over attack <span style="color:red" data-ts="207.765" data-end_ts="207.885" title="207.765" id=c_"207.765">__and__</span> decay, et cetera, but still keep enough modules in a small enough footprint. So we made that and it's also got a really wide, really wide range. You can get <span style="color:red" data-ts="215.645" data-end_ts="215.805" title="215.645" id=c_"215.645">__it__</span> up to five millisecond triggers or five millisecond at its at its smallest, and then 20 minute cycle times at its longest. So it'll go extremely slow, which is useful for ambient patches and whatnot. 
+</p>
+
+<p>
+<b>Darwin: </b>So that dealing with really huge range, like that's often a problem. Do you do it through like, range switches or is everything on like one huge knob sweep? 
+</p>
+
+<p>
+<b>Andrew: </b>It is on, it is on one knob and luckily we're, we're, we're generating it digital so we can, we can fine tune each section of the knob so that we get the proper range is where we want them to be. So I think that's really a benefit of doing this in the digital domain is you have explicit control of what the knobs gonna feel like. So we've, that's actually what we've been doing the past two weeks, is just dialing in the knob to get it feel right for the attack <span style="color:red" data-ts="265.525" data-end_ts="265.645" title="265.525" id=c_"265.525">__in__</span> decay times. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure, that makes a lot of sense. Now, you said that you had three new units announced <span style="color:red" data-ts="271.585" data-end_ts="271.805" title="271.585" id=c_"271.585">__it__</span> <span style="color:red" data-ts="271.835" data-end_ts="272.125" title="271.835" id=c_"271.835">__namm__</span> 
+</p>
+
+<p>
+<b>Andrew: </b>Four new units. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, four new units. Okay. So you got two more to go then? Boy, this is two more to go. You could take the whole hour just telling us about 
+</p>
+
+<p>
+<b>Andrew: </b><laugh>. Yeah, so the, the other two we announced, well, one we announced last year, we re announced it since we revamped it. But the other new one is the tone, which is a quad filter. 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. 
+</p>
+
+<p>
+<b>Andrew: </b>So it pairs extremely well with the contour and with the cord. So each channel has low pass and band pass outputs. It's all analog design 24 DB slope. So it really has that classic warm analog low pass sound. Each one, each channel has resonance on it, which can cause the unit to self oscillate when it's all the way up. When it does that, you can get four octaves of accurate pitch tracking. The CV input is calibrated <span style="color:red" data-ts="317.885" data-end_ts="318.005" title="317.885" id=c_"317.885">__of__</span> Volta, which is really useful. And, each channel has an at 10 inverter for the CV input. So you can invert and scale the incoming voltage for cutoff. 
+</p>
+
+<p>
+<b>Darwin: </b>You're kind of focusing on this four channel scenario. 'cause you have the, you announced at one point the rhythm. I don't know, did that ship yet? 
+</p>
+
+<p>
+<b>Andrew: </b>It did, it did, yeah. Oh, 
+</p>
+
+<p>
+<b>Darwin: </b>Okay. Because that was, that's like a four channel thing too. You seem to have identified four channels as the number of channels that make sense for you, right, <laugh>. 
+</p>
+
+<p>
+<b>Andrew: </b>Right, exactly. Yeah. We started with the chord, you know, and we made it for four outputs because, it was gonna be seventh chord, so you needed the route the third, fifth and the seventh output. Right. And then from there we really found it, we were patching the cord with all of our other modules from our, you know, our friends companies, other manufacturers. And we found we were constantly running out of what we needed, you know, because we wanted <laugh> four filters and four envelopes. And then, you know, we needed something to trigger that. And so we thought let's stick with this four voice architecture and let's make modules that pair really well with each other. And that way we know all of our own stuff works really well as a complete unit, you know, as a, as a system. So, right. That's what we've been really focusing on. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. This kind of implies some additional stuff then, which is at some point you're gonna have to have a nice, a nice way to get the voicings, or to get four channel MIDI in and, do a bunch of mixing and stuff. <span style="color:red" data-ts="401.165" data-end_ts="401.285" title="401.165" id=c_"401.165">__I__</span>, I mean, do you see this four thing kind of eventually evolving into a Four Voice modular synth, or do you not necessarily want to go down that right route? 
+</p>
+
+<p>
+<b>Andrew: </b>That is exactly the road we're going down right now. We are in the works of putting together a system that is centered around a four voice, modular synth. So, 
+</p>
+
+<p>
+<b>Darwin: </b>Nice. Fantastic. Well, cool. Now, one of the things I would say is that when I think of what you guys have done, I really think of qubit as, as being one of the companies that broke through with digital processing in the analog modular world. Now, there were obviously other people that were doing it, but you kind of, you kind of put your stake in the ground and said, here's where we lie. I mean, with the, with the Nebula initially, but with several of the things that you followed up with, with the Narran and the R two 60 and all that stuff, you basically said, Hey, we are gonna unabashedly be digital. How risky did that feel when you decided to do that? 
+</p>
+
+<p>
+<b>Andrew: </b>Well, it felt very risky, honestly. I mean, a lot of the draw of Eurorack specifically is the analog nature, right? Getting out of the box and getting the analog sound. It's such a hot buzzword. We hear people mention it almost synonymously with Eurorack. But for me, the beauty of <span style="color:red" data-ts="481.525" data-end_ts="481.925" title="481.525" id=c_"481.525">__Eurorack__</span> was always in voltage control. It wasn't necessarily tied to analog circuitry. So really the beauty of it, to me was always just the protocol and having voltage control over all these various aspects of your music and getting things to be able to communicate via voltage and not being constricted to working through a computer. And so that was really it. It was risky, but I felt like we really had to go from where our backgrounds were, which was computer music and branch out from there and do what we felt was right for us as a company. 
+</p>
+
+<p>
+<b>Darwin: </b>One of the things I like doing in my podcast is talking to people about their background and kind of their beginning story. And I'm kind of curious because you just said that your background was in computer music, but you're clearly doing work that is heavily invested in both digital design and kind of programming. So I'm curious to what your story is. How did you get to the, to where you're at right now? What is, what is the path you took through the world? 
+</p>
+
+<p>
+<b>Andrew: </b>My initial beginnings in learning to, to design and to write code and, and things like that was with C Sound. I don't know if you're familiar with that. It's the, computer music language started way back in the seventies at MIT and 
+</p>
+
+<p>
+<b>Darwin: </b>And for whom? For whom Dr. B still holds the torch. 
+</p>
+
+<p>
+<b>Andrew: </b>Yep. <laugh> the Man, the man I learned it from. Dr. B. Yeah. It was really, I started learning code with C Sound. It was the first programming I ever did. It was the first language I ever did, and it was the first time I had ever created my own instruments to make music with. And it, it was a really extremely exciting thing for me. It really changed the way I thought about music, the way I thought about composition, because I was no longer just writing music. I was making the mo the, the instruments that were gonna help me make the music, which was another, a deeper layer of control, another level of control, which was really satisfying personally at the time. I already had a very small URAC system, and that's what I was also kind of patching with a little bit. But I was, I was learning to write the code for C sound and it really opened my up my mind in a lot of ways. 
+</p>
+
+<p>
+<b>Andrew: </b>From there, I branched out to Max MSP, obviously, and then Pure <span style="color:red" data-ts="608.115" data-end_ts="608.395" title="608.115" id=c_"608.115">__data__</span> and things like that. But I was, I was always still composing a lot on the modular just because it was, it was so much more immediate and it still felt, it felt like an instrument because I got to touch it and play with it. And it felt like I was getting away from, you know, being on the computer. And it was a very fulfilling experience as well. And I always kind of wanted to, to bridge these two worlds. And so for a couple years I was working in these disparate areas, learning to code, working with Max and C sound, but also patching a lot with the modular. And then I learned about the Raspberry Pie, and it completely changed my life because I realized the raspberry pie can run c sound and pure data, and it's small enough to fit on the back of a module and I can give voltage into it. And that was really a turning point for me because I realized I could merge these two different worlds and get the, the best of both sides. I could have this beautiful voltage control interface and knobs and whatnot, but also have my code running on it and have CS sound or anything, you know, c programs, what have you. But I could have that behind a synthesizer panel doing these things that I love. So that was really how I got started. And, that was the impetus for the, the Nebula. 
+</p>
+
+<p>
+<b>Darwin: </b>How did you get to the point, though, where you were doing your initial experiments with both CSUN <span style="color:red" data-ts="682.595" data-end_ts="682.715" title="682.595" id=c_"682.595">__U__</span> Iraq? I mean, did you grow up in an environment that introduced you to a lot of computer music, or is it something you stumbled not at all into in school? And what is, what was the fascination of computer music that drew you here in the first place? 
+</p>
+
+<p>
+<b>Andrew: </b>So, I grew up playing acoustic instruments like many of us did. I grew up, I played drums for 10 years, and then I started playing guitar as a teenager and I played in bands. And, and once I got into guitar, what really became more exciting for me than playing the guitar was processing the sound of it through pedals, just whatever pedals I could get my hands on, loopers, et cetera. I, that was what I became more interested in than just playing notes and whatnot. And then right around the time I was graduating high school, I started to get really interested in electronic music. I could see that it was really starting to go mainstream a little bit. And I, I learned about it from there. I'd always enjoyed the mainstream electronic music, but I wanted to dig deeper from there. And so I started researching and delving deep into more underground artists, starting with, you know, IDM Aex, twin <span style="color:red" data-ts="747.585" data-end_ts="747.805" title="747.585" id=c_"747.585">__Aer__</span> <span style="color:red" data-ts="747.805" data-end_ts="747.965" title="747.805" id=c_"747.805">__from__</span> and the like, and moving backwards in time, historically until I wound up at, you know, Wendy Carlos or all, you know, Morton <span style="color:red" data-ts="754.445" data-end_ts="754.485" title="754.445" id=c_"754.445">__s__</span> all the classic synthesizer people, <laugh>. 
+</p>
+
+<p>
+<b>Andrew: </b>And, it was right about the same time that I started attending the Berkeley College of Music in Boston. It was right around that time. And I started taking classes with Dr. Richard <span style="color:red" data-ts="767.555" data-end_ts="768.165" title="767.555" id=c_"767.555">__Boulanger__</span>, who we mentioned, Dr. B, and he really opened me up to how to compose in that style, the tools they were using, as well as just really giving me a thorough education on who the important people were. And I had, was surrounded with a huge group of friends, and we all became immersed in this world together and learned from each other and studied and emulated these important composers. And that was the stepping stone. That's how I got from a guitar player obsessed with pedals to this computer music world and beyond <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. So in order to get into Berkeley, you have to be pretty, pretty hot shot on an instrument. <laugh> what instrument was, were you primarily a guitarist at 
+</p>
+
+<p>
+<b>Andrew: </b>That point? I was a guitarist. I was, yeah. I studied mainly jazz performance on the guitar. 
+</p>
+
+<p>
+<b>Darwin: </b>I see, okay. 
+</p>
+
+<p>
+<b>Andrew: </b>As, as my core classes. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, there you go. That's our, that's our connection. That was my area of study as well, right. Up until I fell off the cliff and never looked back. 
+</p>
+
+<p>
+<b>Andrew: </b>Right. 
+</p>
+
+<p>
+<b>Darwin: </b>But c sound, working with C sound is a very peculiar instrument because in many ways it's sort of is like proco, right? True. You define, you define variables, you define actions and functional behaviors. So while it's not strictly a programming language, it has many of the constructs of programming. Had you done much programming before that? Or was that kind of your first, the first thing that was programming like in your life? 
+</p>
+
+<p>
+<b>Andrew: </b>That was the first thing That was pretty much where I started from. I hadn't touched C yet at that point, and I don't think I had done any, anything similar, even like Python related or scripting. That was all after Mm-Hmm. <affirmative>. So C sound was really the, the entryway for me. 
+</p>
+
+<p>
+<b>Darwin: </b>Did it seem like a foreign language or did it seem my, my experience the first time I did programming of something that I liked, rather than being forced to do it, I fell in love with it right away because I felt like it worked the way my brain worked. And so it was a very comfortable environment for me to embrace. How did you feel? Because a lot, lot of times people with a very musical background have kind of the opposite experience. 
+</p>
+
+<p>
+<b>Andrew: </b>I found it very painful, <laugh>. Oh, really? 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. 
+</p>
+
+<p>
+<b>Andrew: </b>I found it very difficult. It was so fascinating to me and I loved it so much, which is why I pushed on no matter what. But I mean, I remember reading the chapter one of the C Sound book a thousand times and just rewriting the examples over and over and over, just trying to get it through my head. 'cause it was extremely difficult. It was a whole new, it was a whole new way of thinking for me, especially in relation to music. Right. And, and so it was, yeah, it was hard for me. And I don't think I've ever tried to learn something harder or, and been more determined about it in my life than, than learning c sound, honestly. And I look back at it now and it's, it's also clear and simple, you know. But yeah, it was, it was very hard. 
+</p>
+
+<p>
+<b>Darwin: </b>What was, what was the thing that most threw you? What was the thing that when you were learning, kept on tripping you up? Do you remember? 
+</p>
+
+<p>
+<b>Andrew: </b>Well, you know, it was a combination for me of not knowing a whole lot of synthesis. You know, I knew most of just what I knew about synthesis from just using an interface of some commercial synth. I didn't truly understand the, the concepts behind it. You know, I didn't really understand how to shape envelopes and apply them to anything I wanted. I more or less prior to that, I had just been turning knobs on <span style="color:red" data-ts="967.725" data-end_ts="967.965" title="967.725" id=c_"967.725">__since__</span> that were made for me. And so it was a combination of just the mind-boggling nature of code being my first experience with it. And also just trying to truly understand all these different synthesis concepts. So that was really the hard thing for me. It was just a double whammy, I think, of both those topics. 
+</p>
+
+<p>
+<b>Darwin: </b>How long did you spend on C sound before you started getting into the development process for the, for the Nebula? Through the Raspberry Pie? I would say that the C sound patch that embodies the Nebula, the stock Nebula. Mm-Hmm. <affirmative> is a pretty sophisticated piece of development. So how, how long of a pathway was it from just starting to getting to that, 
+</p>
+
+<p>
+<b>Andrew: </b>Getting to that was probably about three years. Okay. I would say two to three years I started the Nebula, but that wasn't, I started the Nebula sooner than that, but I was nowhere near writing that final CSD at that point in time. So somewhere between two and three years 
+</p>
+
+<p>
+<b>Darwin: </b>Now. <span style="color:red" data-ts="1030.025" data-end_ts="1030.245" title="1030.025" id=c_"1030.025">__One__</span> of the things, that I would say about the Nebula, I have to say it right, 'cause I want to say Nebula because that ae combination thing. <laugh> <laugh>. Yeah. Anyway, <laugh>, so the Nebula, one of the things I'd say that, that I think was made it really successful is that it's much more than just a raspberry pie behind a panel. You made an opinionated device, a device that said, yes, it's a computational tool, but it's, it has a purpose and that purpose is X Right now, you made optional ways of interacting with it and stuff that, that were cool. But I felt like one of the things that really made it successful was the fact that it was opinionated and it wasn't just a generic compute module. Right. There have been other people that have tried the generic computer thing, including myself, that were not very successful because it's hard for people to cast their imagination and get excited about something that's a chip with a panel. 
+</p>
+
+<p>
+<b>Darwin: </b>How did you decide on that implementation? So basically what you did was you built a, a sample player that had granular pitch control and or, or speed control. And, you built a very effective c sound patch to do it. But again, you had to make a lot of decisions along the way in terms of live recording or not. Would you, you know, how would you access files, all these kinds of decisions? It must've been kind of like a mind-numbing set of decisions. What was the process of coming up with what you would limit yourself to? 'cause that's the problem with having, with starting off with a computer, is that, you know, immediately you can say, Hmm, if I only put 75 knobs and 32 32 buttons Mm-Hmm. <affirmative>, I could do everything. Right. Right, right. And the last thing you want is a <span style="color:red" data-ts="1145.205" data-end_ts="1145.365" title="1145.205" id=c_"1145.205">__map__</span> module that does everything. 
+</p>
+
+<p>
+<b>Andrew: </b>Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Exactly. How did you winnow it down to the set of functions and controls that, that the Nebula embodied? 
+</p>
+
+<p>
+<b>Andrew: </b>Well, it was, it was a difficult decision when we, when we first got started, you know, we had, okay, raspberry pie, we have C sound, this can do anything. As you said, it has all these OP codes ready to go anyways. If I want this to be an FM oscillator, if I want it to be all these different things, it can do that. So I did spend a lot of time racking my brain trying to think, what, what would be the ideal way to harness this powerful combination? And it all went back to what I was most comfortable with using C <span style="color:red" data-ts="1182.765" data-end_ts="1182.965" title="1182.765" id=c_"1182.765">__SOUND__</span> for, which was doing sample-based processing, because it was really one of the only places that I felt I found this extensive control and amazing, these amazing DSP techniques and ways to process samples that I'd never seen before was in C sound. 
+</p>
+
+<p>
+<b>Andrew: </b>So I was most familiar and comfortable using the language to, to work in this realm. And I didn't have any sampler modules in <span style="color:red" data-ts="1204.325" data-end_ts="1204.685" title="1204.325" id=c_"1204.325">__Eurorack__</span>. There weren't a whole lot at the time, especially ones that did what I was used to doing. I, I really wanted to get this FFT independent pitch and speed looping, you know, sort of thing. Right. And, and so that's really where it stemmed from was just a, being extremely familiar and comfortable using C Sound to do that sort of thing. And just realizing that URAC was sorely missing a sample player and, and it really <span style="color:red" data-ts="1227.005" data-end_ts="1227.205" title="1227.005" id=c_"1227.005">__were__</span>, it was the right thing to do at the time. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, indeed. Well, it was also, it also introduced the beginning of granular processing in, in the modular world. I don't think anybody had done anything with granular up to that point. Mm-Hmm. <affirmative>. And so as a result, you know, having some, of, doing some of the things that you could, you could do with that functionality kind of fundamentally changed the sound of modular work. I mean, that's kind of, it's on you, man, <laugh> 
+</p>
+
+<p>
+<b>Andrew: </b><laugh>. No, I'm honored to hear you say that. I think that's a stretch. But <laugh> well, 
+</p>
+
+<p>
+<b>Darwin: </b>I, I don't know though because, the long Moy pitch pitch stretching and stuff like that, that's, that's kind of part and parcel of, you know, I've just been a couple of gigs where I, I, that was kind of a ubiquitous sound. It really wasn't in play prior to the Nebula availability. And I know certainly when I had one, that was one of the things I was doing all the time on stage and stuff, you could get a lot of, you could blow a lot of stage time by just taking a really cool sample and stretching the hell out of it and Oh, yeah. And, and pitching it all over the place. And, and people are wondering, how does he make that audio so elastic? Right. It's, it was a thing. Right. 
+</p>
+
+<p>
+<b>Andrew: </b>Right. Yeah. I mean, we still have people email us about, you know, we'll have some tech support questions and they'll be like, okay, well maybe I'll send it in to get calibrated or whatever, but I can't, right now I'm using it in this piece, <laugh>, <span style="color:red" data-ts="1306.685" data-end_ts="1306.725" title="1306.685" id=c_"1306.685">__I__</span>, I, I can't send it in. We get that all the time, you know, it's like we can't send it in 'cause I have to have it for this piece in the show I have to do. Right. So what you're saying, I, I hear people tell me that all the time. Oh, I, I use the Nebula in this performance, and it was the main <span style="color:red" data-ts="1318.795" data-end_ts="1319.085" title="1318.795" id=c_"1318.795">__sent__</span>, you know, section, the main piece of this one section and makes sense. I mean, I, I've used it countless performances and it really forms the backbone of a lot of, a lot of pieces for me. 
+</p>
+
+<p>
+<b>Darwin: </b>So now I'm, I'm a little curious, and this is maybe a left field question, but it's one I'm curious about. Your very first product was sort of <span style="color:red" data-ts="1338.845" data-end_ts="1338.965" title="1338.845" id=c_"1338.845">__a__</span>, a game changer for the, for the genre. Right. How do you, how do you come out with a second product after that? Right. <laugh> 
+</p>
+
+<p>
+<b>Andrew: </b><laugh> 
+</p>
+
+<p>
+<b>Darwin: </b>It, it must be almost like intimidating to say, well, you know, okay, we've built up these expectations and we've built up this kind of customer base, and now we have to do thing number two. Which in your case was what the, <span style="color:red" data-ts="1361.075" data-end_ts="1361.365" title="1361.075" id=c_"1361.075">__this__</span>, the RT 60, the next thing that came 
+</p>
+
+<p>
+<b>Andrew: </b>Out, it was, yeah. It was the next thing that we made. It's a tough decision to make, you know, as it, it's, it's harder, I feel like, to make that decision when your first product was a hit. Yeah. Like we had in this case. And when you only have one product out that's a hit, you really have to weigh like, okay, we have this one thing that's a hit, but we're trying to build a brand as well. Mm-Hmm. <affirmative>, you know, and so you start to have to make those decisions as to what your product line's gonna look like based on what your brand is, which may or may <span style="color:red" data-ts="1389.685" data-end_ts="1389.765" title="1389.685" id=c_"1389.685">__not__</span> always be a hundred percent consistent with the module that was the most popular. So it's a tough balancing act for sure. But yeah, we released the RT 62nd, and it was really just another thing for us where there didn't seem to be a whole lot of digital effects processors in Eurorack. I didn't have any at the time. Right. And it was something that we really wanted to, to have, and we thought that there was a pretty big hole in the market for it. So we went for it and put out the RT 60. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. And then, the next one that I had was the Nano Rand, which was, again, it's, it was one of those things where, you know, random and, and even kind of funky random stuff, whether you're talking about the waggle bug or the variations on the source of uncertainty or whatever, those all kind of existed. But having something that really embraced sort of the world of digital randomness, I thought, I thought was a pretty unique play on it. And I thought you did it really effectively. 
+</p>
+
+<p>
+<b>Andrew: </b>Oh, thanks. Yeah, the nanor <span style="color:red" data-ts="1444.645" data-end_ts="1444.765" title="1444.645" id=c_"1444.645">__ran__</span>. That was a really, I was really proud of that product when we released it exactly. For those reasons, I felt like digitally generated random was under, it was just so empty at that point in time. There wasn't a lot going around. There still isn't, frankly, I mean Right. You know, a lot of the random modules we see are, there's still analog, which is great and amazing and has its advantages, but you're also restricted to things that we've seen before. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. 
+</p>
+
+<p>
+<b>Andrew: </b>So digitally, digitally generated random for me is such a beautiful, just endless, it's just a, it's a rabbit hole. You can go as far as you want, you know, when you're developing something with it. And it's, the hardest part about that is just choosing what to put in it and what not to put in it, you know? 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well, it's interesting. I recently interviewed, Robert Heka Mm-Hmm. <affirmative>. And he was talking about the developer development of the operator synth in Ableton Live. And, about how at one point, in order to like quote, enhance the synth, they went from, the random being a, a loop of noise to being a purely generated noise. And that that was great. Except all of a sudden there were a bunch of sort of like artifact driven synthesis techniques you could no longer use because there you become, you know, each form of randomness or each form of synthesis of whatever sort. All of these like, like kind of buried parameters and buried decisions, end up having a very specific effect on what, what the end result looks like. 
+</p>
+
+<p>
+<b>Andrew: </b>Yeah, definitely. It's funny you mentioned that actually on the nana <span style="color:red" data-ts="1538.805" data-end_ts="1539.005" title="1538.805" id=c_"1538.805">__ran__</span>, the green algorithm in its first iteration was an accident of mine, actually. I was trying to accomplish something else at the, I think I was trying to do some sort of slewed very specific sort of signal, and it ended up coming out completely wrong, but it was the most amazing sounding thing I'd ever heard. You know, I had it on a VCO of an oscillator or something, and it was just unbelievable what I was hearing. And I was like, this is, we can't get rid of this. I don't care if it's not what I wanted. <laugh>, let's move forward, fine tune it. But this is sticking, you know, and so that's the green algorithm. We released it and it started off as an accident, but it ended up being amazing. You know, I hear it's a lot of people's favorite algorithm. So Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Let's, let's talk a little bit about the development process, because the idea of sort of the happy accident being an important part of development. How often, I mean, when you, when you were putting together a Nebula, for example, first of all, it is more than a raspberry pie in a panel, right? 'cause it also has the equivalent of an Arduino back there Yeah. For handling all the user interface and stuff. There's sort of like a lot of moving parts. 
+</p>
+
+<p>
+<b>Andrew: </b>There's a lot of 
+</p>
+
+<p>
+<b>Darwin: </b>Parts. And, and my assumption is whenever I see a lot of moving parts like that, I'm like, oh, I bet there was a lot of funky stuff that happened both positive and negative during the development of this thing. Right? 
+</p>
+
+<p>
+<b>Andrew: </b>Oh, sure. Sure. I mean, we went through so many different versions of that module layout and hardware wise is insane. 
+</p>
+
+<p>
+<b>Darwin: </b>How much easier do you find the current development? Because the, you know, you're obviously getting a little better at it 'cause you're knocking 'em out here at a pretty good rate, <laugh>. But how much, how much more comfortable are you with <span style="color:red" data-ts="1632.205" data-end_ts="1632.365" title="1632.205" id=c_"1632.205">__the__</span>, with the development thing, but how do you also maintain the opportunity for happy accidents? 
+</p>
+
+<p>
+<b>Andrew: </b>Well, the good thing about development developments, it's like anything, once you get a process down, it takes less effort to do things better than you did them previously. And that's what we found is we've really, you know, at this point, we have a good process down that we follow, but we always leave room in the process for multiple prototype provisions. And most importantly, we leave time to patch with it and to get other people to patch with it and let us know the feedback. So we can think about, okay, well we didn't anticipate this feature coming out that way. And actually I never thought to use it this way, but we should really explore that a little bit further. And it, and we still have time to change it, you know, so we have our process, but we leave room specifically for happy accidents and serendipitous moments where we find these things that we like on accident. And then that winds up being more of a, a feature of the module than we thought it was gonna be before. Or it becomes a concept for another module altogether. You know, it's hard to say 
+</p>
+
+<p>
+<b>Darwin: </b>What's, can you give us a, like a concrete example of a situation where maybe your development changed because of something like that? Or maybe where a new product showed up 'cause of that? 
+</p>
+
+<p>
+<b>Andrew: </b>Sure, sure. Well, the chance, which I already mentioned a little bit, stemmed from the nano <span style="color:red" data-ts="1707.005" data-end_ts="1707.165" title="1707.005" id=c_"1707.005">__ran__</span>. The nano <span style="color:red" data-ts="1707.885" data-end_ts="1708.085" title="1707.885" id=c_"1707.885">__ran__</span> as some people may or may not know, it has an internal and an external clock switch. Mm-Hmm. <affirmative>. And so instead of, it just normally so that when you plug in a cable, it becomes externally clocked. Like some modules you can flip the switch between either one, so you can leave your clock going, flip it off, and it just stops running at the same time. And it's a toggle. So it, it wasn't the intended use of, it wasn't to be a performable feature, but I use it a lot to kind of just pause everything and gets to stop. So when we started doing the <span style="color:red" data-ts="1734.285" data-end_ts="1734.525" title="1734.285" id=c_"1734.285">__chance__</span>, we wanted, you know, to take all these NAND concepts, all these things we'd learned, I thought, Hey, instead of having either it normal so that you clock it when you plug something in or have a switch, why don't we just add a completely separate thing, a freeze button? Why don't, why don't we just make it so that you can just hit a button, stop the module and <span style="color:red" data-ts="1751.085" data-end_ts="1751.205" title="1751.085" id=c_"1751.085">__just__</span> tracks and then you can unfreeze it and it keeps going. And that all just came from not particularly liking the way the toggle felt on the nano <span style="color:red" data-ts="1758.365" data-end_ts="1758.525" title="1758.365" id=c_"1758.365">__ran__</span>, but loving the way it functioned when I was performing with it. So that's an example of that happening. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well, and it's, it's interesting you mentioned the, the, like the concept of freeze functionality. 'cause that too goes all the way back to the nebula where, you know, one of the things that was a fabulous and mind-bending thing was this idea of freezing <span style="color:red" data-ts="1778.965" data-end_ts="1779.085" title="1778.965" id=c_"1778.965">__a__</span>, <span style="color:red" data-ts="1779.205" data-end_ts="1779.325" title="1779.205" id=c_"1779.205">__a__</span> a very particular digital concept in terms of audio processing. Right? Right. So you're working on developing sort of like this, four voice based system, which sounds really pretty exciting because the idea of polyphony and modular, <span style="color:red" data-ts="1797.145" data-end_ts="1797.565" title="1797.145" id=c_"1797.145">__though__</span> they seem to be concepts that clash, you know, are, are two foreheads running into each other, right. <laugh>, right. But, I, I'm curious about what you're, what can be the, the real winner in that kind of environment. I mean, at this point you've probably played with prototypes and stuff enough, so you're getting a sense of why this is important to you. I mean, I'm assuming you do because you're going through with all these products. What is it for you that this multi <span style="color:red" data-ts="1828.335" data-end_ts="1828.685" title="1828.335" id=c_"1828.335">__voice__</span> system really opens up? 
+</p>
+
+<p>
+<b>Andrew: </b>Well, what it really opens up is harmony and harmony for me personally and all the other guys at Qubit is something that I've always loved about music. I love the way different notes interact with each other and make us feel a certain way. And I don't think that just because we make modular music, we should have to ignore this concept and extremely powerful technique of harmony. And I think the only reason we haven't really is more just the original, the classic technical implementations of it because it's so difficult to achieve. And so very, very similar to kind of how we were gonna do hardware. We're gonna do modular synthesizers, but do it digitally. We thought, Hey, why can't we make an oscillator that makes polyphony easier to achieve and at least possible to use in a, compositional context. And so we wanted to open up polyphony in the modular, still be able to have it voltage controlled, still be able to have a generative patch, but at least have the capability to have cords and cord progressions or different notes interacting with each other. And, and that has been the whole impetus for this series of modules was making it accessible, making harmony and chord progressions accessible to everybody. You know, 
+</p>
+
+<p>
+<b>Darwin: </b>Right now with the, with the chord module, you, you took kind of a surprising approach. Rather than just making a straight four oscillator oscillator, you actually embraced the concept of harmony and brought in inversion, voicing selection, and even the character of the seventh chord. Mm-Hmm. <affirmative>, which, you've probably seen people use it. Do people, I I'm having trouble, I have trouble, quite frankly, imagining most modular people even using a chord Mm-Hmm. <affirmative>, let alone a seventh chord. Right, right. Most of 'em, I think could actually make a lot of their music with a trashcan rolling down the stairs, <laugh>. But, you know, embracing the embracing harmony like this, and especially embracing some pretty heady, music theory, I'm curious to know how, how much you're seeing people enjoy using that or being frustrated by it or being confused, or do you think it's like other modular stuff, it just opens the door for learning? 
+</p>
+
+<p>
+<b>Andrew: </b>It definitely opens the door for learning, but I would say, I think the predominant response that we've gotten is that people love the fact that we made it tuned intelligently harmonized to chords because they don't wanna have to do it because either A, they don't have the background or b, they don't want to take the time to tune their modules, two chords, but that's what they're gonna be using anyways. And I feel like there's even a whole other group of people that wouldn't necessarily use chords because they don't know about it. But now that they have access to it, it's become this whole other <span style="color:red" data-ts="1996.405" data-end_ts="1996.805" title="1996.405" id=c_"1996.405">__palette__</span> of sounds that they use in their music, but they would've never had access to it because they weren't gonna take the time to tune three oscillators to the route third, fifth, et cetera. Right. Even though they do like the sound and find it useful. Compositionally. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, and it does also sort of do a nice thing, which is, because some of this is under voltage control, first of all, you can get harmonic changes that, might be actually difficult to manage even with like a CV to mid converter or whatever. 
+</p>
+
+<p>
+<b>Andrew: </b>Exactly. 
+</p>
+
+<p>
+<b>Darwin: </b>But, but also, just maintaining tuning consistency strikes me as, as kind of winner. 'cause at at one point I, I had a mid <span style="color:red" data-ts="2038.085" data-end_ts="2038.305" title="2038.085" id=c_"2038.085">__to__</span> CV converter that allowed me some, some more polyphony than I would generally use. I I have a small system and I generally use two note polyphony, which means basically I run two separate voices. I don't hardly ever even go for the polyphony angle on it. Right. Mm-Hmm. <affirmative>. And I think a lot of people look, do stuff like that. But for a while I had a mid CV converter that allowed me to do four <span style="color:red" data-ts="2059.065" data-end_ts="2059.265" title="2059.065" id=c_"2059.065">__note__</span> polyphony. And, one of the things that really came to become a bugger bearer of trying to play with that was just simply, first of all, having enough modules to even make it worth the effort. And you kind of implied that when we were talking about it earlier. But secondly, just maintaining, tuning for even 10 minutes was unnerving, you know, with, with, analog, with analog oscillators, even well tuned ones and modern oscillators. It's tough though. It's tough to keep everything kind of corralled together. 
+</p>
+
+<p>
+<b>Andrew: </b>Yeah, yeah, totally. I have a lot of experience with that. Unfortunately, <laugh> actually <laugh> the first, the first couple prototypes of the cord were analog, so we had four analog oscillators and we're trying to keep 'em all in tune, you know? Yeah. And, it goes back to kind of us being digital wound up being one of our hugest our biggest advantages when doing the final version of the chord is we realized a analog is not gonna work if we want precise tuning. Right. Let's stick with what we're best at. Let's do it digital. And we did, and we were a little afraid that people wouldn't respond as well to it because it was digital. 'cause they would be, you know, maybe they want polyphony, but they don't want digital waveforms. But we were really, really able to nail down the hardware with really high specs, 96 K sample rate, 24 bit audio, so it doesn't sound digital, but you still get the advantage of completely a hundred percent accurate tuning across all five octaves, which was really great. 
+</p>
+
+<p>
+<b>Darwin: </b>This all sounds really exciting. Can you give us some hints about what the next things down the, down the tunnel might be, aside from like actually shipping the stuff that you just announced? 
+</p>
+
+<p>
+<b>Andrew: </b>Sure. Well, yeah. One of the big things for 2017 is putting together a system, and I mentioned that earlier. So we're gonna be doing the final module selection, figuring out a case <span style="color:red" data-ts="2168.945" data-end_ts="2169.165" title="2168.945" id=c_"2168.945">__con__</span>, solution for it, and deciding what more modules we need to make, if any, to make the system what we have in mind. And that's gonna be a pretty big focus of ours for 2017, is getting out one or two systems in different form factors and different price points to try and get this polyphonic thing happening for people. 
+</p>
+
+<p>
+<b>Darwin: </b>That sounds really pretty exciting. And, of the stuff that you're probably not gonna do, what is the thing that you wish somebody would do? 
+</p>
+
+<p>
+<b>Andrew: </b>That's a tough question. That's a really tough question. I would love to see more loopers. I would definitely love to see more <span style="color:red" data-ts="2206.335" data-end_ts="2206.685" title="2206.335" id=c_"2206.335">__audio__</span>, live, audio processing. I think there's so much to do there, and it's such an under explored area of <span style="color:red" data-ts="2211.685" data-end_ts="2211.845" title="2211.685" id=c_"2211.685">__your__</span> <span style="color:red" data-ts="2211.875" data-end_ts="2212.165" title="2211.875" id=c_"2211.875">__Iraq__</span>. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I agree. I'm a I'm obsessed with those. I'm obsessed with a lot of things. Can you tell 
+</p>
+
+<p>
+<b>Andrew: </b><laugh> <laugh>? 
+</p>
+
+<p>
+<b>Darwin: </b>I love working with Loopers because it really, it really helps in a performative environment, but it also I think takes advantage of the sound design nature of a modular with, but the ability to build on things, I think it's, I think they're a beautiful combination. And so I, I would agree with that. Now finally, one question I have is, and, and this is maybe just the question for me as much <span style="color:red" data-ts="2246.665" data-end_ts="2246.885" title="2246.665" id=c_"2246.665">__as__</span> our podcast is, when I look at your site, it looks like some of the modules are going away. Like the R two 60 isn't really listed anymore. And, I don't know, are, are you going to start retiring some of the older ones as these newer ones are coming up to speed? 
+</p>
+
+<p>
+<b>Andrew: </b>Exactly. We are, we're retiring. All the ones that we have, replacements for that are the same concept. So the Trager has already been replaced by the rhythm as our new gate source, you know, our new clocking module. Oh. So as we come out with the new ones, the original, the original ones will be, replaced. 
+</p>
+
+<p>
+<b>Darwin: </b>Got it. So, I don't see a nebula here. Is the wave the replacement for that 
+</p>
+
+<p>
+<b>Andrew: </b>Or what? It is not. It is not. So I'm glad you asked that. We are working on a version two of the Nebula, and hopefully that will be out in 2017. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, fantastic. <span style="color:red" data-ts="2297.065" data-end_ts="2297.285" title="2297.065" id=c_"2297.065">__Ooh__</span>, that's actually really encouraging and exciting. So Andrew, I, I kind of blew through that time really quickly. It was, it was <span style="color:red" data-ts="2304.965" data-end_ts="2305.085" title="2304.965" id=c_"2304.965">__a__</span>, a really great discussion. Now, one last question, which is gonna be probably the least artistic, but maybe a very interesting one. You sketch out a very interesting career curve. You started off as a guitar player and apparently a hot shot enough guitar player to end up at Berkeley. 
+</p>
+
+<p>
+<b>Andrew: </b>I don't know about that <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, but you end up, you know, getting a, having a mind meld with Dr. Dr B, who convinced you that C sound can change the world. He has that effect on people. 
+</p>
+
+<p>
+<b>Andrew: </b>He does <laugh>. He sure does. 
+</p>
+
+<p>
+<b>Darwin: </b>You end up making modulars and now you find yourself being a businessman. How does that feel? 
+</p>
+
+<p>
+<b>Andrew: </b>You know, it's probably one of the last places I anticipated winding up all along the way. But it feels, you know, it feels really great and it feels, I feel really lucky, honestly. I feel extremely lucky to be able to combine these really disparate areas of my life and combine them into something that I can sell to other people who enjoy them and get to use them for the same reasons I got into it and make them, made them from the beginning. So, yeah, it, <span style="color:red" data-ts="2380.915" data-end_ts="2381.035" title="2380.915" id=c_"2380.915">__I__</span>, it feels strange sometimes to, to be, fashion away at QuickBooks and writing a thousand emails a day and whatnot, and trying to figure out pricing structure. You know, it's not where musicians think they'd wind up being after school, after music school. But no, I feel really lucky and, and it's a special, it's a special job that I get to do every day, and I, I don't regret a single minute of it. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, Andrew, that sounds great. And you know what, I envy the work that you do. I think you do fantastic work. You get a chance to work with some incredible people, a lot of incredible artists are using your stuff. That all that stuff leads to a real, a, a pretty cool gig I think. So congratulations on pulling that together, man. 
+</p>
+
+<p>
+<b>Andrew: </b>Thanks so much. 
+</p>
+
+<p>
+<b>Darwin: </b>Alright, well, with that, I will leave you to, go on with your day. Thank you so much again for your time, and have a good one. All right. 
+</p>
+
+<p>
+<b>Andrew: </b>Thanks for having me. Really appreciate it. 
+</p>
+
+<p>
+<b>Darwin: </b>Bye.
+</p>
+
+<p>
+<b>Andrew: </b>Bye. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="2439.975" data-end_ts="2440.195" title="2439.975" id=c_"2439.975">__Hey__</span>, <span style="color:red" data-ts="2440.255" data-end_ts="2440.475" title="2440.255" id=c_"2440.255">__any__</span> thanks to Andrew for the great chat. If you haven't checked out qubit's work, you need to do it. They started off doing one thing very well. Now they do a lot of things really well. So check it out. Thank you for listening, for continuing to listen. Thanks for sharing this with your friends, family, Friendlys, whatever. And, with that I'm gonna say <span style="color:red" data-ts="2465.635" data-end_ts="2466.035" title="2465.635" id=c_"2465.635">__goodbye__</span>.
+</p>
+
+    <p><i>Copyright 2017-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
