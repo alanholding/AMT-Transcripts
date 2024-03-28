@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0209 - Michael Hetrick</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0209 - Michael Hetrick</h2>
+        <h3>Released: Dec 24, 2017</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6086514/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>This week's podcast is brought to you by Percuss <span style="color:red" data-ts="8.925" data-end_ts="9.045" title="8.925" id=c_"8.925">__a__</span>, the purveyors of audio cubes, the engine and remote system, as well as the upcoming SSP Super Signal processor for the U Rack Systems. Thanks a lot to Picasso for their support of the podcast. With that, Michael Hetrick okay. Today I have the great pleasure of getting a chance to talk to Michael Hettrick. If you don't know Michael's name, you should, if you do a little search, you're gonna find out that you probably knew about his work all along and you just didn't know his name was attached to it. Rather than me talking about it, let's say hi to Michael and then have him kind of tell us a little bit about what he's doing. Hey, Michael, how's it going? 
+</p>
+
+<p>
+<b>Michael Hetrick: </b>Great, Darwin. How are you today? 
+</p>
+
+<p>
+<b>Darwin: </b>I'm all right. Thank you so much for taking the time outta your schedule. I suspect you're a busy guy, so I feel pretty, lucky that you were able to wedge me into your time. 
+</p>
+
+<p>
+<b>Michael: </b>Oh, <laugh>. Well, I appreciate it. Yeah. We're just, you know, working on all sorts of new things this week and, a lot that I'm excited to talk about. Yeah, 
+</p>
+
+<p>
+<b>Darwin: </b>That's great. Why don't we start off by having you, just give a quick tour of duty of the kind of stuff that you've been working on? 
+</p>
+
+<p>
+<b>Michael: </b>Sure. Yes. My main project is my company, unfiltered Audio. We sell audio plugins through Plugin Alliance. I run that company with my business partner, Joshua Dickinson. And we write vsts audio units and a a X plugins. I also am a educator. I teach a modular synthesis course about once a year at uc, Santa Barbara, where I graduated. And I, I write a lot of modular packages for, software environments. So I, I created Euro Max for Maximus p Euro React for Reactor, and recently I started Hedrick CV for VCV Rack. 
+</p>
+
+<p>
+<b>Darwin: </b>Oh, wow. That's really exciting. VCV rack is like blowing up on my Facebook and email, email feeds, man. Everybody's talking about it. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. It's like each week I see another thousand likes on their, on their Facebook page. 
+</p>
+
+<p>
+<b>Darwin: </b>I know. He, he really hit, he really hit the, he really hit the nerve endings on that one, I think. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. And it's, it's one of those things where I'm very grateful that he is open sourced to the entire thing, and, provided an easy SDK to work with. 'cause I <span style="color:red" data-ts="152.565" data-end_ts="152.685" title="152.565" id=c_"152.565">__can__</span>, I can just crank out modules for this, and it's, it's wonderful to work with. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That's really cool. So, I'm a little bit curious about, about your business. First of all, you, you doing, plugin Systems, now you're selling 'em through Plugin Alliance. Why did you decide to work with them? 
+</p>
+
+<p>
+<b>Michael: </b>So we, we started the company in about, 2012 as grad students, and we were initially selling, rack extensions for a reason. And we wrote our first VST, it was called, G eight, and it was, a Dynamics Gate with, you know, all sorts of features where you could trigger the, the envelope manually from MIDI or, trigger other instruments using a MIDI output from the gate. And we were approached by Matt, the CEO of Plugging Alliance at, initially at a ES one year. I was presenting G eight as part of the student, showcase. And that caught their attention. And then we spoke with them at NAMM a few months later after we released the first version of Sandman. And as students, we were, you know, we were spread quite thin between our studies, and our research. So they presented us the offer where, you know, if we sold plugins through them, they would provide us with a tech support backend, a quality assurance team, marketing, and all sorts of promotions. And for us, just starting out in the industry, it's been incredibly helpful just to focus on research and development. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. That's actually a really compelling story, knowing, you know, being in the software industry and knowing what effort it takes to do the support and sales functions. It's gotta be really keen. Now you say you, you actually started doing this company and doing this work as a student? 
+</p>
+
+<p>
+<b>Michael: </b>Yes. Yeah. So, I started the company with Joshua Dickinson and Ryan McGee, both of whom were students at the Media Arts and Technology Department at uc, Santa Barbara. And all three of us were working on our masters at the time. It was around the time that the propeller had released the rack extension format. We were taking DSP classes and we wanted to release some ideas, and we saw this new format, and we thought it would be a great way to break in, you know, just be one of the first companies selling on this, this new thing. So we kind of, hastily put together a rack extension, tested it out, released it, and then we, you know, had a, had a lot of fun doing it. So we, we kept on going and yeah, it was just a great way to initially just make money on the side while we were students and help pay for our expenses. But it just kind of naturally turned into a full-time job. And that's how I spend most of my time nowadays. 
+</p>
+
+<p>
+<b>Darwin: </b>Shit, it's pretty interesting. Now, were you, the, the stuff you did with Euro <span style="color:red" data-ts="319.065" data-end_ts="319.285" title="319.065" id=c_"319.065">__Max__</span> and the Euro React for, reactor, was that stuff also things that you did while you were a student? 
+</p>
+
+<p>
+<b>Michael: </b>Yes, actually both of them were student projects. Euromax was one of my first projects as a student. I took a class under Matt Wright, one of the co-inventors of OSC, and he's the author of many of the Karma, max packages. And he's, you know, just, he's a great guy. So he taught a class that was more about, it was sort of like an intro to DSP class. And each, <span style="color:red" data-ts="354.385" data-end_ts="354.605" title="354.385" id=c_"354.385">__the__</span>, the way that the classes were structured at, at MATT is on the first day of class, they would give you the final project. Okay. And so the final project for that class was, you know, write a piece of software that demonstrates what you've learned, <laugh>, you know, like they're just very open-ended, 'cause the department kind of combines, you know, people whose backgrounds are pure art, pure art, pure engineering, pure architecture, and then, you know, combos of those. 
+</p>
+
+<p>
+<b>Michael: </b>And so I came in as an artist with almost no programming experience. I had worked a little bit with processing and reactor, but you know, I, I took like maybe one quarter of Java in undergrad. That was about it. And so I was learning Max and I decided everything that we learned in this class, I wanna put into a max object and, you know, just make it reusable. And that way I can see is this working as, as DSP, like, is this idea useful? And it was also at the time when I was starting to build a modular, and I clearly did not have enough money to build a modular as a grad student. Right. So it was kind of like a way to put some of that energy into like intellectual capital, I suppose, instead of just buying a module. Like, if I saw something that I wanted, but I didn't have enough, I would say, okay, can I make something similar in Max? 
+</p>
+
+<p>
+<b>Michael: </b>And that, that was how Euromax started. Now, Euro React was a few years later, and that was actually all part of my dissertation for, for my PhD. What happened was I was starting to teach a modular synthesis course with Curtis Rhodes, who was, my primary advisor. And while I was teaching the class, you know, that one of the huge problems was always we had, you know, two synthesizers, one large one in the studio, and then like a Pittsburgh Foundation that was kind of being passed around the, with the students. You know, <span style="color:red" data-ts="467.705" data-end_ts="467.925" title="467.705" id=c_"467.705">__the__</span>, the modulars were already out of reach for myself, who, you know, I've, I've dedicated the significant portion of the last decade to modulars, let alone students who just have a passing interest. So when Reactor Six came out with this blocks format, I immediately knew like, okay, this is, you know, $99 for students. The sound quality's excellent. If I can port some of the ideas from Euromax and document this thoroughly, I think this would be, you know, a great platform for my students to learn. And so that, that ended up being, my dissertation project. <span style="color:red" data-ts="502.585" data-end_ts="502.805" title="502.585" id=c_"502.585">__You__</span> know, I, I bundled my dissertation with, with Your React, so if you download it from the user library, you can read everything I wrote there. 
+</p>
+
+<p>
+<b>Darwin: </b>Wow. Cool. That's pretty exciting. But it also kind of really points to the fact, and, and, and now you're doing plugins, but you're also doing this stuff for VCV Rack. Yes. You kind live a modular life, I would say. Yes. What? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, very much so. 
+</p>
+
+<p>
+<b>Darwin: </b>What was your first, what was your first interaction with it? Was it at Santa Barbara or was it, was it before that? 
+</p>
+
+<p>
+<b>Michael: </b>It was my, senior year at Vanderbilt. I was wrapping up my undergrad, and I stupidly bought this issue of Sound on Sound that was about Modular Sense <laugh>. Yeah, I still have it somewhere, but it was like a 2005 early 2006 issue. And so I started going on the forums around that time someone was selling a dope for Beauty case for 20 bucks, and then someone else was selling a, dope for a 1 27, triple Band Pass filter. I, I forget the, the proper name for it, but at the time, I was primarily playing guitar. So I looked at this and I thought, okay, I'll use this as a glorified effects pedal, you know, just one module, one case, that's it, <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. That's, that's how everybody starts, right? 
+</p>
+
+<p>
+<b>Michael: </b><laugh>, you, you, you go in thinking like, oh, yeah, I'm not gonna have, you know, one of those crazy systems. And, you know, <span style="color:red" data-ts="590.485" data-end_ts="590.605" title="590.485" id=c_"590.485">__I__</span> <span style="color:red" data-ts="590.765" data-end_ts="590.965" title="590.765" id=c_"590.765">__look__</span> to my right and I have, you know, seven rows right now of Euro Rack, <laugh> 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. That's hilarious. Well, you also, you actually are, do recordings and you're a performing artist too, right? 
+</p>
+
+<p>
+<b>Michael: </b>Yes. Yeah. I perform under the name, the February Thaw. And I, I try to focus on purely live performances, not like live in person, but live in the studio. I try not to do edits to my music. I try to create pieces that are more like gestures. Like I'll sit in front of my synth and I'll design a patch, and then I just try to do one take and, and leave it as that. I just kind of find it to be the most interesting way to, to create with the modular, just to treat it like I would treat, you know, a guitar or any other instrument. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. The the question I have though, then, since you're so heavily invested in software Yes. Do you hybridize your system? Do you have like cable snaking back and forth through your computer, or do you, do you kind of delineate between the two environments? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. What's funny is I, they're, they're mutually ex exclusive. I have an expert sleepers ES eight, which I use, during academic presentations to show how to connect reactor to hardware synths. But in practice, in my own music, I just find it a lot easier, to shut down the computer at the end of the day and just, you know, walk over to the modular and, and record there. And, you know, if I am doing editing, I'll record, bring it to the computer and work on that separately. Occasionally I'll generate material and save it to an SD card and, and use it as, sort of like a baseline to work from on the modular. But I'm, I, I've almost never <span style="color:red" data-ts="698.395" data-end_ts="698.685" title="698.395" id=c_"698.395">__used__</span> both simultaneously, I should say. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. But when you're working with the February thaw, do you ever do then things that are in the box? Or do you really, do you really prefer working in the hardware? 
+</p>
+
+<p>
+<b>Michael: </b>I think the last piece I published that was in the box was maybe, 2010, 2009 or so. Yeah. It was, one of my student projects satellites for Curtis Rhodes was, a piece that I made for his composition class. And even then it was, you know, a lot of modular material that was then heavily edited in the box. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. Interesting. You know, you mentioned Curtis Rhodes there, and I think a lot of people would be curious, about what it's like, you know, taking, first of all, taking classes from him, but then later on actually teaching with him. I mean, he's sort of a, he's sort of like one of one of these people that's a kind of a living legend. Yeah. Right. Yeah. How, how intimidating is that when all of a sudden you're like teaching a class with him, or even you're attending a class with him? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, extraordinarily, I would say. I mean, my, my first, the first time I came across as material was, I bought the computer music tutorial when I was in eighth grade. Right. Or I, I got it as a Christmas present. And at the time I was just starting to experiment with, at the time it was called Fruity Loops. This was before FL Studio, and I saw this book on Amazon, and I was just like, oh, this will be great. I can finally learn all this stuff. And I got this copy and I was so confused, <laugh>, I was like, flipping through this book. I was like, this is all stuff from the seventies and eighties boo. And, you know, I just kind of put it aside and it just, you know, <span style="color:red" data-ts="810.125" data-end_ts="810.285" title="810.125" id=c_"810.125">__it__</span> was, it was just kind of this stupid kid. 
+</p>
+
+<p>
+<b>Michael: </b>And then a few years later I came back to it and I realized what an excellent resource it was. You know, it was just teaching me the history of all these instruments. And even though like, it seems out of date, everything is still so relevant, you know, like the, the pictures are old, the descriptions are old, but FM synthesis is still the same. Granular synthesis is still the same, additive, subtractive, all of this stuff. So having this book kind of laid a lot of groundwork for how I was independently studying towards the end of high school and most of college when I was, you know, just building reactor instruments or trying to figure out how these things worked. You know, towards the end of my undergraduate career, I was trying to figure out what to do, and there was a create digital music article about Curtis Rhodes, and it, it posted, you know, he is a professor at uc, Santa Barbara. 
+</p>
+
+<p>
+<b>Michael: </b>And it was like this instant click where I was like, I gotta go study with him. <laugh>. So I, I, I filled out the applications I got in and I, I, I think I embarrassed myself. 'cause on the first day I walked up to him and I was like, I want you to be my advisor. And there was this kind of like, this long pause and he looked at me, he <span style="color:red" data-ts="881.645" data-end_ts="881.685" title="881.645" id=c_"881.645">__is__</span> like, okay, <laugh> <laugh>. And so that, that was how I met him. But, o over the, those few years, it was just like, I took every class he offered. <span style="color:red" data-ts="892.425" data-end_ts="892.645" title="892.425" id=c_"892.425">__We__</span>, we would, I worked as his TA a few times, and we would just go to Hollister Brewery in Santa Barbara all the time and just talk music, music technology and modulars. And that just kind of, you know, I, I now consider him a, like a really good friend and mentor. And it, it was a huge honor working with him. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. I'll bet. It's amazing. So I am a little curious because now you, you've kind of sprinkled like little hints about your background throughout the discussion so far. Okay. 
+</p>
+
+<p>
+<b>Darwin: </b>But I'm curious because I mean, right now you are an accomplished DSP programmer, you know, you're, you're a performing musician that has a very specific kind of voice, so it's like a, it's not a, it's not just a fun thing, it's a serious thing for you. But you also, you know, you have this educational side to you. I'm curious about your background. One of the things I like to do <span style="color:red" data-ts="948.285" data-end_ts="948.445" title="948.285" id=c_"948.285">__on__</span> my podcast is explore people's background. Where are you coming from? Did where, growing up, how much interaction with music did you have versus interaction with technology? And, and how did you become the, the artist and maker that you are now? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, so, I mean, I've just, I've been into music from the start. I think my mom put me in violin classes when I was three. It was funny. I, I guess I only pulled out the violin when she had guests over. Like, I just wanted to be a performer. And then, you know, that, that kind of fell by the wayside. But in around second grade, I, I just wanted a guitar and I was just glued to the guitar for years. And that sort of became my identity through, through grade school. I was the guitar guy. I started playing drums in fourth grade bass in sixth. And then it was just like, I, I was always the nerd. But I got to high school and I played drums in a band, and I was finally like, kind of cool <laugh>, not necessarily, but I at least was able to shake off like sort of the nerdy, reputation that was short-lived <laugh>. 
+</p>
+
+<p>
+<b>Michael: </b>But, so I, I spent all this time as a musician. And then in the background, I got into the electronics. And as I said, you know, I, I was using FL Studio <span style="color:red" data-ts="1026.625" data-end_ts="1026.845" title="1026.625" id=c_"1026.625">__in__</span> grade school. What happened was around eighth grade radio had put out Kid <span style="color:red" data-ts="1031.405" data-end_ts="1031.525" title="1031.405" id=c_"1031.405">__A__</span> and that just kind of kicked open the doors for me. Like, I just, I needed to listen to everything on Warp Records. Like, I, I was reading all these interviews with them and they were like, oh, yeah, you should listen to Square Push, or an Apex Twin and Au Techer. And I did exactly that. And so I was just, you know, that was when everything changed for me. When I <span style="color:red" data-ts="1050.645" data-end_ts="1050.725" title="1050.645" id=c_"1050.645">__would__</span>, it was just like, okay, I wanna do electronic music. What happened was, I was just always, I sort of lacked confidence to do programming because I didn't start with it right away. 
+</p>
+
+<p>
+<b>Michael: </b>So throughout college, I was, I was mainly taking music, business classes, art classes, film studies. I was just kind of more into everything but programming. And I was just working in the background. I was like, okay, I'm gonna be a musician. What, what happened was I just got to grad school and I knew, you know, I, I'm not gonna be able to support myself if I'm just, only doing music. Right. So that was where I started to learn how to program and, and I immediately fell in love. I was just, it was something that came to me very naturally. I just started, you know, devoting all of my evenings to it outside of homework. I was always starting projects. I released a few iOS apps, as homework assignments. And it just got to the point where, you know, every day, all day I was doing electronic music and I was doing programming, you know, with the whole unfiltered audio thing. Just kind of happened naturally from that. It was like, well, I'm doing this <span style="color:red" data-ts="1114.005" data-end_ts="1114.365" title="1114.005" id=c_"1114.005">__anyway__</span>, so let's, you know, let's, let's turn this into a job. 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1117.185" data-end_ts="1117.405" title="1117.185" id=c_"1117.185">__And__</span> Well, it's interesting that, that you kind of stumbled into it that way because the timing of this, you actually kind of came through your education life a little bit early for what now is the creative coding world. Right? Right. Now, it seems like if you're an art school or music school, you're going to get kind of like pushed towards doing some programming, but that, that until very recently, that really wasn't the case at all. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, absolutely. You know, when in high school there were no classes for me to take on programming the art department in undergrad, you know, processing was just starting to take off. Mm-Hmm. <affirmative>. So I taught myself processing, and I did that for credits as like an independent study, but there wasn't really like a formal art technology class, I should say. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That, that really wasn't part of the canon at all. Yeah. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. I, I did take a video art class, and that was the closest thing to art technology, but, you know, that's <span style="color:red" data-ts="1174.585" data-end_ts="1174.805" title="1174.585" id=c_"1174.585">__it__</span>. That wasn't electronic music, but that was still like a very valuable class for me. 'cause I, you know, that was where I learned a lot of history in digital media. But yeah, the whole time was just, you know, independent studies for, for music. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. It's interesting. Well, you actually did some programming <span style="color:red" data-ts="1190.365" data-end_ts="1190.565" title="1190.365" id=c_"1190.365">__and__</span> visual for, visual stuff too, right? 
+</p>
+
+<p>
+<b>Michael: </b>Yes. Yeah. So on, on my portfolio page, I still have, you know, one of my video art projects, which was a video sculpture. And then, when I was at MATI definitely continued taking generative visual classes. So I've posted some source code and some sort of images that I created in these classes. And when I work as the February thaw, I try to do all of the art myself, like a, all of the, art you see on my SoundCloud page, those are all things that I made to go along with, with the music. 
+</p>
+
+<p>
+<b>Darwin: </b>Do you do anything where, like you have either the music or your code sort of like informing one another with between visuals and sound? Or do you keep those also kind of separated? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. Again, so far those have been pretty separate projects. The one crossover I did was I did a project for one of the MAT end of year shows called Synthesizer mm-Hmm. <affirmative>. And it was this large, I think they had like nine TVs set up in, the lobby. It was a large video synthesizer where I wrote a complex algorithm that was constantly generating, harmonic sine waves in the background, but it was silent, you know, you would never hear the audio that it, that it was creating. Instead you would only see these, you know, complex visuals that were generated from it. And that was a, that was a really fun project for me. 'cause it was sort of, it was sort of me bringing together these two worlds, right. And then hiding one of them. Just, just keeping that part to myself. But, I, I think that was one of my most successful video projects. And I, I had a, I had a lot of fun doing that. I, I would love to do more, stuff like that in the future, but it's just kind of hard to find, you know, opportunities to do things like that. 
+</p>
+
+<p>
+<b>Darwin: </b>My experience is that if, if you have both chops and audio and vis visuals that there are so many people wanting to do music that are dying to find someone to do visuals, that it's actually pretty easy to get gigs for that <laugh>. 
+</p>
+
+<p>
+<b>Michael: </b>I'm, I'm constantly joking, with my business partner Josh. So he is way more talented than I am with visuals. He's incredible with OpenGL. And he, he does most of the visualizers for our plugins. Okay. Like the spec ops visualizer that, you know, a lot of people love that was all him. So we've frequently been talking about doing like a tour together. Like, I'll do music, he'll do visuals, and Right. We'll put something together. But right now we just have so many projects on our plate. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I hear you. But on the other hand, don't make it too much of a joke. That sounds like that would be a pretty awesome, pretty awesome experience. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, we would absolutely love to do that. Just kind of take a break from, you know, the serious programming and just release it into art. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Right. Indeed. So now you said that in, as part of your background, you actually kinda learned all the pop instrumentation, guitar, drum, bass, all this kind of stuff. Yes. First of all, what of those things proved to be the most valuable to you in the music that you're making now, but also how much of that ended up being valuable as you move towards doing programming? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, that's a great question. So I would say guitar and drums were the two most valuable in many ways. Guitar. I'll start by saying, I think one of the, the things that is most important to me in electronic music, there, there's a thing that's kind of missing in a lot of mu modular music in my opinion, and it's a lot of articulation. Like when I'm hearing a lot of recordings of, you know, sort of smaller modular systems or people who are learning, there's this tendency of always keeping your envelopes and your VCA is just the same level for every hit. And that's one of those things that's so simple to get away from on an acoustic instrument. Like when you learn guitar, it's much harder to make everything the same amplitude than it is to just play in a, in, you know, a flowier type of state. 
+</p>
+
+<p>
+<b>Michael: </b>So one of the things I'm, I'm constantly trying to get away from in my music is I don't want that kind of machine gun nature in my music where each note is dot, dot, dot, dot. Like same, same articulation. And so that's one of those things I always keep in the back of my mind is how can I make this more organic, more natural? How can I make this sound more like an acoustic instrument? And I still think, you know, the guitar is such a good controller in many ways. Like it's just a perfect interface. And that's one of those things that I, I, I'm always thinking about when I'm, you know, working with say, pressure points or joysticks or whatever I have connected to my modulars. How can I rearrange this to be a natural fit for my hands? How can I learn these gestures and use them in my music for drums? 
+</p>
+
+<p>
+<b>Michael: </b>You know, that's one of those things where when you're learning drums, it starts off, you learn basic four, four, you know, kick on every, every downbeat, and you start to break away from that more and more. So as you get better, you're learning how to not only play weird time signatures, but maybe a different time signature with each limb. And you start taking in a lot of, rhythms of the world. So you'll learn, you know, Brazilian drum styles, you learn, new Orleans style linear drumming, and you, you just take in, all these patterns and then that go, that translates really well when you're starting to program, drum rhythms, you, because you, you have this sort of library of ideas that, that you get to work with. The other thing about that too is, you know, kind of like the guitar and kind of like when I was talking about with modulars is when I'm working with a drum machine, I can't use it if I don't have really in depth velocity programming, because that's one of those things that I think it, I'll hear a drum pattern. And if it's just everything is the same volume over, over the course of the pattern, no matter how complex the rhythm is itself, it will just sound kind of bad. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>, it drives you nuts. Yeah. You know, it's funny, I'm a big MPC user, right? Yes. And one of the things that drives me nutty is when I watch most people use it, the first thing they do is they hit the full level button, right? So that everything's at velocity 1 27 and they just kind of mash stuff out. And I'm just like, oh my God, there's so much opportunity for nuance and articulation here, and it's just, it's plowed over by pressing that one button, you know? Yeah. 
+</p>
+
+<p>
+<b>Michael: </b>And it kind of goes hand in hand with like the loudness war that we have going on in recording where it's just everything is maximum level all the time. And it's, it's kind of exhausting to listen to. Like, I, I just, I want to hear more recordings where people are exploring dynamics and subtle shifts instead of everything being, you know, mechanical and maximum volume. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, and especially since we're not that dependent on blasting out of the radio anymore, you would think that that would kind of open up more freedom for, dynamic exploration, but it seems to not have really done that. It's kind of odd. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. On, on the bright side. I mean, I think the, that it's starting to break a little bit. Like, you know, Spotify announced newer standards. They're reducing kind of the dynamic levels. What, what, what is it called? It's a luff is the unit Yeah. Right. <span style="color:red" data-ts="1626.585" data-end_ts="1626.805" title="1626.585" id=c_"1626.585">__Of__</span> loudness. So they're sort of fighting back, and I think things are changing, but there are still recordings I hear all the time where everything's just clipping everything looks like square waves. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>It's ridiculous. So in talking about rhythms, one of the things I haven't seen in your work is a lot of work programming or developing rhythmic tooling. Is that something that you just avoid because you're not into it or because it's too dependent on the hosting environment or just hasn't come up yet? 
+</p>
+
+<p>
+<b>Michael: </b>I'm actually, <span style="color:red" data-ts="1660.405" data-end_ts="1660.525" title="1660.405" id=c_"1660.405">__I__</span> really into it. I just, I hide it <laugh>. I, I try to make things that don't sound like they're very mechanically programmed, but you know, in reality there, there are a lot of deeper polyrhythms and, all sorts of things happening. Like, you know, in my pieces I tend to have like four or five sequences running at a time. It's just that I, I believe a lot in phasing and kind of hiding where a lot of these things are are coming from. Like, I, I don't want the grid to be audible in my pieces. Sure. One of, the writings that actually meant a lot to me was, in, in Curtis Rhodes', newest book, there's a chapter on rhythm. And he <span style="color:red" data-ts="1702.235" data-end_ts="1702.525" title="1702.235" id=c_"1702.235">__said__</span> he describes a, a state where instead of thinking about rhythm as a grid, he <span style="color:red" data-ts="1708.925" data-end_ts="1709.125" title="1708.925" id=c_"1708.925">__de__</span> he defines it as an ever flowing substrate. 
+</p>
+
+<p>
+<b>Michael: </b>That's something that's kind of stuck with me because, you know, when we're working with computers, we have the ability to put a sound anywhere. It, it doesn't have to be the downbeat, the, you know, it doesn't have to be even like 16th notes, 32nd notes. We can place it anywhere we want. You know, it's a matter of finding the tools that you can think in this state. But the modular is such an excellent tool for that because you have all these various clocks you can choose to perform without a master clock. And I think that's, you know, a very critical component of the music I make. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. No, it's interesting 'cause one of the things about sort of like the grid and whether it's computer or it's sequencing on a modular or whatever, I think that a lot of times people become dependent on the grid because it's sort of like a stress reducer, right? Yes. If you, if you tighten things up to a grid, no one can point at you and say, oh, that guy doesn't have any time. Right? Right. Doesn't have a sense of time. You know, I popped in on your SoundCloud and I was listening to some of your stuff, and some of the things that you do are really interesting because they don't do grid <span style="color:red" data-ts="1781.725" data-end_ts="1781.965" title="1781.725" id=c_"1781.725">__based__</span> time, but there are other, like you used the word before gestures. There are other gesture, <span style="color:red" data-ts="1787.355" data-end_ts="1787.645" title="1787.355" id=c_"1787.355">__like__</span> things that you do to sort of like say, well, this doesn't lay in a timeline, you know, in a grid, but it's still is composed of a timed environment, you know, so you do things. I was like, these things where in, in fact, I just happened to be goofing around with this in Max the other day, the thing that kind of sounds like a pinging pong ball bouncing right. Or something like that, right? You do kind of some of these physics <span style="color:red" data-ts="1811.915" data-end_ts="1812.205" title="1811.915" id=c_"1811.915">__like__</span> things and, and some of these other things. So what it it does is it's able to say, I'm not on a grid, but I'm still being intentional. Right? Yes. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>What are the, what are some of the tricks you use to, to do that? 
+</p>
+
+<p>
+<b>Michael: </b>That's, that's a great question. There, there are times where I will start a piece with just something looping over and over and over again, almost to the point where I'll get sick of it. But from there, I'll, I'll start to break it a bit. Like I'll find what would be a good example? Okay. So, I was working, on a piece with the Morpho gene the other night, and that's a, you know, a sample looper with granular capabilities. So what I've found is the slide control kind of picks a window of sound for you to work with, and the gene size kind of controls, the size of the grains that are used to play back that section. So I'll find a way to modulate the slide parameter at exactly the length of, of the gene. So, you know, you can plug in a clock out from the morpho <span style="color:red" data-ts="1878.485" data-end_ts="1878.685" title="1878.485" id=c_"1878.485">__gene__</span>, reset an LFO, and then just kind of have that LFO move the slide back and forth. 
+</p>
+
+<p>
+<b>Michael: </b>So you get a very deterministic sample playback over and over. But there's now some modulation, right? Then what I like to do is I, I introduce a completely unrelated modulation into either the Morpho <span style="color:red" data-ts="1898.725" data-end_ts="1898.885" title="1898.725" id=c_"1898.725">__gene__</span> or the other LFO, and that's where you start to get this generative behavior. 'cause you're, you're saying, okay, here's my foundational clock and here's the interruption that's going to throw the piece into a little bit of disarray, but it's still going to provide this foundational element that your ear will latch onto. And that, you know, it will, as you said, communicate to the audience, I know what I'm doing, trust me, <laugh>, but you know, I don't want this to repeat over and over again as is, right? 
+</p>
+
+<p>
+<b>Darwin: </b><span style="color:red" data-ts="1928.715" data-end_ts="1929.005" title="1928.715" id=c_"1928.715">__Yeah__</span>. Well, this dual LFO thing, though, that's a technique. You, you've got a pair of LFOs stuck inside the Sandman, plug too, right? 
+</p>
+
+<p>
+<b>Michael: </b>Yes. Yeah. So Sandman, <span style="color:red" data-ts="1939.955" data-end_ts="1940.245" title="1939.955" id=c_"1939.955">__when__</span>, when I create plugins, I try to create tools that I would want to use. And one of my founding principles is I also like gear that is, I describe it as non-judgmental. So a piece of gear that I really fell in love with recently is the Okta <span style="color:red" data-ts="1954.925" data-end_ts="1955.165" title="1954.925" id=c_"1954.925">__Track__</span>. And I somehow resisted it for years, but I finally picked one up. And it is just such a bizarre design because there's no clear cut way on how to use it. Like, every time I power it up, I have a different workflow. And I think that's, that's fabulous. Like it's, I, I understand why it alienates so many people, but I love that you bring more to the table than what the gear does. So it doesn't sound like, you know, you're creating demos of the gear you're using. It sounds like you're creating your music and you happen to be using this piece of gear. 
+</p>
+
+<p>
+<b>Michael: </b>So with the effects that we've created, one of the things I try to avoid is I, I don't want it to have like a concrete workflow or sound signature where it's just like, oh yes, obvious use of Sandman <laugh>, right? And so, so Sandman was one of the, our first, like, I, I guess that was our breakout hit. And the idea was I just wanted a way to freeze audio and then use these unsynced LFOs to modify the position and the timing of the audio. So you get these repeated loops, but it, it's always just slightly off it, it just kind of manipulates it. And then, you know, we explored that in a much bigger way with Sam Man Pro. So a lot of the presets that I included have sort of like a Steve Rech style where, you know, one of them will freeze 10 seconds of audio and the LFOs will modulate the playback rate on the left channel on the right channel ever so slightly. 
+</p>
+
+<p>
+<b>Michael: </b>So you just trap a loop and you just, you know, you get 10 minutes of material as the, as the audio goes in and out phase with each other. And yeah. That, that's, that's just what I shoot for, is I just want people to use our tools. So Sandman, I knew it was going to be a success. I sent it to Steve Westbrook, he performs under the name Ignatius. Mm-Hmm. <affirmative>. He makes excellent music. He sent me an Instagram video and I was so confused 'cause I was listening to it. I was like, that's not Sandman. And he, and he showed me how he was using it, and I, I realized like that it was exactly what I was going for. It was this thing that whoever used it would bring themselves to the instrument and, you know, it, it was not how I was using it, and that was what made me really happy. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, I actually wanted to explore that a little bit because it just, it does seem like you're trying to make these unopinionated systems, and so the likelihood is when when you actually get customers to use them, you're gonna be a little surprised at what even comes out of it. 
+</p>
+
+<p>
+<b>Michael: </b>Absolutely, yes. I, I think, spec ops, our most recent product was kind of the most shocking in that regard because we've sent it to, you know, very different artists. Like, we sent it to Richard Devine and Sarah <span style="color:red" data-ts="2117.115" data-end_ts="2117.405" title="2117.115" id=c_"2117.115">__Chai__</span>. We sent it to Patton and Deru, and, you know, just all of these artists who are coming from d completely different places. Recently, there was a YouTube video, the guy is <span style="color:red" data-ts="2128.485" data-end_ts="2128.725" title="2128.485" id=c_"2128.485">__like__</span>, Lisas MMT eight is what he posts under. And he did a demo of vocals and only vocals, and he just used the same loop for the entire 18 minute video. And it was funny, Josh sent me this video and he goes, this guy knows how to use spec ops better than I do <laugh>. And I, I, I, I was watching the video and I was like, oh my God. He, I think he knows it even more than I do. Like, I, like, I wrote the DSP for it, I designed it, and then this guy is killing it. And <span style="color:red" data-ts="2155.865" data-end_ts="2156.085" title="2155.865" id=c_"2155.865">__it__</span>, it's just like, wow. I, I never thought to use it in that way. You know, that that was, I think, one of my favorite things I've seen so far as a, as a tool creator 
+</p>
+
+<p>
+<b>Darwin: </b>For somebody who wanted to, who heard your story and was inspired by it, or sees your work as either, unfiltered or seized the work that you're putting into VCV Rack or was inspired by the Eurorack stuff and, and says, I want to be like this guy <laugh>. You know, obviously they don't have to go through as much pain as you did because there's a lot more information out there. Right. But what would you suggest? What, where would you point people who wanted to follow that path? 
+</p>
+
+<p>
+<b>Michael: </b>Yeah, a few things I'd like to address. You know, one of those things is information was very scarce when I was starting. You know, everyone was trying to be sort of mysterious with their workflows, and there wasn't a lot of public sharing going on. So I, I think we're already in like a sort of better learning environment for people who are getting into electronic music. My advice, you know, there, there are so many good books. The audio programming book is a great place to start reading up on your history through, you know, the Curtis Rhodes books or whatnot, reading the Super Collide or Source code, C Sound Source code. All of these are great, resources, but really, you know, part of my advice is the mental game. You know, just keeping yourself focused on what you want to learn and not feeling like you have to, you know, live up to some standard. 
+</p>
+
+<p>
+<b>Michael: </b>You know, like one of my big problems, and I still go through this, is, you know, when I got to grad school, I had imposter syndrome in the worst way because, you know, I'm coming in as a musician and I'm working under all these people who've contributed amazing things to electronic music. And I'm, you know, I play Guitar <laugh>, right? You know, we still have this, Josh and I were talking right before ZIP was released to our, beta testers. He did months and months of research on the compression algorithm for that. And, you know, we were nervous before we sent it into Plugin Alliance because they have many compressors. Many of them are analog modeled. And it's one of those things where even though we're fairly confident in the product, there is just this, oh, well, everyone has these years of experience with analog modeling and creating Mojo and all these marketing terms. And when it comes down to it, it's just like, is the tool good? Is the thing you made useful? You know, start simple, learn reactor, learn maxims <span style="color:red" data-ts="2310.045" data-end_ts="2310.165" title="2310.045" id=c_"2310.045">__p__</span> create a simple application that solves one minor problem, and then just keep on working from there. And, you know, soon, soon enough, you just get comfortable just through practice, like anything else. 
+</p>
+
+<p>
+<b>Darwin: </b>And how important do you think it is to just literally get work out there? Because I mean, one of the things that's interesting about your history is that you did stuff like the Euromax thing and you just threw it out there for people to use, right? Yeah. I mean, did, did you get a lot of attention because of that? 
+</p>
+
+<p>
+<b>Michael: </b>So, Euromax was funny 'cause I caught, almost no feedback from that, right? That, that was just one of those things where it was released. And I think a few, MAT students used it, but I was mostly just using it for my own purposes. And I just open sourced it because, you know, it's max, everything's open source, <span style="color:red" data-ts="2357.395" data-end_ts="2357.685" title="2357.395" id=c_"2357.395">__your__</span> React. I did not expect for that to blow up in the way it did. I think that it was just a matter of good timing. But I do try to put stuff out as soon as I make it just so I can start iterating. So with Euro React, before it was Euro React, I released the first module for it was, logic Mix. And I posted that the Night Reactor six came out. Like I bought it, I started hacking at it. I watched one of the Salamander anagram videos and I was like, okay, let's make a block <laugh>. 
+</p>
+
+<p>
+<b>Michael: </b>And you know, I just like, I wanted to post it immediately 'cause I was proud and I also wanted someone to say, here's what you're doing wrong. And then I made another block and another, and I then I realized, okay, this is a pain for people to download. And then so I bundled it, and that was where it started to get outta hand. But yeah, I think it, I think it's really important that you put your stuff out there because if you're, you know, if you're, if you're obsessed with this idea of creating like the one great work, like, you know, this huge tool that will change music or the, the album, which is still the thing that I have trouble with. Yeah. You know, it, it's, it's not gonna get finished. Like if you don't practice the art of releasing things, like, I mean, you know, there's, there, there are two things. Like it's hard to start things, but it's also very hard to finish things. And it's, it's something you need to practice like anything else. So if you don't know when to say this is ready for people to use, that's just something that you have to work on over and over again. Yeah. For me it's just, I'll put things out. Sometimes it shouldn't have been put out at that state, but it's good to say, okay, here's a point where you can now use it. 
+</p>
+
+<p>
+<b>Darwin: </b>So our, time is just about up. I can't, it's, burnt through that right. Quickly. But before I let you go, I'm just wondering, one <span style="color:red" data-ts="2465.165" data-end_ts="2465.245" title="2465.165" id=c_"2465.165">__of__</span> the things, another thing that's maybe sort of like a hallmark of your career or your time is sort of like, the surprising events, right? <laugh> going from one thing, what's the next surprise that you're gonna release on the world? Man. 
+</p>
+
+<p>
+<b>Michael: </b>So we're working on the first, unfiltered audio synthesizer. And this has just been, we, you know, this is what we are deep into right now. We're, we're currently just in a foundational state, but we're starting with microtonal support and MPE support. 'cause we want it to be flexible for everyone's purposes. So I have, you know, the world's most boring sine wave generator, but I have it connected to a rolly seaboard. And, you know, I called my wife over the other day, I was like, take a look at this. And I dragged my finger across the keyboard and it went whoop. Yeah. And she's like, that's nice, hun <laugh> <laugh>. But we're, we're just really, putting a lot of effort into making this the best instrument that we can, it has our full modulation system and the modulation system can exist for each note, which I think is going to be really exciting for a lot of people. And we're hoping to put it out in the middle of next year. I, I think it's going to be a lot of fun. So that's, that's our next, I guess it's not a surprise anymore, but, that's, that's what we're working on. And it's going to be, it's something we're very proud of already. 
+</p>
+
+<p>
+<b>Darwin: </b>That sounds really exciting. Well, and I just, I'm excited to hear about more stuff that's gonna be embracing MPE in a creative way. I think that that's really a strong contender for the thing that we're gonna eventually say, man, I don't know how we got along without that. You know? Yeah. 
+</p>
+
+<p>
+<b>Michael: </b>Yeah. It's, it's an excellent format. It's just something that I think every new instrument should support from now on. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. It seems like it. Well, Michael, I wanna thank you so much for, for your time. It was great having a chat. 
+</p>
+
+<p>
+<b>Michael: </b>Yes. Thank you so much for inviting me. 
+</p>
+
+<p>
+<b>Darwin: </b>But with that, I'm going to let you go and have the rest of your day. So thank you so much and we'll catch you again soon. 
+</p>
+
+<p>
+<b>Michael: </b>Alright. Thank you so much, Darwin. It was great talking to you. Yeah, likewise. 
+</p>
+
+<p>
+<b>Darwin: </b>Bye now. 
+</p>
+
+<p>
+<b>Michael: </b>Bye. 
+</p>
+
+<p>
+<b>Darwin: </b>Wasn't that amazing. Yeah, he's <span style="color:red" data-ts="2597.605" data-end_ts="2597.725" title="2597.605" id=c_"2597.605">__a__</span> incredible cat, doing some incredible work. If you get a chance, check out some of his plugins or his work with VCV Rack. It's amazing stuff. Thank you so much, listeners for continuing to support me for spreading the word. If there's, any ideas, comments, suggestions that you have, shoot me a line DD g@cyclingseventyfour.com. Again, I want to thank percussive for their support of the PO of this week's podcast and, thank them for the great work that they're doing as well. With that, I'm gonna let you go. Catch you next week. Bye.
+</p>
+
+    <p><i>Copyright 2017-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
