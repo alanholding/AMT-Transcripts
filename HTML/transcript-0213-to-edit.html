@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>Transcription: Podcast 0213 - James Grahame (MeeBlip)</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js does not work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      
+    </head>
+
+    <body>
+      <div class="container">
+        <h2>Transcription: 0213 - James Grahame (MeeBlip)</h2>
+        <h3>Released: Jan 21, 2018</h3>
+    <br>
+    <p>
+      <iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6171600/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </p>
+    <br>
+    <p>
+<b>Darwin: </b>This interview with James Graham is the third in a series of podcasts related to open source hardware and software that was coordinated with opia.com. Thanks to the folks at opia for helping to pull this together. This podcast is also supported in part by Robert Simmons, a contributor to our kickstart campaign. Thank you very much, Robert, for helping out with that. Enjoy the podcast. Okay. Today I have the great pleasure of speaking to someone that's new to me, but, really maybe shouldn't be, but whatever. His name's James Graham and he is involved in one of the sneaky fun projects of the music industry. I'm gonna let him talk about the me <span style="color:red" data-ts="50.125" data-end_ts="50.325" title="50.125" id=c_"50.125">__lip__</span> system, but it's, it's a lot of fun and, I'm anxious to hear a lot more about it. So, with that, I'm gonna turn it right over to James. Hey James. How's it going? 
+</p>
+
+<p>
+<b>James Grahame (MeeBlip): </b>Hi, Darwin. It's going really well, and I was trying to think, I, I think Meli right now is about seven years old, almost. Exactly. And it was started as a little pet project. I was originally working on a little hardware synthesizer, and I was thinking it was gonna work with our, our duos. And then I, I got to talking with Peter Kern of Create digital music.com and he said, you know, what would be great if we could, if we could put out an open source synthesizer and it would be something that people could learn synthesis on, they could learn programming on and perhaps hack it a little bit. And so in November of 2010, we released a little digital synthesizer, which was, I had to look it up. It was selling for $129. Mm-Hmm. <affirmative>. And the front panel, we tried to make as generic as possible. 
+</p>
+
+<p>
+<b>James: </b>We put a bunch of knobs on there. I think we put eight knobs on there and about 16 switches. And we thought, well, people will make it into whatever they make it into. And that was the beginning of Blup, which has since gone through three different iterations of hardware. We're currently working on a fourth, and all of them so far have been open source. And it's been really interesting to see how people as a whole have embraced open source and how open source hardware works. And we're learning a little bit about how it doesn't work as well. 
+</p>
+
+<p>
+<b>Darwin: </b>Right. I'd like to hear a little bit more about the iterations of the me blips. So over seven years, you say there have been three iterations so far? Yeah. 
+</p>
+
+<p>
+<b>James: </b>We started with what we call the ME blip, which was the first synth. And as far as when we were making it, we thought, well, this will be the only melet that we ever make. And at the time, I envisioned something which would probably be an Arduino dot <span style="color:red" data-ts="161.125" data-end_ts="161.405" title="161.125" id=c_"161.125">__board__</span>, which would plug into an Arduino, and we would be able to use that, that environment. But I realized that that was a little bit constricting, and I thought, well, let's put it in a case. We'll, we'll use a little eight bit at <span style="color:red" data-ts="172.645" data-end_ts="172.845" title="172.645" id=c_"172.645">__mill__</span> processor and we'll try and keep the costs down as low as we can. So we created something which was all digital. It had a little, midi jack in the back so you could play it with any keyword, which has been created since 1983, and an audio jack in the back. 
+</p>
+
+<p>
+<b>James: </b>And then it was all about twisting the knobs and making sound and going from there. We didn't know who the market was gonna be. We didn't know if it would be musicians or if it would be people who were playing with hardware for the first time and, you know, had never seen a musical instrument. And it turned out that it was a little bit of both because we were thinking it was going to be DIY and, and hackable. We released it in, I think we had a pre-built version, which was maybe $10 more. And we also sold one where you actually got to install the, the board into the box itself and, you know, put on the knobs. And the thinking there was, you know, if we encourage people to build it from, from scratch, you know, if, if they're okay with actually putting it in the case, they won't have any problems with taking the case apart and then hacking what was inside there. 
+</p>
+
+<p>
+<b>James: </b>Right. So that was 2010. And what we discovered was that a lot of people were, they really enjoyed sort of the IKEA aspect of putting things together. A few people enjoyed hacking the firmware, but for most people, they just actually wanted the fun of having an inexpensive instrument. So they bought it prebuilt. And so that led us to, probably mid 2013 where we started looking. And the goal at that point was to see if we could produce something which was more of a product which sold for under a hundred dollars. So our target was 99 to dollars, and we came up with something called the Melo Anode, which is a tiny little synth, which it measures four and a quarter by four and a quarter inches square, and it comes pre-built. And with that one, we kept the same atmo processor inside, but we, we stepped beyond and said, well, why don't we try and throw in a real analog filter? 
+</p>
+
+<p>
+<b>James: </b>We went back and I stumbled across something that Craig Anderton had come up with in 1973, and it was a, i, I think it was actually a Wawa pedal schematic. And it, it's a really, really simple grungy sounding, filter circuit. We ended up playing along with that, with the old <span style="color:red" data-ts="305.825" data-end_ts="306.045" title="305.825" id=c_"305.825">__me__</span> blip oscillators and discovered, you know what, there's something really special there. There's something very musical. And so that then became our, our next low <span style="color:red" data-ts="315.165" data-end_ts="315.365" title="315.165" id=c_"315.165">__cost__</span> product. And what we discovered was that being able to actually assemble something in North America and sell it for $99 is really, really hard when you're doing it in small quantities. And I mean, we were talking quantities of, you know, 250 or 500, and so we ended up, I think it was about 130 $929 seemed to be the magic mark for what we could sell it at. 
+</p>
+
+<p>
+<b>James: </b>We sold that one for actually a couple of years. And I think one of the reasons for that was that when it's open source, I think people expect that it's going to live a little bit longer and you're going to add a few features to it as, as time goes by. So we added things like digital wave table oscillators, and I think full midi control of all the, the various knobs. So you could use a sequencer to, to make all that tweakable. That led to the Ebola triad, which was, basically a polished version of the Nambla Banano, which had many of the similar features. And we tweaked the sound a little bit. And that's, that's where we are today. The interesting thing is that we moved a little bit away from the DIY stuff and we ended up going to water actually prebuilt products, but they're still open source and we weren't sure how the world would deal with that. So it's been interesting to see how people have taken to that. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Well, in recent weeks I've had the chance to, talk to a couple of different people that are doing open source hardware and in general, people feel strongly like it has been quite a success, not without bumps in the road, but quite a success. Mm-Hmm. <affirmative>, do you feel the same for yourself? 
+</p>
+
+<p>
+<b>James: </b>It's been really interesting to see how people embrace it when, when they hear that something is open source that makes them more eager to buy it, it definitely makes them eager to go and take a look at things like the schematics and say, well, why did you do this? How does it work? They go looking at the firmware and you get, you get quite interesting feedback from people, you know, they're interested in saying, well, I looked through, I looked through the code and it looks like there's a bug here. You know, stuff that people wouldn't be able to do if it was a commercial product. So yes, I'd say it's a success. And I'd say our number one fear when we went into it was, well, what if people just take our idea and figure out a way of being able to, to sell it to people for less? 
+</p>
+
+<p>
+<b>James: </b>Right. But the reality is that few people are gonna bother. What ends up happening is people will build stuff for themselves. Or a couple of months ago, I got an interesting email from somebody in Brazil, and the issue with electronic gear or importing most things into Brazil is that they have incredibly high tariffs for import Right. To the point that it doubles the cost of something. Somebody contacted me and he said, look, I found your, your, synth, it looks great. I found all the design files online. What, what do you think if we were to make it in Brazil so that we can actually sell it affordably here? And I mean, that, that to me is perfect. That's what, what open source should be all about, because the reality is that we're not gonna lose sales by him doing that, and he's going to create a, a cottage industry, you know, potentially in Brazil. So I'm looking forward to hopefully, you know, in a month or two, he'll send me an email saying, here, here's my website, and then I'll see if I can get my hands on, on his hardware and we'll see, you know, I think that's the coolest part. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well, you know, I hadn't even really thought about that, but the idea that open sourcing both the software and the hardware actually allows us to kind of sub subvert or do an end around sort of like national limitations. I mean, given the way politics is going right now, sounds great to me. Right? <laugh>? Mm-Hmm. 
+</p>
+
+<p>
+<b>James: </b><affirmative>. Mm-Hmm. <affirmative>. 
+</p>
+
+<p>
+<b>Darwin: </b>That's, that's really interesting. You talk about, a a little bit about trying to discern who the market of this was going to be for. One of the things I saw is that, first of all, like you say, because it was described as open source that made people seem to be more interested in purchasing it, but I also noticed that that kind of builds up momentum for people suggesting and, and sharing their use of it. There's something about that that en<a href="https://en.wikipedia.org/wiki/Max_(software)">Jitter</a>s community a lot more than a, than a typical commercial product. Do you feel like that's the case? 
+</p>
+
+<p>
+<b>James: </b>It certainly is. You definitely get people when they, they start using things and posting things online, they feel, I, I think they perhaps feel more connected to the product, which is a wonderful thing, right? Because there's, you know, you've essentially handed them the keys and say, well, look, if you want to go in there and tweak it, go ahead. But the flip side of that is that there've been some really interesting people who've come along with code suggestions or they've come along and they've said, look, I, I modified the filter so it worked like this. Or I, I added an arpeggiator to it 'cause I thought that was a very cool little, piece of functionality. And you take a look at some of that code and you think, well, that's, that's brilliant. And I, my mind wouldn't have gone in that direction. I just wouldn't have thought of it. 
+</p>
+
+<p>
+<b>James: </b>So, yeah, you get this wonderful synergy and there've been a few examples where people have sent stuff to me and I've said, well, can I throw that into the project? And they're very excited about that, you know, it's like, okay, well I get to be part of it too. And that's, I think that's where it becomes instead of a solitary thing where a designer is sitting in a room and you know, they're being paid X number of dollars a year to come up with a product, all of a sudden you're designing something, letting it loose, and then people are doing stuff to it that you wouldn't have anticipated. And all of a sudden there's a little bit of community ownership there, which I think is a wonderful, wonderful thing. I think we need more of that 
+</p>
+
+<p>
+<b>Darwin: </b>Right now. How do you, how do you handle people who want to make either fork versions or make alternative versions? You don't directly support that, right? You just allow the community to share it themselves? Or is there a repository someplace where they can put fork diversions? How, how do you manage that? 
+</p>
+
+<p>
+<b>James: </b>We have a repository on GitHub where people can go and they can grab the code and the design files. There are a couple of different licenses around, around the code. I think we're using the GPLV three license for the code, and essentially you're free to use it for any purpose, including commercial as long as you attribute the people and attribute back to the original product. And also that you share whatever code or whatever schematics you end up creating such that somebody could create and modify their own version of it, which I think is, is the way that it should be. And so what happens is you, you see people going in and they fork it and then they work with it. The only gotcha for us is that when it comes to things like cases, we, because, for financial reasons, we've been forced to use commercial cases, which we've modified the molds a bit of, and they're not available open source. So you can get the board designs from us, you can get the bill of materials, you can get the schematics, but we don't have any cases. But what I noticed is that there are a few, 3D printed cases which have popped up online, you know, people saying, well, <span style="color:red" data-ts="738.915" data-end_ts="739.205" title="738.915" id=c_"738.915">__look__</span>, here's what I did. Right. So I mean, that's a nice way of doing an end run around that, so you can make small numbers of them. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, that's really, that's really interesting. So I'm curious, is the, is the ME blip the first musical instrument that you made, or do you, do you have some background doing that? 
+</p>
+
+<p>
+<b>James: </b>The ME blip was the first musical instrument that I made that was sort of released into the world. I got into synthesis and, and DIY stuff in the mid 1980s and then ended up heading off to university. And then everything became about software. And it seemed that, you know, software was going to be the be all and end all of everything through the nineties and the early two thousands. So I was working, in databases. I stepped out of it for an incredibly long time, and by the time I'd stepped back in, you know, the, the or duino movement was just starting. And you looked at the cost of microcontrollers and they were down to, you know, two, three, $4 each. And you realize that instead of having to pay $20 for an Intel 80 51, which is what it would've been in the, in the late eighties, all of a sudden you've got something which is a single chip selling for practically nothing. And all of a sudden I sat there and went, well look at all the possibilities. And so I, I stepped away from the software side and I stepped into <span style="color:red" data-ts="813.825" data-end_ts="814.045" title="813.825" id=c_"813.825">__bl__</span>. So I'm, I'm developing these things, open source while at the same time I'm doing a little bit of hardware development consulting for, for other companies as well. 
+</p>
+
+<p>
+<b>Darwin: </b>Interesting. I think it's fascinating, the number of people that I've talked to for whom the Arduino revolution kind of changed their trajectory and how they thought about both hardware and software, it seemed to be, it seemed to be the thing that that refocused the maker movement, especially the musical maker movement, because all of a sudden then you had this thing that was fast enough to be able to do some synthesis or control voltage management or whatever Mm-Hmm. <affirmative>, but also could very easily handle serial midi communication and also wouldn't die the second you looked at it cross-eyed. Right. <laugh>. Exactly. It was a very stable and, and solid platform on which to do your experimentation. What were the first things you did with the Arduino and when was it, and, and when did you sort of like take off and go beyond just the Arduino platform to do your own at male-based, circuitry? 
+</p>
+
+<p>
+<b>James: </b>It would've been, I'm, I'm thinking it was probably 2008, 2009 that, that I, I jumped into it. It's hard to remember. And I mean at, at first it was just a simple matter of building sketches and going, okay, well great, I can interface, I can interface knobs, I can get MIDI running because that's a relatively easy thing to do on, on an Arduino. And so it became all about, well, I can build midi control surfaces. And it was interesting 'cause you saw a lot of people doing that, that same sort of thing at the same time when it came to synthesis, you are really trapped by, by the hardware a little bit. Doing a digital synthesizer in an <span style="color:red" data-ts="918.485" data-end_ts="918.645" title="918.485" id=c_"918.485">__app__</span> <span style="color:red" data-ts="918.645" data-end_ts="918.845" title="918.645" id=c_"918.645">__mal__</span> processor, like, like existed in that first generation of Arduinos was really quite tricky. And I ended up, I mean most of it is assembler, which is brutal from a legibility standpoint for anybody else who's trying to read it because it makes it a little, a little bit harder to read. 
+</p>
+
+<p>
+<b>James: </b>And it also requires quite a little bit of, mental gymnastics to make everything go. So what it looked like is, from there, the logical step of course is you get into, bridging to the analog world, right? And all of a sudden it's like, well, how can I use an Arduino for controlling cv? And at that point, all of a sudden you get into the universe where it's like, well, I should be creating my own, my own boards with my own app <span style="color:red" data-ts="957.405" data-end_ts="957.605" title="957.405" id=c_"957.405">__now__</span> processor on it and just going that route. And I think a lot of people did that in the eurorack world <span style="color:red" data-ts="962.045" data-end_ts="962.245" title="962.045" id=c_"962.045">__as__</span> especially, right. You know, that was, it was definitely a gateway for a lot of people to say, well, I'm gonna go from Arduino and then I'm going to go into building eurorack modules 'cause that's something small and concise and I don't have to build an entire system. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, it's, it's interesting though that you actually took a very different approach. You and Peter made some decisions that kind of in hindsight were a little shocking because I guess at the price point that you produce this at, you're producing it for less than most people put out a module. But if you think about all of the infrastructure that comes for free, if you do a module, it's kind of reassuring because, you know, there's power already. There's casing already. All those things are <span style="color:red" data-ts="1006.605" data-end_ts="1006.765" title="1006.605" id=c_"1006.605">__kinda__</span> handled for you. You're building a standalone thing. So that means you have to, you have to deal with power issues, you have to deal with casing construction and you know, certainly a lot more, assembly than most people. What is the trick to getting this thing in at the kind of price point you're doing? 
+</p>
+
+<p>
+<b>James: </b>We have an advantage in that with the existence of create digital <span style="color:red" data-ts="1031.575" data-end_ts="1031.925" title="1031.575" id=c_"1031.575">__music__</span>, music, we were able to talk about Meeb <span style="color:red" data-ts="1034.965" data-end_ts="1035.045" title="1034.965" id=c_"1034.965">__ble__</span> and the Meeb Echo system and keep it in the forefront of people's minds. So we could turn around and say, you know what, I think we, we may sell 500 of these things. Right? Right. And, and that changes the economies of scale a little bit, where you can turn around and say, well, okay, if we sell 500 of these, we can afford to spend a few thousand dollars on getting, an insert mold for the case so that we don't have to machine in the knobs and that'll cut the case per the per unit cost of the case down a little bit. And so that was the trick for us. But I mean, honestly, margins have been tight. It's, it's a really tough thing to do. 
+</p>
+
+<p>
+<b>James: </b>And I don't think that either Peter or I could make this a, a full-time concern if it was the only thing that we were doing. And, and we have, he and I have sat down quite a few times over beer and we've said, okay, well, you know, this is, it is really tricky for us 'cause you know, we're selling something for $139 and, and a lot of Euro modules are selling for two hundred, two hundred and fifty, three hundred bucks. Right, right, right. But it becomes, it becomes an issue of accessibility because I think what we're trying to do with the <span style="color:red" data-ts="1102.555" data-end_ts="1102.845" title="1102.555" id=c_"1102.555">__Miop__</span> stuff was create something which is a little bit of a gateway drug, right? It's like, okay, for a lot of people, and we're seeing a lot of emails from people where this is their first piece of hardware, right? So the questions they're sending us are, how does MIDI work? 
+</p>
+
+<p>
+<b>James: </b>How do I connect it to my computer? How do I get it to talk to Ableton? You know, you, you hear all these things over and over again, <laugh>. And then you get the same guy a year later who will send you a message back saying, you know what? I wish you had CVGate on the back of your box so that I could, interface it into the mother 32 that I just bought. And you go, okay, we got one. Right. Right. And so, you know, I I, I feel a little bit like the neighborhood weeded dealer and you know, you can get into the eurorack, that stuff, you know, that's the hardcore stuff as well. But that was the thinking, right. And I don't know, we've talked for years about getting into the eurorack space, but at the same time, there's lots of people there already and they're doing a really, really, really good job. So, you know, we we're a little unsure about the direction that we're gonna take from here. And I definitely think we wanna return to the our DIY roots a little bit, you know, see, see if we can come up with something which is truly hackable, you know, and go that approach. Sure. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. That's, it's interesting. But also then that just makes a lot clearer too. Why you're working with, with Peter is such an important part of the success story of this. How did you get to, how did you meet him in the first place? 
+</p>
+
+<p>
+<b>James: </b>In 2004, 2005, we both started blogs and he started create digital music.com, which still, it's still puttering along. I started one called retro thing.com. And yes, I did borrow the name shamelessly from you remember the old music thing, <span style="color:red" data-ts="1208.475" data-end_ts="1208.765" title="1208.475" id=c_"1208.475">__blog__</span>. And I started retro thing.com and I kept it alive probably a decade or so, as we were puttering along through stuff. So I was writing about, vintage technology, you know, classic cameras and eight bit computers and stuff. But what that did was, there were a few conversations that I had with, with Peter at CDM or with, Tom Whitwell at, music thing as well, just about the logistics of running a blog and, you know, keeping stuff going. And that was how I got in touch with Peter. And I think at the time he was writing a book all about everything to do with electronic music and synthesis, midi and things. 
+</p>
+
+<p>
+<b>James: </b>I think he released that in about 2006. So we had a lot of things to talk about there. And when I got into talk, you know, dealing with and deciding I wanted to do some music hardware, he was sort of the, the logical person to talk to about it. And all of a sudden it became a matter of sharing everything with him. And him literally scratching his head and say, well, why wouldn't you do this in a different way? It turned out that because of his, I'll call it an esoteric background, 'cause it is, he's got a very interesting perspective on synthesis products and design. So what happened is I would, I would whip something up, I would hand it off to him. He's in Berlin, so the next morning he would fire something back to me and say, well, don't do it this way, do it this way. And we've been working like that ever since. And it turns out that we, something about it gives us a little bit of a synergy to make, to make things as simple as possible while still being reasonably powerful. So, and I, I will admit that we're currently working on something new and it's something a little bit more advanced. And once again, you know, the design iterations are bouncing back and forward and, we'll see, we'll see how this product goes, but that'll be, you know, something for 2018. So we're not done yet, that's for sure. 
+</p>
+
+<p>
+<b>Darwin: </b><laugh>. Yeah. Well it's, it's a very interesting and obviously a very rewarding collaboration. Now, I'm a little bit curious about where you are coming from. One of the things I like to do on my podcast is talk to people about their beginning stories. And you kind of filled in some of the blanks about your move into, hardware design and syn design, but there's still something back there. I I'm always curious about people who are equally comfortable talking about either music and music, musical instruments and technical tools and technical concepts. Right? And you are clearly that. I'm curious, what is your background that gives you sort of facility in both technical stuff, but also in musical stuff? Did you, you know, were you a band kid growing up or was it like a Tangerine Dream album that all of a sudden turned you into electronic musician? What is the background that kind of brings you to musical instruments as opposed to like making drones or robots or something else? 
+</p>
+
+<p>
+<b>James: </b>It, it's funny that the way that you worded that question, 'cause yeah, I think the album was, it was probably Tangerine Dreams Exit. And, and which is a really interesting, introduction. And I remember, I remember I must've been probably 11 or 12 years old and I remember being at the public library in, in the city that we lived in. And I remember going and I remember looking through albums and I found that one, and I found K CraftWorks Autobahn as well. And so I remember taking, taking the LP and, you know, getting it from the desk and going and grabbing the big <span style="color:red" data-ts="1419.125" data-end_ts="1419.405" title="1419.125" id=c_"1419.125">__cost__</span> headphones and plugging it into the turntable there. And my mind was blown 'cause I was hearing this stuff and I had no idea how it was made, you know, and it wasn't a case of being able to Google and say, what's a sequencer? 
+</p>
+
+<p>
+<b>James: </b>Right? I mean, <span style="color:red" data-ts="1432.495" data-end_ts="1432.845" title="1432.495" id=c_"1432.495">__there__</span>, that knowledge just wasn't shared at that point. I went from that and then I decided that I was gonna start learning to play guitar for whatever reason, guitar. And I never, never got along at all, but I stumbled into the synth section, and this must've been in the early days of midi and they had the only synth that I could afford to rent was an old piece of garbage cord mono <span style="color:red" data-ts="1455.375" data-end_ts="1455.725" title="1455.375" id=c_"1455.375">__polly__</span>. The poor thing had been used for live performance. It stank like cigarette smoke, it had cigarette burns on everything. <laugh>, you know, the keys were yellow and everything else. So I took this stinky thing home and that was my gateway. And, you know, looking back on it, I wish that I had paid the 200 or $300 that they wanted to sell the instrument for. I wish I'd just bought it and kept it forever, you know, 'cause it's now unobtainium. 
+</p>
+
+<p>
+<b>James: </b>But that was my introduction into the synth world. And, you know, using the arpeggiator and everything else in there and, and just learning the basics of synthesis. It was a wonderful tool. But at the same time, I also got into, programming. I think my first computer was A-A-T-R-S 80, which was on sale, you know, the, the old trash eighties, which was on sale, a model one, which was on sale at, radio Shack. It was on clearance. It was about the only one that my family could afford. And they bought it for me. You know, that came with its own set of constraints. It had 16 k of memory, so I could code in, in basic, but I discovered that if you wanted to do anything really quick, then all of a sudden you had to get into assembler. And so that was, that was the gateway drug into both sides. 
+</p>
+
+<p>
+<b>James: </b>You know, there was, there was an understanding of synthesis, which, which led me, you know, to a very expensive synth habit when I was in my early twenties. You know, <laugh> actually afford to buy these things, but I, I didn't connect the two, right. It wasn't a case of me saying, well, it's reasonable for me to design my own hardware. It's reasonable for me to, you know, try and figure out an algorithm for a filter. That stuff just didn't click until years and years and years later. And it, again, it goes back to Arduino and saying, okay, well this is strikingly affordable and now it gets to be something which potentially could be a consumer product, you know? 
+</p>
+
+<p>
+<b>Darwin: </b>Right. That's a really interesting, <span style="color:red" data-ts="1564.685" data-end_ts="1564.965" title="1564.685" id=c_"1564.685">__trail__</span>. So did you, did you actually find a way to make any noise come out of the trash 80? 
+</p>
+
+<p>
+<b>James: </b>You know what, as I recall about the only music program that I had was something called Dancing Demon, which is a little, black and white animated demon. And you could, you could make it do various different dance moves. And it also had a really rudimentary monophonic synthesizer. And I think it was just playing square waves. And I remember being fascinated by that. So that <span style="color:red" data-ts="1591.105" data-end_ts="1591.325" title="1591.105" id=c_"1591.105">__was__</span>, that was it, as far as synthesis was concerned with, computers until the arrival of the Commodore 64 mm-Hmm. <affirmative>. And, you know, the whole idea of being able to have, you know, basically a tiny little polyphonic synthesizer with an an analog filter just blew my mind to see what was, what was possible there. You know, I remember tracking music with that and, you know, trying as best I could to come up with something interesting and creative. And it was a good lesson in absolute minimalism. And I think it's one that we should return to a little bit sometimes, you know? 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah. Well, it's interesting you say it that way 'cause I, I was actually going to kind of go down a path that I'm always curious about, which is for people who I understand, people now have a real love of chip <span style="color:red" data-ts="1639.715" data-end_ts="1640.005" title="1639.715" id=c_"1639.715">__tune__</span> like things, right? Mm-Hmm. <affirmative>. But there is a, there are many generations of us for whom chip <span style="color:red" data-ts="1647.845" data-end_ts="1648.085" title="1647.845" id=c_"1647.845">__tune__</span> at the time was sort of like an unfortunate reality, right. <laugh>, you know, we really wanted to sound like Tangerine dream, but in fact we mostly sounded like Tangerine Dream squeezed through a toothpaste container. Right, exactly. It was, it was hard to get these sounds that we loved to come outta our machine, and it was really also hard to embrace what we had at the time. Now you kind of mentioned that you had like a very expensive synth habit in your twenties. Was that part of like trying to chase the, the great sounding dream? Or, or did you just like collecting, or did you, what, what was behind that? 
+</p>
+
+<p>
+<b>James: </b>I was lucky in that when I got into synthesis, it was just after the emergence of midi and that was the, I mean, that was the golden age of the, you know, the first golden age of hardware really. You know, all of a sudden you had beautiful dream instruments like the, the Jupiter eight, you had the excitement of hearing a PPG wave for the first time sampling. You know, the, the first time I heard a, a Fairlight, it was like, well, what's that? And then all of a sudden, in sonic releases the Mirage at whatever it was, $1,395 and all of a sudden it was within, within reach. So, you know, there was this wonderful collection of instruments which came along. And, I think the logical thing for me was, well, I, I'll try collecting a few of them. It was never really about collecting, it was always about experiencing and seeing, you know, what would happen if I grabbed an analog sense, a digital sense, and maybe a sampler and see what kind of music I can create with that. 
+</p>
+
+<p>
+<b>James: </b>And, you know, I think that was a little escape. And in some ways it was very much stepping back and saying, well, can I create, you know, the same sort of sounds that I heard in the synth wave when I was a teenager? You know, the stuff that I heard in 1982 and 83 and and beyond that, making some mistakes along the way, like not picking up the cheap TR 8 0 8 that I saw sitting in, in the store, or an Mc 2 0 2, which was sitting in the, in the display case in <span style="color:red" data-ts="1775.505" data-end_ts="1775.625" title="1775.505" id=c_"1775.505">__a__</span>, my local music store for years. 'cause they didn't know how to sell it. You know, that stuff just went by the wayside. 
+</p>
+
+<p>
+<b>Darwin: </b>It's, it's funny you say it that way because, and, and actually I'll say so many people I know have like this regrettable TB 3 0 3 memory, right? Mine was, there was a pawn shop that apparently got a bunch of 'em that Roland was trying to dump, and they like strap taped a 3 0 3 and a 6 0 6 together and like had threw 'em in a rain barrel and you could have 'em, you could have 'em both for 99 bucks if you wanted 'em. And literally at the time, nobody wanted 'em, right? Yeah, 
+</p>
+
+<p>
+<b>James: </b>Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Go figure. 
+</p>
+
+<p>
+<b>James: </b>I mean, that was the curse. 'cause all of a sudden, all these wonderful analog instruments, or even the, the analog hybrids became really boring and everybody started jumping on things like, you know, they wanted the D 50 or they wanted the core game one, or, you know, it was all about sample playback. And we didn't realize what we were abandoning. 'cause I mean, I remember I, I bought a <span style="color:red" data-ts="1837.395" data-end_ts="1837.685" title="1837.395" id=c_"1837.395">__Moog__</span> prodigy from, from some guy, I saw an ad in the newspaper and I think I paid a hundred dollars for it, and it was in great shape, and I kept it for a while, but then I got rid of it because, well, it doesn't have midn, so it doesn't really have any future, you know, and, and it's those sort of realizations, which were funny because you, you look at it and you think, whoa, I could have had all this stuff and, you know, a Roland <span style="color:red" data-ts="1859.665" data-end_ts="1859.885" title="1859.665" id=c_"1859.665">__sh__</span> 1 0 1, which some guy who worked in the, the campus bar was trying to get rid of so that he could pay rent. You know, stuff like, stuff like that. And you just, you didn't realize the importance of it. You didn't realize that, you know, they were classics and and would always be classics. 
+</p>
+
+<p>
+<b>Darwin: </b>Yeah, indeed. So you've had this experience and, and, and like me, you've had this chance to sort of like see musical instrument technology change over, you know, over a fair amount of time. I'm curious what you think of where things are at currently, and also this sense, I mean, you hear the talk of people saying, oh, is is the modular thing a bubble? Is that gonna, you know, is that gonna explode or is there something that's gonna take its place? And I wonder, I sometimes wonder if thanks to the internet, maybe when it comes to instruments, it's no longer a zero <span style="color:red" data-ts="1914.265" data-end_ts="1914.485" title="1914.265" id=c_"1914.265">__sum__</span> game, right? We don't have to abandon digital for analog, nor do we have to abandon analog for digital. We can have <span style="color:red" data-ts="1921.675" data-end_ts="1921.965" title="1921.675" id=c_"1921.675">__navi__</span> synths and we can have vsts, because now with the internet, so many people are connected. You can find a large enough group behind most of these kinds of, like, instrument movements. Right? I mean, does, does it feel that way to you? Or do you, or do you think that it's already kind of overpopulated? I mean, you're, you actually have an instrument in place, so I'm kind of curious to know what you think of the marketplace right now. 
+</p>
+
+<p>
+<b>James: </b>Well, my perception has changed over the last year or so because I watched the emergence of modular and I thought in a way it's the ultimate backlash to, to computer-based synthesis. You know, everybody's staring at their laptop all the time. All of a sudden everybody wanted to get out of the box and they wanted to build their own, you know, massive, unique eurorack system. And I watched everybody do it, and I watched everybody say, well, you know, analog is where it at, where it's at, and everything should be analog. And people were looking down at digital. And at that point I got a little concerned and I thought, well, maybe this is just going to end up as a bubble. But what you saw then was the emergence of some really, really interesting digital modules, right? So all of a sudden you had Eurorack, which was this wonderful interface between analog and digital. 
+</p>
+
+<p>
+<b>James: </b>And now it seems like things are, if, if you look at, for me anyway, the Euro modules, which are exciting me most right now are, tend to be sort of leaning towards polyphony. You know, it's like maybe a, a MIDI to CV interface with, with four outputs and something, <span style="color:red" data-ts="2013.805" data-end_ts="2014.005" title="2013.805" id=c_"2013.805">__and__</span> stuff. So all of a sudden you can get into polyphonic era rack. But what's really interesting from our perspective, from, from a manufacturer's perspective is that a lot of people are coming to us and saying, well, why is there no CV gate and CV control on your sims? Because if you had it there, I'd love to have one so that I could integrate it into my modular setup. Mm-Hmm. <affirmative>. And at the same time, you're seeing a lot of people who are using, computers to control modular, and all of a sudden everything, there's, there's a lot of cross pollination going on. 
+</p>
+
+<p>
+<b>James: </b>And I think what you're gonna see, you know, by the time we hit 2020 or 2025, is you're gonna see this wonderful mishmash where there's <span style="color:red" data-ts="2052.085" data-end_ts="2052.205" title="2052.085" id=c_"2052.085">__no__</span>, there's not such a line anymore. You'll see people with a computer sitting beside their modular, potentially sitting beside table, tabletop <span style="color:red" data-ts="2060.045" data-end_ts="2060.365" title="2060.045" id=c_"2060.045">__since__</span>, and then, you know, the classic hardware keyboards and, and all that stuff. So I think perhaps we're seeing a blending together of stuff. So a year ago, two years ago, I might've said, well, you know what? I think we're hitting peak modular where everything is going modular. Now it's getting to the point where I'm thinking, well, no, everything's actually getting really interesting and we're developing some stuff that I don't think we would've imagined coming along five or 10 years ago. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>I, I agree. Well, I think too, there's the success and the breadth of things like the Rolling Boutique series and stuff, to see them kind of embrace this kind of extended tabletop metaphor, for example, Mm-Hmm. <affirmative>, right? Or the number of people that are actually embracing battery or rechargeable units for more portability and stuff. That seems to also be a nod to this, like massive hybridization of the place, right? Mm-Hmm. 
+</p>
+
+<p>
+<b>James: </b>Well, yeah, even being able to take things like your iPhone and run some, you know, run a run software like, the mode <span style="color:red" data-ts="2119.485" data-end_ts="2119.725" title="2119.485" id=c_"2119.485">__step__</span> sequencer on it, for example, and then control whatever various battery powered things you have. It's really exciting. And all of a sudden you get people going out and you get people performing with this table full of gear and, and not necessarily performing where you would expect people to perform. All of a sudden it's like, well, we could take this outside, right? <laugh>. 
+</p>
+
+<p>
+<b>Darwin: </b>Right, right. 
+</p>
+
+<p>
+<b>James: </b>Well that was always the problem with producing electronic music. You know, I think back to the eighties and you basically had your studio racks full of gear and you made your music at home. Performing live was a really, really tricky thing, right? You took along some of your gear, or you took along, you know, tape backups and, and you performed some of it. But it's not like now where you can go out and you can work with a wonderful little hybrid rig. It's interesting 'cause we're coming up to Christmas right now and I'm seeing a number of people who are, you know, you get parents who are emailing you questions, asking about, you know, their rig. And somebody came up and said, well, look, if my kid got a, a Novation circuit and Alet triad, would they work well together? Mm-Hmm. <affirmative>. And, you know, I was able to point them to a, a YouTube video and say, well, look, this is all the sort of stuff that they could do. And they came back actually pretty astounded that, you know, there was no computer involved, there were no other instruments involved, you know, that two instruments alone or one instrument alone, is enough often to perform. So it'll be interesting, you know, interesting to see, you know, how little Euro racks go along with that as well. 
+</p>
+
+<p>
+<b>Darwin: </b>Sure. Now, to kind of continue this, this line then, what do you think might be the surprise twist that we see in the future and the relatively near term future? I mean, do you think that video will go this direction? I mean, we see some, you know, with the LZX stuff, we see a little bit of modular video, but video still is kind of a, a heavy lifting thing. I don't know if that's something that could really make the trans translation, or do you think that people are gonna get more and more into advanced and idiosyncratic controllers? What do you think is the thing that that is likely to explode next? 
+</p>
+
+<p>
+<b>James: </b>Well, the interesting thing, I think it was the last NAMM show, teenage engineering was showing off their, little OPZ, prototype synth, and it's got an HDMI port on it, right? So it, it's all about getting video out there into the world. So obviously from their perspective, they're thinking, well, you know what? We've got an arm processor in here, which is capable of doing the heavy lifting so that we can actually, we can deal with video. I don't know, I really don't know if that's the next thing. 'cause you get a bunch of people who, who are heavily invested in audio and music. I don't know if they're <span style="color:red" data-ts="2283.125" data-end_ts="2283.285" title="2283.125" id=c_"2283.125">__going__</span> to take the step across to, to video. I, I, I can see that happening in parallel much as it's happened already. You know, you have, you have the VJs who work, with synthesis to create something. 
+</p>
+
+<p>
+<b>James: </b>I wish I had a crystal ball and I could tell you where the next big thing was. I, I think what it's gonna be, perhaps if somebody can crack this, you know, create a little box, which is two or $300, which has got a whole bunch of CV outputs on it, which has got midi, which has got audio io on it, that can be used to, to really effectively integrate your laptop with a modular environment and everything else. I think that might actually be a wonderful Swiss Army tool for making a lot of people very, very happy. Although <span style="color:red" data-ts="2327.285" data-end_ts="2327.445" title="2327.285" id=c_"2327.285">__that__</span>, I don't know whether they would realize that they need it until they actually see it. That's the trick there. Right. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, that's kind of the trick with a lot of stuff. That was kind of the trick with modulars in general when they first came out. A lot of people didn't understand why to do 'em and why to do it until they saw someone do it. Right. 
+</p>
+
+<p>
+<b>James: </b>Well, yeah, definitely. I think you're right there. Yeah. 
+</p>
+
+<p>
+<b>Darwin: </b>Well, James, I want to, we've already kind of hit our time here, unfortunately, and there's, there's stuff I wanted to <laugh> go into, but, we'll save it for next time. I want to thank you so much for taking the time, out of your, out of your day to have a chat. 
+</p>
+
+<p>
+<b>James: </b>Well, thank you Darwin. It was a pleasure. 
+</p>
+
+<p>
+<b>Darwin: </b>Thank you so much and goodbye now. Such a fun interview. I really enjoyed talking to James. Thanks again to opia for helping put this together. Thanks again to Robert Simmons for his support of the podcast. And I want to thank you again for listening, for showing up every week and hearing me am to these amazing people. With that, I will, let you go. If you have any questions or comments, make sure you drop me a line d dg@cyclingfour.com. Otherwise, we'll catch next.
+</p>
+
+    <p><i>Copyright 2018-2024 by Darwin Grosse. All right reserved.</i></p></div>
+    <!-- jQuery (necessary for the Bootstrap JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
+    
